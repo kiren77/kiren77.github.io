@@ -1,0 +1,16 @@
+<svg width="296" height="343" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="345" width="298" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000" transform="rotate(90 148.17857360839844,171.82141113281253) " id="svg_1" d="m-23.32143,171.82142l73.50001,-146.99999l195.99999,0l73.49998,146.99999l-73.49998,146.99998l-195.99999,0l-73.50001,-146.99998z" stroke-width="1.5" fill="#729C62"/>
+  <path id="svg_4" d="m101,188.5" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+  <text stroke="#000" transform="matrix(8.32490361036249,0,0,8.84236928966101,-1445.4076519199423,-1697.0277422005288) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_6" y="214.5" x="174" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Sheep</text>
+ </g>
+</svg>
