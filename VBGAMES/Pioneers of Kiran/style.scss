@@ -2,29 +2,45 @@
 
 
 //testA
-$pastureTile: green;
-$forestTile: brown;
-$clayMine: #670320;
-$stoneQuarry: 
-
-$colorTileA: cornflowerblue;
-$colorTileB: green;
+$sheepTile: green;
+$woodTile: brown;
+$brickTile: #670320;
+$oreTile: grey;
+$wheatTile: #606113;
+$desertTile:#606113;
+//associate css variable $colorTileX with JS variable assignedRandomTileX
+//where X is the respective tile
+$backdropGame: cornflowerblue;
+//$colorTileB: green;
 
 
 body {
-background-color: cornflowerblue;
+background-color: $backdropGame;
 }
 
 svg {
 //margin-left: 50%;
-width: 100%;
+width: fit-content;
 max-height: 50%;
 }
-
-
 #islandContainer {
-//viewBox in html>svg is what affects island size
+     //viewBox in html>svg is what affects island size
+opacity: 0;
+-webkit-transition: opacity 3s ease-in-out;
+-moz-transition: opacity 3s ease-in-out;
+-ms-transition: opacity 3s ease-in-out;
+-o-transition: opacity 3s ease-in-out;
+transition: opacity 3s ease-in-out;
 }
+
+//Below we CREATE a fade CLASS (not in html)
+
+body.fade {
+opacity:0;
+}
+//seeing that islandContainer is 
+    
+
 
      #idTileA{
 fill: $colorTileA; /*should be someday be changed to a 

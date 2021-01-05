@@ -3,18 +3,27 @@ body {
 }
 
 svg {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   max-height: 50%;
 }
 
+.fadein-animation {
+  -webkit-animation: fadein 10s;
+          animation: fadein 10s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
 #idTileA {
-  fill: green;
+  fill: cornflowerblue;
   /*should be someday be changed to a 
 variable*/
 }
 
 #idTileS {
-  fill: blue;
+  fill: pink;
 }
 
 /* Tile arrangement: 4 players
