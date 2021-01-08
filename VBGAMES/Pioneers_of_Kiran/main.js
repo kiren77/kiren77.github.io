@@ -51,13 +51,9 @@ const nineteenTiles = [
 randomTile.forEach(ninteenTiles => {[Math.floor(Math.random() * nineteenTiles.length)];});
 console.log(randomTile);
 */
-
-
 //below is the random tile distributor module.
-//let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
-//console.log(randomTile);
-
-
+let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
+console.log(randomTile);
 
 
 //for (let index = 0; index < array.length; index++) {
