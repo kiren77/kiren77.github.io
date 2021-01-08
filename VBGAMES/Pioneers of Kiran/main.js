@@ -1,104 +1,204 @@
-//const dino = document.getElementById('dino');
 
+let svg = document.getElementsByTagName('svg');
+let hexPath = document.getElementsByTagName('path');
+let islandSVG = document.getElementsByClassName('islandSVG');
 
-/*
-let head = document.getElementsByTagName("head")[0]; 
-    for (let i = 0; i < sheets.length; ++i) 
-    {let elem = sheets[i]; 
-        let parent = elem.parentElement || head; parent.removeChild(elem); 
-        let rel = elem.rel; 
-        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") { var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, ''); 
-        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf()); 
-    }
-    */
-   const tileLetters = [
-   {tileA: document.getElementById("idTileA")},
-   {tileB: document.getElementById("idTileB")},
-   {tileC: document.getElementById("idTileC")},
-   {tileD: document.getElementById("idTileD")},
-   {tileE: document.getElementById("idTileE")},
-   {tileF: document.getElementById("idTileF")},
-   {tileG: document.getElementById("idTileG")},
-   {tileH: document.getElementById("idTileH")},
-   {tileI: document.getElementById("idTileI")},
-   {tileJ: document.getElementById("idTileJ")},
-   {tileK: document.getElementById("idTileK")},
-   {tileL: document.getElementById("idTileL")},
-   {tileM: document.getElementById("idTileM")},
-   {tileN: document.getElementById("idTileN")},
-   {tileO: document.getElementById("idTileO")},
-   {tileP: document.getElementById("idTileP")},
-   {tileQ: document.getElementById("idTileQ")},
-   {tileR: document.getElementById("idTileR")},
-   {tileS: document.getElementById("idTileS")},
-]
-console.log
-// getting the is
-window.onload = function(){
-        //assigning low caps variable to id #islandContainer
-wholepage = document.getElementById('body');
-//we now make a button function
-
-document.getElementById('myButton').onclick = function(){
-
-wholepage.classList.toggle('fade');
-console.log("myButton was pressed");
-
+function myFunction() {
+        var x = document.getElementById("islandSVG").hasAttribute("onclick");
+        document.getElementById("demo").innerHTML = x;//let sheepTile = document.getElementsBy
 }
-}
-//end of intro fade code
-
-
-// --------RANDOM factor below
-let randomNumber = Math.floor(Math.random() * 19);      
-console.log(`the random number is ${randomNumber}`)
-// returns a random integer from 0 to 10
-
-const tileHexes = [
-                //tile will be assocated to random tileX
-        { name: 'sheepOne',     allocatedLetter: undefined  },
-        { name: 'sheepTwo',     allocatedLetter: undefined  },
-        { name: 'sheepThree',   allocatedLetter: undefined  },
-        { name: 'sheepFour',    allocatedLetter: undefined  },
-        { name: 'woodOne',      allocatedLetter: undefined  },
-        { name: 'woodTwo',      allocatedLetter: undefined  },
-        { name: 'woodThree',    allocatedLetter: undefined  },
-        { name: 'woodFour',     allocatedLetter: undefined  },
-        { name: 'wheatOne',     allocatedLetter: undefined  },
-        { name: 'wheatTwo',     allocatedLetter: undefined  },
-        { name: 'wheatThree',   allocatedLetter: undefined  },
-        { name: 'wheatFour',    allocatedLetter: undefined  },
-        { name: 'oreTwo',       allocatedLetter: undefined  },
-        { name: 'oreThree',     allocatedLetter: undefined  },
-        { name: 'brickTwo',     allocatedLetter: undefined  },
-        { name: 'brickThree',   allocatedLetter: undefined  },
-        { name: 'desert',       allocatedLetter: undefined  },
-] //end of array
-
-tileHexes.forEach((tileHex) => {
-
-//WHEN CODE IS READY use this to troubleshoot
-//console.log(`${tileHex.name} 'has' ${tileHex.allocatedLetter}`)
-})
         
+let tileA = document.getElementById("idTileA");
+let tileB = document.getElementById("idTileB");
+let tileC = document.getElementById("idTileC");
+let tileD = document.getElementById("idTileD");
+let tileE = document.getElementById("idTileE");
+let tileF = document.getElementById("idTileF");
+let tileG = document.getElementById("idTileG");
+let tileH = document.getElementById("idTileH");
+let tileI = document.getElementById("idTileI");
+let tileJ = document.getElementById("idTileJ");
+let tileK = document.getElementById("idTileK");
+let tileL = document.getElementById("idTileL");
+let tileM = document.getElementById("idTileM");
+let tileN = document.getElementById("idTileN");
+let tileO = document.getElementById("idTileO");
+let tileP = document.getElementById("idTileP");
+let tileQ = document.getElementById("idTileQ");
+let tileR = document.getElementById("idTileR");
+let tileS = document.getElementById("idTileS");//tile colors 
 
 
 
-let setupIsland;
+let sheepTile;
+let woodTile;
+let wheatTile;
+let oreTile;
+let brickTile;
+let desertTile;
+
+const nineteenTiles = [
+        {sheepTile: {amountLeft:  4, colorTile: "#008000;" }},
+        {woodTile: {amountLeft:   4, colorTile: "#bdc001" }},
+        {wheatTile: {amountLeft:  4, colorTile: "#606113" }},
+        {oreTile: {amountLeft:    3, colorTile: "#bbbba3" }},
+        {brickTile: {amountLeft:  3, colorTile: "#670320" }},
+        {desertTile: {amountLeft: 1, colorTile: "#606113" }},
+];
+
+/*let randomTile;
+
+randomTile.forEach(ninteenTiles => {[Math.floor(Math.random() * nineteenTiles.length)];});
+console.log(randomTile);
+*/
+
+
+//below is the random tile distributor module.
+//let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
+//console.log(randomTile);
 
 
 
 
-let chipArray = ["chip1", "chip2", "chip3", "chip4", "chip5", "chip6", "chip7", "chip8", "chip9", "chip10", "chip11", "chip12", "chip13", "chip14", "chip15", "chip16",
-"chip17", "chip18"];
+//for (let index = 0; index < array.length; index++) {
+ //       const element = array[index];}
 
- //function is called upon click
- function myFunction() {
-        //take the element in the tag LI...
-         let x = document.getElementsByTagName("LI");
-        //... the number of its height being indicated
-        // inside the bracket x 
-        document.getElementById("demo").innerHTML = x[0].innerHTML;}
+let tileHexes = [
+        {tile: tileA,   assignedColor: undefined},
+        {tile: tileB,   assignedColor: undefined},
+        {tile: tileC,   assignedColor: undefined},
+        {tile: tileD,   assignedColor: undefined},
+        {tile: tileE,   assignedColor: undefined},
+        {tile: tileF,   assignedColor: undefined},
+        {tile: tileG,   assignedColor: undefined},
+        {tile: tileH,   assignedColor: undefined},
+        {tile: tileI,   assignedColor: undefined},
+        {tile: tileJ,   assignedColor: undefined},
+        {tile: tileK,   assignedColor: undefined},
+        {tile: tileL,   assignedColor: undefined},
+        {tile: tileM,   assignedColor: undefined},
+        {tile: tileM,   assignedColor: undefined},
+        {tile: tileO,   assignedColor: undefined},
+        {tile: tileP,   assignedColor: undefined},
+        {tile: tileQ,   assignedColor: undefined},
+        {tile: tileR,   assignedColor: undefined},
+        {tile: tileS,   assignedColor: undefined},
+]
+//console.log(Array.isArray(tileHexes));   // checks if it's an array returns true
+
+//fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+
+// We now create a function for the distribution of tiles.
+// With each refresh of the page we should have all tiles randomly
+// assigned (using the fillX() function below).
+
+// The nineteen hex tiles should be distributed randomly.
+// These are the tiles that are distributed.
+// 4 sheepTile          4 woodTile      4 wheatTile
+// 3 oreTile            3 brickTile     1 desertTile
+
+//so workflow is
+//1: initial variables/arrays declared ( 
+        //sixTiles + tileHexes)
+//2: random Function established (randomTile)
+        //(value must be updated with every loop)
+//3: distribution function perfected 
+
+//4: 
+
+//array.forEach(element => {});
+
+//THIS WORKS!
+//<button onclick="myFunction()">Try it</button>
+
+
+//forEach tile
+// check if assignedColor is undefined
+// check available tiles
+
+//(only)
+
+//ignore defined ones
+//if it is && has assign a randomTile}
+//else { move on to next tile}
+
+//randomTile must be replaced by assignedColor !!!
+function fillA() {
+        document.querySelector("path#idTileA").style.fill = randomTile;
+}
+//
+function fillB() {
+        document.querySelector("#idTileB").style.fill =  randomTile;
+        }
+//
+function fillC() {
+        document.querySelector("path#idTileC").style.fill =  randomTile;
+        }
+//
+function fillD() {
+        document.querySelector("path#idTileD").style.fill =  randomTile;
+        }
+//
+function fillE() {
+        document.querySelector("path#idTileE").style.fill =  randomTile;
+        }
+//
+function fillF() {
+        document.querySelector("path#idTileF").style.fill =  randomTile;
+        }
+//
+function fillG() {
+        document.querySelector("path#idTileG").style.fill =  randomTile;
+        }
+//
+function fillH() {
+        document.querySelector("path#idTileH").style.fill =  randomTile;
+        }
+//
+function fillI() {
+        document.querySelector("path#idTileI").style.fill =  randomTile;
+        }
+//
+function fillJ() {
+        document.querySelector("path#idTileJ").style.fill =  randomTile;
+        }
+//
+function fillK() {
+        document.querySelector("path#idTileK").style.fill =  randomTile;
+        }
+//
+function fillL() {
+        document.querySelector("path#idTileL").style.fill =  randomTile;
+        }
+//
+function fillM() {
+        document.querySelector("path#idTileM").style.fill =  randomTile;
+        }
+//
+function fillN() {
+        document.querySelector("path#idTileN").style.fill =  randomTile;
+        }
+//
+function fillO() {
+        document.querySelector("path#idTileO").style.fill =  randomTile;
+        }
+//
+function fillP() {
+        document.querySelector("path#idTileP").style.fill =  randomTile;
+        }
+//
+function fillQ() {
+        document.querySelector("path#idTileQ").style.fill =  randomTile;
+        }
+//
+function fillR() {
+        document.querySelector("path#idTileR").style.fill =  randomTile;
+        }
+//
+function fillS() {
+        document.querySelector("path#idTileS").style.fill =  randomTile;
+        }
+                                                                                                                                          
 
 /*
 PHASE ONE setupIsland:

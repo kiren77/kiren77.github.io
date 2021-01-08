@@ -1,40 +1,98 @@
 body {
+  font-family: Papyrus;
   background-color: cornflowerblue;
 }
+h1 {
+  text-align: center;
+}
+
+
+
+
+
+
 
 svg {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-height: 50%;
+/*viewBox: -300 0 1500 1500;*/
+max-height: 50%;
 }
 
-.fadein-animation {
-  -webkit-animation: fadein 10s;
-          animation: fadein 10s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+#idTileA{
+  fill: grey;
+}
+#idTileB{
+  fill: grey;
+}
+#idTileC{
+  fill: grey;
+}
+#idTileD{
+fill: grey;
+}
+#idTileE{
+  fill: grey;
+}
+#idTileE{
+   fill: grey;
+}
+#idTileF{
+fill: grey;
+}
+#idTileG{
+  fill: grey;
+}
+#idTileG{
+  fill: grey;
+}
+#idTileH{
+  fill: grey;
+}
+#idTileI{
+  fill: grey;
+}
+#idTileJ{
+  fill: grey;
+}
+#idTileK{
+  fill: grey;
+}
+#idTileL{
+  fill: grey;
+}
+#idTileM{
+  fill: grey;
+}
+#idTileN{
+  fill: grey;
+}
+#idTileO{
+  fill: grey;
+}
+#idTileP{
+  fill: grey;
+}
+#idTileQ{
+  fill: grey;
+}
+#idTileR{
+  fill: grey;
+}
+#idTileS{
+  fill: grey;
 }
 
-#idTileA {
-  fill: cornflowerblue;
-  /*should be someday be changed to a 
-variable*/
-}
 
-#idTileS {
-  fill: pink;
-}
+
 
 /* Tile arrangement: 4 players
 p = Port
-            p    p
-             A--B--C p
-          p D--E--F--G
-           H--I--J--K--L p
-          p  M--N--O--p
-              Q--R--S  p
-            p     p
+           p    p
+            A--B--C p
+         p D--E--F--G
+          H--I--J--K--L p
+         p  M--N--O--p
+             Q--R--S  p
+           p     p
 
 */
 /*dice animation*/
