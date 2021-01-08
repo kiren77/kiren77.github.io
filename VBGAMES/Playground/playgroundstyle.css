@@ -12,6 +12,9 @@ background-color: aqua;
 border: orange;
 border-style:dotted;
 }
+table td {
+    background-color: yellow;
+}
 /*
 #cellOne{
 min-height: 100px;

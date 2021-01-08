@@ -7,9 +7,9 @@
 //3 green
 //1 purple (desert)
 
-//instead of island tiles let's use pots of paint
 
 let sheepTile, woodTile, wheatTile, oreTile, brickTile, desertTile;
+let tileType = ["sheep", "wood", "wheat", "ore", "brick", "desert"];
 
 
 const remainingTiles = [
@@ -44,9 +44,16 @@ const hexagonArray = [
     {cellEighteen : document.getElementById("cellEighteen")},
     {cellNineteen : document.getElementById("cellNineteen")}
 ]
+//x is variable to navigate to the row
+// from which we want the value;
+let x = 0;
+//and we can check the array value at that
+console.log(`tileType is ${(tileType)[x]}`);
 
+
+document.getElementById("updates").write
 //remainingTiles[0].amountTiles = return amountTiles on first row.
-console.log(`remaining ${remainingTiles.[]}: ${remainingTiles[0].amountTiles}`);
+console.log(`remaining ${remainingTiles[0]}: ${remainingTiles[0].amountTiles}`);
 
 /*for (let index = 0; index < array.length; index++) {
     const element = array[index];
@@ -102,22 +109,12 @@ while
   i++
 }
 */
-
-
-
-
-
 //below is the random tile distributor module.
 /*let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
 console.log(randomTile);
 */
 
 
-function colorFunction() {
-    //document.body.style.backgroundColor = "red"
-    //(we replace .body with .querySelector("#cellOne"))
-    document.querySelector("td").style.backgroundColor = "blue";
-}
 
 /*if ('WebSocket' in window) { (function () { function refreshCSS() 
     { var sheets = [].slice.call(document.getElementsByTagName("link")); 
