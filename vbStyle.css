@@ -1,14 +1,16 @@
-body {
-        background-color: #c5b8ab;
-        margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
 
-      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+      .container { 
+         margin: 50px auto 40px auto;
+         width: 600px; 
+         text-align: center;
+         }
 
-      a { color: #4183c4; 
-        text-decoration: none; }
-      a:hover { text-decoration: underline; }
+      a { color: #d1d1d1; 
+        text-decoration: none;
+     }
+      a:hover {  
+        text-decoration-line: underline;
+        text-decoration-style: dashed; }
 
       h1 { 
           width: 800px; 
@@ -19,10 +21,10 @@ body {
           font-size: 60px; 
           font-weight: 100; 
           margin: 0px 0 50px 0; 
-          text-shadow: 0 1px 0 #fff;
+          text-shadow: 0 1px 0 #e6b9b9;
          }
       
-      p { color: rgba(0, 0, 0, 0.5);
+      p { color: #ffffff6b;
          margin: 20px 0; 
          line-height: 1.6; 
          
@@ -60,11 +62,9 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: inherit;
     font-style: inherit;
- background-color: inherit;
+    background-color: #574b4b;
 }
-a {
 
-}
 
 #vbStyle{
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -76,4 +76,16 @@ a#vbLink {
     color: lavender;
 }
 
-*/
+#returnHome {
+
+}
+br {
+    padding: 10px;
+}
+.vbBreak {
+    margin: 10px;
+}
+br.vbBreak {
+    line-height: 10px;
+}
+
