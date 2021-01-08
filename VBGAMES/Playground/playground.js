@@ -27,22 +27,31 @@ const remainingTiles = [
 ]
 
 
-//if there are items left in the
+//if there are items left in the array
+//so first we check if there are .some left
 const tilesLeft = remainingTiles.some((tile) => {
    return tile.amountTiles > 0
 })
 // if there are tiles left the console returns true
 console.log(tilesLeft);
+//console.log(remainingTiles[1].amountTiles);
 
-//we want to distribute all Tiles
+while (!tilesLeft) {
+    let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
+console.log(`randomTile is number ${randomTile}`)
+}
+console.log(`randomTile is number ${randomTile}`)
 
-//
-/*const tilesLeft = remainingTiles.some((tile) => {
-   return tile.amountTiles > 0
-})
-// if there are tiles left the console returns true
-console.log(tilesLeft);
+
+//below is the random tile distributor module.
+/*let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
+console.log(randomTile);
 */
+
+
+
+
+
 
 
 
