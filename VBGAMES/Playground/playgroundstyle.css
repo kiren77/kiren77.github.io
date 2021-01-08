@@ -1,0 +1,44 @@
+table{
+    min-width: 200px;
+    max-width: 70vh;
+margin-block-start: 20%;
+position: relative;
+}
+td {
+    min-height: 100px;
+min-width: 20px;
+max-height: 50%;
+background-color: aqua;
+border: orange;
+border-style:dotted;
+}
+/*
+#cellOne{
+min-height: 100px;
+min-width: 20px;
+max-height: 50%;
+background-color: aqua;
+border: orange;
+border-style:dotted;
+}
+#cellTwo{
+    min-width: 20px;
+max-height: 50%;
+background-color: aqua;
+border: orange;
+border-style:dotted;
+}
+#cellThree{
+    min-width: 20px;
+max-height: 50%;
+background-color: aqua;
+border: orange;
+border-style:dotted;
+}
+#cellFour{
+    min-width: 20px;
+max-height: 50%;
+background-color: aqua;
+border: orange;
+border-style:dotted;
+}*/
