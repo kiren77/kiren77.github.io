@@ -9,12 +9,7 @@
 
 //instead of island tiles let's use pots of paint
 
-let sheepTile;
-let woodTile;
-let wheatTile;
-let oreTile;
-let brickTile;
-let desertTile;
+let sheepTile, woodTile, wheatTile, oreTile, brickTile, desertTile;
 
 
 const remainingTiles = [
@@ -25,37 +20,97 @@ const remainingTiles = [
     {brickTile: '#670320',  amountTiles: 3},//brick
     {desertTile:'#606113',  amountTiles: 1}//desert
 ]
+//all cells
+let cellOne, cellTwo, cellThree, cellFour, cellFive, cellSix, cellSeven, cellEight, cellNine, cellTen, cellEleven, cellTwelve, cellThirteen, cellFourteen, cellFifteen, cellSixteen, cellSeventeen, cellEighteen, cellNineteen;
+
+const hexagonArray = [
+    {cellOne :      document.getElementById("cellOne")},
+    {cellTwo :      document.getElementById("cellTwo")},
+    {cellThree :    document.getElementById("cellThree")},
+    {cellFour :     document.getElementById("cellFour")},
+    {cellFive :     document.getElementById("cellFive")},
+    {cellSix :      document.getElementById("cellSix")},
+    {cellSeven :    document.getElementById("cellSeven")},
+    {cellEight :    document.getElementById("cellEight")},
+    {cellNine :     document.getElementById("cellNine")},
+    {cellTen :      document.getElementById("cellTen")},
+    {cellEleven :   document.getElementById("cellEleven")},
+    {cellTwelve :   document.getElementById("cellTwelve")},
+    {cellThirteen : document.getElementById("cellThirteen")},
+    {cellFourteen : document.getElementById("cellFourteen")},
+    {cellFifteen :  document.getElementById("cellFifteen")},
+    {cellSixteen :  document.getElementById("cellSixteen")},
+    {cellSeventeen : document.getElementById("cellSeventeen")},
+    {cellEighteen : document.getElementById("cellEighteen")},
+    {cellNineteen : document.getElementById("cellNineteen")}
+]
+
+//remainingTiles[0].amountTiles = return amountTiles on first row.
+console.log(`remaining ${remainingTiles.[]}: ${remainingTiles[0].amountTiles}`);
+
+/*for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+}*/
 
 
-//if there are items left in the array
+
+//now we describe the random tile function
+/*let randomTile;
+if (remainingTiles.amountTiles
+     
+do {
+    randomTile = nineteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
+console.log(`randomTile is number ${randomTile}`)
+}
+while (tilesLeft);
+*/
+
+
+//console.log(`randomTile is number ${randomTile}`);
+
+
 //so first we check if there are .some left
 const tilesLeft = remainingTiles.some((tile) => {
    return tile.amountTiles > 0
 })
+
 // if there are tiles left the console returns true
 console.log(tilesLeft);
 //console.log(remainingTiles[1].amountTiles);
 
-while (!tilesLeft) {
-    let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
-console.log(`randomTile is number ${randomTile}`)
+//we will simplify things:
+//for each tile color: we distribute them randomly.
+//(aka all four sheep, then all four wood,...ect)
+//across the 19 possible tiles.
+//once we run out of a color, we move on to the next
+/* example:
+ (distribute all sheep randomly) across tile array.
+*/
+
+
+
+/*if(!tilesLeft) {
+    start "chipPhase()"
+}*/
+/*
+var i = 0;
+while
+ (i 
+<
+ 10) {
+  console.log(i);
+  i++
 }
-console.log(`randomTile is number ${randomTile}`)
-
-
-//below is the random tile distributor module.
-/*let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
-console.log(randomTile);
 */
 
 
 
 
 
-
-
-
-
+//below is the random tile distributor module.
+/*let randomTile = ninteenTiles[Math.floor(Math.random() * nineteenTiles.length)];
+console.log(randomTile);
+*/
 
 
 function colorFunction() {
