@@ -1,17 +1,30 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: lavender;
+    text-shadow:black;
+    text-decoration-color: lightcoral;
+    text-indent: 10px;
+    box-shadow: black;
+    text-decoration-color: blue;
+    background-color: #342b36;
+}
 table{
+    color: darkmagenta;
     min-width: 200px;
     max-width: 70vh;
-margin-block-start: 20%;
-position: relative;
-}
+position: sticky;
+font-size:larger ;
+;}
 td {
-    min-height: 100px;
-min-width: 20px;
-max-height: 50%;
-background-color: aqua;
+border-width: 1em;
+height: 3em;
+text-align: center;
+border-radius: 20%;
 border: orange;
-border-style:dotted;
+border-style:dashed;
 }
+
 table td {
     background-color: yellow;
 }
