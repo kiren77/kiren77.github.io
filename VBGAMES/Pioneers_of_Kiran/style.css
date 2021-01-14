@@ -1,87 +1,122 @@
 body {
   font-family: Papyrus;
-  background-color: cornflowerblue;
+  background-color: #173979;
+  background-blend-mode: lighten;
+  
 }
+
+
+
+
+#gameContainer {
+  background-image: radial-gradient(700px, #0c76cc #0d0f75,);
+position: sticky;
+min-width: 80vh;
+border-style: groove;
+}
+
 h1 {
-  text-align: center;
+  color: #bcd69a
 }
 
+#myInterface {
+border: inset;
+border-radius: 20px;
+border-color: orange;
 
-
-
-
-
-
-svg {
-/*viewBox: -300 0 1500 1500;*/
-max-height: 50%;
+background-color: rgb(128, 115, 0);
 }
 
-#idTileA{
+path#idTileA{
   fill: grey;
 }
-#idTileB{
+
+path#idTileA {
+  fill: red;
+  
+}path#idTileB{
   fill: grey;
 }
-#idTileC{
+path#idTileC{
   fill: grey;
 }
-#idTileD{
+path#idTileD{
 fill: grey;
 }
-#idTileE{
+path#idTileE{
   fill: grey;
 }
-#idTileE{
+path#idTileE{
    fill: grey;
 }
-#idTileF{
+path#idTileF{
 fill: grey;
 }
-#idTileG{
+path#idTileG{
   fill: grey;
 }
-#idTileG{
+path#idTileG{
   fill: grey;
 }
-#idTileH{
+path#idTileH{
   fill: grey;
 }
-#idTileI{
+path#idTileI{
   fill: grey;
 }
-#idTileJ{
+path#idTileJ{
   fill: grey;
 }
-#idTileK{
+path#idTileK{
   fill: grey;
 }
-#idTileL{
+path#idTileL{
   fill: grey;
 }
-#idTileM{
+path#idTileM{
   fill: grey;
 }
-#idTileN{
+path#idTileN{
   fill: grey;
 }
-#idTileO{
+path#idTileO{
   fill: grey;
 }
-#idTileP{
+path#idTileP{
   fill: grey;
 }
-#idTileQ{
+path#idTileQ{
   fill: grey;
 }
-#idTileR{
+path#idTileR{
   fill: grey;
 }
-#idTileS{
+path#idTileS{
   fill: grey;
 }
 
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 
 /* Tile arrangement: 4 players

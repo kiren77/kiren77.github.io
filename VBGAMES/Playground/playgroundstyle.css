@@ -9,16 +9,19 @@ body {
     text-decoration-color: blue;
     background-color: #342b36;
 }
+
 table{
+    align-self: center;
     color: darkmagenta;
-    min-width: 200px;
-    max-width: 70vh;
-position: sticky;
+    min-height: 70vh;
+    min-width: 70%;
+position:relative;
 font-size:larger ;
 ;}
+
 td {
-border-width: 1em;
-height: 3em;
+border-width: 3em;
+height: 1em;
 text-align: center;
 border-radius: 20%;
 border: orange;
