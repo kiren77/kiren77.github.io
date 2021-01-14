@@ -1,10 +1,7 @@
 body {
   font-family: Papyrus;
   background-color: #173979;
-}
-
-svg {
-  max-height: 100px;
+  background-blend-mode: lighten;
 }
 
 #gameContainer {
@@ -13,13 +10,10 @@ svg {
   position: sticky;
   min-width: 80vh;
   border-style: groove;
-  max-height: 100px;
 }
 
-h1.pioneersTitle {
+h1 {
   color: #bcd69a;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 #myInterface {
@@ -27,8 +21,6 @@ h1.pioneersTitle {
   border-radius: 20px;
   border-color: orange;
   background-color: #807300;
-  margin: 30px;
-  padding: 10px;
 }
 
 path#idTileA {
@@ -159,4 +151,4 @@ path#idTileS {
   
   */
 /*dice animation*/
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=newStyle.css.map */

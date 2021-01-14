@@ -1,134 +1,142 @@
 
+
+
 body {
-  font-family: Papyrus;
-  background-color: #173979;
-  background-blend-mode: lighten;
+    font-family: Papyrus;
+    background-color: #173979;
+  }
   
-}
-
-
-
-
-#gameContainer {
+  svg {
+      max-height: 100px;
+  }
+  
+  
+  #gameContainer {
   background-image: radial-gradient(700px, #0c76cc #0d0f75,);
-position: sticky;
-min-width: 80vh;
-border-style: groove;
-}
+  position: sticky;
+  min-width: 80vh;
+  border-style: groove;
+  max-height: 100px;
 
-h1 {
-  color: #bcd69a
-}
-
-#myInterface {
-border: inset;
-border-radius: 20px;
-border-color: orange;
-
-background-color: rgb(128, 115, 0);
-}
-
-path#idTileA{
-  fill: grey;
-}
-
-path#idTileA {
-  fill: red;
+  }
   
-}path#idTileB{
+  h1.pioneersTitle {
+    color: #bcd69a;
+    position: sticky;
+  }
+  
+  #myInterface {
+  border: inset;
+  border-radius: 20px;
+  border-color: orange;
+  background-color: rgb(128, 115, 0);
+  margin:30px;
+  padding:10px;
+  }
+  
+  path#idTileA{
+    fill: grey;
+  }
+  
+  path#idTileA {
+    fill: red;
+    
+  }path#idTileB{
+    fill: grey;
+  }
+  path#idTileC{
+    fill: grey;
+  }
+  path#idTileD{
   fill: grey;
-}
-path#idTileC{
+  }
+  path#idTileE{
+    fill: grey;
+  }
+  path#idTileE{
+     fill: grey;
+  }
+  path#idTileF{
   fill: grey;
+  }
+  path#idTileG{
+    fill: grey;
+  }
+  path#idTileG{
+    fill: grey;
+  }
+  path#idTileH{
+    fill: grey;
+  }
+  path#idTileI{
+    fill: grey;
+  }
+  path#idTileJ{
+    fill: grey;
+  }
+  path#idTileK{
+    fill: grey;
+  }
+  path#idTileL{
+    fill: grey;
+  }
+  path#idTileM{
+    fill: grey;
+  }
+  path#idTileN{
+    fill: grey;
+  }
+  path#idTileO{
+    fill: grey;
+  }
+  path#idTileP{
+    fill: grey;
+  }
+  path#idTileQ{
+    fill: grey;
+  }
+  path#idTileR{
+    fill: grey;
+  }
+  path#idTileS{
+    fill: grey;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
 }
-path#idTileD{
-fill: grey;
-}
-path#idTileE{
-  fill: grey;
-}
-path#idTileE{
-   fill: grey;
-}
-path#idTileF{
-fill: grey;
-}
-path#idTileG{
-  fill: grey;
-}
-path#idTileG{
-  fill: grey;
-}
-path#idTileH{
-  fill: grey;
-}
-path#idTileI{
-  fill: grey;
-}
-path#idTileJ{
-  fill: grey;
-}
-path#idTileK{
-  fill: grey;
-}
-path#idTileL{
-  fill: grey;
-}
-path#idTileM{
-  fill: grey;
-}
-path#idTileN{
-  fill: grey;
-}
-path#idTileO{
-  fill: grey;
-}
-path#idTileP{
-  fill: grey;
-}
-path#idTileQ{
-  fill: grey;
-}
-path#idTileR{
-  fill: grey;
-}
-path#idTileS{
-  fill: grey;
-}
-
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
-/* Tile arrangement: 4 players
-p = Port
-           p    p
-            A--B--C p
-         p D--E--F--G
-          H--I--J--K--L p
-         p  M--N--O--p
-             Q--R--S  p
-           p     p
-
-*/
-/*dice animation*/
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  
+  /* Tile arrangement: 4 players
+  p = Port
+             p    p
+              A--B--C p
+           p D--E--F--G
+            H--I--J--K--L p
+           p  M--N--O--p
+               Q--R--S  p
+             p     p
+  
+  */
+  /*dice animation*/

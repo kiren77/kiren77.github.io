@@ -5,13 +5,13 @@
 
 
 
-let svg = document.getElementsByTagName('svg');
-let hexPath = document.getElementsByTagName('path');
-let islandSVG = document.getElementsByClassName('islandSVG');
+//let svg = document.getElementsByTagName('svg');
+//let hexPath = document.getElementsByTagName('path');
+//let islandSVG = document.getElementsByClassName('islandSVG');
 
-const idTileA = document.getElementById('idTileA');
+//const idTileA = document.getElementById('idTileA');
 
-console.log(var rect = group.findOne('path.hexTile').fill('#999006'))
+//console.log(var rect = group.findOne('path.hexTile').fill('#999006'))
 /* //this function will generate the idTile[x]
 // value located alongside the hexLetter value for
 // each array item 
