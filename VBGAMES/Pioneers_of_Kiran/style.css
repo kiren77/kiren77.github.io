@@ -1,6 +1,7 @@
 body {
   font-family: Papyrus;
   background-color: #173979;
+<<<<<<< Updated upstream
 }
 
 svg {
@@ -20,9 +21,39 @@ h1.pioneersTitle {
   color: #bcd69a;
   position: -webkit-sticky;
   position: sticky;
+=======
+  background-blend-mode: lighten;
+}
+#gameContainer {
+  background-image: radial-gradient(700px, #0c76cc #0d0f75,);
+position: sticky;
+min-width: 80vh;
+max-width: 80vh;
+border-style: groove;
+}
+
+
+h1 {
+  color: #bcd69a
+>>>>>>> Stashed changes
+}
+h3 {
+  font-size: 15px;
+padding: 0px;
+margin: 0px;;
+}
+section#updateBox {
+ text-align: center;
+  /*font-style: italic;*/
+font:status-bar;
+font-size: 5vh;
+box-sizing: 40vh;
+border-color: turquoise;
+background-color: #6690b3;}
 }
 
 #myInterface {
+<<<<<<< Updated upstream
   border: inset;
   border-radius: 20px;
   border-color: orange;
@@ -34,12 +65,32 @@ h1.pioneersTitle {
 path#idTileA {
   fill: grey;
 }
+=======
+border: none;
+border-radius: 20mm;
+background-color: coral
+}
 
+>>>>>>> Stashed changes
+
+/*all Hes*/
+.hexTile {
+ }
+ 
+  /*clip-path: polygon(50% 0, 100% 60%, 50% 100%, 0 50%);*/
+
+/*
 path#idTileA {
+<<<<<<< Updated upstream
   fill: red;
 }
 
 path#idTileB {
+=======
+  fill: grey;
+  
+}path#idTileB{
+>>>>>>> Stashed changes
   fill: grey;
 }
 
@@ -118,17 +169,18 @@ path#idTileR {
 path#idTileS {
   fill: grey;
 }
-
-.button {
+*/
+.kiranButton {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 2px 2px;
+  font-size: 3vh;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
   background-color: #4CAF50;
+<<<<<<< Updated upstream
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 0 9px #999;
@@ -138,8 +190,15 @@ path#idTileS {
 .button:hover {
   background-color: #3e8e41;
 }
+=======
+  border-radius:5px;
+  box-shadow: 0 9px #999;
+}
 
-.button:active {
+.kiranButton:hover {background-color: #3e8e41}
+>>>>>>> Stashed changes
+
+.kiranButton:active {
   background-color: #3e8e41;
   -webkit-box-shadow: 0 5px #666;
           box-shadow: 0 5px #666;
@@ -147,6 +206,16 @@ path#idTileS {
           transform: translateY(4px);
 }
 
+<<<<<<< Updated upstream
+=======
+
+/*all Hes*/
+.hexTile {
+  fill: grey;  
+}
+
+
+>>>>>>> Stashed changes
 /* Tile arrangement: 4 players
   p = Port
              p    p

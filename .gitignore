@@ -22,6 +22,7 @@ js-solitaire-master/src/index.scss
 js-solitaire-master/src/sprite.js
 .DS_Store
 .DS_Store
+.DS_Store
 .gitignore
 index.html
 vbStyle.css
@@ -47,3 +48,4 @@ VBGAMES/Playground/playground2.html
 VBGAMES/Playground/playground3.html
 VBGAMES/Playground/playground3.js
 VBGAMES/Playground/playgroundstyle.css
+.DS_Store
