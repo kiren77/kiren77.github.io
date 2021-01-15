@@ -1,186 +1,117 @@
 body {
-  font-family: Papyrus;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #173979;
-<<<<<<< Updated upstream
 }
 
-svg {
-  max-height: 100px;
-}
-
-#gameContainer {
-  background-image: radial-gradient(700px, #0c76cc #0d0f75);
-  position: -webkit-sticky;
+/*      svg {
+   max-height: 80vh;
+   }
+ */
+/*  #gameContainer {
+  background-image: radial-gradient(700px, #0c76cc #0d0f75,);
   position: sticky;
   min-width: 80vh;
   border-style: groove;
   max-height: 100px;
-}
 
+  } */
+/* svg.svgIsland {
+    width: 50vw;
+  } */
+/* #hexTile {
+  fill:yellow;
+} */
 h1.pioneersTitle {
   color: #bcd69a;
-  position: -webkit-sticky;
-  position: sticky;
-=======
-  background-blend-mode: lighten;
-}
-#gameContainer {
-  background-image: radial-gradient(700px, #0c76cc #0d0f75,);
-position: sticky;
-min-width: 80vh;
-max-width: 80vh;
-border-style: groove;
+  position: stickys;
 }
 
-
-h1 {
-  color: #bcd69a
->>>>>>> Stashed changes
-}
-h3 {
-  font-size: 15px;
-padding: 0px;
-margin: 0px;;
-}
-section#updateBox {
- text-align: center;
-  /*font-style: italic;*/
-font:status-bar;
-font-size: 5vh;
-box-sizing: 40vh;
-border-color: turquoise;
-background-color: #6690b3;}
-}
-
-#myInterface {
-<<<<<<< Updated upstream
+/*  #myInterface {
   border: inset;
   border-radius: 20px;
   border-color: orange;
-  background-color: #807300;
-  margin: 30px;
-  padding: 10px;
-}
-
-path#idTileA {
-  fill: grey;
-}
-=======
-border: none;
-border-radius: 20mm;
-background-color: coral
-}
-
->>>>>>> Stashed changes
-
-/*all Hes*/
-.hexTile {
- }
- 
-  /*clip-path: polygon(50% 0, 100% 60%, 50% 100%, 0 50%);*/
-
-/*
-path#idTileA {
-<<<<<<< Updated upstream
-  fill: red;
-}
-
-path#idTileB {
-=======
-  fill: grey;
+  background-color: rgb(128, 115, 0);
+  margin:30px;
+  padding:10px;
+  } */
+/* 
+  path#idTileA{
+    fill: grey;
+  }
   
-}path#idTileB{
->>>>>>> Stashed changes
+  path#idTileA {
+    fill: red;
+    
+  }path#idTileB{
+    fill: grey;
+  }
+  path#idTileC{
+    fill: grey;
+  }
+  path#idTileD{
   fill: grey;
-}
-
-path#idTileC {
+  }
+  path#idTileE{
+    fill: grey;
+  }
+  path#idTileE{
+     fill: grey;
+  }
+  path#idTileF{
   fill: grey;
-}
-
-path#idTileD {
-  fill: grey;
-}
-
-path#idTileE {
-  fill: grey;
-}
-
-path#idTileE {
-  fill: grey;
-}
-
-path#idTileF {
-  fill: grey;
-}
-
-path#idTileG {
-  fill: grey;
-}
-
-path#idTileG {
-  fill: grey;
-}
-
-path#idTileH {
-  fill: grey;
-}
-
-path#idTileI {
-  fill: grey;
-}
-
-path#idTileJ {
-  fill: grey;
-}
-
-path#idTileK {
-  fill: grey;
-}
-
-path#idTileL {
-  fill: grey;
-}
-
-path#idTileM {
-  fill: grey;
-}
-
-path#idTileN {
-  fill: grey;
-}
-
-path#idTileO {
-  fill: grey;
-}
-
-path#idTileP {
-  fill: grey;
-}
-
-path#idTileQ {
-  fill: grey;
-}
-
-path#idTileR {
-  fill: grey;
-}
-
-path#idTileS {
-  fill: grey;
-}
-*/
-.kiranButton {
+  }
+  path#idTileG{
+    fill: grey;
+  }
+  path#idTileG{
+    fill: grey;
+  }
+  path#idTileH{
+    fill: grey;
+  }
+  path#idTileI{
+    fill: grey;
+  }
+  path#idTileJ{
+    fill: grey;
+  }
+  path#idTileK{
+    fill: grey;
+  }
+  path#idTileL{
+    fill: grey;
+  }
+  path#idTileM{
+    fill: grey;
+  }
+  path#idTileN{
+    fill: grey;
+  }
+  path#idTileO{
+    fill: grey;
+  }
+  path#idTileP{
+    fill: grey;
+  }
+  path#idTileQ{
+    fill: grey;
+  }
+  path#idTileR{
+    fill: grey;
+  }
+  path#idTileS{
+    fill: grey;
+  } */
+.button {
   display: inline-block;
-  padding: 2px 2px;
-  font-size: 3vh;
+  padding: 15px 25px;
+  font-size: 24px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: #fff;
   background-color: #4CAF50;
-<<<<<<< Updated upstream
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 0 9px #999;
@@ -190,15 +121,8 @@ path#idTileS {
 .button:hover {
   background-color: #3e8e41;
 }
-=======
-  border-radius:5px;
-  box-shadow: 0 9px #999;
-}
 
-.kiranButton:hover {background-color: #3e8e41}
->>>>>>> Stashed changes
-
-.kiranButton:active {
+.button:active {
   background-color: #3e8e41;
   -webkit-box-shadow: 0 5px #666;
           box-shadow: 0 5px #666;
@@ -206,16 +130,6 @@ path#idTileS {
           transform: translateY(4px);
 }
 
-<<<<<<< Updated upstream
-=======
-
-/*all Hes*/
-.hexTile {
-  fill: grey;  
-}
-
-
->>>>>>> Stashed changes
 /* Tile arrangement: 4 players
   p = Port
              p    p
