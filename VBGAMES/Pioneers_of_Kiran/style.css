@@ -3,10 +3,73 @@ body {
   background-color: #173979;
 }
 
-/*      svg {
-   max-height: 80vh;
-   }
- */
+svg {
+  padding: 0rem 0rem;
+  font-size: 1.3rem;
+  line-height: 2;
+  max-width: 30rem;
+  margin: 0px;
+  color: #333;
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  fill: aqua;
+}
+
+.cls-3 {
+  fill: #c1272d;
+}
+
+.cls-4 {
+  fill: blue;
+}
+
+.cls-5 {
+  fill: gray;
+}
+
+.cls-6 {
+  fill: #0071bc;
+}
+
+.cls-6,
+.cls-9 {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+.cls-7,
+.cls-9 {
+  fill: #524fa1;
+}
+
+.cls-8 {
+  fill: #fff;
+}
+
+.cls-10 {
+  fill: #ff7bac;
+}
+
+.cls-11 {
+  fill: #ff0;
+}
+
+.cls-12 {
+  fill: #39b54a;
+}
+
+.cls-13 {
+  fill: url(#Pattern_Pioneers_Kiran);
+}
+
+/* svg {
+   max-height: 100vh;
+   } */
 /*  #gameContainer {
   background-image: radial-gradient(700px, #0c76cc #0d0f75,);
   position: sticky;
@@ -24,6 +87,11 @@ body {
 h1.pioneersTitle {
   color: #bcd69a;
   position: stickys;
+  padding: 0px;
+  font-size: medium;
+  font-family: papyrus;
+  text-align: center;
+  margin: 0px;
 }
 
 /*  #myInterface {
@@ -115,7 +183,7 @@ h1.pioneersTitle {
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 0 9px #999;
-          box-shadow: 0 9px #999;
+  box-shadow: 0 9px #999;
 }
 
 .button:hover {
@@ -125,9 +193,9 @@ h1.pioneersTitle {
 .button:active {
   background-color: #3e8e41;
   -webkit-box-shadow: 0 5px #666;
-          box-shadow: 0 5px #666;
+  box-shadow: 0 5px #666;
   -webkit-transform: translateY(4px);
-          transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 /* Tile arrangement: 4 players
@@ -139,6 +207,12 @@ h1.pioneersTitle {
            p  M--N--O--p
                Q--R--S  p
              p     p
+
+
+
+
+
+             
   
   */
 /*dice animation*/
