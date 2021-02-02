@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Drag and Drop HTML5</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="vcDP62UdRQAMl2s0eWT60jJxza94QzNc+2/Zh9uzhlOkW+aDlWTRxs8A0o4QvrmitP/cdQ1RulGp6SN+eSd2gA==" />
+
+
+
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/embed/embed-309e09885c1aa9602f409897b4a4e60ce0e4a2eb1a23faf4f1785ce9ffee78f0.css" />
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #3d3d3e;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #3d3d3e;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #666666;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #888888;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #dddddd;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #ffffff;
+    }
+
+    .embed-nav svg {
+      stroke: #ffffff !important;
+    }
+  </style>
+
+
+
+
+
+
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/editor/themes/twilight-bbb3d58f8024c27567f788f3990f2dce8754c2b67246bf12ad766768fe51955b.css" />
+
+
+</head>
+
+
+
+
+
+
+<!---->
+<body id="the-body" style="border: 1px solid #555555; --borderWidth: 1px;" class="codepen-embed-body  static">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="#html-box" role="button" aria-pressed="false">
+Pug
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="#css-box" role="button" aria-pressed="false">
+Stylus
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/acauamontiel/pen/NPBWyM" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z" />
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24" />
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="pug" id="actual-html-code">h1 Drag and Drop HTML5
+
+.drag-list
+  .drag-item(draggable=&quot;true&quot;) A
+  .drag-item(draggable=&quot;true&quot;) B
+  .drag-item(draggable=&quot;true&quot;) C
+  .drag-item(draggable=&quot;true&quot;) D
+  .drag-item(draggable=&quot;true&quot;) E
+  .drag-item(draggable=&quot;true&quot;) F
+  .drag-item(draggable=&quot;true&quot;) G
+  .drag-item(draggable=&quot;true&quot;) H
+  .drag-item(draggable=&quot;true&quot;) I
+  .drag-item(draggable=&quot;true&quot;) J
+  .drag-item(draggable=&quot;true&quot;) K
+  .drag-item(draggable=&quot;true&quot;) L</code></pre>
+<a href="#0" id="view-html-compiled-button" class="action-button bottom right view-compiled-button" data-type="html">
+View Compiled
+</a>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-styl" id="actual-css-code">@import &quot;nib&quot;
+
+[draggable]
+  user-select none
+
+.drag-list
+  overflow hidden
+  margin 10px auto
+  width 500px
+  border 1px solid #ccc
+
+.drag-item
+  float left
+  padding 50px 20px
+  width 25%
+  text-align center
+  color #555
+  background #ddd
+  border 1px solid #ccc
+  box-sizing border-box
+  transition 0.25s
+
+.drag-start
+  opacity 0.8
+
+.drag-enter
+  opacity 0.5
+  transform scale(0.9)</code></pre>
+<a href="#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="javascript" id="actual-js-code">function DragNSort (config) {
+  this.$activeItem = null;
+  this.$container = config.container;
+	this.$items = this.$container.querySelectorAll(&#39;.&#39; + config.itemClass);
+  this.dragStartClass = config.dragStartClass;
+  this.dragEnterClass = config.dragEnterClass;
+}
+
+DragNSort.prototype.removeClasses = function () {
+	[].forEach.call(this.$items, function ($item) {
+		$item.classList.remove(this.dragStartClass, this.dragEnterClass);
+  }.bind(this));
+};
+
+DragNSort.prototype.on = function (elements, eventType, handler) {
+	[].forEach.call(elements, function (element) {
+    element.addEventListener(eventType, handler.bind(element, this), false);
+  }.bind(this));
+};
+
+DragNSort.prototype.onDragStart = function (_this, event) {
+  _this.$activeItem = this;
+
+  this.classList.add(_this.dragStartClass);
+  event.dataTransfer.effectAllowed = &#39;move&#39;;
+  event.dataTransfer.setData(&#39;text/html&#39;, this.innerHTML);
+};
+
+DragNSort.prototype.onDragEnd = function (_this) {
+	this.classList.remove(_this.dragStartClass);
+};
+
+DragNSort.prototype.onDragEnter = function (_this) {
+	this.classList.add(_this.dragEnterClass);
+};
+
+DragNSort.prototype.onDragLeave = function (_this) {
+	this.classList.remove(_this.dragEnterClass);
+};
+
+DragNSort.prototype.onDragOver = function (_this, event) {
+  if (event.preventDefault) {
+  event.preventDefault();
+  }
+
+  event.dataTransfer.dropEffect = &#39;move&#39;;
+
+  return false;
+};
+
+DragNSort.prototype.onDrop = function (_this, event) {
+	if (event.stopPropagation) {
+    event.stopPropagation();
+  }
+
+  if (_this.$activeItem !== this) {
+    _this.$activeItem.innerHTML = this.innerHTML;
+    this.innerHTML = event.dataTransfer.getData(&#39;text/html&#39;);
+  }
+
+  _this.removeClasses();
+
+  return false;
+};
+
+DragNSort.prototype.bind = function () {
+	this.on(this.$items, &#39;dragstart&#39;, this.onDragStart);
+	this.on(this.$items, &#39;dragend&#39;, this.onDragEnd);
+	this.on(this.$items, &#39;dragover&#39;, this.onDragOver);
+	this.on(this.$items, &#39;dragenter&#39;, this.onDragEnter);
+	this.on(this.$items, &#39;dragleave&#39;, this.onDragLeave);
+	this.on(this.$items, &#39;drop&#39;, this.onDrop);
+};
+
+DragNSort.prototype.init = function () {
+	this.bind();
+};
+
+// Instantiate
+var draggable = new DragNSort({
+	container: document.querySelector(&#39;.drag-list&#39;),
+  itemClass: &#39;drag-item&#39;,
+  dragStartClass: &#39;drag-start&#39;,
+  dragEnterClass: &#39;drag-enter&#39;
+});
+draggable.init();</code></pre>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/acauamontiel" target="_blank" rel="noopener"><img src="https://assets.codepen.io/43980/internal/avatars/users/default.png?fit=crop&amp;format=auto&amp;height=256&amp;version=1509170338&amp;width=256" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/acauamontiel" target="_blank" rel="noopener">Acauã Montiel</a> on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="/acauamontiel" target="_blank" rel="noopener" class="about-user-more">
+See more by @acauamontiel on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="Ocr3Ho7fxqI=">
+    __processedPen = {"html":"&lt;h1&gt;Drag and Drop HTML5&lt;/h1&gt;\n&lt;div class=&quot;drag-list&quot;&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;A&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;B&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;C&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;D&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;E&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;F&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;G&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;H&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;I&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;J&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;K&lt;/div&gt;\n  &lt;div class=&quot;drag-item&quot; draggable=&quot;true&quot;&gt;L&lt;/div&gt;\n&lt;/div&gt;","css":"[draggable] {\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.drag-list {\n  overflow: hidden;\n  margin: 10px auto;\n  width: 500px;\n  border: 1px solid #ccc;\n}\n.drag-item {\n  float: left;\n  padding: 50px 20px;\n  width: 25%;\n  text-align: center;\n  color: #555;\n  background: #ddd;\n  border: 1px solid #ccc;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-transition: 0.25s;\n  -moz-transition: 0.25s;\n  -o-transition: 0.25s;\n  -ms-transition: 0.25s;\n  transition: 0.25s;\n}\n.drag-start {\n  opacity: 0.8;\n  -ms-filter: &quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=80)&quot;;\n  filter: alpha(opacity=80);\n}\n.drag-enter {\n  opacity: 0.5;\n  -ms-filter: &quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=50)&quot;;\n  filter: alpha(opacity=50);\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -o-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n}","js":"function DragNSort(config) {\n  this.$activeItem = null;\n  this.$container = config.container;\n  this.$items = this.$container.querySelectorAll(&#39;.&#39; + config.itemClass);\n  this.dragStartClass = config.dragStartClass;\n  this.dragEnterClass = config.dragEnterClass;\n}\n\nDragNSort.prototype.removeClasses = function () {\n  [].forEach.call(this.$items, function ($item) {\n    $item.classList.remove(this.dragStartClass, this.dragEnterClass);\n  }.bind(this));\n};\n\nDragNSort.prototype.on = function (elements, eventType, handler) {\n  [].forEach.call(elements, function (element) {\n    element.addEventListener(eventType, handler.bind(element, this), false);\n  }.bind(this));\n};\n\nDragNSort.prototype.onDragStart = function (_this, event) {\n  _this.$activeItem = this;\n\n  this.classList.add(_this.dragStartClass);\n  event.dataTransfer.effectAllowed = &#39;move&#39;;\n  event.dataTransfer.setData(&#39;text/html&#39;, this.innerHTML);\n};\n\nDragNSort.prototype.onDragEnd = function (_this) {\n  this.classList.remove(_this.dragStartClass);\n};\n\nDragNSort.prototype.onDragEnter = function (_this) {\n  this.classList.add(_this.dragEnterClass);\n};\n\nDragNSort.prototype.onDragLeave = function (_this) {\n  this.classList.remove(_this.dragEnterClass);\n};\n\nDragNSort.prototype.onDragOver = function (_this, event) {\n  if (event.preventDefault) {\n    event.preventDefault();\n  }\n\n  event.dataTransfer.dropEffect = &#39;move&#39;;\n\n  return false;\n};\n\nDragNSort.prototype.onDrop = function (_this, event) {\n  if (event.stopPropagation) {\n    event.stopPropagation();\n  }\n\n  if (_this.$activeItem !== this) {\n    _this.$activeItem.innerHTML = this.innerHTML;\n    this.innerHTML = event.dataTransfer.getData(&#39;text/html&#39;);\n  }\n\n  _this.removeClasses();\n\n  return false;\n};\n\nDragNSort.prototype.bind = function () {\n  this.on(this.$items, &#39;dragstart&#39;, this.onDragStart);\n  this.on(this.$items, &#39;dragend&#39;, this.onDragEnd);\n  this.on(this.$items, &#39;dragover&#39;, this.onDragOver);\n  this.on(this.$items, &#39;dragenter&#39;, this.onDragEnter);\n  this.on(this.$items, &#39;dragleave&#39;, this.onDragLeave);\n  this.on(this.$items, &#39;drop&#39;, this.onDrop);\n};\n\nDragNSort.prototype.init = function () {\n  this.bind();\n};\n\n// Instantiate\nvar draggable = new DragNSort({\n  container: document.querySelector(&#39;.drag-list&#39;),\n  itemClass: &#39;drag-item&#39;,\n  dragStartClass: &#39;drag-start&#39;,\n  dragEnterClass: &#39;drag-enter&#39; });\n\ndraggable.init();"};
+    __preprocessors = {
+      "html": "pug",
+      "css": "stylus",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "Pug",
+      "css": "Stylus",
+      "js": "JS"
+    };
+    __pageType = "embed";
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="https://cpwebassets.codepen.io/assets/embed/embed-3690985ea2a3216737903c1e943e37377719fb52620886c141f0584d7a4f3a6b.js"></script>
+</body>
+</html>
+
