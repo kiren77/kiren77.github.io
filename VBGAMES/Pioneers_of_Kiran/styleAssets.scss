@@ -29,10 +29,11 @@
   border: none;
 }
 
-/*nesting*/
+
 .sheepCard {
   background-image: url("gameAssetsOfficial/sheepCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 983px;
@@ -72,7 +73,8 @@ background-position: absolute;
 }
 .totalSheepDiamond {
   background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1117px;
@@ -84,7 +86,8 @@ background-position: absolute;
 }
 .woodCard {
   background-image: url("gameAssetsOfficial/woodCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1033px;
@@ -152,7 +155,8 @@ background-position: absolute;
 }
 .totalWoodDiamond {
   background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1152px;
@@ -164,7 +168,8 @@ background-position: absolute;
 }
 .wheatCard {
   background-image: url("gameAssetsOfficial/wheatCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1102px;
@@ -203,7 +208,8 @@ background-position: absolute;
 }
 .totalWheatDiamond {
   background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1196px;
@@ -215,7 +221,8 @@ background-position: absolute;
 }
 .oreCard {
   background-image: url("gameAssetsOfficial/oreCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1184px;
@@ -275,7 +282,8 @@ background-position: absolute;
 }
 .totalOreDiamond {
   background-image: url("gameAssetsOfficial/totalOreDiamond.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1248px;
@@ -287,7 +295,8 @@ background-position: absolute;
 }
 .brickCard {
   background-image: url("gameAssetsOfficial/brickCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1272px;
@@ -319,7 +328,8 @@ background-position: absolute;
 }
 .totalBrickDiamond {
   background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1299px;
@@ -329,7 +339,7 @@ background-position: absolute;
   z-index: 365;
   border: none;
 }
-
+/* 
 .placeHoldersIsland {
   position: absolute;
   left: 0px;
@@ -339,7 +349,7 @@ background-position: absolute;
   z-index: 362;
   border: none;
 }
-/*nesting*/
+
 
 .placeholders_A {
   opacity: 0.502;
@@ -353,7 +363,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_B {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 506px;
@@ -365,7 +376,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_B {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 507px;
@@ -377,7 +389,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_B {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 432px;
@@ -389,7 +402,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_B {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 433px;
@@ -401,7 +415,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_B {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 457px;
@@ -413,7 +428,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_B {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 447px;
@@ -425,7 +441,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_B {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 535px;
@@ -447,7 +464,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_B {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 660px;
@@ -459,7 +477,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_B {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 661px;
@@ -471,7 +490,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_B {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 586px;
@@ -483,7 +503,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_B {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 587px;
@@ -495,7 +516,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NE_B {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NE_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 732px;
@@ -507,7 +529,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_NE_B {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_NE_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 729px;
@@ -519,7 +542,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_B {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 611px;
@@ -531,7 +555,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_B {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 601px;
@@ -543,7 +568,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_B {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 689px;
@@ -565,7 +591,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_C {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 810px;
@@ -577,7 +604,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_C {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 811px;
@@ -589,7 +617,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_C {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 736px;
@@ -601,7 +630,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_C {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 737px;
@@ -613,7 +643,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NE_C {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NE_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 882px;
@@ -625,7 +656,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_NE_C {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_NE_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 879px;
@@ -637,7 +669,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_C {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 882px;
@@ -649,7 +682,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_C {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 879px;
@@ -661,7 +695,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_C {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 808px;
@@ -673,7 +708,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_C {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 805px;
@@ -685,7 +721,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_C {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 761px;
@@ -697,7 +734,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SE_NE_C {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 899px;
@@ -709,7 +747,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_C {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 751px;
@@ -721,7 +760,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_C {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 839px;
@@ -743,7 +783,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SE_NE_G {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_G.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 980px;
@@ -755,7 +796,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NE_G {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NE_G.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 963px;
@@ -767,7 +809,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_G {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_G.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 839px;
@@ -779,7 +822,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_G {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_G.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 829px;
@@ -791,7 +835,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_G {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_G.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 917px;
@@ -813,7 +858,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_F {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 733px;
@@ -825,7 +871,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_F {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 733px;
@@ -837,7 +884,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_F {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 658px;
@@ -849,7 +897,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_F {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 659px;
@@ -861,7 +910,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_F {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 683px;
@@ -873,7 +923,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_F {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 673px;
@@ -885,7 +936,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_F {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_F.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 761px;
@@ -907,7 +959,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_E {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 576px;
@@ -919,7 +972,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_E {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 576px;
@@ -931,7 +985,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_E {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 501px;
@@ -943,7 +998,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_E {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 502px;
@@ -955,7 +1011,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_E {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 526px;
@@ -967,7 +1024,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_E {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 516px;
@@ -979,7 +1037,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_E {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_E.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 604px;
@@ -1001,7 +1060,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_D {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 429px;
@@ -1013,7 +1073,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_D {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 430px;
@@ -1025,7 +1086,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_D {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 355px;
@@ -1037,7 +1099,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_D {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 356px;
@@ -1049,7 +1112,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_D {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 380px;
@@ -1061,7 +1125,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_D {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 370px;
@@ -1073,7 +1138,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_D {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 458px;
@@ -1095,7 +1161,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_H {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 348px;
@@ -1107,7 +1174,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_H {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 349px;
@@ -1119,7 +1187,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_H {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 274px;
@@ -1131,7 +1200,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_H {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 275px;
@@ -1143,7 +1213,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_H {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 274px;
@@ -1155,7 +1226,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_H {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 275px;
@@ -1167,7 +1239,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_H {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 346px;
@@ -1179,7 +1252,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_H {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 343px;
@@ -1191,7 +1265,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_H {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 299px;
@@ -1203,7 +1278,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_H {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 289px;
@@ -1215,7 +1291,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_H {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 381px;
@@ -1227,7 +1304,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_H {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 377px;
@@ -1239,7 +1317,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_H {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_H.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 300px;
@@ -1261,7 +1340,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_I {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 499px;
@@ -1273,7 +1353,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_I {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 500px;
@@ -1285,7 +1366,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_I {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 425px;
@@ -1297,7 +1379,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_I {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 426px;
@@ -1309,7 +1392,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_I {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 425px;
@@ -1321,7 +1405,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_I {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 426px;
@@ -1333,7 +1418,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_I {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 497px;
@@ -1345,7 +1431,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_I {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 494px;
@@ -1357,7 +1444,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_I {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 450px;
@@ -1369,7 +1457,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_I {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 440px;
@@ -1381,7 +1470,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_I {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 532px;
@@ -1393,7 +1483,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_I {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_I.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 528px;
@@ -1405,7 +1496,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_J {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 451px;
@@ -1427,7 +1519,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_J {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 658px;
@@ -1439,7 +1532,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_J {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 659px;
@@ -1451,7 +1545,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_J {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 584px;
@@ -1463,7 +1558,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_J {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 585px;
@@ -1475,7 +1571,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_J {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 584px;
@@ -1487,7 +1584,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_J {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 585px;
@@ -1499,7 +1597,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_J {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 656px;
@@ -1511,7 +1610,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_J {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 653px;
@@ -1523,7 +1623,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_J {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 609px;
@@ -1535,7 +1636,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_J {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 599px;
@@ -1547,7 +1649,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_J {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 691px;
@@ -1559,7 +1662,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_J {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 687px;
@@ -1571,7 +1675,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_J {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_J.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 610px;
@@ -1593,7 +1698,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_K {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 817px;
@@ -1605,7 +1711,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_K {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 818px;
@@ -1617,7 +1724,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_K {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 743px;
@@ -1629,7 +1737,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_K {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 744px;
@@ -1641,7 +1750,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_K {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 743px;
@@ -1653,7 +1763,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_K {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 744px;
@@ -1665,7 +1776,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_K {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 815px;
@@ -1677,7 +1789,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_K {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 812px;
@@ -1689,7 +1802,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_K {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 768px;
@@ -1701,7 +1815,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_K {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 758px;
@@ -1713,7 +1828,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_K {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 850px;
@@ -1725,7 +1841,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_K {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 846px;
@@ -1737,7 +1854,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_K {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_K.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 769px;
@@ -1759,7 +1877,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_S {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 738px;
@@ -1771,7 +1890,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_S {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 739px;
@@ -1783,7 +1903,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_S {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 884px;
@@ -1795,7 +1916,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_S {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 881px;
@@ -1807,7 +1929,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_S {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 810px;
@@ -1819,7 +1942,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_S {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 807px;
@@ -1831,7 +1955,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SE_NE_S {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 901px;
@@ -1843,7 +1968,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_S {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 753px;
@@ -1855,7 +1981,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_S {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 845px;
@@ -1867,7 +1994,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_S {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_S.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 764px;
@@ -1889,7 +2017,8 @@ background-position: absolute;
 }
 .cityPlaceholder_N_L {
   background-image: url("gameAssetsOfficial/cityPlaceholder_N_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 967px;
@@ -1901,7 +2030,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_L {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 968px;
@@ -1913,7 +2043,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NW_L {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NW_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 893px;
@@ -1925,7 +2056,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_N_L {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_N_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 894px;
@@ -1937,7 +2069,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_L {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 893px;
@@ -1949,7 +2082,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_L {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 894px;
@@ -1961,7 +2095,8 @@ background-position: absolute;
 }
 .cityPlaceholder_NE_L {
   background-image: url("gameAssetsOfficial/cityPlaceholder_NE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1039px;
@@ -1973,7 +2108,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_NE_L {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_NE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1036px;
@@ -1985,7 +2121,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_L {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1039px;
@@ -1997,7 +2134,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_L {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1036px;
@@ -2009,7 +2147,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_L {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 965px;
@@ -2021,7 +2160,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_L {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 962px;
@@ -2033,7 +2173,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NW_L {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 918px;
@@ -2045,7 +2186,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SE_NE_L {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1056px;
@@ -2057,7 +2199,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_L {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 908px;
@@ -2069,7 +2212,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_L {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1000px;
@@ -2081,7 +2225,8 @@ background-position: absolute;
 }
 .roadPlaceholder_N_NE_L {
   background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 996px;
@@ -2093,7 +2238,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_L {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_L.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 919px;
@@ -2115,7 +2261,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_P {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 820px;
@@ -2127,7 +2274,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_P {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 821px;
@@ -2139,7 +2287,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_P {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 966px;
@@ -2151,7 +2300,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_P {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 963px;
@@ -2163,7 +2313,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_P {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 892px;
@@ -2175,7 +2326,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_P {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 889px;
@@ -2187,7 +2339,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SE_NE_P {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 983px;
@@ -2199,7 +2352,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_P {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 835px;
@@ -2211,7 +2365,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_P {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 927px;
@@ -2223,7 +2378,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_P {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_P.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 846px;
@@ -2245,7 +2401,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_O {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 663px;
@@ -2257,7 +2414,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_O {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 664px;
@@ -2269,7 +2427,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_O {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 735px;
@@ -2281,7 +2440,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_O {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 732px;
@@ -2293,7 +2453,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_O {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 678px;
@@ -2305,7 +2466,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_O {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 770px;
@@ -2317,7 +2479,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_O {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_O.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 689px;
@@ -2339,7 +2502,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_N {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 504px;
@@ -2351,7 +2515,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_N {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 505px;
@@ -2363,7 +2528,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_N {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 576px;
@@ -2375,7 +2541,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_N {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 573px;
@@ -2387,7 +2554,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_N {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 519px;
@@ -2399,7 +2567,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_N {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 611px;
@@ -2411,7 +2580,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_N {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_N.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 530px;
@@ -2433,7 +2603,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_M {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 348px;
@@ -2445,7 +2616,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_M {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 349px;
@@ -2457,7 +2629,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_M {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 420px;
@@ -2469,7 +2642,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_M {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 417px;
@@ -2481,7 +2655,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_M {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 363px;
@@ -2493,7 +2668,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_M {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 455px;
@@ -2505,7 +2681,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_M {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_M.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 374px;
@@ -2527,7 +2704,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_Q {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 431px;
@@ -2539,7 +2717,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_Q {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 432px;
@@ -2551,7 +2730,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_Q {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 503px;
@@ -2563,7 +2743,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_Q {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 500px;
@@ -2575,7 +2756,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_Q {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 446px;
@@ -2587,7 +2769,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_Q {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 538px;
@@ -2599,7 +2782,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_Q {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_Q.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 457px;
@@ -2621,7 +2805,8 @@ background-position: absolute;
 }
 .cityPlaceholder_SE_R {
   background-image: url("gameAssetsOfficial/cityPlaceholder_SE_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 587px;
@@ -2633,7 +2818,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_SE_R {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 588px;
@@ -2645,7 +2831,8 @@ background-position: absolute;
 }
 .cityPlaceholder_S_R {
   background-image: url("gameAssetsOfficial/cityPlaceholder_S_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 659px;
@@ -2657,7 +2844,8 @@ background-position: absolute;
 }
 .settlementPlaceholder_S_R {
   background-image: url("gameAssetsOfficial/settlementPlaceholder_S_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 656px;
@@ -2669,7 +2857,8 @@ background-position: absolute;
 }
 .roadPlaceholder_SW_NW_R {
   background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 602px;
@@ -2681,7 +2870,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SE_R {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 694px;
@@ -2693,7 +2883,8 @@ background-position: absolute;
 }
 .roadPlaceholder_S_SW_R {
   background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_R.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 613px;
@@ -2703,7 +2894,7 @@ background-position: absolute;
   z-index: 144;
   border: none;
 }
-
+ 
 .Buyable_Items_Logo {
   position: absolute;
   left: 0px;
@@ -2712,7 +2903,7 @@ background-position: absolute;
   min-height: 768px;
   z-index: 140;
 }
-/*nesting*/
+
 
 .playerOrange {
   position: absolute;
@@ -2724,7 +2915,8 @@ background-position: absolute;
 }
 .devCardOrange {
   background-image: url("gameAssetsOfficial/devCardOrange.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1255px;
@@ -2735,7 +2927,8 @@ background-position: absolute;
 }
 .roadOrange {
   background-image: url("gameAssetsOfficial/roadOrange.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1253px;
@@ -2746,7 +2939,8 @@ background-position: absolute;
 }
 .settlementOrange {
   background-image: url("gameAssetsOfficial/settlementOrange.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1252px;
@@ -2757,7 +2951,8 @@ background-position: absolute;
 }
 .cityOrange {
   background-image: url("gameAssetsOfficial/cityOrange.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1251px;
@@ -2776,7 +2971,8 @@ background-position: absolute;
 }
 .devCardWhite {
   background-image: url("gameAssetsOfficial/devCardWhite.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1255px;
@@ -2787,7 +2983,8 @@ background-position: absolute;
 }
 .roadWhite {
   background-image: url("gameAssetsOfficial/roadWhite.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1253px;
@@ -2798,7 +2995,8 @@ background-position: absolute;
 }
 .settlementWhite {
   background-image: url("gameAssetsOfficial/settlementWhite.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1252px;
@@ -2809,7 +3007,8 @@ background-position: absolute;
 }
 .cityWhite {
   background-image: url("gameAssetsOfficial/cityWhite.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1251px;
@@ -2828,7 +3027,8 @@ background-position: absolute;
 }
 .devCardRed {
   background-image: url("gameAssetsOfficial/devCardRed.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1255px;
@@ -2839,7 +3039,8 @@ background-position: absolute;
 }
 .roadRed {
   background-image: url("gameAssetsOfficial/roadRed.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1253px;
@@ -2850,7 +3051,8 @@ background-position: absolute;
 }
 .settlementRed {
   background-image: url("gameAssetsOfficial/settlementRed.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1252px;
@@ -2861,7 +3063,8 @@ background-position: absolute;
 }
 .cityRed {
   background-image: url("gameAssetsOfficial/cityRed.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1251px;
@@ -2880,7 +3083,8 @@ background-position: absolute;
 }
 .devCardBlue {
   background-image: url("gameAssetsOfficial/devCardBlue.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1255px;
@@ -2891,7 +3095,8 @@ background-position: absolute;
 }
 .roadBLue {
   background-image: url("gameAssetsOfficial/roadBLue.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1256px;
@@ -2902,7 +3107,8 @@ background-position: absolute;
 }
 .settlementBlue {
   background-image: url("gameAssetsOfficial/settlementBlue.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1255px;
@@ -2913,7 +3119,8 @@ background-position: absolute;
 }
 .cityBlue {
   background-image: url("gameAssetsOfficial/cityBlue.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1254px;
@@ -2931,7 +3138,7 @@ background-position: absolute;
   min-height: 768px;
   z-index: 115;
 }
-/*nesting*/
+
 
 .myVPs {
   font-size: 16px;
@@ -3234,10 +3441,11 @@ background-position: absolute;
 
 }
 
-/*nesting*/
+
 .colorHandBigUnderBlue {
   background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 942px;
@@ -3250,7 +3458,8 @@ background-position: absolute;
 }
 .colorHandBigUnderRed {
   background-image: url("gameAssetsOfficial/colorHandBigUnderRed.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 942px;
@@ -3263,7 +3472,8 @@ background-position: absolute;
 }
 .colorHandBigUnderWhite {
   background-image: url("gameAssetsOfficial/colorHandBigUnderWhite.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 942px;
@@ -3276,7 +3486,8 @@ background-position: absolute;
 }
 .colorHandBigUnderOrange {
   background-image: url("gameAssetsOfficial/colorHandBigUnderOrange.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 942px;
@@ -3298,10 +3509,11 @@ background-position: absolute;
   z-index: 90;
   border: none;
 }
-/*nesting*/
+
 .any3_1A {
   background-image: url("gameAssetsOfficial/any3_1A.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 954px;
@@ -3313,7 +3525,8 @@ background-position: absolute;
 
 .any3_1B {
   background-image: url("gameAssetsOfficial/any3_1B.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 971px;
@@ -3325,7 +3538,8 @@ background-position: absolute;
 }
 .any3_1C {
   background-image: url("gameAssetsOfficial/any3_1C.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 993px;
@@ -3337,7 +3551,8 @@ background-position: absolute;
 }
 .any3_1D {
   background-image: url("gameAssetsOfficial/any3_1D.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1011px;
@@ -3349,7 +3564,8 @@ background-position: absolute;
 }
 .brick_2_1 {
   background-image: url("gameAssetsOfficial/brick-2_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 983px;
@@ -3361,7 +3577,8 @@ background-position: absolute;
 }
 .ore_2_1 {
   background-image: url("gameAssetsOfficial/ore-2_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 990px;
@@ -3373,7 +3590,8 @@ background-position: absolute;
 }
 .sheep_2_1 {
   background-image: url("gameAssetsOfficial/sheep-2_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 997px;
@@ -3385,7 +3603,8 @@ background-position: absolute;
 }
 .wood_2_1 {
   background-image: url("gameAssetsOfficial/wood-2_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1004px;
@@ -3397,7 +3616,8 @@ background-position: absolute;
 }
 .wheat_2_1 {
   background-image: url("gameAssetsOfficial/wheat-2_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1011px;
@@ -3415,7 +3635,7 @@ background-position: absolute;
   min-height: 768px;
   z-index: 79;
 }
-/*nesting*/
+
 
 .timerArrow {
   background-color: rgb(100, 63, 15);
@@ -3428,7 +3648,8 @@ background-position: absolute;
 }
 .timerBG {
   background-image: url("gameAssetsOfficial/timerBG.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 1120px;
@@ -3454,7 +3675,8 @@ background-position: absolute;
 
 .robber {
   background-image: url("gameAssetsOfficial/robber.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 808px;
@@ -3472,10 +3694,11 @@ background-position: absolute;
   min-height: 768px;
   z-index: 73;
 }
-/*nesting*/
+
 .n2 {
   background-image: url("gameAssetsOfficial/n2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 632px;
@@ -3486,7 +3709,8 @@ background-position: absolute;
 }
 .n3_1 {
   background-image: url("gameAssetsOfficial/n3_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 635px;
@@ -3497,7 +3721,8 @@ background-position: absolute;
 }
 .n3_2 {
   background-image: url("gameAssetsOfficial/n3_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 635px;
@@ -3508,7 +3733,8 @@ background-position: absolute;
 }
 .n4_1 {
   background-image: url("gameAssetsOfficial/n4_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 637px;
@@ -3519,7 +3745,8 @@ background-position: absolute;
 }
 .n4_2 {
   background-image: url("gameAssetsOfficial/n4_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 639px;
@@ -3530,7 +3757,8 @@ background-position: absolute;
 }
 .n5_1 {
   background-image: url("gameAssetsOfficial/n5_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 639px;
@@ -3541,7 +3769,8 @@ background-position: absolute;
 }
 .n5_2 {
   background-image: url("gameAssetsOfficial/n5_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 639px;
@@ -3552,7 +3781,8 @@ background-position: absolute;
 }
 .n6_1 {
   background-image: url("gameAssetsOfficial/n6_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 644px;
@@ -3563,7 +3793,8 @@ background-position: absolute;
 }
 .n6_2 {
   background-image: url("gameAssetsOfficial/n6_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 644px;
@@ -3574,7 +3805,8 @@ background-position: absolute;
 }
 .n8_1 {
   background-image: url("gameAssetsOfficial/n8_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 639px;
@@ -3585,7 +3817,8 @@ background-position: absolute;
 }
 .n8_2 {
   background-image: url("gameAssetsOfficial/n8_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 642px;
@@ -3596,7 +3829,8 @@ background-position: absolute;
 }
 .n9_1 {
   background-image: url("gameAssetsOfficial/n9_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 637px;
@@ -3607,7 +3841,8 @@ background-position: absolute;
 }
 .n9_2 {
   background-image: url("gameAssetsOfficial/n9_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 639px;
@@ -3618,7 +3853,8 @@ background-position: absolute;
 }
 .n10_1 {
   background-image: url("gameAssetsOfficial/n10_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 639px;
@@ -3629,7 +3865,8 @@ background-position: absolute;
 }
 .n10_2 {
   background-image: url("gameAssetsOfficial/n10_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 638px;
@@ -3640,7 +3877,8 @@ background-position: absolute;
 }
 .n11_1 {
   background-image: url("gameAssetsOfficial/n11_1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 641px;
@@ -3651,7 +3889,8 @@ background-position: absolute;
 }
 .n11_2 {
   background-image: url("gameAssetsOfficial/n11_2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 641px;
@@ -3662,7 +3901,8 @@ background-position: absolute;
 }
 .n12 {
   background-image: url("gameAssetsOfficial/n12.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
   left: 641px;
@@ -3690,10 +3930,11 @@ background-position: absolute;
   min-width: 1366px;
   min-height: 768px;
   z-index: 51;
-  /*nesting*/
+  
   .Longest_Road {
     background-image: url("gameAssetsOfficial/Longest Road.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 1135px;
@@ -3704,7 +3945,8 @@ background-position: absolute;
   }
   .Biggest_Army {
     background-image: url("gameAssetsOfficial/Biggest Army.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 1135px;
@@ -3723,11 +3965,12 @@ background-position: absolute;
   min-width: 1366px;
   min-height: 768px;
   z-index: 47;
-  /*nesting*/
+  
 
   .knightCard {
     background-image: url("gameAssetsOfficial/knightCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 5px;
@@ -3738,7 +3981,8 @@ background-position: absolute;
   }
   .monopolyCard {
     background-image: url("gameAssetsOfficial/monopolyCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 105px;
@@ -3749,7 +3993,8 @@ background-position: absolute;
   }
   .yearofplentyCard {
     background-image: url("gameAssetsOfficial/yearofplentyCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 206px;
@@ -3760,7 +4005,8 @@ background-position: absolute;
   }
   .oneVPCard {
     background-image: url("gameAssetsOfficial/oneVPCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 5px;
@@ -3771,7 +4017,8 @@ background-position: absolute;
   }
   .roadCard {
     background-image: url("gameAssetsOfficial/roadCard.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
     position: absolute;
     left: 105px;
@@ -3789,7 +4036,7 @@ background-position: absolute;
   min-width: 1366px;
   min-height: 768px;
   z-index: 40;
-  /*nesting*/
+  
 
   
 }
@@ -3860,16 +4107,16 @@ background-position: absolute;
     z-index: 35;
   } */
 .Chat {
-  /* border-width: 6.35px;
+  border-width: 6.35px;
   border-color: rgb(114, 104, 105);
   border-style: solid;
+  background-image: linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -moz-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -webkit-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
-   */
-  background-image: url("gameAssetsOfficial/chat.png");
-background-position: absolute;
-  
+   
+/*   background-image: url("gameAssetsOfficial/chat.png");
+ */background-repeat: no-repeat;
 
   position: absolute;
   left: -1px;
@@ -3879,16 +4126,17 @@ background-position: absolute;
   z-index: 33;
 }
 .box1 {
-  /* border-width: 6.35px;
+  border-width: 6.35px;
   border-color: rgb(114, 104, 105);
   border-style: solid;
+  background-image: linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -moz-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -webkit-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
-   */
-  background-image: url("gameAssetsOfficial/box1.png");
-background-position: absolute;
-  
+   
+/*   background-image: url("gameAssetsOfficial/box1.png");
+ */
+ background-repeat: no-repeat;
 
   position: absolute;
   left: 271px;
@@ -3898,16 +4146,16 @@ background-position: absolute;
   z-index: 32;
 }
 .box2 {
-  /* border-width: 6.35px;
+   border-width: 6.35px;
   border-color: rgb(114, 104, 105);
   border-style: solid;
+  background-image: linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -moz-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -webkit-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
-   */
-  background-image: url("gameAssetsOfficial/box2.png");
-background-position: absolute;
-  
+   
+/*   background-image: url("gameAssetsOfficial/box2.png");
+ */background-repeat: no-repeat;
 
   position: absolute;
   left: 280px;
@@ -3917,19 +4165,20 @@ background-position: absolute;
   z-index: 31;
 }
 .box3 {
-  /* 
+  
   border-width: 6.35px;
   border-color: rgb(114, 104, 105);
   border-style: solid;
+  background-image: linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -moz-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -webkit-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(238, 238, 238) 50%, rgb(210, 210, 210) 100%);
-   */
-  background-image: url("gameAssetsOfficial/box3.png");
-background-position: absolute;
+   
+/*   background-image: url("gameAssetsOfficial/box3.png");
+ */background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 280px;
   top: 710px;
   min-width: 81.3px;
@@ -3940,21 +4189,20 @@ left: 280px;
 
 .island_hexes {
   position: absolute;
-background-repeat: no-repeat;
 left: -32px;
   top: -16px;
   min-width: 1407px;
   min-height: 802px;
   z-index: 28;
-  /*nesting*/
+  
 }
 
 .sheep1 {
   background-image: url("gameAssetsOfficial/sheep1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 470px;
   top: 44px;
   min-width: 172px;
@@ -3963,10 +4211,10 @@ left: 470px;
 }
 .sheep2 {
   background-image: url("gameAssetsOfficial/sheep2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 627px;
   top: 44px;
   min-width: 171px;
@@ -3976,10 +4224,10 @@ left: 627px;
 }
 .sheep3 {
   background-image: url("gameAssetsOfficial/sheep3.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 781px;
   top: 42px;
   min-width: 171px;
@@ -3988,10 +4236,10 @@ left: 781px;
 }
 .sheep4 {
   background-image: url("gameAssetsOfficial/sheep4.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 393px;
   top: 176px;
   min-width: 172px;
@@ -4000,10 +4248,10 @@ left: 393px;
 }
 .wood1 {
   background-image: url("gameAssetsOfficial/wood1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 547px;
   top: 176px;
   min-width: 172px;
@@ -4012,10 +4260,10 @@ left: 547px;
 }
 .wood2 {
   background-image: url("gameAssetsOfficial/wood2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 703px;
   top: 176px;
   min-width: 172px;
@@ -4024,10 +4272,10 @@ left: 703px;
 }
 .wood3 {
   background-image: url("gameAssetsOfficial/wood3.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 859px;
   top: 176px;
   min-width: 172px;
@@ -4036,10 +4284,10 @@ left: 859px;
 }
 .wood4 {
   background-image: url("gameAssetsOfficial/wood4.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 316px;
   top: 308px;
   min-width: 172px;
@@ -4048,10 +4296,10 @@ left: 316px;
 }
 .wheat1 {
   background-image: url("gameAssetsOfficial/wheat1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 470px;
   top: 308px;
   min-width: 172px;
@@ -4060,10 +4308,10 @@ left: 470px;
 }
 .wheat2 {
   background-image: url("gameAssetsOfficial/wheat2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 626px;
   top: 308px;
   min-width: 172px;
@@ -4072,10 +4320,10 @@ left: 626px;
 }
 .wheat3 {
   background-image: url("gameAssetsOfficial/wheat3.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 781px;
   top: 308px;
   min-width: 172px;
@@ -4084,10 +4332,10 @@ left: 781px;
 }
 .wheat4 {
   background-image: url("gameAssetsOfficial/wheat4.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 936px;
   top: 308px;
   min-width: 168px;
@@ -4096,10 +4344,10 @@ left: 936px;
 }
 .ore1 {
   background-image: url("gameAssetsOfficial/ore1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 393px;
   top: 441px;
   min-width: 172px;
@@ -4108,10 +4356,10 @@ left: 393px;
 }
 .ore2 {
   background-image: url("gameAssetsOfficial/ore2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 548px;
   top: 441px;
   min-width: 172px;
@@ -4120,10 +4368,10 @@ left: 548px;
 }
 .ore3 {
   background-image: url("gameAssetsOfficial/ore3.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 703px;
   top: 441px;
   min-width: 172px;
@@ -4132,10 +4380,10 @@ left: 703px;
 }
 .brick1 {
   background-image: url("gameAssetsOfficial/brick1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 859px;
   top: 441px;
   min-width: 172px;
@@ -4144,10 +4392,10 @@ left: 859px;
 }
 .brick2 {
   background-image: url("gameAssetsOfficial/brick2.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 470px;
   top: 573px;
   min-width: 172px;
@@ -4156,10 +4404,10 @@ left: 470px;
 }
 .brick3 {
   background-image: url("gameAssetsOfficial/brick3.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 626px;
   top: 573px;
   min-width: 172px;
@@ -4168,10 +4416,10 @@ left: 626px;
 }
 .desert1 {
   background-image: url("gameAssetsOfficial/desert1.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 781px;
   top: 573px;
   min-width: 172px;
@@ -4182,20 +4430,19 @@ left: 781px;
 
 .bankChest {
   position: absolute;
-background-repeat: no-repeat;
 left: 0px;
   top: 0px;
   min-width: 1366px;
   min-height: 768px;
   z-index: 7;
 }
-/*nesting*/
+
 .bankChestTop {
-  background-image: url("/gameAssetsOfficial/gameFolder/class_bankChest/bankChestTop.png");
-background-position: absolute;
+  background-image: url("gameAssetsOfficial/bankChestTop.png");
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 5px;
   top: 407px;
   min-width: 219px;
@@ -4203,11 +4450,11 @@ left: 5px;
   z-index: 6;
 }
 .bankChestBottom {
-  background-image: url("gameAssetsOfficial/gameAssetsOfficial/gameFolder/class_bankChest/bankChestBottom.png");
-background-position: absolute;
+  background-image: url("gameAssetsOfficial/bankChestBottom.png");
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 7px;
   top: 451px;
   min-width: 215px;
@@ -4215,11 +4462,11 @@ left: 7px;
   z-index: 5;
 }
 .bankChestInside {
-  background-image: url("gameAssetsOfficial/gameAssetsOfficial/gameFolder/class_bankChest/bankChestInside.png");
-background-position: absolute;
+  background-image: url("gameAssetsOfficial/bankChestInside.png");
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: 13px;
   top: 417px;
   min-width: 200px;
@@ -4230,14 +4477,1653 @@ left: 13px;
 
 .islandBackground {
   background-image: url("gameAssetsOfficial/islandBackground.png");
-background-position: absolute;
+background-repeat: no-repeat;
+
   
   position: absolute;
-background-repeat: no-repeat;
 left: -15px;
   top: -9px;
   min-width: 1381px;
   min-height: 785px;
   z-index: 2;
   border: none;
+}
+/*  NEW PLACEHOLDERS BELOW*/
+
+.Group_1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 285;
+}
+.cityPlaceholder_N_B {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_B.png");
+  position: absolute;
+  left: 506px;
+  top: 0px;
+  width: 57px;
+  height: 53px;
+  z-index: 284;
+}
+.settlementPlaceholder_N_B {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_B.png");
+  position: absolute;
+  left: 507px;
+  top: 0px;
+  width: 54px;
+  height: 52px;
+  z-index: 283;
+}
+.cityPlaceholder_NW_B {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_B.png");
+  position: absolute;
+  left: 432px;
+  top: 22px;
+  width: 57px;
+  height: 70px;
+  z-index: 282;
+}
+.settlementPlaceholder_N_B {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_B.png");
+  position: absolute;
+  left: 433px;
+  top: 37px;
+  width: 54px;
+  height: 53px;
+  z-index: 281;
+}
+.roadPlaceholder_N_NW_B {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_B.png");
+  position: absolute;
+  left: 457px;
+  top: 32px;
+  width: 68px;
+  height: 49px;
+  z-index: 280;
+}
+.roadPlaceholder_SW_NW_B {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_B.png");
+  position: absolute;
+  left: 447px;
+  top: 79px;
+  width: 19px;
+  height: 71px;
+  z-index: 279;
+}
+.roadPlaceholder_N_NE_B {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_B.png");
+  position: absolute;
+  left: 535px;
+  top: 32px;
+  width: 68px;
+  height: 49px;
+  z-index: 278;
+}
+.cityPlaceholder_N_B {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_B.png");
+  position: absolute;
+  left: 660px;
+  top: 0px;
+  width: 57px;
+  height: 55px;
+  z-index: 277;
+}
+.settlementPlaceholder_N_B {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_B.png");
+  position: absolute;
+  left: 661px;
+  top: 1px;
+  width: 54px;
+  height: 53px;
+  z-index: 276;
+}
+.cityPlaceholder_NW_B {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_B.png");
+  position: absolute;
+  left: 586px;
+  top: 24px;
+  width: 57px;
+  height: 70px;
+  z-index: 275;
+}
+.settlementPlaceholder_N_B {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_B.png");
+  position: absolute;
+  left: 587px;
+  top: 39px;
+  width: 54px;
+  height: 53px;
+  z-index: 274;
+}
+.cityPlaceholder_NE_B {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NE_B.png");
+  position: absolute;
+  left: 732px;
+  top: 24px;
+  width: 57px;
+  height: 70px;
+  z-index: 273;
+}
+.settlementPlaceholder_NE_B {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_NE_B.png");
+  position: absolute;
+  left: 729px;
+  top: 39px;
+  width: 54px;
+  height: 53px;
+  z-index: 272;
+}
+.roadPlaceholder_N_NW_B {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_B.png");
+  position: absolute;
+  left: 611px;
+  top: 34px;
+  width: 68px;
+  height: 49px;
+  z-index: 271;
+}
+.roadPlaceholder_SW_NW_B {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_B.png");
+  position: absolute;
+  left: 601px;
+  top: 81px;
+  width: 19px;
+  height: 71px;
+  z-index: 270;
+}
+.roadPlaceholder_N_NE_B {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_B.png");
+  position: absolute;
+  left: 689px;
+  top: 34px;
+  width: 68px;
+  height: 49px;
+  z-index: 269;
+}
+.cityPlaceholder_N_C {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_C.png");
+  position: absolute;
+  left: 810px;
+  top: 0px;
+  width: 57px;
+  height: 54px;
+  z-index: 268;
+}
+.settlementPlaceholder_N_C {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_C.png");
+  position: absolute;
+  left: 811px;
+  top: 0px;
+  width: 54px;
+  height: 52px;
+  z-index: 267;
+}
+.cityPlaceholder_NW_C {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_C.png");
+  position: absolute;
+  left: 736px;
+  top: 22px;
+  width: 57px;
+  height: 70px;
+  z-index: 266;
+}
+.settlementPlaceholder_N_C {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_C.png");
+  position: absolute;
+  left: 737px;
+  top: 37px;
+  width: 54px;
+  height: 53px;
+  z-index: 265;
+}
+.cityPlaceholder_NE_C {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NE_C.png");
+  position: absolute;
+  left: 882px;
+  top: 22px;
+  width: 57px;
+  height: 70px;
+  z-index: 264;
+}
+.settlementPlaceholder_NE_C {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_NE_C.png");
+  position: absolute;
+  left: 879px;
+  top: 37px;
+  width: 54px;
+  height: 53px;
+  z-index: 263;
+}
+.cityPlaceholder_SE_C {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_C.png");
+  position: absolute;
+  left: 882px;
+  top: 109px;
+  width: 57px;
+  height: 70px;
+  z-index: 262;
+}
+.settlementPlaceholder_SE_C {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_C.png");
+  position: absolute;
+  left: 879px;
+  top: 124px;
+  width: 54px;
+  height: 53px;
+  z-index: 261;
+}
+.cityPlaceholder_S_C {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_C.png");
+  position: absolute;
+  left: 808px;
+  top: 151px;
+  width: 57px;
+  height: 70px;
+  z-index: 260;
+}
+.settlementPlaceholder_S_C {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_C.png");
+  position: absolute;
+  left: 805px;
+  top: 166px;
+  width: 54px;
+  height: 53px;
+  z-index: 259;
+}
+.roadPlaceholder_N_NW_C {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_C.png");
+  position: absolute;
+  left: 761px;
+  top: 32px;
+  width: 68px;
+  height: 49px;
+  z-index: 258;
+}
+.roadPlaceholder_SE_NE_C {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SE-NE_C.png");
+  position: absolute;
+  left: 899px;
+  top: 79px;
+  width: 19px;
+  height: 71px;
+  z-index: 257;
+}
+.roadPlaceholder_SW_NW_C {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_C.png");
+  position: absolute;
+  left: 751px;
+  top: 79px;
+  width: 19px;
+  height: 71px;
+  z-index: 256;
+}
+.roadPlaceholder_N_NE_C {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_C.png");
+  position: absolute;
+  left: 839px;
+  top: 32px;
+  width: 68px;
+  height: 49px;
+  z-index: 255;
+}
+.roadPlaceholder_SE_NE_G {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SE-NE_G.png");
+  position: absolute;
+  left: 980px;
+  top: 212px;
+  width: 19px;
+  height: 71px;
+  z-index: 254;
+}
+.cityPlaceholder_NE_G {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NE_G.png");
+  position: absolute;
+  left: 963px;
+  top: 155px;
+  width: 57px;
+  height: 70px;
+  z-index: 253;
+}
+.roadPlaceholder_N_NW_G {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_G.png");
+  position: absolute;
+  left: 839px;
+  top: 163px;
+  width: 68px;
+  height: 49px;
+  z-index: 252;
+}
+.roadPlaceholder_SW_NW_G {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_G.png");
+  position: absolute;
+  left: 829px;
+  top: 210px;
+  width: 19px;
+  height: 71px;
+  z-index: 251;
+}
+.roadPlaceholder_N_NE_G {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_G.png");
+  position: absolute;
+  left: 917px;
+  top: 163px;
+  width: 68px;
+  height: 49px;
+  z-index: 250;
+}
+.cityPlaceholder_N_F {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_F.png");
+  position: absolute;
+  left: 733px;
+  top: 115px;
+  width: 57px;
+  height: 70px;
+  z-index: 249;
+}
+.settlementPlaceholder_N_F {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_F.png");
+  position: absolute;
+  left: 733px;
+  top: 130px;
+  width: 54px;
+  height: 53px;
+  z-index: 248;
+}
+.cityPlaceholder_NW_F {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_F.png");
+  position: absolute;
+  left: 658px;
+  top: 153px;
+  width: 57px;
+  height: 70px;
+  z-index: 247;
+}
+.settlementPlaceholder_N_F {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_F.png");
+  position: absolute;
+  left: 659px;
+  top: 168px;
+  width: 54px;
+  height: 53px;
+  z-index: 246;
+}
+.roadPlaceholder_N_NW_F {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_F.png");
+  position: absolute;
+  left: 683px;
+  top: 163px;
+  width: 68px;
+  height: 49px;
+  z-index: 245;
+}
+.roadPlaceholder_SW_NW_F {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_F.png");
+  position: absolute;
+  left: 673px;
+  top: 210px;
+  width: 19px;
+  height: 71px;
+  z-index: 244;
+}
+.roadPlaceholder_N_NE_F {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_F.png");
+  position: absolute;
+  left: 761px;
+  top: 163px;
+  width: 68px;
+  height: 49px;
+  z-index: 243;
+}
+.cityPlaceholder_N_E {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_E.png");
+  position: absolute;
+  left: 576px;
+  top: 115px;
+  width: 57px;
+  height: 70px;
+  z-index: 242;
+}
+.settlementPlaceholder_N_E {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_E.png");
+  position: absolute;
+  left: 576px;
+  top: 130px;
+  width: 54px;
+  height: 53px;
+  z-index: 241;
+}
+.cityPlaceholder_NW_E {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_E.png");
+  position: absolute;
+  left: 501px;
+  top: 153px;
+  width: 57px;
+  height: 70px;
+  z-index: 240;
+}
+.settlementPlaceholder_N_E {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_E.png");
+  position: absolute;
+  left: 502px;
+  top: 168px;
+  width: 54px;
+  height: 53px;
+  z-index: 239;
+}
+.roadPlaceholder_N_NW_E {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_E.png");
+  position: absolute;
+  left: 526px;
+  top: 163px;
+  width: 68px;
+  height: 49px;
+  z-index: 238;
+}
+.roadPlaceholder_SW_NW_E {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_E.png");
+  position: absolute;
+  left: 516px;
+  top: 210px;
+  width: 19px;
+  height: 71px;
+  z-index: 237;
+}
+.roadPlaceholder_N_NE_E {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_E.png");
+  position: absolute;
+  left: 604px;
+  top: 163px;
+  width: 68px;
+  height: 49px;
+  z-index: 236;
+}
+.cityPlaceholder_N_D {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_D.png");
+  position: absolute;
+  left: 429px;
+  top: 119px;
+  width: 57px;
+  height: 70px;
+  z-index: 235;
+}
+.settlementPlaceholder_N_D {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_D.png");
+  position: absolute;
+  left: 430px;
+  top: 134px;
+  width: 54px;
+  height: 53px;
+  z-index: 234;
+}
+.cityPlaceholder_NW_D {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_D.png");
+  position: absolute;
+  left: 355px;
+  top: 157px;
+  width: 57px;
+  height: 70px;
+  z-index: 233;
+}
+.settlementPlaceholder_N_D {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_D.png");
+  position: absolute;
+  left: 356px;
+  top: 172px;
+  width: 54px;
+  height: 53px;
+  z-index: 232;
+}
+.roadPlaceholder_N_NW_D {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_D.png");
+  position: absolute;
+  left: 380px;
+  top: 167px;
+  width: 68px;
+  height: 49px;
+  z-index: 231;
+}
+.roadPlaceholder_SW_NW_D {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_D.png");
+  position: absolute;
+  left: 370px;
+  top: 214px;
+  width: 19px;
+  height: 71px;
+  z-index: 230;
+}
+.roadPlaceholder_N_NE_D {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_D.png");
+  position: absolute;
+  left: 458px;
+  top: 167px;
+  width: 68px;
+  height: 49px;
+  z-index: 229;
+}
+.cityPlaceholder_N_H {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_H.png");
+  position: absolute;
+  left: 348px;
+  top: 250px;
+  width: 57px;
+  height: 70px;
+  z-index: 228;
+}
+.settlementPlaceholder_N_H {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_H.png");
+  position: absolute;
+  left: 349px;
+  top: 265px;
+  width: 54px;
+  height: 53px;
+  z-index: 227;
+}
+.cityPlaceholder_NW_H {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_H.png");
+  position: absolute;
+  left: 274px;
+  top: 288px;
+  width: 57px;
+  height: 70px;
+  z-index: 226;
+}
+.settlementPlaceholder_N_H {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_H.png");
+  position: absolute;
+  left: 275px;
+  top: 303px;
+  width: 54px;
+  height: 53px;
+  z-index: 225;
+}
+.cityPlaceholder_SE_H {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_H.png");
+  position: absolute;
+  left: 274px;
+  top: 375px;
+  width: 57px;
+  height: 70px;
+  z-index: 224;
+}
+.settlementPlaceholder_SE_H {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_H.png");
+  position: absolute;
+  left: 275px;
+  top: 390px;
+  width: 54px;
+  height: 53px;
+  z-index: 223;
+}
+.cityPlaceholder_S_H {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_H.png");
+  position: absolute;
+  left: 346px;
+  top: 417px;
+  width: 57px;
+  height: 70px;
+  z-index: 222;
+}
+.settlementPlaceholder_S_H {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_H.png");
+  position: absolute;
+  left: 343px;
+  top: 432px;
+  width: 54px;
+  height: 53px;
+  z-index: 221;
+}
+.roadPlaceholder_N_NW_H {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_H.png");
+  position: absolute;
+  left: 299px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 220;
+}
+.roadPlaceholder_SW_NW_H {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_H.png");
+  position: absolute;
+  left: 289px;
+  top: 345px;
+  width: 19px;
+  height: 71px;
+  z-index: 219;
+}
+.roadPlaceholder_S_SE_H {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_H.png");
+  position: absolute;
+  left: 381px;
+  top: 425px;
+  width: 68px;
+  height: 49px;
+  z-index: 218;
+}
+.roadPlaceholder_N_NE_H {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_H.png");
+  position: absolute;
+  left: 377px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 217;
+}
+.roadPlaceholder_S_SW_H {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_H.png");
+  position: absolute;
+  left: 300px;
+  top: 424px;
+  width: 68px;
+  height: 49px;
+  z-index: 216;
+}
+.cityPlaceholder_N_I {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_I.png");
+  position: absolute;
+  left: 499px;
+  top: 250px;
+  width: 57px;
+  height: 70px;
+  z-index: 215;
+}
+.settlementPlaceholder_N_I {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_I.png");
+  position: absolute;
+  left: 500px;
+  top: 265px;
+  width: 54px;
+  height: 53px;
+  z-index: 214;
+}
+.cityPlaceholder_NW_I {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_I.png");
+  position: absolute;
+  left: 425px;
+  top: 288px;
+  width: 57px;
+  height: 70px;
+  z-index: 213;
+}
+.settlementPlaceholder_N_I {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_I.png");
+  position: absolute;
+  left: 426px;
+  top: 303px;
+  width: 54px;
+  height: 53px;
+  z-index: 212;
+}
+.cityPlaceholder_SE_I {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_I.png");
+  position: absolute;
+  left: 425px;
+  top: 375px;
+  width: 57px;
+  height: 70px;
+  z-index: 211;
+}
+.settlementPlaceholder_SE_I {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_I.png");
+  position: absolute;
+  left: 426px;
+  top: 390px;
+  width: 54px;
+  height: 53px;
+  z-index: 210;
+}
+.cityPlaceholder_S_I {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_I.png");
+  position: absolute;
+  left: 497px;
+  top: 417px;
+  width: 57px;
+  height: 70px;
+  z-index: 209;
+}
+.settlementPlaceholder_S_I {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_I.png");
+  position: absolute;
+  left: 494px;
+  top: 432px;
+  width: 54px;
+  height: 53px;
+  z-index: 208;
+}
+.roadPlaceholder_N_NW_I {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_I.png");
+  position: absolute;
+  left: 450px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 207;
+}
+.roadPlaceholder_SW_NW_I {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_I.png");
+  position: absolute;
+  left: 440px;
+  top: 345px;
+  width: 19px;
+  height: 71px;
+  z-index: 206;
+}
+.roadPlaceholder_S_SE_I {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_I.png");
+  position: absolute;
+  left: 532px;
+  top: 425px;
+  width: 68px;
+  height: 49px;
+  z-index: 205;
+}
+.roadPlaceholder_N_NE_I {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_I.png");
+  position: absolute;
+  left: 528px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 204;
+}
+.roadPlaceholder_S_SW_J {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_J.png");
+  position: absolute;
+  left: 451px;
+  top: 424px;
+  width: 68px;
+  height: 49px;
+  z-index: 203;
+}
+.cityPlaceholder_N_J {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_J.png");
+  position: absolute;
+  left: 658px;
+  top: 250px;
+  width: 57px;
+  height: 70px;
+  z-index: 202;
+}
+.settlementPlaceholder_N_J {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_J.png");
+  position: absolute;
+  left: 659px;
+  top: 265px;
+  width: 54px;
+  height: 53px;
+  z-index: 201;
+}
+.cityPlaceholder_NW_J {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_J.png");
+  position: absolute;
+  left: 584px;
+  top: 288px;
+  width: 57px;
+  height: 70px;
+  z-index: 200;
+}
+.settlementPlaceholder_N_J {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_J.png");
+  position: absolute;
+  left: 585px;
+  top: 303px;
+  width: 54px;
+  height: 53px;
+  z-index: 199;
+}
+.cityPlaceholder_SE_J {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_J.png");
+  position: absolute;
+  left: 584px;
+  top: 375px;
+  width: 57px;
+  height: 70px;
+  z-index: 198;
+}
+.settlementPlaceholder_SE_J {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_J.png");
+  position: absolute;
+  left: 585px;
+  top: 390px;
+  width: 54px;
+  height: 53px;
+  z-index: 197;
+}
+.cityPlaceholder_S_J {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_J.png");
+  position: absolute;
+  left: 656px;
+  top: 417px;
+  width: 57px;
+  height: 70px;
+  z-index: 196;
+}
+.settlementPlaceholder_S_J {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_J.png");
+  position: absolute;
+  left: 653px;
+  top: 432px;
+  width: 54px;
+  height: 53px;
+  z-index: 195;
+}
+.roadPlaceholder_N_NW_J {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_J.png");
+  position: absolute;
+  left: 609px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 194;
+}
+.roadPlaceholder_SW_NW_J {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_J.png");
+  position: absolute;
+  left: 599px;
+  top: 345px;
+  width: 19px;
+  height: 71px;
+  z-index: 193;
+}
+.roadPlaceholder_S_SE_J {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_J.png");
+  position: absolute;
+  left: 691px;
+  top: 425px;
+  width: 68px;
+  height: 49px;
+  z-index: 192;
+}
+.roadPlaceholder_N_NE_J {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_J.png");
+  position: absolute;
+  left: 687px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 191;
+}
+.roadPlaceholder_S_SW_J {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_J.png");
+  position: absolute;
+  left: 610px;
+  top: 424px;
+  width: 68px;
+  height: 49px;
+  z-index: 190;
+}
+.cityPlaceholder_N_K {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_K.png");
+  position: absolute;
+  left: 817px;
+  top: 250px;
+  width: 57px;
+  height: 70px;
+  z-index: 189;
+}
+.settlementPlaceholder_N_K {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_K.png");
+  position: absolute;
+  left: 818px;
+  top: 265px;
+  width: 54px;
+  height: 53px;
+  z-index: 188;
+}
+.cityPlaceholder_NW_K {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_K.png");
+  position: absolute;
+  left: 743px;
+  top: 288px;
+  width: 57px;
+  height: 70px;
+  z-index: 187;
+}
+.settlementPlaceholder_N_K {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_K.png");
+  position: absolute;
+  left: 744px;
+  top: 303px;
+  width: 54px;
+  height: 53px;
+  z-index: 186;
+}
+.cityPlaceholder_SE_K {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_K.png");
+  position: absolute;
+  left: 743px;
+  top: 375px;
+  width: 57px;
+  height: 70px;
+  z-index: 185;
+}
+.settlementPlaceholder_SE_K {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_K.png");
+  position: absolute;
+  left: 744px;
+  top: 390px;
+  width: 54px;
+  height: 53px;
+  z-index: 184;
+}
+.cityPlaceholder_S_K {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_K.png");
+  position: absolute;
+  left: 815px;
+  top: 417px;
+  width: 57px;
+  height: 70px;
+  z-index: 183;
+}
+.settlementPlaceholder_S_K {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_K.png");
+  position: absolute;
+  left: 812px;
+  top: 432px;
+  width: 54px;
+  height: 53px;
+  z-index: 182;
+}
+.roadPlaceholder_N_NW_K {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_K.png");
+  position: absolute;
+  left: 768px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 181;
+}
+.roadPlaceholder_SW_NW_K {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_K.png");
+  position: absolute;
+  left: 758px;
+  top: 345px;
+  width: 19px;
+  height: 71px;
+  z-index: 180;
+}
+.roadPlaceholder_S_SE_K {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_K.png");
+  position: absolute;
+  left: 850px;
+  top: 425px;
+  width: 68px;
+  height: 49px;
+  z-index: 179;
+}
+.roadPlaceholder_N_NE_K {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_K.png");
+  position: absolute;
+  left: 846px;
+  top: 298px;
+  width: 68px;
+  height: 49px;
+  z-index: 178;
+}
+.roadPlaceholder_S_SW_K {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_K.png");
+  position: absolute;
+  left: 769px;
+  top: 424px;
+  width: 68px;
+  height: 49px;
+  z-index: 177;
+}
+.cityPlaceholder_SE_S {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_S.png");
+  position: absolute;
+  left: 738px;
+  top: 638px;
+  width: 57px;
+  height: 70px;
+  z-index: 176;
+}
+.settlementPlaceholder_SE_S {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_S.png");
+  position: absolute;
+  left: 739px;
+  top: 653px;
+  width: 54px;
+  height: 53px;
+  z-index: 175;
+}
+.cityPlaceholder_SE_S {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_S.png");
+  position: absolute;
+  left: 884px;
+  top: 638px;
+  width: 57px;
+  height: 70px;
+  z-index: 174;
+}
+.settlementPlaceholder_SE_S {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_S.png");
+  position: absolute;
+  left: 881px;
+  top: 653px;
+  width: 54px;
+  height: 53px;
+  z-index: 173;
+}
+.cityPlaceholder_S_S {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_S.png");
+  position: absolute;
+  left: 810px;
+  top: 680px;
+  width: 57px;
+  height: 70px;
+  z-index: 172;
+}
+.settlementPlaceholder_S_S {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_S.png");
+  position: absolute;
+  left: 807px;
+  top: 695px;
+  width: 54px;
+  height: 53px;
+  z-index: 171;
+}
+.roadPlaceholder_SE_NE_S {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SE-NE_S.png");
+  position: absolute;
+  left: 901px;
+  top: 608px;
+  width: 19px;
+  height: 71px;
+  z-index: 170;
+}
+.roadPlaceholder_SW_NW_S {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_S.png");
+  position: absolute;
+  left: 753px;
+  top: 608px;
+  width: 19px;
+  height: 71px;
+  z-index: 169;
+}
+.roadPlaceholder_S_SE_S {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_S.png");
+  position: absolute;
+  left: 845px;
+  top: 688px;
+  width: 68px;
+  height: 49px;
+  z-index: 168;
+}
+.roadPlaceholder_S_SW_S {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_S.png");
+  position: absolute;
+  left: 764px;
+  top: 687px;
+  width: 68px;
+  height: 49px;
+  z-index: 167;
+}
+.cityPlaceholder_N_L {
+  background-image: url("gameAssetOfficial/cityPlaceholder_N_L.png");
+  position: absolute;
+  left: 967px;
+  top: 254px;
+  width: 57px;
+  height: 70px;
+  z-index: 166;
+}
+.settlementPlaceholder_N_L {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_L.png");
+  position: absolute;
+  left: 968px;
+  top: 269px;
+  width: 54px;
+  height: 53px;
+  z-index: 165;
+}
+.cityPlaceholder_NW_L {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NW_L.png");
+  position: absolute;
+  left: 893px;
+  top: 292px;
+  width: 57px;
+  height: 70px;
+  z-index: 164;
+}
+.settlementPlaceholder_N_L {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_N_L.png");
+  position: absolute;
+  left: 894px;
+  top: 307px;
+  width: 54px;
+  height: 53px;
+  z-index: 163;
+}
+.cityPlaceholder_SE_L {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_L.png");
+  position: absolute;
+  left: 893px;
+  top: 379px;
+  width: 57px;
+  height: 70px;
+  z-index: 162;
+}
+.settlementPlaceholder_SE_L {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_L.png");
+  position: absolute;
+  left: 894px;
+  top: 394px;
+  width: 54px;
+  height: 53px;
+  z-index: 161;
+}
+.cityPlaceholder_NE_L {
+  background-image: url("gameAssetOfficial/cityPlaceholder_NE_L.png");
+  position: absolute;
+  left: 1039px;
+  top: 292px;
+  width: 57px;
+  height: 70px;
+  z-index: 160;
+}
+.settlementPlaceholder_NE_L {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_NE_L.png");
+  position: absolute;
+  left: 1036px;
+  top: 307px;
+  width: 54px;
+  height: 53px;
+  z-index: 159;
+}
+.cityPlaceholder_SE_L {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_L.png");
+  position: absolute;
+  left: 1039px;
+  top: 379px;
+  width: 57px;
+  height: 70px;
+  z-index: 158;
+}
+.settlementPlaceholder_SE_L {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_L.png");
+  position: absolute;
+  left: 1036px;
+  top: 394px;
+  width: 54px;
+  height: 53px;
+  z-index: 157;
+}
+.cityPlaceholder_S_L {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_L.png");
+  position: absolute;
+  left: 965px;
+  top: 421px;
+  width: 57px;
+  height: 70px;
+  z-index: 156;
+}
+.settlementPlaceholder_S_L {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_L.png");
+  position: absolute;
+  left: 962px;
+  top: 436px;
+  width: 54px;
+  height: 53px;
+  z-index: 155;
+}
+.roadPlaceholder_N_NW_L {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NW_L.png");
+  position: absolute;
+  left: 918px;
+  top: 302px;
+  width: 68px;
+  height: 49px;
+  z-index: 154;
+}
+.roadPlaceholder_SE_NE_L {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SE-NE_L.png");
+  position: absolute;
+  left: 1056px;
+  top: 349px;
+  width: 19px;
+  height: 71px;
+  z-index: 153;
+}
+.roadPlaceholder_SW_NW_L {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_L.png");
+  position: absolute;
+  left: 908px;
+  top: 349px;
+  width: 19px;
+  height: 71px;
+  z-index: 152;
+}
+.roadPlaceholder_S_SE_L {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_L.png");
+  position: absolute;
+  left: 1000px;
+  top: 429px;
+  width: 68px;
+  height: 49px;
+  z-index: 151;
+}
+.roadPlaceholder_N_NE_L {
+  background-image: url("gameAssetOfficial/roadPlaceholder_N-NE_L.png");
+  position: absolute;
+  left: 996px;
+  top: 302px;
+  width: 68px;
+  height: 49px;
+  z-index: 150;
+}
+.roadPlaceholder_S_SW_L {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_L.png");
+  position: absolute;
+  left: 919px;
+  top: 428px;
+  width: 68px;
+  height: 49px;
+  z-index: 149;
+}
+.cityPlaceholder_SE_P {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_P.png");
+  position: absolute;
+  left: 820px;
+  top: 505px;
+  width: 57px;
+  height: 70px;
+  z-index: 148;
+}
+.settlementPlaceholder_SE_P {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_P.png");
+  position: absolute;
+  left: 821px;
+  top: 520px;
+  width: 54px;
+  height: 53px;
+  z-index: 147;
+}
+.cityPlaceholder_SE_P {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_P.png");
+  position: absolute;
+  left: 966px;
+  top: 505px;
+  width: 57px;
+  height: 70px;
+  z-index: 146;
+}
+.settlementPlaceholder_SE_P {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_P.png");
+  position: absolute;
+  left: 963px;
+  top: 520px;
+  width: 54px;
+  height: 53px;
+  z-index: 145;
+}
+.cityPlaceholder_S_P {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_P.png");
+  position: absolute;
+  left: 892px;
+  top: 547px;
+  width: 57px;
+  height: 70px;
+  z-index: 144;
+}
+.settlementPlaceholder_S_P {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_P.png");
+  position: absolute;
+  left: 889px;
+  top: 562px;
+  width: 54px;
+  height: 53px;
+  z-index: 143;
+}
+.roadPlaceholder_SE_NE_P {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SE-NE_P.png");
+  position: absolute;
+  left: 983px;
+  top: 475px;
+  width: 19px;
+  height: 71px;
+  z-index: 142;
+}
+.roadPlaceholder_SW_NW_P {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_P.png");
+  position: absolute;
+  left: 835px;
+  top: 475px;
+  width: 19px;
+  height: 71px;
+  z-index: 141;
+}
+.roadPlaceholder_S_SE_P {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_P.png");
+  position: absolute;
+  left: 927px;
+  top: 555px;
+  width: 68px;
+  height: 49px;
+  z-index: 140;
+}
+.roadPlaceholder_S_SW_P {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_P.png");
+  position: absolute;
+  left: 846px;
+  top: 554px;
+  width: 68px;
+  height: 49px;
+  z-index: 139;
+}
+.cityPlaceholder_SE_O {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_O.png");
+  position: absolute;
+  left: 663px;
+  top: 509px;
+  width: 57px;
+  height: 70px;
+  z-index: 138;
+}
+.settlementPlaceholder_SE_O {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_O.png");
+  position: absolute;
+  left: 664px;
+  top: 524px;
+  width: 54px;
+  height: 53px;
+  z-index: 137;
+}
+.cityPlaceholder_S_O {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_O.png");
+  position: absolute;
+  left: 735px;
+  top: 551px;
+  width: 57px;
+  height: 70px;
+  z-index: 136;
+}
+.settlementPlaceholder_S_O {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_O.png");
+  position: absolute;
+  left: 732px;
+  top: 566px;
+  width: 54px;
+  height: 53px;
+  z-index: 135;
+}
+.roadPlaceholder_SW_NW_O {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_O.png");
+  position: absolute;
+  left: 678px;
+  top: 479px;
+  width: 19px;
+  height: 71px;
+  z-index: 134;
+}
+.roadPlaceholder_S_SE_O {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_O.png");
+  position: absolute;
+  left: 770px;
+  top: 559px;
+  width: 68px;
+  height: 49px;
+  z-index: 133;
+}
+.roadPlaceholder_S_SW_O {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_O.png");
+  position: absolute;
+  left: 689px;
+  top: 558px;
+  width: 68px;
+  height: 49px;
+  z-index: 132;
+}
+.cityPlaceholder_SE_N {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_N.png");
+  position: absolute;
+  left: 504px;
+  top: 507px;
+  width: 57px;
+  height: 70px;
+  z-index: 131;
+}
+.settlementPlaceholder_SE_N {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_N.png");
+  position: absolute;
+  left: 505px;
+  top: 522px;
+  width: 54px;
+  height: 53px;
+  z-index: 130;
+}
+.cityPlaceholder_S_N {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_N.png");
+  position: absolute;
+  left: 576px;
+  top: 549px;
+  width: 57px;
+  height: 70px;
+  z-index: 129;
+}
+.settlementPlaceholder_S_N {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_N.png");
+  position: absolute;
+  left: 573px;
+  top: 564px;
+  width: 54px;
+  height: 53px;
+  z-index: 128;
+}
+.roadPlaceholder_SW_NW_N {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_N.png");
+  position: absolute;
+  left: 519px;
+  top: 477px;
+  width: 19px;
+  height: 71px;
+  z-index: 127;
+}
+.roadPlaceholder_S_SE_N {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_N.png");
+  position: absolute;
+  left: 611px;
+  top: 557px;
+  width: 68px;
+  height: 49px;
+  z-index: 126;
+}
+.roadPlaceholder_S_SW_N {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_N.png");
+  position: absolute;
+  left: 530px;
+  top: 556px;
+  width: 68px;
+  height: 49px;
+  z-index: 125;
+}
+.cityPlaceholder_SE_M {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_M.png");
+  position: absolute;
+  left: 348px;
+  top: 507px;
+  width: 57px;
+  height: 70px;
+  z-index: 124;
+}
+.settlementPlaceholder_SE_M {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_M.png");
+  position: absolute;
+  left: 349px;
+  top: 522px;
+  width: 54px;
+  height: 53px;
+  z-index: 123;
+}
+.cityPlaceholder_S_M {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_M.png");
+  position: absolute;
+  left: 420px;
+  top: 549px;
+  width: 57px;
+  height: 70px;
+  z-index: 122;
+}
+.settlementPlaceholder_S_M {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_M.png");
+  position: absolute;
+  left: 417px;
+  top: 564px;
+  width: 54px;
+  height: 53px;
+  z-index: 121;
+}
+.roadPlaceholder_SW_NW_M {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_M.png");
+  position: absolute;
+  left: 363px;
+  top: 477px;
+  width: 19px;
+  height: 71px;
+  z-index: 120;
+}
+.roadPlaceholder_S_SE_M {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_M.png");
+  position: absolute;
+  left: 455px;
+  top: 557px;
+  width: 68px;
+  height: 49px;
+  z-index: 119;
+}
+.roadPlaceholder_S_SW_M {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_M.png");
+  position: absolute;
+  left: 374px;
+  top: 556px;
+  width: 68px;
+  height: 49px;
+  z-index: 118;
+}
+.cityPlaceholder_SE_Q {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_Q.png");
+  position: absolute;
+  left: 431px;
+  top: 637px;
+  width: 57px;
+  height: 70px;
+  z-index: 117;
+}
+.settlementPlaceholder_SE_Q {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_Q.png");
+  position: absolute;
+  left: 432px;
+  top: 652px;
+  width: 54px;
+  height: 53px;
+  z-index: 116;
+}
+.cityPlaceholder_S_Q {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_Q.png");
+  position: absolute;
+  left: 503px;
+  top: 679px;
+  width: 57px;
+  height: 70px;
+  z-index: 115;
+}
+.settlementPlaceholder_S_Q {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_Q.png");
+  position: absolute;
+  left: 500px;
+  top: 694px;
+  width: 54px;
+  height: 53px;
+  z-index: 114;
+}
+.roadPlaceholder_SW_NW_Q {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_Q.png");
+  position: absolute;
+  left: 446px;
+  top: 607px;
+  width: 19px;
+  height: 71px;
+  z-index: 113;
+}
+.roadPlaceholder_S_SE_Q {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_Q.png");
+  position: absolute;
+  left: 538px;
+  top: 687px;
+  width: 68px;
+  height: 49px;
+  z-index: 112;
+}
+.roadPlaceholder_S_SW_Q {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_Q.png");
+  position: absolute;
+  left: 457px;
+  top: 686px;
+  width: 68px;
+  height: 49px;
+  z-index: 111;
+}
+.cityPlaceholder_SE_R {
+  background-image: url("gameAssetOfficial/cityPlaceholder_SE_R.png");
+  position: absolute;
+  left: 587px;
+  top: 636px;
+  width: 57px;
+  height: 70px;
+  z-index: 110;
+}
+.settlementPlaceholder_SE_R {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_SE_R.png");
+  position: absolute;
+  left: 588px;
+  top: 651px;
+  width: 54px;
+  height: 53px;
+  z-index: 109;
+}
+.cityPlaceholder_S_R {
+  background-image: url("gameAssetOfficial/cityPlaceholder_S_R.png");
+  position: absolute;
+  left: 659px;
+  top: 678px;
+  width: 57px;
+  height: 70px;
+  z-index: 108;
+}
+.settlementPlaceholder_S_R {
+  background-image: url("gameAssetOfficial/settlementPlaceholder_S_R.png");
+  position: absolute;
+  left: 656px;
+  top: 693px;
+  width: 54px;
+  height: 53px;
+  z-index: 107;
+}
+.roadPlaceholder_SW_NW_R {
+  background-image: url("gameAssetOfficial/roadPlaceholder_SW-NW_R.png");
+  position: absolute;
+  left: 602px;
+  top: 606px;
+  width: 19px;
+  height: 71px;
+  z-index: 106;
+}
+.roadPlaceholder_S_SE_R {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SE_R.png");
+  position: absolute;
+  left: 694px;
+  top: 686px;
+  width: 68px;
+  height: 49px;
+  z-index: 105;
+}
+.roadPlaceholder_S_SW_R {
+  background-image: url("gameAssetOfficial/roadPlaceholder_S-SW_R.png");
+  position: absolute;
+  left: 613px;
+  top: 685px;
+  width: 68px;
+  height: 49px;
+  z-index: 104;
 }
