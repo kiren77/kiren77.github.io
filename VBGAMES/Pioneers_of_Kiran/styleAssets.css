@@ -1,8 +1,3 @@
-.gameContainer {
-  position: relative;
-  left: 0vw;
-}
-
 /*all other rules are nested
      inside the container*/
 .resCardRobTradeBuy {
@@ -25,7 +20,7 @@
   border: none;
 }
 
-.sheepCard {
+.resourceCards .sheepCard {
   background-image: url("gameAssetsOfficial/sheepCard.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -37,29 +32,7 @@
   border: none;
 }
 
-.sheepTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -moz-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -webkit-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -ms-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  position: absolute;
-  left: 1124.493px;
-  top: 724.467px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 378;
-  border: none;
-  background-repeat: no-repeat;
-}
-
-.totalSheepDiamond {
+.resourceCards .totalSheepDiamond {
   background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -71,7 +44,29 @@
   border: none;
 }
 
-.woodCard {
+.resourceCards .totalSheepDiamond .sheepTotalNull {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+  -moz-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+  -webkit-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+  -ms-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+  position: relative;
+  left: 0px;
+  top: 20px;
+  min-width: 10.859px;
+  min-height: 17px;
+  z-index: 378;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.resourceCards .woodCard {
   background-image: url("gameAssetsOfficial/woodCard.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -83,7 +78,19 @@
   border: none;
 }
 
-.woodTotalNull {
+.resourceCards .totalWoodDiamond {
+  background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 1152px;
+  top: 651px;
+  min-width: 53px;
+  min-height: 55px;
+  z-index: 374;
+  border: none;
+}
+
+.resourceCards .totalWoodDiamond .woodTotalNull {
   font-size: 24px;
   font-family: "Roboto Slab";
   color: #cccccc;
@@ -96,28 +103,16 @@
   -moz-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
   -webkit-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
   -ms-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-  position: absolute;
-  left: 1158.493px;
-  top: 686.467px;
+  position: relative;
+  left: 0px;
+  top: 20px;
   min-width: 10.859px;
   min-height: 17px;
   z-index: 375;
   border: none;
 }
 
-.totalWoodDiamond {
-  background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1152px;
-  top: 651px;
-  min-width: 53px;
-  min-height: 55px;
-  z-index: 374;
-  border: none;
-}
-
-.wheatCard {
+.resourceCards .wheatCard {
   background-image: url("gameAssetsOfficial/wheatCard.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -129,28 +124,7 @@
   border: none;
 }
 
-.wheatTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -moz-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -webkit-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -ms-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  position: absolute;
-  left: 1200.993px;
-  top: 655.967px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 372;
-  border: none;
-}
-
-.totalWheatDiamond {
+.resourceCards .totalWheatDiamond {
   background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -162,7 +136,28 @@
   border: none;
 }
 
-.oreCard {
+.resourceCards .totalWheatDiamond .wheatTotalNull {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+  -moz-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+  -webkit-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+  -ms-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+  position: relative;
+  left: 0px;
+  top: 20px;
+  min-width: 10.859px;
+  min-height: 17px;
+  z-index: 372;
+  border: none;
+}
+
+.resourceCards .oreCard {
   background-image: url("gameAssetsOfficial/oreCard.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -174,28 +169,7 @@
   border: none;
 }
 
-.oreTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  -moz-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  -webkit-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  -ms-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  position: absolute;
-  left: 1246.993px;
-  top: 637.967px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 369;
-  border: none;
-}
-
-.totalOreDiamond {
+.resourceCards .totalOreDiamond {
   background-image: url("gameAssetsOfficial/totalOreDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -207,7 +181,28 @@
   border: none;
 }
 
-.brickCard {
+.resourceCards .totalOreDiamond .oreTotalNull {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+  -moz-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+  -webkit-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+  -ms-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+  position: relative;
+  left: 0px;
+  top: 20px;
+  min-width: 10.859px;
+  min-height: 17px;
+  z-index: 369;
+  border: none;
+}
+
+.resourceCards .brickCard {
   background-image: url("gameAssetsOfficial/brickCard.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -219,28 +214,7 @@
   border: none;
 }
 
-.brickTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -moz-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  position: absolute;
-  left: 1296.993px;
-  top: 633.467px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 366;
-  border: none;
-}
-
-.totalBrickDiamond {
+.resourceCards .totalBrickDiamond {
   background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -252,6 +226,28 @@
   border: none;
 }
 
+.resourceCards .totalBrickDiamond .brickTotalNull {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  transform: matrix(0.9901, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+  position: relative;
+  left: 0px;
+  top: 10px;
+  min-width: 10.859px;
+  min-height: 17px;
+  z-index: 366;
+  border: none;
+}
+
+/* resourcecards */
 .playerOrange {
   position: absolute;
   left: 0px;
@@ -1286,7 +1282,7 @@
 .mainChat {
   font-size: 18px;
   font-family: "Courier";
-  color: #302828 333;
+  color: #2c2424;
   text-transform: uppercase;
   line-height: 1.111;
   text-align: left;
@@ -1671,9 +1667,9 @@
 }
 
 /*  NEW PLACEHOLDERS BELOW*/
-.Group_1 {
+.placeHoldersPawns {
   position: absolute;
-  left: 0px;
+  left: -15px;
   top: 0px;
   width: 1366px;
   height: 768px;
@@ -1681,7 +1677,7 @@
 }
 
 .cityPlaceholder_N_B {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_B.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 506px;
   top: 0px;
@@ -1690,8 +1686,8 @@
   z-index: 284;
 }
 
-.settlementPlaceholder_N_B {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
+.settlementPlaceholder_N_B-2 {
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 507px;
   top: 0px;
@@ -1701,7 +1697,7 @@
 }
 
 .cityPlaceholder_NW_B {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_B.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 432px;
   top: 22px;
@@ -1710,8 +1706,8 @@
   z-index: 282;
 }
 
-.settlementPlaceholder_N_B {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
+.settlementPlaceholder_N_B-3 {
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 433px;
   top: 37px;
@@ -1721,8 +1717,8 @@
 }
 
 .roadPlaceholder_N_NW_B {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_B.png");
-  position: absolute;
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
+  position: relative;
   left: 457px;
   top: 32px;
   width: 68px;
@@ -1731,7 +1727,7 @@
 }
 
 .roadPlaceholder_SW_NW_B {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_B.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 447px;
   top: 79px;
@@ -1741,7 +1737,7 @@
 }
 
 .roadPlaceholder_N_NE_B {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_B.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 535px;
   top: 32px;
@@ -1751,7 +1747,7 @@
 }
 
 .cityPlaceholder_N_B {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_B.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 660px;
   top: 0px;
@@ -1760,8 +1756,8 @@
   z-index: 277;
 }
 
-.settlementPlaceholder_N_B {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
+.settlementPlaceholder_N_B-4 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 661px;
   top: 1px;
@@ -1771,7 +1767,7 @@
 }
 
 .cityPlaceholder_NW_B {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_B.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 586px;
   top: 24px;
@@ -1781,7 +1777,7 @@
 }
 
 .settlementPlaceholder_N_B {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_B.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 587px;
   top: 39px;
@@ -1791,7 +1787,7 @@
 }
 
 .cityPlaceholder_NE_B {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NE_B.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 732px;
   top: 24px;
@@ -1801,7 +1797,7 @@
 }
 
 .settlementPlaceholder_NE_B {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_NE_B.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 729px;
   top: 39px;
@@ -1810,8 +1806,8 @@
   z-index: 272;
 }
 
-.roadPlaceholder_N_NW_B {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_B.png");
+.roadPlaceholder_N_NW_B-2 {
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 611px;
   top: 34px;
@@ -1820,8 +1816,8 @@
   z-index: 271;
 }
 
-.roadPlaceholder_SW_NW_B {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_B.png");
+.roadPlaceholder_SW-NW_B-2 {
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 601px;
   top: 81px;
@@ -1830,8 +1826,8 @@
   z-index: 270;
 }
 
-.roadPlaceholder_N_NE_B {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_B.png");
+.roadPlaceholder_N_NE_B-2 {
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 689px;
   top: 34px;
@@ -1841,7 +1837,7 @@
 }
 
 .cityPlaceholder_N_C {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_C.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 810px;
   top: 0px;
@@ -1851,7 +1847,7 @@
 }
 
 .settlementPlaceholder_N_C {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_C.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 811px;
   top: 0px;
@@ -1861,7 +1857,7 @@
 }
 
 .cityPlaceholder_NW_C {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_C.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 736px;
   top: 22px;
@@ -1870,8 +1866,8 @@
   z-index: 266;
 }
 
-.settlementPlaceholder_N_C {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_C.png");
+.settlementPlaceholder_N_C-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 737px;
   top: 37px;
@@ -1881,7 +1877,7 @@
 }
 
 .cityPlaceholder_NE_C {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NE_C.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 882px;
   top: 22px;
@@ -1891,7 +1887,7 @@
 }
 
 .settlementPlaceholder_NE_C {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_NE_C.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 879px;
   top: 37px;
@@ -1901,7 +1897,7 @@
 }
 
 .cityPlaceholder_SE_C {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_C.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 882px;
   top: 109px;
@@ -1911,7 +1907,7 @@
 }
 
 .settlementPlaceholder_SE_C {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_C.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 879px;
   top: 124px;
@@ -1921,7 +1917,7 @@
 }
 
 .cityPlaceholder_S_C {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_C.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 808px;
   top: 151px;
@@ -1931,7 +1927,7 @@
 }
 
 .settlementPlaceholder_S_C {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_C.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 805px;
   top: 166px;
@@ -1941,7 +1937,7 @@
 }
 
 .roadPlaceholder_N_NW_C {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_C.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 761px;
   top: 32px;
@@ -1951,7 +1947,7 @@
 }
 
 .roadPlaceholder_SE_NE_C {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_C.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 899px;
   top: 79px;
@@ -1961,7 +1957,7 @@
 }
 
 .roadPlaceholder_SW_NW_C {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_C.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 751px;
   top: 79px;
@@ -1971,7 +1967,7 @@
 }
 
 .roadPlaceholder_N_NE_C {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_C.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 839px;
   top: 32px;
@@ -1981,7 +1977,7 @@
 }
 
 .roadPlaceholder_SE_NE_G {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_G.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 980px;
   top: 212px;
@@ -1991,7 +1987,7 @@
 }
 
 .cityPlaceholder_NE_G {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NE_G.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 963px;
   top: 155px;
@@ -2001,7 +1997,7 @@
 }
 
 .roadPlaceholder_N_NW_G {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_G.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 839px;
   top: 163px;
@@ -2011,7 +2007,7 @@
 }
 
 .roadPlaceholder_SW_NW_G {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_G.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 829px;
   top: 210px;
@@ -2021,7 +2017,7 @@
 }
 
 .roadPlaceholder_N_NE_G {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_G.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 917px;
   top: 163px;
@@ -2031,7 +2027,7 @@
 }
 
 .cityPlaceholder_N_F {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_F.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 733px;
   top: 115px;
@@ -2041,7 +2037,7 @@
 }
 
 .settlementPlaceholder_N_F {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_F.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 733px;
   top: 130px;
@@ -2051,7 +2047,7 @@
 }
 
 .cityPlaceholder_NW_F {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_F.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 658px;
   top: 153px;
@@ -2060,8 +2056,8 @@
   z-index: 247;
 }
 
-.settlementPlaceholder_N_F {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_F.png");
+.settlementPlaceholder_N_F-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 659px;
   top: 168px;
@@ -2071,7 +2067,7 @@
 }
 
 .roadPlaceholder_N_NW_F {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_F.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 683px;
   top: 163px;
@@ -2081,7 +2077,7 @@
 }
 
 .roadPlaceholder_SW_NW_F {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_F.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 673px;
   top: 210px;
@@ -2091,7 +2087,7 @@
 }
 
 .roadPlaceholder_N_NE_F {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_F.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 761px;
   top: 163px;
@@ -2101,7 +2097,7 @@
 }
 
 .cityPlaceholder_N_E {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_E.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 576px;
   top: 115px;
@@ -2111,7 +2107,7 @@
 }
 
 .settlementPlaceholder_N_E {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_E.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 576px;
   top: 130px;
@@ -2121,7 +2117,7 @@
 }
 
 .cityPlaceholder_NW_E {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_E.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 501px;
   top: 153px;
@@ -2130,8 +2126,8 @@
   z-index: 240;
 }
 
-.settlementPlaceholder_N_E {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_E.png");
+.settlementPlaceholder_N_E-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 502px;
   top: 168px;
@@ -2141,7 +2137,7 @@
 }
 
 .roadPlaceholder_N_NW_E {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_E.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 526px;
   top: 163px;
@@ -2151,7 +2147,7 @@
 }
 
 .roadPlaceholder_SW_NW_E {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_E.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 516px;
   top: 210px;
@@ -2161,7 +2157,7 @@
 }
 
 .roadPlaceholder_N_NE_E {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_E.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 604px;
   top: 163px;
@@ -2171,7 +2167,7 @@
 }
 
 .cityPlaceholder_N_D {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_D.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 429px;
   top: 119px;
@@ -2181,7 +2177,7 @@
 }
 
 .settlementPlaceholder_N_D {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_D.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 430px;
   top: 134px;
@@ -2191,7 +2187,7 @@
 }
 
 .cityPlaceholder_NW_D {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_D.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 355px;
   top: 157px;
@@ -2200,8 +2196,8 @@
   z-index: 233;
 }
 
-.settlementPlaceholder_N_D {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_D.png");
+.settlementPlaceholder_N_D-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 356px;
   top: 172px;
@@ -2211,7 +2207,7 @@
 }
 
 .roadPlaceholder_N_NW_D {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_D.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 380px;
   top: 167px;
@@ -2221,7 +2217,7 @@
 }
 
 .roadPlaceholder_SW_NW_D {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_D.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 370px;
   top: 214px;
@@ -2231,7 +2227,7 @@
 }
 
 .roadPlaceholder_N_NE_D {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_D.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 458px;
   top: 167px;
@@ -2241,7 +2237,7 @@
 }
 
 .cityPlaceholder_N_H {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_H.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 348px;
   top: 250px;
@@ -2251,7 +2247,7 @@
 }
 
 .settlementPlaceholder_N_H {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_H.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 349px;
   top: 265px;
@@ -2261,7 +2257,7 @@
 }
 
 .cityPlaceholder_NW_H {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_H.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 274px;
   top: 288px;
@@ -2270,8 +2266,8 @@
   z-index: 226;
 }
 
-.settlementPlaceholder_N_H {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_H.png");
+.settlementPlaceholder_N_H-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 275px;
   top: 303px;
@@ -2281,7 +2277,7 @@
 }
 
 .cityPlaceholder_SE_H {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_H.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 274px;
   top: 375px;
@@ -2291,7 +2287,7 @@
 }
 
 .settlementPlaceholder_SE_H {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_H.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 275px;
   top: 390px;
@@ -2301,7 +2297,7 @@
 }
 
 .cityPlaceholder_S_H {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_H.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 346px;
   top: 417px;
@@ -2311,7 +2307,7 @@
 }
 
 .settlementPlaceholder_S_H {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_H.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 343px;
   top: 432px;
@@ -2321,7 +2317,7 @@
 }
 
 .roadPlaceholder_N_NW_H {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_H.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 299px;
   top: 298px;
@@ -2331,7 +2327,7 @@
 }
 
 .roadPlaceholder_SW_NW_H {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_H.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 289px;
   top: 345px;
@@ -2341,7 +2337,7 @@
 }
 
 .roadPlaceholder_S_SE_H {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_H.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 381px;
   top: 425px;
@@ -2351,7 +2347,7 @@
 }
 
 .roadPlaceholder_N_NE_H {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_H.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 377px;
   top: 298px;
@@ -2361,7 +2357,7 @@
 }
 
 .roadPlaceholder_S_SW_H {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_H.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 300px;
   top: 424px;
@@ -2371,7 +2367,7 @@
 }
 
 .cityPlaceholder_N_I {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_I.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 499px;
   top: 250px;
@@ -2380,8 +2376,8 @@
   z-index: 215;
 }
 
-.settlementPlaceholder_N_I {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_I.png");
+.settlementPlaceholder_N_I-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 500px;
   top: 265px;
@@ -2391,7 +2387,7 @@
 }
 
 .cityPlaceholder_NW_I {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_I.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 425px;
   top: 288px;
@@ -2400,8 +2396,8 @@
   z-index: 213;
 }
 
-.settlementPlaceholder_N_I {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_I.png");
+.settlementPlaceholder_N_I-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 426px;
   top: 303px;
@@ -2411,7 +2407,7 @@
 }
 
 .cityPlaceholder_SE_I {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_I.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 425px;
   top: 375px;
@@ -2421,7 +2417,7 @@
 }
 
 .settlementPlaceholder_SE_I {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_I.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 426px;
   top: 390px;
@@ -2431,7 +2427,7 @@
 }
 
 .cityPlaceholder_S_I {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_I.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 497px;
   top: 417px;
@@ -2441,7 +2437,7 @@
 }
 
 .settlementPlaceholder_S_I {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_I.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 494px;
   top: 432px;
@@ -2451,7 +2447,7 @@
 }
 
 .roadPlaceholder_N_NW_I {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_I.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 450px;
   top: 298px;
@@ -2461,7 +2457,7 @@
 }
 
 .roadPlaceholder_SW_NW_I {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_I.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 440px;
   top: 345px;
@@ -2471,7 +2467,7 @@
 }
 
 .roadPlaceholder_S_SE_I {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_I.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 532px;
   top: 425px;
@@ -2481,7 +2477,7 @@
 }
 
 .roadPlaceholder_N_NE_I {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_I.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 528px;
   top: 298px;
@@ -2490,8 +2486,8 @@
   z-index: 204;
 }
 
-.roadPlaceholder_S_SW_J {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_J.png");
+.roadPlaceholder_S_SW_J-2 {
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 451px;
   top: 424px;
@@ -2501,7 +2497,7 @@
 }
 
 .cityPlaceholder_N_J {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_J.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 658px;
   top: 250px;
@@ -2511,7 +2507,7 @@
 }
 
 .settlementPlaceholder_N_J {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_J.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 659px;
   top: 265px;
@@ -2521,7 +2517,7 @@
 }
 
 .cityPlaceholder_NW_J {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_J.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 584px;
   top: 288px;
@@ -2530,8 +2526,8 @@
   z-index: 200;
 }
 
-.settlementPlaceholder_N_J {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_J.png");
+.settlementPlaceholder_N_J-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 585px;
   top: 303px;
@@ -2541,7 +2537,7 @@
 }
 
 .cityPlaceholder_SE_J {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_J.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 584px;
   top: 375px;
@@ -2551,7 +2547,7 @@
 }
 
 .settlementPlaceholder_SE_J {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_J.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 585px;
   top: 390px;
@@ -2561,7 +2557,7 @@
 }
 
 .cityPlaceholder_S_J {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_J.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 656px;
   top: 417px;
@@ -2571,7 +2567,7 @@
 }
 
 .settlementPlaceholder_S_J {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_J.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 653px;
   top: 432px;
@@ -2581,7 +2577,7 @@
 }
 
 .roadPlaceholder_N_NW_J {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_J.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 609px;
   top: 298px;
@@ -2591,7 +2587,7 @@
 }
 
 .roadPlaceholder_SW_NW_J {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_J.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 599px;
   top: 345px;
@@ -2601,7 +2597,7 @@
 }
 
 .roadPlaceholder_S_SE_J {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_J.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 691px;
   top: 425px;
@@ -2611,7 +2607,7 @@
 }
 
 .roadPlaceholder_N_NE_J {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_J.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 687px;
   top: 298px;
@@ -2621,7 +2617,7 @@
 }
 
 .roadPlaceholder_S_SW_J {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_J.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 610px;
   top: 424px;
@@ -2631,7 +2627,7 @@
 }
 
 .cityPlaceholder_N_K {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_K.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 817px;
   top: 250px;
@@ -2640,8 +2636,8 @@
   z-index: 189;
 }
 
-.settlementPlaceholder_N_K {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_K.png");
+.settlementPlaceholder_N_K-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 818px;
   top: 265px;
@@ -2651,7 +2647,7 @@
 }
 
 .cityPlaceholder_NW_K {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_K.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 743px;
   top: 288px;
@@ -2661,7 +2657,7 @@
 }
 
 .settlementPlaceholder_N_K {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_K.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 744px;
   top: 303px;
@@ -2671,7 +2667,7 @@
 }
 
 .cityPlaceholder_SE_K {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_K.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 743px;
   top: 375px;
@@ -2681,7 +2677,7 @@
 }
 
 .settlementPlaceholder_SE_K {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_K.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 744px;
   top: 390px;
@@ -2691,7 +2687,7 @@
 }
 
 .cityPlaceholder_S_K {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_K.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 815px;
   top: 417px;
@@ -2701,7 +2697,7 @@
 }
 
 .settlementPlaceholder_S_K {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_K.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 812px;
   top: 432px;
@@ -2711,7 +2707,7 @@
 }
 
 .roadPlaceholder_N_NW_K {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_K.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 768px;
   top: 298px;
@@ -2721,7 +2717,7 @@
 }
 
 .roadPlaceholder_SW_NW_K {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_K.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 758px;
   top: 345px;
@@ -2731,7 +2727,7 @@
 }
 
 .roadPlaceholder_S_SE_K {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_K.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 850px;
   top: 425px;
@@ -2741,7 +2737,7 @@
 }
 
 .roadPlaceholder_N_NE_K {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_K.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 846px;
   top: 298px;
@@ -2751,7 +2747,7 @@
 }
 
 .roadPlaceholder_S_SW_K {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_K.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 769px;
   top: 424px;
@@ -2760,8 +2756,8 @@
   z-index: 177;
 }
 
-.cityPlaceholder_SE_S {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_S.png");
+.cityPlaceholder_SE_S-2 {
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 738px;
   top: 638px;
@@ -2770,8 +2766,8 @@
   z-index: 176;
 }
 
-.settlementPlaceholder_SE_S {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_S.png");
+.settlementPlaceholder_SE_S-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 739px;
   top: 653px;
@@ -2781,7 +2777,7 @@
 }
 
 .cityPlaceholder_SE_S {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_S.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 884px;
   top: 638px;
@@ -2790,8 +2786,8 @@
   z-index: 174;
 }
 
-.settlementPlaceholder_SE_S {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_S.png");
+.settlementPlaceholder_SE_S-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 881px;
   top: 653px;
@@ -2801,7 +2797,7 @@
 }
 
 .cityPlaceholder_S_S {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_S.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 810px;
   top: 680px;
@@ -2811,7 +2807,7 @@
 }
 
 .settlementPlaceholder_S_S {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_S.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 807px;
   top: 695px;
@@ -2821,7 +2817,7 @@
 }
 
 .roadPlaceholder_SE_NE_S {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_S.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 901px;
   top: 608px;
@@ -2831,7 +2827,7 @@
 }
 
 .roadPlaceholder_SW_NW_S {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_S.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 753px;
   top: 608px;
@@ -2841,7 +2837,7 @@
 }
 
 .roadPlaceholder_S_SE_S {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_S.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 845px;
   top: 688px;
@@ -2851,7 +2847,7 @@
 }
 
 .roadPlaceholder_S_SW_S {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_S.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 764px;
   top: 687px;
@@ -2861,7 +2857,7 @@
 }
 
 .cityPlaceholder_N_L {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_N_L.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 967px;
   top: 254px;
@@ -2870,8 +2866,8 @@
   z-index: 166;
 }
 
-.settlementPlaceholder_N_L {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_L.png");
+.settlementPlaceholder_N_L-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 968px;
   top: 269px;
@@ -2881,7 +2877,7 @@
 }
 
 .cityPlaceholder_NW_L {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NW_L.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 893px;
   top: 292px;
@@ -2891,7 +2887,7 @@
 }
 
 .settlementPlaceholder_N_L {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_N_L.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 894px;
   top: 307px;
@@ -2901,7 +2897,7 @@
 }
 
 .cityPlaceholder_SE_L {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_L.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 893px;
   top: 379px;
@@ -2910,8 +2906,8 @@
   z-index: 162;
 }
 
-.settlementPlaceholder_SE_L {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_L.png");
+.settlementPlaceholder_SE_L-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 894px;
   top: 394px;
@@ -2921,7 +2917,7 @@
 }
 
 .cityPlaceholder_NE_L {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_NE_L.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 1039px;
   top: 292px;
@@ -2931,7 +2927,7 @@
 }
 
 .settlementPlaceholder_NE_L {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_NE_L.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 1036px;
   top: 307px;
@@ -2941,7 +2937,7 @@
 }
 
 .cityPlaceholder_SE_L {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_L.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 1039px;
   top: 379px;
@@ -2951,7 +2947,7 @@
 }
 
 .settlementPlaceholder_SE_L {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_L.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 1036px;
   top: 394px;
@@ -2961,7 +2957,7 @@
 }
 
 .cityPlaceholder_S_L {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_L.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 965px;
   top: 421px;
@@ -2971,7 +2967,7 @@
 }
 
 .settlementPlaceholder_S_L {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_L.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 962px;
   top: 436px;
@@ -2981,7 +2977,7 @@
 }
 
 .roadPlaceholder_N_NW_L {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NW_L.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 918px;
   top: 302px;
@@ -2991,7 +2987,7 @@
 }
 
 .roadPlaceholder_SE_NE_L {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_L.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 1056px;
   top: 349px;
@@ -3001,7 +2997,7 @@
 }
 
 .roadPlaceholder_SW_NW_L {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_L.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 908px;
   top: 349px;
@@ -3011,7 +3007,7 @@
 }
 
 .roadPlaceholder_S_SE_L {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_L.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 1000px;
   top: 429px;
@@ -3021,7 +3017,7 @@
 }
 
 .roadPlaceholder_N_NE_L {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_N-NE_L.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 996px;
   top: 302px;
@@ -3031,7 +3027,7 @@
 }
 
 .roadPlaceholder_S_SW_L {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_L.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 919px;
   top: 428px;
@@ -3041,7 +3037,7 @@
 }
 
 .cityPlaceholder_SE_P {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_P.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 820px;
   top: 505px;
@@ -3050,8 +3046,8 @@
   z-index: 148;
 }
 
-.settlementPlaceholder_SE_P {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_P.png");
+.settlementPlaceholder_SE_P-2 {
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 821px;
   top: 520px;
@@ -3061,7 +3057,7 @@
 }
 
 .cityPlaceholder_SE_P {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_P.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 966px;
   top: 505px;
@@ -3071,7 +3067,7 @@
 }
 
 .settlementPlaceholder_SE_P {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_P.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 963px;
   top: 520px;
@@ -3081,7 +3077,7 @@
 }
 
 .cityPlaceholder_S_P {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_P.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 892px;
   top: 547px;
@@ -3091,7 +3087,7 @@
 }
 
 .settlementPlaceholder_S_P {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_P.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 889px;
   top: 562px;
@@ -3101,7 +3097,7 @@
 }
 
 .roadPlaceholder_SE_NE_P {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SE-NE_P.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 983px;
   top: 475px;
@@ -3111,7 +3107,7 @@
 }
 
 .roadPlaceholder_SW_NW_P {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_P.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 835px;
   top: 475px;
@@ -3121,7 +3117,7 @@
 }
 
 .roadPlaceholder_S_SE_P {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_P.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 927px;
   top: 555px;
@@ -3131,7 +3127,7 @@
 }
 
 .roadPlaceholder_S_SW_P {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_P.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 846px;
   top: 554px;
@@ -3141,7 +3137,7 @@
 }
 
 .cityPlaceholder_SE_O {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_O.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 663px;
   top: 509px;
@@ -3151,7 +3147,7 @@
 }
 
 .settlementPlaceholder_SE_O {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_O.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 664px;
   top: 524px;
@@ -3161,7 +3157,7 @@
 }
 
 .cityPlaceholder_S_O {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_O.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 735px;
   top: 551px;
@@ -3171,7 +3167,7 @@
 }
 
 .settlementPlaceholder_S_O {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_O.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 732px;
   top: 566px;
@@ -3181,7 +3177,7 @@
 }
 
 .roadPlaceholder_SW_NW_O {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_O.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 678px;
   top: 479px;
@@ -3191,7 +3187,7 @@
 }
 
 .roadPlaceholder_S_SE_O {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_O.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 770px;
   top: 559px;
@@ -3201,7 +3197,7 @@
 }
 
 .roadPlaceholder_S_SW_O {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_O.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 689px;
   top: 558px;
@@ -3211,7 +3207,7 @@
 }
 
 .cityPlaceholder_SE_N {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_N.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 504px;
   top: 507px;
@@ -3221,7 +3217,7 @@
 }
 
 .settlementPlaceholder_SE_N {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_N.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 505px;
   top: 522px;
@@ -3231,7 +3227,7 @@
 }
 
 .cityPlaceholder_S_N {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_N.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 576px;
   top: 549px;
@@ -3241,7 +3237,7 @@
 }
 
 .settlementPlaceholder_S_N {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_N.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 573px;
   top: 564px;
@@ -3251,7 +3247,7 @@
 }
 
 .roadPlaceholder_SW_NW_N {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_N.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 519px;
   top: 477px;
@@ -3261,7 +3257,7 @@
 }
 
 .roadPlaceholder_S_SE_N {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_N.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 611px;
   top: 557px;
@@ -3271,7 +3267,7 @@
 }
 
 .roadPlaceholder_S_SW_N {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_N.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 530px;
   top: 556px;
@@ -3281,7 +3277,7 @@
 }
 
 .cityPlaceholder_SE_M {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_M.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 348px;
   top: 507px;
@@ -3291,7 +3287,7 @@
 }
 
 .settlementPlaceholder_SE_M {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_M.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 349px;
   top: 522px;
@@ -3301,7 +3297,7 @@
 }
 
 .cityPlaceholder_S_M {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_M.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 420px;
   top: 549px;
@@ -3311,7 +3307,7 @@
 }
 
 .settlementPlaceholder_S_M {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_M.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 417px;
   top: 564px;
@@ -3321,7 +3317,7 @@
 }
 
 .roadPlaceholder_SW_NW_M {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_M.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 363px;
   top: 477px;
@@ -3331,7 +3327,7 @@
 }
 
 .roadPlaceholder_S_SE_M {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_M.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 455px;
   top: 557px;
@@ -3341,7 +3337,7 @@
 }
 
 .roadPlaceholder_S_SW_M {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_M.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 374px;
   top: 556px;
@@ -3351,7 +3347,7 @@
 }
 
 .cityPlaceholder_SE_Q {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_Q.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 431px;
   top: 637px;
@@ -3361,7 +3357,7 @@
 }
 
 .settlementPlaceholder_SE_Q {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_Q.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 432px;
   top: 652px;
@@ -3371,7 +3367,7 @@
 }
 
 .cityPlaceholder_S_Q {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_Q.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 503px;
   top: 679px;
@@ -3381,7 +3377,7 @@
 }
 
 .settlementPlaceholder_S_Q {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_Q.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 500px;
   top: 694px;
@@ -3391,7 +3387,7 @@
 }
 
 .roadPlaceholder_SW_NW_Q {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_Q.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 446px;
   top: 607px;
@@ -3401,7 +3397,7 @@
 }
 
 .roadPlaceholder_S_SE_Q {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_Q.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 538px;
   top: 687px;
@@ -3411,7 +3407,7 @@
 }
 
 .roadPlaceholder_S_SW_Q {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_Q.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 457px;
   top: 686px;
@@ -3421,7 +3417,7 @@
 }
 
 .cityPlaceholder_SE_R {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_SE_R.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 587px;
   top: 636px;
@@ -3431,7 +3427,7 @@
 }
 
 .settlementPlaceholder_SE_R {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_SE_R.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 588px;
   top: 651px;
@@ -3441,7 +3437,7 @@
 }
 
 .cityPlaceholder_S_R {
-  background-image: url("gameAssetsOfficial/cityPlaceholder_S_R.png");
+  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 659px;
   top: 678px;
@@ -3451,7 +3447,7 @@
 }
 
 .settlementPlaceholder_S_R {
-  background-image: url("gameAssetsOfficial/settlementPlaceholder_S_R.png");
+  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 656px;
   top: 693px;
@@ -3461,7 +3457,7 @@
 }
 
 .roadPlaceholder_SW_NW_R {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_SW-NW_R.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 602px;
   top: 606px;
@@ -3471,7 +3467,7 @@
 }
 
 .roadPlaceholder_S_SE_R {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SE_R.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 694px;
   top: 686px;
@@ -3481,7 +3477,7 @@
 }
 
 .roadPlaceholder_S_SW_R {
-  background-image: url("gameAssetsOfficial/roadPlaceholder_S-SW_R.png");
+  background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 613px;
   top: 685px;
