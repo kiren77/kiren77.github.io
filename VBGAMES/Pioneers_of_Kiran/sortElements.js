@@ -1,1 +1,1 @@
-var doc = document.getElementById("")
+var fullListCity = document.getElementsByClassName("fullListCity")

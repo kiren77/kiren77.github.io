@@ -23,249 +23,234 @@ $settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
   z-index: 380;
   border: none;
 
-
-.sheepCard {
-  background-image: url("gameAssetsOfficial/sheepCard.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 983px;
-  top: 597px;
-  min-width: 172px;
-  min-height: 152px;
-  z-index: 379;
-  border: none;
-}
-
-
-.totalSheepDiamond {
-  background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1117px;
-  top: 693px;
-  min-width: 55px;
-  min-height: 54px;
-  z-index: 377;
-  border: none;
-
-.sheepTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -moz-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -webkit-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -ms-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  position: relative;
-left: 0px;
-top: 20px;
-
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 378;
-  border: none;
-  background-repeat: no-repeat;
-}
-}
-
-.woodCard {
-  background-image: url("gameAssetsOfficial/woodCard.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1033px;
-  top: 533px;
-  min-width: 168px;
-  min-height: 167px;
-  z-index: 376;
-  border: none;
-
-}
-
-
-
-
-
-.totalWoodDiamond {
-  background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1152px;
-  top: 651px;
-  min-width: 53px;
-  min-height: 55px;
-  z-index: 374;
-  border: none;
-
-  .woodTotalNull {
-    font-size: 24px;
-    font-family: "Roboto Slab";
-    color: #cccccc;
-    text-transform: uppercase;
-    line-height: 0.583;
-    text-align: center;
-    text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-    transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-    transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-    -moz-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-    -webkit-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-    -ms-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-    position: relative;
-    left: 0px;
-  top: 20px;
-    min-width: 10.859px;
-    min-height: 17px;
-    z-index: 375;
+  .sheepCard {
+    background-image: url("gameAssetsOfficial/sheepCard.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 983px;
+    top: 597px;
+    min-width: 172px;
+    min-height: 152px;
+    z-index: 379;
     border: none;
   }
-}
 
-.wheatCard {
-  background-image: url("gameAssetsOfficial/wheatCard.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1102px;
-  top: 485px;
-  min-width: 154px;
-  min-height: 170px;
-  z-index: 373;
-  border: none;
-}
+  .totalSheepDiamond {
+    background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1117px;
+    top: 693px;
+    min-width: 55px;
+    min-height: 54px;
+    z-index: 377;
+    border: none;
 
+    .sheepTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+      -moz-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+      -webkit-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+      -ms-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+      position: relative;
+      left: 0px;
+      top: 20px;
 
-.totalWheatDiamond {
-  background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1196px;
-  top: 619px;
-  min-width: 53px;
-  min-height: 56px;
-  z-index: 371;
-  border: none;
+      min-width: 10.859px;
+      min-height: 17px;
+      z-index: 378;
+      border: none;
+      background-repeat: no-repeat;
+    }
+  }
 
+  .woodCard {
+    background-image: url("gameAssetsOfficial/woodCard.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1033px;
+    top: 533px;
+    min-width: 168px;
+    min-height: 167px;
+    z-index: 376;
+    border: none;
+  }
 
+  .totalWoodDiamond {
+    background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1152px;
+    top: 651px;
+    min-width: 53px;
+    min-height: 55px;
+    z-index: 374;
+    border: none;
 
-.wheatTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -moz-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -webkit-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -ms-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  position: relative;
-  left: 0px;
-  top: 20px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 372;
-  border: none;
-}
-}
+    .woodTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
+      transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
+      -moz-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
+      -webkit-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
+      -ms-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
+      position: relative;
+      left: 0px;
+      top: 20px;
+      min-width: 10.859px;
+      min-height: 17px;
+      z-index: 375;
+      border: none;
+    }
+  }
 
-.oreCard {
-  background-image: url("gameAssetsOfficial/oreCard.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1184px;
-  top: 460px;
-  min-width: 132px;
-  min-height: 166px;
-  z-index: 370;
-  border: none;
+  .wheatCard {
+    background-image: url("gameAssetsOfficial/wheatCard.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1102px;
+    top: 485px;
+    min-width: 154px;
+    min-height: 170px;
+    z-index: 373;
+    border: none;
+  }
 
-}
+  .totalWheatDiamond {
+    background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1196px;
+    top: 619px;
+    min-width: 53px;
+    min-height: 56px;
+    z-index: 371;
+    border: none;
 
+    .wheatTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+      -moz-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+      -webkit-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+      -ms-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+      position: relative;
+      left: 0px;
+      top: 20px;
+      min-width: 10.859px;
+      min-height: 17px;
+      z-index: 372;
+      border: none;
+    }
+  }
 
-.totalOreDiamond {
-  background-image: url("gameAssetsOfficial/totalOreDiamond.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1248px;
-  top: 602px;
-  min-width: 50px;
-  min-height: 57px;
-  z-index: 368;
-  border: none;
+  .oreCard {
+    background-image: url("gameAssetsOfficial/oreCard.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1184px;
+    top: 460px;
+    min-width: 132px;
+    min-height: 166px;
+    z-index: 370;
+    border: none;
+  }
 
-.oreTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  -moz-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  -webkit-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  -ms-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-  position: relative;
-  left: 0px;
-  top: 20px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 369;
-  border: none;
-}
-}
+  .totalOreDiamond {
+    background-image: url("gameAssetsOfficial/totalOreDiamond.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1248px;
+    top: 602px;
+    min-width: 50px;
+    min-height: 57px;
+    z-index: 368;
+    border: none;
 
-.brickCard {
-  background-image: url("gameAssetsOfficial/brickCard.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1272px;
-  top: 459px;
-  min-width: 100px;
-  min-height: 151px;
-  z-index: 367;
-  border: none;
-}
+    .oreTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+      -moz-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+      -webkit-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+      -ms-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+      position: relative;
+      left: 0px;
+      top: 20px;
+      min-width: 10.859px;
+      min-height: 17px;
+      z-index: 369;
+      border: none;
+    }
+  }
 
-.totalBrickDiamond {
-  background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 1299px;
-  top: 601px;
-  min-width: 49px;
-  min-height: 54px;
-  z-index: 365;
-  border: none;
+  .brickCard {
+    background-image: url("gameAssetsOfficial/brickCard.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1272px;
+    top: 459px;
+    min-width: 100px;
+    min-height: 151px;
+    z-index: 367;
+    border: none;
+  }
 
-.brickTotalNull {
-  font-size: 24px;
-  font-family: "Roboto Slab";
-  color: #cccccc;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -moz-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  position: relative;
-  left: 0px;
-  top: 10px;
-  min-width: 10.859px;
-  min-height: 17px;
-  z-index: 366;
-  border: none;
-}
+  .totalBrickDiamond {
+    background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1299px;
+    top: 601px;
+    min-width: 49px;
+    min-height: 54px;
+    z-index: 365;
+    border: none;
 
+    .brickTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.9901, 0, 0, 1, 0, 0);
+      -moz-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+      -webkit-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+      -ms-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+      position: relative;
+      left: 0px;
+      top: 20px;
+      min-width: 10.859px;
+      min-height: 17px;
+      z-index: 366;
+      border: none;
+    }
   }
 } /* resourcecards */
-
-
 
 .playerOrange {
   position: absolute;
@@ -298,7 +283,7 @@ top: 20px;
   z-index: 137;
 }
 
-.settlementOrange {
+.settleOrange {
   background-image: url("gameAssetsOfficial/settlementOrange.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -351,7 +336,7 @@ top: 20px;
   z-index: 131;
 }
 
-.settlementWhite {
+.settleWhite {
   background-image: url("gameAssetsOfficial/settlementWhite.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -404,7 +389,7 @@ top: 20px;
   z-index: 125;
 }
 
-.settlementRed {
+.settleRed {
   background-image: url("gameAssetsOfficial/settlementRed.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -457,7 +442,7 @@ top: 20px;
   z-index: 119;
 }
 
-.settlementBlue {
+.settleBlue {
   background-image: url("gameAssetsOfficial/settlementBlue.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -502,36 +487,36 @@ top: 20px;
   min-width: 72px;
   min-height: 53px;
   z-index: 114;
-}
 
-.vpCounter {
-  font-size: 30px;
-  font-family: "Arial Rounded MT Bold";
-  color: #eae3e2;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: left;
-  position: absolute;
-  left: 1296px;
-  top: 65.08px;
-  min-width: 16px;
-  min-height: 23px;
-  z-index: 113;
-}
+  .vpCounter {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1296px;
+    top: 65.08px;
+    min-width: 16px;
+    min-height: 23px;
+    z-index: 113;
+  }
 
-.victoryPoints {
-  border-width: 9.56px;
-  border-color: #343434;
-  border-style: solid;
-  background-color: #494949;
-  opacity: 0.729;
-  position: absolute;
-  left: 1213px;
-  top: 1px;
-  min-width: 134.88px;
-  min-height: 58.88px;
-  z-index: 112;
-  border: none;
+  .victoryPoints {
+    border-width: 9.56px;
+    border-color: #343434;
+    border-style: solid;
+    background-color: #494949;
+    opacity: 0.729;
+    position: absolute;
+    left: 1213px;
+    top: 1px;
+    min-width: 134.88px;
+    min-height: 58.88px;
+    z-index: 112;
+    border: none;
+  }
 }
 
 .pawnsCounterContainer {
@@ -542,102 +527,115 @@ top: 20px;
   min-height: 768px;
   z-index: 110;
   border: none;
-}
 
-.left {
-  font-size: 20px;
-  font-family: "Arial Rounded MT Bold";
-  color: #eae3e2;
-  text-transform: uppercase;
-  line-height: 2;
-  text-align: left;
-  position: absolute;
-  left: 1289px;
-  top: 190.688px;
-  min-width: 49px;
-  min-height: 16px;
-  z-index: 109;
-  border: none;
-}
+  .left {
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 2;
+    text-align: left;
+    position: absolute;
+    left: 1289px;
+    top: 190.688px;
+    min-width: 49px;
+    min-height: 16px;
+    z-index: 109;
+    border: none;
+  }
 
-.devCardTotal {
-  font-size: 30px;
-  font-family: "Arial Rounded MT Bold";
-  color: #eae3e2;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: left;
-  position: absolute;
-  left: 1329px;
-  top: 411.08px;
-  min-width: 16px;
-  min-height: 23px;
-  z-index: 108;
-  border: none;
-}
+  .devCardTotal {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1329px;
+    top: 411.08px;
+    min-width: 16px;
+    min-height: 23px;
+    z-index: 108;
+    border: none;
+  }
 
-.roadsLeft {
-  font-size: 30px;
-  font-family: "Arial Rounded MT Bold";
-  color: #eae3e2;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: left;
-  position: absolute;
-  left: 1327.578px;
-  top: 356.08px;
-  min-width: 34px;
-  min-height: 23px;
-  z-index: 107;
-  border: none;
-}
+  .roadsLeft {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1327.578px;
+    top: 356.08px;
+    min-width: 34px;
+    min-height: 23px;
+    z-index: 107;
+    border: none;
+  }
 
-.settlementsLeft {
-  font-size: 30px;
-  font-family: "Arial Rounded MT Bold";
-  color: #eae3e2;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: left;
-  position: absolute;
-  left: 1327.062px;
-  top: 303.08px;
-  min-width: 16px;
-  min-height: 22px;
-  z-index: 106;
-  border: none;
-}
+  .settlementsLeft {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1326.062px;
+    top: 303.08px;
+    min-width: 16px;
+    min-height: 22px;
+    z-index: 105;
+    border: none;
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1327.062px;
+    top: 303.08px;
+    min-width: 16px;
+    min-height: 22px;
+    z-index: 106;
+    border: none;
+  }
 
-.citiesLeft {
-  font-size: 30px;
-  font-family: "Arial Rounded MT Bold";
-  color: #eae3e2;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: left;
-  position: absolute;
-  left: 1328.062px;
-  top: 241.08px;
-  min-width: 16px;
-  min-height: 22px;
-  z-index: 105;
-  border: none;
-}
+  .citiesLeft {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: #eae3e2;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1328.062px;
+    top: 241.08px;
+    min-width: 16px;
+    min-height: 22px;
+    z-index: 105;
+    border: none;
+  }
 
-.pawnsContainer {
-  border-width: 9.56px;
-  border-color: #343434;
-  border-style: solid;
-  border-radius: 27px;
-  background-color: #494949;
-  opacity: 0.729;
-  position: absolute;
-  left: 1241px;
-  top: 139px;
-  min-width: 111.88px;
-  min-height: 275.88px;
-  z-index: 104;
-  border: none;
+  .pawnsContainer {
+    border-width: 9.56px;
+    border-color: #343434;
+    border-style: solid;
+    border-radius: 27px;
+    background-color: #494949;
+    opacity: 0.729;
+    position: absolute;
+    left: 1241px;
+    top: 139px;
+    min-width: 111.88px;
+    min-height: 275.88px;
+    z-index: 104;
+    border: none;
+  }
 }
 
 .buySkipTrade {
@@ -715,19 +713,18 @@ top: 20px;
   z-index: 97;
   background-repeat: no-repeat;
 
-
-.colorHandBigUnderBlue {
-  background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 948px;
-  top: 460px;
-  width: 418px;
-  height: 308px;
-  z-index: 96;
-  background-repeat: no-repeat;
-}
-/*.colorHandBigUnderBlue {
+  .colorHandBigUnderBlue {
+    background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 948px;
+    top: 460px;
+    width: 418px;
+    height: 308px;
+    z-index: 96;
+    background-repeat: no-repeat;
+  }
+  /*.colorHandBigUnderBlue {
   background-image: url("colorHandBigUnderBlue.png");
   position: absolute;
   left: 948px;
@@ -737,43 +734,43 @@ top: 20px;
   z-index: 74;
 }
 */
-.colorHandBigUnderRed {
-  background-image: url("gameAssetsOfficial/colorHandBigUnderRed.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 948px;
-  top: 460px;
-  width: 418px;
-  height: 308px;
-  z-index: 95;
-  background-repeat: no-repeat;
-}
+  .colorHandBigUnderRed {
+    background-image: url("gameAssetsOfficial/colorHandBigUnderRed.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 948px;
+    top: 460px;
+    width: 418px;
+    height: 308px;
+    z-index: 95;
+    background-repeat: no-repeat;
+  }
 
-.colorHandBigUnderWhite {
-  background-image: url("gameAssetsOfficial/colorHandBigUnderWhite.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 948px;
-  top: 460px;
-  width: 418px;
-  height: 308px;
-  z-index: 93;
-  border: none;
-  background-repeat: no-repeat;
-}
+  .colorHandBigUnderWhite {
+    background-image: url("gameAssetsOfficial/colorHandBigUnderWhite.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 948px;
+    top: 460px;
+    width: 418px;
+    height: 308px;
+    z-index: 93;
+    border: none;
+    background-repeat: no-repeat;
+  }
 
-.colorHandBigUnderOrange {
-  background-image: url("gameAssetsOfficial/colorHandBigUnderOrange.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 948px;
-  top: 460px;
-  width: 418px;
-  height: 308px;
-  z-index: 93;
-  border: none;
-  background-repeat: no-repeat;
-}
+  .colorHandBigUnderOrange {
+    background-image: url("gameAssetsOfficial/colorHandBigUnderOrange.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 948px;
+    top: 460px;
+    width: 418px;
+    height: 308px;
+    z-index: 93;
+    border: none;
+    background-repeat: no-repeat;
+  }
 }
 .tradeShips {
   position: absolute;
@@ -929,8 +926,8 @@ top: 20px;
   border-radius: 50%;
   background-color: #e3d55d;
   position: absolute;
-  left: 1115px;
-  top: 0px;
+  left: 1125px;
+  top: 10px;
   min-width: 72.88px;
   min-height: 72.88px;
   z-index: 76;
@@ -952,205 +949,204 @@ top: 20px;
 .hexNumbers {
   position: absolute;
 
-.n2 {
-  background-image: url("gameAssetsOfficial/n2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 632px;
-  top: 250px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 72;
-}
+  .n2 {
+    background-image: url("gameAssetsOfficial/n2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 632px;
+    top: 250px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 72;
+  }
 
-.n3_1 {
-  background-image: url("gameAssetsOfficial/n3_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 635px;
-  top: 257px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 71;
-}
+  .n3_1 {
+    background-image: url("gameAssetsOfficial/n3_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 635px;
+    top: 257px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 71;
+  }
 
-.n3_2 {
-  background-image: url("gameAssetsOfficial/n3_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 635px;
-  top: 265px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 70;
-}
+  .n3_2 {
+    background-image: url("gameAssetsOfficial/n3_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 635px;
+    top: 265px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 70;
+  }
 
-.n4_1 {
-  background-image: url("gameAssetsOfficial/n4_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 637px;
-  top: 272px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 69;
-}
+  .n4_1 {
+    background-image: url("gameAssetsOfficial/n4_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 637px;
+    top: 272px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 69;
+  }
 
-.n4_2 {
-  background-image: url("gameAssetsOfficial/n4_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 283px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 68;
-}
+  .n4_2 {
+    background-image: url("gameAssetsOfficial/n4_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 639px;
+    top: 283px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 68;
+  }
 
-.n5_1 {
-  background-image: url("gameAssetsOfficial/n5_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 290px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 67;
-}
+  .n5_1 {
+    background-image: url("gameAssetsOfficial/n5_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 639px;
+    top: 290px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 67;
+  }
 
-.n5_2 {
-  background-image: url("gameAssetsOfficial/n5_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 299px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 66;
-}
+  .n5_2 {
+    background-image: url("gameAssetsOfficial/n5_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 639px;
+    top: 299px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 66;
+  }
 
-.n6_1 {
-  background-image: url("gameAssetsOfficial/n6_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 644px;
-  top: 301px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 65;
-}
+  .n6_1 {
+    background-image: url("gameAssetsOfficial/n6_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 644px;
+    top: 301px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 65;
+  }
 
-.n6_2 {
-  background-image: url("gameAssetsOfficial/n6_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 644px;
-  top: 305px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 64;
-}
+  .n6_2 {
+    background-image: url("gameAssetsOfficial/n6_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 644px;
+    top: 305px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 64;
+  }
 
-.n8_1 {
-  background-image: url("gameAssetsOfficial/n8_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 305px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 63;
-}
+  .n8_1 {
+    background-image: url("gameAssetsOfficial/n8_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 639px;
+    top: 305px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 63;
+  }
 
-.n8_2 {
-  background-image: url("gameAssetsOfficial/n8_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 642px;
-  top: 314px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 62;
-}
+  .n8_2 {
+    background-image: url("gameAssetsOfficial/n8_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 642px;
+    top: 314px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 62;
+  }
 
-.n9_1 {
-  background-image: url("gameAssetsOfficial/n9_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 637px;
-  top: 314px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 61;
-}
+  .n9_1 {
+    background-image: url("gameAssetsOfficial/n9_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 637px;
+    top: 314px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 61;
+  }
 
-.n9_2 {
-  background-image: url("gameAssetsOfficial/n9_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 321px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 60;
-}
+  .n9_2 {
+    background-image: url("gameAssetsOfficial/n9_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 639px;
+    top: 321px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 60;
+  }
 
-.n10_1 {
-  background-image: url("gameAssetsOfficial/n10_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 328px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 59;
-}
+  .n10_1 {
+    background-image: url("gameAssetsOfficial/n10_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 639px;
+    top: 328px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 59;
+  }
 
-.n10_2 {
-  background-image: url("gameAssetsOfficial/n10_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 638px;
-  top: 332px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 58;
-}
+  .n10_2 {
+    background-image: url("gameAssetsOfficial/n10_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 638px;
+    top: 332px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 58;
+  }
 
-.n11_1 {
-  background-image: url("gameAssetsOfficial/n11_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 334px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 57;
-}
+  .n11_1 {
+    background-image: url("gameAssetsOfficial/n11_1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 641px;
+    top: 334px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 57;
+  }
 
-.n11_2 {
-  background-image: url("gameAssetsOfficial/n11_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 341px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 56;
-}
+  .n11_2 {
+    background-image: url("gameAssetsOfficial/n11_2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 641px;
+    top: 341px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 56;
+  }
 
-.n12 {
-  background-image: url("gameAssetsOfficial/n12.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 347px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 55;
-  border: none;
-}
-
+  .n12 {
+    background-image: url("gameAssetsOfficial/n12.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 641px;
+    top: 347px;
+    min-width: 69px;
+    min-height: 69px;
+    z-index: 55;
+    border: none;
+  }
 }
 
 /* 
@@ -1342,9 +1338,26 @@ top: 20px;
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
-  background-image: -webkit-gradient(linear, left top, right top, from(#bebebe), color-stop(50%, #eeeeee), to(#d2d2d2));
-  background-image: linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
-  background-image: -ms-linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#bebebe),
+    color-stop(50%, #eeeeee),
+    to(#d2d2d2)
+  );
+  background-image: linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
   /*   background-image: url("gameAssetsOfficial/chat.png");
  */
   background-repeat: no-repeat;
@@ -1360,9 +1373,26 @@ top: 20px;
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
-  background-image: -webkit-gradient(linear, left top, right top, from(#bebebe), color-stop(50%, #eeeeee), to(#d2d2d2));
-  background-image: linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
-  background-image: -ms-linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#bebebe),
+    color-stop(50%, #eeeeee),
+    to(#d2d2d2)
+  );
+  background-image: linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
   /*   background-image: url("gameAssetsOfficial/box1.png");
  */
   background-repeat: no-repeat;
@@ -1378,9 +1408,26 @@ top: 20px;
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
-  background-image: -webkit-gradient(linear, left top, right top, from(#bebebe), color-stop(50%, #eeeeee), to(#d2d2d2));
-  background-image: linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
-  background-image: -ms-linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#bebebe),
+    color-stop(50%, #eeeeee),
+    to(#d2d2d2)
+  );
+  background-image: linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
   /*   background-image: url("gameAssetsOfficial/box2.png");
  */
   background-repeat: no-repeat;
@@ -1396,9 +1443,26 @@ top: 20px;
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
-  background-image: -webkit-gradient(linear, left top, right top, from(#bebebe), color-stop(50%, #eeeeee), to(#d2d2d2));
-  background-image: linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
-  background-image: -ms-linear-gradient(90deg, #bebebe 0%, #eeeeee 50%, #d2d2d2 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#bebebe),
+    color-stop(50%, #eeeeee),
+    to(#d2d2d2)
+  );
+  background-image: linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    #bebebe 0%,
+    #eeeeee 50%,
+    #d2d2d2 100%
+  );
   /*   background-image: url("gameAssetsOfficial/box3.png");
  */
   background-repeat: no-repeat;
@@ -2026,8 +2090,8 @@ top: 20px;
 }
 
 .roadPlaceholder_SW_NW_G {
-  background-image: url($roadTemplatePawn);  
-position: absolute;
+  background-image: url($roadTemplatePawn);
+  position: absolute;
   left: 829px;
   top: 210px;
   width: 19px;
@@ -2036,8 +2100,8 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_G {
-background-image: url($roadTemplatePawn);  
-position: absolute;
+  background-image: url($roadTemplatePawn);
+  position: absolute;
   left: 917px;
   top: 163px;
   width: 68px;
@@ -2086,8 +2150,8 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_F {
-  background-image: url($roadTemplatePawn);  
-position: absolute;
+  background-image: url($roadTemplatePawn);
+  position: absolute;
   left: 683px;
   top: 163px;
   width: 68px;
@@ -2096,8 +2160,8 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_F {
-  background-image: url($roadTemplatePawn);  
-position: absolute;
+  background-image: url($roadTemplatePawn);
+  position: absolute;
   left: 673px;
   top: 210px;
   width: 19px;
@@ -2106,7 +2170,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_F {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 761px;
   top: 163px;
@@ -2156,7 +2220,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_E {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 526px;
   top: 163px;
@@ -2167,7 +2231,7 @@ position: absolute;
 
 .roadPlaceholder_SW_NW_E {
   background-image: url($roadTemplatePawn);
-    position: absolute;
+  position: absolute;
   left: 516px;
   top: 210px;
   width: 19px;
@@ -2176,7 +2240,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_E {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 604px;
   top: 163px;
@@ -2227,17 +2291,17 @@ position: absolute;
 
 .roadPlaceholder_N_NW_D {
   background-image: url($cityTemplatePawn);
-    position: absolute;
+  position: absolute;
   left: 380px;
   top: 167px;
   width: 68px;
   height: 49px;
   z-index: 231;
-}  
+}
 
 .roadPlaceholder_SW_NW_D {
   background-image: url($cityTemplatePawn);
-    position: absolute;
+  position: absolute;
   left: 370px;
   top: 214px;
   width: 19px;
@@ -2246,7 +2310,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_D {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 458px;
   top: 167px;
@@ -2336,7 +2400,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_H {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 299px;
   top: 298px;
@@ -2346,7 +2410,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_H {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 289px;
   top: 345px;
@@ -2356,7 +2420,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_H {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 381px;
   top: 425px;
@@ -2366,7 +2430,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_H {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 377px;
   top: 298px;
@@ -2376,7 +2440,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_H {
-  background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 300px;
   top: 424px;
@@ -2466,7 +2530,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_I {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 450px;
   top: 298px;
@@ -2476,7 +2540,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_I {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 440px;
   top: 345px;
@@ -2486,7 +2550,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_I {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 532px;
   top: 425px;
@@ -2496,7 +2560,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_I {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 528px;
   top: 298px;
@@ -2506,7 +2570,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_J-2 {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 451px;
   top: 424px;
@@ -2596,7 +2660,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_J {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 609px;
   top: 298px;
@@ -2606,7 +2670,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_J {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 599px;
   top: 345px;
@@ -2616,7 +2680,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_J {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 691px;
   top: 425px;
@@ -2626,7 +2690,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_J {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 687px;
   top: 298px;
@@ -2636,7 +2700,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_J {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 610px;
   top: 424px;
@@ -2726,7 +2790,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_K {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 768px;
   top: 298px;
@@ -2736,7 +2800,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_K {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 758px;
   top: 345px;
@@ -2746,7 +2810,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_K {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 850px;
   top: 425px;
@@ -2756,7 +2820,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_K {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 846px;
   top: 298px;
@@ -2766,7 +2830,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_K {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 769px;
   top: 424px;
@@ -2836,7 +2900,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SE_NE_S {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 901px;
   top: 608px;
@@ -2846,7 +2910,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_S {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 753px;
   top: 608px;
@@ -2856,7 +2920,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_S {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 845px;
   top: 688px;
@@ -2865,14 +2929,17 @@ position: absolute;
   z-index: 168;
 }
 
-.roadPlaceholder_S_SW_S {
-    background-image: url($roadTemplatePawn);  
+.roadPlaceholder_S_sw_s {
+  
+  background-image: url($roadTemplatePawn);
+  
   position: absolute;
   left: 764px;
   top: 687px;
   width: 68px;
   height: 49px;
   z-index: 167;
+
 }
 
 .cityPlaceholder_N_L {
@@ -2996,7 +3063,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NW_L {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 918px;
   top: 302px;
@@ -3006,7 +3073,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SE_NE_L {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 1056px;
   top: 349px;
@@ -3016,7 +3083,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_L {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 908px;
   top: 349px;
@@ -3026,7 +3093,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_L {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 1000px;
   top: 429px;
@@ -3036,7 +3103,7 @@ position: absolute;
 }
 
 .roadPlaceholder_N_NE_L {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 996px;
   top: 302px;
@@ -3046,7 +3113,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_L {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 919px;
   top: 428px;
@@ -3116,7 +3183,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SE_NE_P {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 983px;
   top: 475px;
@@ -3126,7 +3193,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_P {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 835px;
   top: 475px;
@@ -3136,7 +3203,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_P {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 927px;
   top: 555px;
@@ -3146,7 +3213,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_P {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 846px;
   top: 554px;
@@ -3196,7 +3263,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_O {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 678px;
   top: 479px;
@@ -3206,7 +3273,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_O {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 770px;
   top: 559px;
@@ -3216,7 +3283,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_O {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 689px;
   top: 558px;
@@ -3266,7 +3333,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_N {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 519px;
   top: 477px;
@@ -3276,7 +3343,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_N {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 611px;
   top: 557px;
@@ -3286,7 +3353,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_N {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 530px;
   top: 556px;
@@ -3336,7 +3403,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_M {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 363px;
   top: 477px;
@@ -3346,7 +3413,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_M {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 455px;
   top: 557px;
@@ -3356,7 +3423,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_M {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 374px;
   top: 556px;
@@ -3406,7 +3473,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_Q {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 446px;
   top: 607px;
@@ -3416,7 +3483,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_Q {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 538px;
   top: 687px;
@@ -3426,7 +3493,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_Q {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 457px;
   top: 686px;
@@ -3476,7 +3543,7 @@ position: absolute;
 }
 
 .roadPlaceholder_SW_NW_R {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 602px;
   top: 606px;
@@ -3486,7 +3553,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SE_R {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 694px;
   top: 686px;
@@ -3496,7 +3563,7 @@ position: absolute;
 }
 
 .roadPlaceholder_S_SW_R {
-    background-image: url($roadTemplatePawn);  
+  background-image: url($roadTemplatePawn);
   position: absolute;
   left: 613px;
   top: 685px;
@@ -3504,6 +3571,5 @@ position: absolute;
   height: 49px;
   z-index: 104;
 }
-
 
 /*# sourceMappingURL=styleAssets.css.map */

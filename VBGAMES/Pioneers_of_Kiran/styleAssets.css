@@ -240,7 +240,7 @@
   -ms-transform: matrix(0.9901, 0, 0, 1, 0, 0);
   position: relative;
   left: 0px;
-  top: 10px;
+  top: 20px;
   min-width: 10.859px;
   min-height: 17px;
   z-index: 366;
@@ -279,7 +279,7 @@
   z-index: 137;
 }
 
-.settlementOrange {
+.settleOrange {
   background-image: url("gameAssetsOfficial/settlementOrange.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -332,7 +332,7 @@
   z-index: 131;
 }
 
-.settlementWhite {
+.settleWhite {
   background-image: url("gameAssetsOfficial/settlementWhite.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -385,7 +385,7 @@
   z-index: 125;
 }
 
-.settlementRed {
+.settleRed {
   background-image: url("gameAssetsOfficial/settlementRed.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -438,7 +438,7 @@
   z-index: 119;
 }
 
-.settlementBlue {
+.settleBlue {
   background-image: url("gameAssetsOfficial/settlementBlue.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -485,7 +485,7 @@
   z-index: 114;
 }
 
-.vpCounter {
+.myVPs .vpCounter {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -500,7 +500,7 @@
   z-index: 113;
 }
 
-.victoryPoints {
+.myVPs .victoryPoints {
   border-width: 9.56px;
   border-color: #343434;
   border-style: solid;
@@ -525,7 +525,7 @@
   border: none;
 }
 
-.left {
+.pawnsCounterContainer .left {
   font-size: 20px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -541,7 +541,7 @@
   border: none;
 }
 
-.devCardTotal {
+.pawnsCounterContainer .devCardTotal {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -557,7 +557,7 @@
   border: none;
 }
 
-.roadsLeft {
+.pawnsCounterContainer .roadsLeft {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -573,7 +573,20 @@
   border: none;
 }
 
-.settlementsLeft {
+.pawnsCounterContainer .settlementsLeft {
+  font-size: 30px;
+  font-family: "Arial Rounded MT Bold";
+  color: #eae3e2;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: left;
+  position: absolute;
+  left: 1326.062px;
+  top: 303.08px;
+  min-width: 16px;
+  min-height: 22px;
+  z-index: 105;
+  border: none;
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -589,7 +602,7 @@
   border: none;
 }
 
-.citiesLeft {
+.pawnsCounterContainer .citiesLeft {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -605,7 +618,7 @@
   border: none;
 }
 
-.pawnsContainer {
+.pawnsCounterContainer .pawnsContainer {
   border-width: 9.56px;
   border-color: #343434;
   border-style: solid;
@@ -911,8 +924,8 @@
   border-radius: 50%;
   background-color: #e3d55d;
   position: absolute;
-  left: 1115px;
-  top: 0px;
+  left: 1125px;
+  top: 10px;
   min-width: 72.88px;
   min-height: 72.88px;
   z-index: 76;
@@ -2846,7 +2859,7 @@
   z-index: 168;
 }
 
-.roadPlaceholder_S_SW_S {
+.roadPlaceholder_S_sw_s {
   background-image: url("gameAssetsOfficial/roadTemplatePawn.png");
   position: absolute;
   left: 764px;
