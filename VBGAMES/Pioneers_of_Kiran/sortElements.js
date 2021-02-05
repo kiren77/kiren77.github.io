@@ -1,1 +1,0 @@
-var fullListCity = document.getElementsByClassName("fullListCity")

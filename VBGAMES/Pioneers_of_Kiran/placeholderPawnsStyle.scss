@@ -1,0 +1,1681 @@
+$cityTemplatePawn: "gameAssetsOfficial/cityTemplatePawn.png";
+$roadTemplatePawn: "gameAssetsOfficial/roadTemplatePawn.png";
+$settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
+
+.allPlaceholderPawns {
+  opacity: 0.702;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 335;
+}
+.F {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 334;
+}
+.settlementPlaceholder_F4 {
+  background-image: url("settlementPlaceholder_F4.png");
+  position: absolute;
+  left: 654px;
+  top: 702px;
+  width: 54px;
+  height: 53px;
+  z-index: 333;
+}
+.settlementPlaceholder_F5 {
+  background-image: url("settlementPlaceholder_F5.png");
+  position: absolute;
+  left: 737px;
+  top: 662px;
+  width: 54px;
+  height: 53px;
+  z-index: 332;
+}
+.settlementPlaceholder_F7 {
+  background-image: url("settlementPlaceholder_F7.png");
+  position: absolute;
+  left: 879px;
+  top: 662px;
+  width: 54px;
+  height: 53px;
+  z-index: 331;
+}
+.settlementPlaceholder_F6 {
+  background-image: url("settlementPlaceholder_F6.png");
+  position: absolute;
+  left: 805px;
+  top: 704px;
+  width: 54px;
+  height: 53px;
+  z-index: 330;
+}
+.settlementPlaceholder_F1 {
+  background-image: url("settlementPlaceholder_F1.png");
+  position: absolute;
+  left: 430px;
+  top: 661px;
+  width: 54px;
+  height: 53px;
+  z-index: 329;
+}
+.settlementPlaceholder_F2 {
+  background-image: url("settlementPlaceholder_F2.png");
+  position: absolute;
+  left: 498px;
+  top: 703px;
+  width: 54px;
+  height: 53px;
+  z-index: 328;
+}
+.settlementPlaceholder_F3 {
+  background-image: url("settlementPlaceholder_F3.png");
+  position: absolute;
+  left: 586px;
+  top: 660px;
+  width: 54px;
+  height: 53px;
+  z-index: 327;
+}
+.cityPlaceholder_F5 {
+  background-image: url("cityPlaceholder_F5.png");
+  position: absolute;
+  left: 736px;
+  top: 647px;
+  width: 57px;
+  height: 70px;
+  z-index: 326;
+}
+.cityPlaceholder_F7 {
+  background-image: url("cityPlaceholder_F7.png");
+  position: absolute;
+  left: 882px;
+  top: 647px;
+  width: 57px;
+  height: 70px;
+  z-index: 325;
+}
+.cityPlaceholder_F6 {
+  background-image: url("cityPlaceholder_F6.png");
+  position: absolute;
+  left: 808px;
+  top: 689px;
+  width: 57px;
+  height: 70px;
+  z-index: 324;
+}
+.cityPlaceholder_F1 {
+  background-image: url("cityPlaceholder_F1.png");
+  position: absolute;
+  left: 429px;
+  top: 646px;
+  width: 57px;
+  height: 70px;
+  z-index: 323;
+}
+.cityPlaceholder_F2 {
+  background-image: url("cityPlaceholder_F2.png");
+  position: absolute;
+  left: 501px;
+  top: 688px;
+  width: 57px;
+  height: 70px;
+  z-index: 322;
+}
+.cityPlaceholder_F3 {
+  background-image: url("cityPlaceholder_F3.png");
+  position: absolute;
+  left: 585px;
+  top: 645px;
+  width: 57px;
+  height: 70px;
+  z-index: 321;
+}
+.cityPlaceholder_F4 {
+  background-image: url("cityPlaceholder_F4.png");
+  position: absolute;
+  left: 657px;
+  top: 687px;
+  width: 57px;
+  height: 70px;
+  z-index: 320;
+}
+.roadPlaceholder_f7_e8 {
+  background-image: url("roadPlaceholder_f7_e8.png");
+  position: absolute;
+  left: 899px;
+  top: 617px;
+  width: 19px;
+  height: 71px;
+  z-index: 319;
+}
+.roadPlaceholder_f5_e6 {
+  background-image: url("roadPlaceholder_f5-e6.png");
+  position: absolute;
+  left: 751px;
+  top: 617px;
+  width: 19px;
+  height: 71px;
+  z-index: 318;
+}
+.roadPlaceholder_f6_f7 {
+  background-image: url("roadPlaceholder_f6_f7.png");
+  position: absolute;
+  left: 843px;
+  top: 697px;
+  width: 68px;
+  height: 49px;
+  z-index: 317;
+}
+.roadPlaceholder_f5_f6 {
+  background-image: url("roadPlaceholder_f5_f6.png");
+  position: absolute;
+  left: 762px;
+  top: 696px;
+  width: 68px;
+  height: 49px;
+  z-index: 316;
+}
+.roadPlaceholder_f1_e2 {
+  background-image: url("roadPlaceholder_f1_e2.png");
+  position: absolute;
+  left: 444px;
+  top: 616px;
+  width: 19px;
+  height: 71px;
+  z-index: 315;
+}
+.roadPlaceholder_f2_f3 {
+  background-image: url("roadPlaceholder_f2_f3.png");
+  position: absolute;
+  left: 536px;
+  top: 696px;
+  width: 68px;
+  height: 49px;
+  z-index: 314;
+}
+.roadPlaceholder_f1_f2 {
+  background-image: url("roadPlaceholder_f1_f2.png");
+  position: absolute;
+  left: 455px;
+  top: 695px;
+  width: 68px;
+  height: 49px;
+  z-index: 313;
+}
+.roadPlaceholder_f3_e4 {
+  background-image: url("roadPlaceholder_f3_e4.png");
+  position: absolute;
+  left: 600px;
+  top: 615px;
+  width: 19px;
+  height: 71px;
+  z-index: 312;
+}
+.roadPlaceholder_f4_f5 {
+  background-image: url("roadPlaceholder_f4_f5.png");
+  position: absolute;
+  left: 692px;
+  top: 695px;
+  width: 68px;
+  height: 49px;
+  z-index: 311;
+}
+.roadPlaceholder_f3_4 {
+  background-image: url("roadPlaceholder_f3_4.png");
+  position: absolute;
+  left: 611px;
+  top: 694px;
+  width: 68px;
+  height: 49px;
+  z-index: 310;
+}
+.E {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 308;
+}
+.roadPlaceholder_e6_e7 {
+  background-image: url("roadPlaceholder_e6_e7.png");
+  position: absolute;
+  left: 768px;
+  top: 568px;
+  width: 68px;
+  height: 49px;
+  z-index: 307;
+}
+.roadPlaceholder_e5_e6 {
+  background-image: url("roadPlaceholder_e5_e6.png");
+  position: absolute;
+  left: 687px;
+  top: 567px;
+  width: 68px;
+  height: 49px;
+  z-index: 306;
+}
+.settlementPlaceholder_E7 {
+  background-image: url("settlementPlaceholder_E7.png");
+  position: absolute;
+  left: 819px;
+  top: 529px;
+  width: 54px;
+  height: 53px;
+  z-index: 305;
+}
+.settlementPlaceholder_E9 {
+  background-image: url("settlementPlaceholder_E9.png");
+  position: absolute;
+  left: 961px;
+  top: 529px;
+  width: 54px;
+  height: 53px;
+  z-index: 304;
+}
+.settlementPlaceholder_E8 {
+  background-image: url("settlementPlaceholder_E8.png");
+  position: absolute;
+  left: 887px;
+  top: 571px;
+  width: 54px;
+  height: 53px;
+  z-index: 303;
+}
+.settlementPlaceholder_E5 {
+  background-image: url("settlementPlaceholder_E5.png");
+  position: absolute;
+  left: 662px;
+  top: 533px;
+  width: 54px;
+  height: 53px;
+  z-index: 302;
+}
+.settlementPlaceholder_E6 {
+  background-image: url("settlementPlaceholder_E6.png");
+  position: absolute;
+  left: 730px;
+  top: 575px;
+  width: 54px;
+  height: 53px;
+  z-index: 301;
+}
+.settlementPlaceholder_E3 {
+  background-image: url("settlementPlaceholder_E3.png");
+  position: absolute;
+  left: 503px;
+  top: 531px;
+  width: 54px;
+  height: 53px;
+  z-index: 300;
+}
+.settlementPlaceholder_E4 {
+  background-image: url("settlementPlaceholder_E4.png");
+  position: absolute;
+  left: 571px;
+  top: 573px;
+  width: 54px;
+  height: 53px;
+  z-index: 299;
+}
+.settlementPlaceholder_E1 {
+  background-image: url("settlementPlaceholder_E1.png");
+  position: absolute;
+  left: 347px;
+  top: 531px;
+  width: 54px;
+  height: 53px;
+  z-index: 298;
+}
+.settlementPlaceholder_E2 {
+  background-image: url("settlementPlaceholder_E2.png");
+  position: absolute;
+  left: 415px;
+  top: 573px;
+  width: 54px;
+  height: 53px;
+  z-index: 297;
+}
+.cityPlaceholder_E7 {
+  background-image: url("cityPlaceholder_E7.png");
+  position: absolute;
+  left: 818px;
+  top: 514px;
+  width: 57px;
+  height: 70px;
+  z-index: 296;
+}
+.cityPlaceholder_E9 {
+  background-image: url("cityPlaceholder_E9.png");
+  position: absolute;
+  left: 964px;
+  top: 514px;
+  width: 57px;
+  height: 70px;
+  z-index: 295;
+}
+.cityPlaceholder_E8 {
+  background-image: url("cityPlaceholder_E8.png");
+  position: absolute;
+  left: 890px;
+  top: 556px;
+  width: 57px;
+  height: 70px;
+  z-index: 294;
+}
+.cityPlaceholder_E5 {
+  background-image: url("cityPlaceholder_E5.png");
+  position: absolute;
+  left: 661px;
+  top: 518px;
+  width: 57px;
+  height: 70px;
+  z-index: 293;
+}
+.cityPlaceholder_E6 {
+  background-image: url("cityPlaceholder_E6.png");
+  position: absolute;
+  left: 733px;
+  top: 560px;
+  width: 57px;
+  height: 70px;
+  z-index: 292;
+}
+.cityPlaceholder_E3 {
+  background-image: url("cityPlaceholder_E3.png");
+  position: absolute;
+  left: 502px;
+  top: 516px;
+  width: 57px;
+  height: 70px;
+  z-index: 291;
+}
+.cityPlaceholder_E4 {
+  background-image: url("cityPlaceholder_E4.png");
+  position: absolute;
+  left: 574px;
+  top: 558px;
+  width: 57px;
+  height: 70px;
+  z-index: 290;
+}
+.cityPlaceholder_E1 {
+  background-image: url("cityPlaceholder_E1.png");
+  position: absolute;
+  left: 346px;
+  top: 516px;
+  width: 57px;
+  height: 70px;
+  z-index: 289;
+}
+.cityPlaceholder_E2 {
+  background-image: url("cityPlaceholder_E2.png");
+  position: absolute;
+  left: 418px;
+  top: 558px;
+  width: 57px;
+  height: 70px;
+  z-index: 288;
+}
+.roadPlaceholder_e9_d10 {
+  background-image: url("roadPlaceholder_e9_d10.png");
+  position: absolute;
+  left: 981px;
+  top: 484px;
+  width: 19px;
+  height: 71px;
+  z-index: 287;
+}
+.roadPlaceholder_e7_d8 {
+  background-image: url("roadPlaceholder_e7_d8.png");
+  position: absolute;
+  left: 833px;
+  top: 484px;
+  width: 19px;
+  height: 71px;
+  z-index: 286;
+}
+.roadPlaceholder_e8_e9 {
+  background-image: url("roadPlaceholder_e8_e9.png");
+  position: absolute;
+  left: 925px;
+  top: 564px;
+  width: 68px;
+  height: 49px;
+  z-index: 285;
+}
+.roadPlaceholder_e7_e8 {
+  background-image: url("roadPlaceholder_e7_e8.png");
+  position: absolute;
+  left: 844px;
+  top: 563px;
+  width: 68px;
+  height: 49px;
+  z-index: 284;
+}
+.roadPlaceholder_e5_d6 {
+  background-image: url("roadPlaceholder_e5_d6.png");
+  position: absolute;
+  left: 676px;
+  top: 488px;
+  width: 19px;
+  height: 71px;
+  z-index: 283;
+}
+.roadPlaceholder_e3_d4 {
+  background-image: url("roadPlaceholder_e3_d4.png");
+  position: absolute;
+  left: 517px;
+  top: 486px;
+  width: 19px;
+  height: 71px;
+  z-index: 282;
+}
+.roadPlaceholder_e4_e5 {
+  background-image: url("roadPlaceholder_e4_e5.png");
+  position: absolute;
+  left: 609px;
+  top: 566px;
+  width: 68px;
+  height: 49px;
+  z-index: 281;
+}
+.roadPlaceholder_e3_e4 {
+  background-image: url("roadPlaceholder_e3_e4.png");
+  position: absolute;
+  left: 528px;
+  top: 565px;
+  width: 68px;
+  height: 49px;
+  z-index: 280;
+}
+.roadPlaceholder_e1_d2 {
+  background-image: url("roadPlaceholder_e1_d2.png");
+  position: absolute;
+  left: 361px;
+  top: 486px;
+  width: 19px;
+  height: 71px;
+  z-index: 279;
+}
+.roadPlaceholder_e2_e3 {
+  background-image: url("roadPlaceholder_e2_e3.png");
+  position: absolute;
+  left: 453px;
+  top: 566px;
+  width: 68px;
+  height: 49px;
+  z-index: 278;
+}
+.roadPlaceholder_e1_e2 {
+  background-image: url("roadPlaceholder_e1_e2.png");
+  position: absolute;
+  left: 372px;
+  top: 565px;
+  width: 68px;
+  height: 49px;
+  z-index: 277;
+}
+.D {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 275;
+}
+.roadPlaceholder_d9_d10 {
+  background-image: url("roadPlaceholder_d9_d10.png");
+  position: absolute;
+  left: 917px;
+  top: 437px;
+  width: 68px;
+  height: 49px;
+  z-index: 274;
+}
+.settlementPlaceholder_D1 {
+  background-image: url("settlementPlaceholder_D1.png");
+  position: absolute;
+  left: 273px;
+  top: 399px;
+  width: 54px;
+  height: 53px;
+  z-index: 273;
+}
+.settlementPlaceholder_D2 {
+  background-image: url("settlementPlaceholder_D2.png");
+  position: absolute;
+  left: 341px;
+  top: 441px;
+  width: 54px;
+  height: 53px;
+  z-index: 272;
+}
+.settlementPlaceholder_D3 {
+  background-image: url("settlementPlaceholder_D3.png");
+  position: absolute;
+  left: 424px;
+  top: 399px;
+  width: 54px;
+  height: 53px;
+  z-index: 271;
+}
+.settlementPlaceholder_D4 {
+  background-image: url("settlementPlaceholder_D4.png");
+  position: absolute;
+  left: 492px;
+  top: 441px;
+  width: 54px;
+  height: 53px;
+  z-index: 270;
+}
+.settlementPlaceholder_D5 {
+  background-image: url("settlementPlaceholder_D5.png");
+  position: absolute;
+  left: 583px;
+  top: 399px;
+  width: 54px;
+  height: 53px;
+  z-index: 269;
+}
+.settlementPlaceholder_D7 {
+  background-image: url("settlementPlaceholder_D7.png");
+  position: absolute;
+  left: 742px;
+  top: 399px;
+  width: 54px;
+  height: 53px;
+  z-index: 268;
+}
+.settlementPlaceholder_D8 {
+  background-image: url("settlementPlaceholder_D8.png");
+  position: absolute;
+  left: 810px;
+  top: 441px;
+  width: 54px;
+  height: 53px;
+  z-index: 267;
+}
+.settlementPlaceholder_D9 {
+  background-image: url("settlementPlaceholder_D9.png");
+  position: absolute;
+  left: 892px;
+  top: 403px;
+  width: 54px;
+  height: 53px;
+  z-index: 266;
+}
+.settlementPlaceholder_D11 {
+  background-image: url("settlementPlaceholder_D11.png");
+  position: absolute;
+  left: 1034px;
+  top: 403px;
+  width: 54px;
+  height: 53px;
+  z-index: 265;
+}
+.settlementPlaceholder_D10 {
+  background-image: url("settlementPlaceholder_D10.png");
+  position: absolute;
+  left: 960px;
+  top: 445px;
+  width: 54px;
+  height: 53px;
+  z-index: 264;
+}
+.settlementPlaceholder_D6 {
+  background-image: url("settlementPlaceholder_D6.png");
+  position: absolute;
+  left: 651px;
+  top: 441px;
+  width: 54px;
+  height: 53px;
+  z-index: 263;
+}
+.cityPlaceholder_D1 {
+  background-image: url("cityPlaceholder_D1.png");
+  position: absolute;
+  left: 272px;
+  top: 384px;
+  width: 57px;
+  height: 70px;
+  z-index: 262;
+}
+.cityPlaceholder_D2 {
+  background-image: url("cityPlaceholder_D2.png");
+  position: absolute;
+  left: 344px;
+  top: 426px;
+  width: 57px;
+  height: 70px;
+  z-index: 261;
+}
+.cityPlaceholder_D3 {
+  background-image: url("cityPlaceholder_D3.png");
+  position: absolute;
+  left: 423px;
+  top: 384px;
+  width: 57px;
+  height: 70px;
+  z-index: 260;
+}
+.cityPlaceholder_D4 {
+  background-image: url("cityPlaceholder_D4.png");
+  position: absolute;
+  left: 495px;
+  top: 426px;
+  width: 57px;
+  height: 70px;
+  z-index: 259;
+}
+.cityPlaceholder_D5 {
+  background-image: url("cityPlaceholder_D5.png");
+  position: absolute;
+  left: 582px;
+  top: 384px;
+  width: 57px;
+  height: 70px;
+  z-index: 258;
+}
+.cityPlaceholder_D6 {
+  background-image: url("cityPlaceholder_D6.png");
+  position: absolute;
+  left: 654px;
+  top: 426px;
+  width: 57px;
+  height: 70px;
+  z-index: 257;
+}
+.cityPlaceholder_D7 {
+  background-image: url("cityPlaceholder_D7.png");
+  position: absolute;
+  left: 741px;
+  top: 384px;
+  width: 57px;
+  height: 70px;
+  z-index: 256;
+}
+.cityPlaceholder_D8 {
+  background-image: url("cityPlaceholder_D8.png");
+  position: absolute;
+  left: 813px;
+  top: 426px;
+  width: 57px;
+  height: 70px;
+  z-index: 255;
+}
+.cityPlaceholder_D9 {
+  background-image: url("cityPlaceholder_D9.png");
+  position: absolute;
+  left: 891px;
+  top: 388px;
+  width: 57px;
+  height: 70px;
+  z-index: 254;
+}
+.cityPlaceholder_D11 {
+  background-image: url("cityPlaceholder_D11.png");
+  position: absolute;
+  left: 1037px;
+  top: 388px;
+  width: 57px;
+  height: 70px;
+  z-index: 253;
+}
+.cityPlaceholder_D10 {
+  background-image: url("cityPlaceholder_D10.png");
+  position: absolute;
+  left: 963px;
+  top: 430px;
+  width: 57px;
+  height: 70px;
+  z-index: 252;
+}
+.roadPlaceholder_d1_d2 {
+  background-image: url("roadPlaceholder_d1_d2.png");
+  position: absolute;
+  left: 298px;
+  top: 433px;
+  width: 68px;
+  height: 49px;
+  z-index: 251;
+}
+.roadPlaceholder_d1_c1 {
+  background-image: url("roadPlaceholder_d1_c1.png");
+  position: absolute;
+  left: 287px;
+  top: 354px;
+  width: 19px;
+  height: 71px;
+  z-index: 250;
+}
+.roadPlaceholder_d2_d3 {
+  background-image: url("roadPlaceholder_d2_d3.png");
+  position: absolute;
+  left: 379px;
+  top: 434px;
+  width: 68px;
+  height: 49px;
+  z-index: 249;
+}
+.roadPlaceholder_d3_c3 {
+  background-image: url("roadPlaceholder_d3_c3.png");
+  position: absolute;
+  left: 438px;
+  top: 354px;
+  width: 19px;
+  height: 71px;
+  z-index: 248;
+}
+.roadPlaceholder_d4_d5 {
+  background-image: url("roadPlaceholder_d4_d5.png");
+  position: absolute;
+  left: 530px;
+  top: 434px;
+  width: 68px;
+  height: 49px;
+  z-index: 247;
+}
+.roadPlaceholder_d3_d4 {
+  background-image: url("roadPlaceholder_d3_d4.png");
+  position: absolute;
+  left: 449px;
+  top: 433px;
+  width: 68px;
+  height: 49px;
+  z-index: 246;
+}
+.roadPlaceholder_d5_c5 {
+  background-image: url("roadPlaceholder_d5_c5.png");
+  position: absolute;
+  left: 597px;
+  top: 354px;
+  width: 19px;
+  height: 71px;
+  z-index: 245;
+}
+.roadPlaceholder_d6_d7 {
+  background-image: url("roadPlaceholder_d6_d7.png");
+  position: absolute;
+  left: 689px;
+  top: 434px;
+  width: 68px;
+  height: 49px;
+  z-index: 244;
+}
+.roadPlaceholder_d5_d6 {
+  background-image: url("roadPlaceholder_d5_d6.png");
+  position: absolute;
+  left: 608px;
+  top: 433px;
+  width: 68px;
+  height: 49px;
+  z-index: 243;
+}
+.roadPlaceholder_d7_c7 {
+  background-image: url("roadPlaceholder_d7-c7.png");
+  position: absolute;
+  left: 756px;
+  top: 354px;
+  width: 19px;
+  height: 71px;
+  z-index: 242;
+}
+.roadPlaceholder_d8_d9 {
+  background-image: url("roadPlaceholder_d8_d9.png");
+  position: absolute;
+  left: 848px;
+  top: 434px;
+  width: 68px;
+  height: 49px;
+  z-index: 241;
+}
+.roadPlaceholder_d7_d8 {
+  background-image: url("roadPlaceholder_d7_d8.png");
+  position: absolute;
+  left: 767px;
+  top: 433px;
+  width: 68px;
+  height: 49px;
+  z-index: 240;
+}
+.roadPlaceholder_d11_c11 {
+  background-image: url("roadPlaceholder_d11_c11.png");
+  position: absolute;
+  left: 1054px;
+  top: 358px;
+  width: 19px;
+  height: 71px;
+  z-index: 239;
+}
+.roadPlaceholder_d9_c9 {
+  background-image: url("roadPlaceholder_d9_c9.png");
+  position: absolute;
+  left: 906px;
+  top: 358px;
+  width: 19px;
+  height: 71px;
+  z-index: 238;
+}
+.roadPlaceholder_d10_d11 {
+  background-image: url("roadPlaceholder_d10_d11.png");
+  position: absolute;
+  left: 998px;
+  top: 438px;
+  width: 68px;
+  height: 49px;
+  z-index: 237;
+}
+.C {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 235;
+}
+.settlementPlaceholder_C2 {
+  background-image: url("settlementPlaceholder_C2.png");
+  position: absolute;
+  left: 347px;
+  top: 274px;
+  width: 54px;
+  height: 53px;
+  z-index: 234;
+}
+.settlementPlaceholder_C1 {
+  background-image: url("settlementPlaceholder_C1.png");
+  position: absolute;
+  left: 273px;
+  top: 312px;
+  width: 54px;
+  height: 53px;
+  z-index: 233;
+}
+.settlementPlaceholder_C4 {
+  background-image: url("settlementPlaceholder_C4.png");
+  position: absolute;
+  left: 498px;
+  top: 274px;
+  width: 54px;
+  height: 53px;
+  z-index: 232;
+}
+.settlementPlaceholder_C3 {
+  background-image: url("settlementPlaceholder_C3.png");
+  position: absolute;
+  left: 424px;
+  top: 312px;
+  width: 54px;
+  height: 53px;
+  z-index: 231;
+}
+.settlementPlaceholder_C6 {
+  background-image: url("settlementPlaceholder_C6.png");
+  position: absolute;
+  left: 657px;
+  top: 274px;
+  width: 54px;
+  height: 53px;
+  z-index: 230;
+}
+.settlementPlaceholder_C5 {
+  background-image: url("settlementPlaceholder_C5.png");
+  position: absolute;
+  left: 583px;
+  top: 312px;
+  width: 54px;
+  height: 53px;
+  z-index: 229;
+}
+.settlementPlaceholder_C8 {
+  background-image: url("settlementPlaceholder_C8.png");
+  position: absolute;
+  left: 816px;
+  top: 274px;
+  width: 54px;
+  height: 53px;
+  z-index: 228;
+}
+.settlementPlaceholder_C7 {
+  background-image: url("settlementPlaceholder_C7.png");
+  position: absolute;
+  left: 742px;
+  top: 312px;
+  width: 54px;
+  height: 53px;
+  z-index: 227;
+}
+.settlementPlaceholder_C10 {
+  background-image: url("settlementPlaceholder_C10.png");
+  position: absolute;
+  left: 966px;
+  top: 278px;
+  width: 54px;
+  height: 53px;
+  z-index: 226;
+}
+.settlementPlaceholder_C9 {
+  background-image: url("settlementPlaceholder_C9.png");
+  position: absolute;
+  left: 892px;
+  top: 316px;
+  width: 54px;
+  height: 53px;
+  z-index: 225;
+}
+.settlementPlaceholder_C11 {
+  background-image: url("settlementPlaceholder_C11.png");
+  position: absolute;
+  left: 1034px;
+  top: 316px;
+  width: 54px;
+  height: 53px;
+  z-index: 224;
+}
+.cityPlaceholder_C1 {
+  background-image: url("cityPlaceholder_C1.png");
+  position: absolute;
+  left: 272px;
+  top: 297px;
+  width: 57px;
+  height: 70px;
+  z-index: 223;
+}
+.cityPlaceholder_C4 {
+  background-image: url("cityPlaceholder_C4.png");
+  position: absolute;
+  left: 497px;
+  top: 259px;
+  width: 57px;
+  height: 70px;
+  z-index: 222;
+}
+.cityPlaceholder_C3 {
+  background-image: url("cityPlaceholder_C3.png");
+  position: absolute;
+  left: 423px;
+  top: 297px;
+  width: 57px;
+  height: 70px;
+  z-index: 221;
+}
+.cityPlaceholder_C6 {
+  background-image: url("cityPlaceholder_C6.png");
+  position: absolute;
+  left: 656px;
+  top: 259px;
+  width: 57px;
+  height: 70px;
+  z-index: 220;
+}
+.cityPlaceholder_C5 {
+  background-image: url("cityPlaceholder_C5.png");
+  position: absolute;
+  left: 582px;
+  top: 297px;
+  width: 57px;
+  height: 70px;
+  z-index: 219;
+}
+.cityPlaceholder_C8 {
+  background-image: url("cityPlaceholder_C8.png");
+  position: absolute;
+  left: 815px;
+  top: 259px;
+  width: 57px;
+  height: 70px;
+  z-index: 218;
+}
+.cityPlaceholder_C7 {
+  background-image: url("cityPlaceholder_C7.png");
+  position: absolute;
+  left: 741px;
+  top: 297px;
+  width: 57px;
+  height: 70px;
+  z-index: 217;
+}
+.cityPlaceholder_C10 {
+  background-image: url("cityPlaceholder_C10.png");
+  position: absolute;
+  left: 965px;
+  top: 263px;
+  width: 57px;
+  height: 70px;
+  z-index: 216;
+}
+.cityPlaceholder_C9 {
+  background-image: url("cityPlaceholder_C9.png");
+  position: absolute;
+  left: 891px;
+  top: 301px;
+  width: 57px;
+  height: 70px;
+  z-index: 215;
+}
+.cityPlaceholder_C11 {
+  background-image: url("cityPlaceholder_C11.png");
+  position: absolute;
+  left: 1037px;
+  top: 301px;
+  width: 57px;
+  height: 70px;
+  z-index: 214;
+}
+.cityPlaceholder_C2 {
+  background-image: url("cityPlaceholder_C2.png");
+  position: absolute;
+  left: 346px;
+  top: 259px;
+  width: 57px;
+  height: 70px;
+  z-index: 213;
+}
+.roadPlaceholder_c10_b9 {
+  background-image: url("roadPlaceholder_c10_b9.png");
+  position: absolute;
+  left: 978px;
+  top: 221px;
+  width: 19px;
+  height: 71px;
+  z-index: 212;
+}
+.roadPlaceholder_c8_b7 {
+  background-image: url("roadPlaceholder_c8_b7.png");
+  position: absolute;
+  left: 827px;
+  top: 219px;
+  width: 19px;
+  height: 71px;
+  z-index: 211;
+}
+.roadPlaceholder_c6_b5 {
+  background-image: url("roadPlaceholder_c6_b5.png");
+  position: absolute;
+  left: 671px;
+  top: 219px;
+  width: 19px;
+  height: 71px;
+  z-index: 210;
+}
+.roadPlaceholder_c4_b3 {
+  background-image: url("roadPlaceholder_c4_b3.png");
+  position: absolute;
+  left: 514px;
+  top: 219px;
+  width: 19px;
+  height: 71px;
+  z-index: 209;
+}
+.roadPlaceholder_c2_b1 {
+  background-image: url("roadPlaceholder_c2_b1.png");
+  position: absolute;
+  left: 368px;
+  top: 223px;
+  width: 19px;
+  height: 71px;
+  z-index: 208;
+}
+.roadPlaceholder_c1_c2 {
+  background-image: url("roadPlaceholder_c1_c2.png");
+  position: absolute;
+  left: 297px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 207;
+}
+.roadPlaceholder_c2_c3 {
+  background-image: url("roadPlaceholder_c2_c3.png");
+  position: absolute;
+  left: 375px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 206;
+}
+.roadPlaceholder_c3_c4 {
+  background-image: url("roadPlaceholder_c3_c4.png");
+  position: absolute;
+  left: 448px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 205;
+}
+.roadPlaceholder_c4_c5 {
+  background-image: url("roadPlaceholder_c4_c5.png");
+  position: absolute;
+  left: 526px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 204;
+}
+.roadPlaceholder_c5_c6 {
+  background-image: url("roadPlaceholder_c5_c6.png");
+  position: absolute;
+  left: 607px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 203;
+}
+.roadPlaceholder_c6_c7 {
+  background-image: url("roadPlaceholder_c6_c7.png");
+  position: absolute;
+  left: 685px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 202;
+}
+.roadPlaceholder_c7_c8 {
+  background-image: url("roadPlaceholder_c7_c8.png");
+  position: absolute;
+  left: 766px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 201;
+}
+.roadPlaceholder_c8_c9 {
+  background-image: url("roadPlaceholder_c8_c9.png");
+  position: absolute;
+  left: 844px;
+  top: 307px;
+  width: 68px;
+  height: 49px;
+  z-index: 200;
+}
+.roadPlaceholder_c9_c10 {
+  background-image: url("roadPlaceholder_c9_c10.png");
+  position: absolute;
+  left: 916px;
+  top: 311px;
+  width: 68px;
+  height: 49px;
+  z-index: 199;
+}
+.roadPlaceholder_c10_c11 {
+  background-image: url("roadPlaceholder_c10_c11.png");
+  position: absolute;
+  left: 994px;
+  top: 311px;
+  width: 68px;
+  height: 49px;
+  z-index: 198;
+}
+.B {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 196;
+}
+.settlementPlaceholder_B9 {
+  background-image: url("settlementPlaceholder_B9.png");
+  position: absolute;
+  left: 960px;
+  top: 181px;
+  width: 54px;
+  height: 53px;
+  z-index: 195;
+}
+.settlementPlaceholder_B8 {
+  background-image: url("settlementPlaceholder_B8.png");
+  position: absolute;
+  left: 877px;
+  top: 133px;
+  width: 54px;
+  height: 53px;
+  z-index: 194;
+}
+.settlementPlaceholder_B7 {
+  background-image: url("settlementPlaceholder_B7.png");
+  position: absolute;
+  left: 803px;
+  top: 175px;
+  width: 54px;
+  height: 53px;
+  z-index: 193;
+}
+.settlementPlaceholder_B6 {
+  background-image: url("settlementPlaceholder_B6.png");
+  position: absolute;
+  left: 731px;
+  top: 139px;
+  width: 54px;
+  height: 53px;
+  z-index: 192;
+}
+.settlementPlaceholder_B5 {
+  background-image: url("settlementPlaceholder_B5.png");
+  position: absolute;
+  left: 657px;
+  top: 177px;
+  width: 54px;
+  height: 53px;
+  z-index: 191;
+}
+.settlementPlaceholder_B4 {
+  background-image: url("settlementPlaceholder_B4.png");
+  position: absolute;
+  left: 574px;
+  top: 139px;
+  width: 54px;
+  height: 53px;
+  z-index: 190;
+}
+.settlementPlaceholder_B3 {
+  background-image: url("settlementPlaceholder_B3.png");
+  position: absolute;
+  left: 500px;
+  top: 177px;
+  width: 54px;
+  height: 53px;
+  z-index: 189;
+}
+.settlementPlaceholder_B2 {
+  background-image: url("settlementPlaceholder_B2.png");
+  position: absolute;
+  left: 428px;
+  top: 143px;
+  width: 54px;
+  height: 53px;
+  z-index: 188;
+}
+.settlementPlaceholder_B1 {
+  background-image: url("settlementPlaceholder_B1.png");
+  position: absolute;
+  left: 354px;
+  top: 181px;
+  width: 54px;
+  height: 53px;
+  z-index: 187;
+}
+.cityPlaceholder_B8 {
+  background-image: url("cityPlaceholder_B8.png");
+  position: absolute;
+  left: 880px;
+  top: 118px;
+  width: 57px;
+  height: 70px;
+  z-index: 186;
+}
+.cityPlaceholder_B7 {
+  background-image: url("cityPlaceholder_B7.png");
+  position: absolute;
+  left: 806px;
+  top: 160px;
+  width: 57px;
+  height: 70px;
+  z-index: 185;
+}
+.cityPlaceholder_B9 {
+  background-image: url("cityPlaceholder_B9.png");
+  position: absolute;
+  left: 961px;
+  top: 164px;
+  width: 57px;
+  height: 70px;
+  z-index: 184;
+}
+.cityPlaceholder_B6 {
+  background-image: url("cityPlaceholder_B6.png");
+  position: absolute;
+  left: 731px;
+  top: 124px;
+  width: 57px;
+  height: 70px;
+  z-index: 183;
+}
+.cityPlaceholder_B5 {
+  background-image: url("cityPlaceholder_B5.png");
+  position: absolute;
+  left: 656px;
+  top: 162px;
+  width: 57px;
+  height: 70px;
+  z-index: 182;
+}
+.cityPlaceholder_B4 {
+  background-image: url("cityPlaceholder_B4.png");
+  position: absolute;
+  left: 574px;
+  top: 124px;
+  width: 57px;
+  height: 70px;
+  z-index: 181;
+}
+.cityPlaceholder_B3 {
+  background-image: url("cityPlaceholder_B3.png");
+  position: absolute;
+  left: 499px;
+  top: 162px;
+  width: 57px;
+  height: 70px;
+  z-index: 180;
+}
+.cityPlaceholder_B2 {
+  background-image: url("cityPlaceholder_B2.png");
+  position: absolute;
+  left: 427px;
+  top: 128px;
+  width: 57px;
+  height: 70px;
+  z-index: 179;
+}
+.cityPlaceholder_B1 {
+  background-image: url("cityPlaceholder_B1.png");
+  position: absolute;
+  left: 353px;
+  top: 166px;
+  width: 57px;
+  height: 70px;
+  z-index: 178;
+}
+.roadPlaceholder_b8_a7 {
+  background-image: url("roadPlaceholder_b8_a7.png");
+  position: absolute;
+  left: 897px;
+  top: 88px;
+  width: 19px;
+  height: 71px;
+  z-index: 177;
+}
+.roadPlaceholder_b2_a1 {
+  background-image: url("roadPlaceholder_b2_a1.png");
+  position: absolute;
+  left: 445px;
+  top: 88px;
+  width: 19px;
+  height: 71px;
+  z-index: 176;
+}
+.roadPlaceholder_b4_a3 {
+  background-image: url("roadPlaceholder_b4_a3.png");
+  position: absolute;
+  left: 599px;
+  top: 90px;
+  width: 19px;
+  height: 71px;
+  z-index: 175;
+}
+.roadPlaceholder_b6_a5 {
+  background-image: url("roadPlaceholder_b6_a5.png");
+  position: absolute;
+  left: 749px;
+  top: 88px;
+  width: 19px;
+  height: 71px;
+  z-index: 174;
+}
+.roadPlaceholder_b7_b8 {
+  background-image: url("roadPlaceholder_b7_b8.png");
+  position: absolute;
+  left: 837px;
+  top: 172px;
+  width: 68px;
+  height: 49px;
+  z-index: 173;
+}
+.roadPlaceholder_b8_b9 {
+  background-image: url("roadPlaceholder_b8_b9.png");
+  position: absolute;
+  left: 915px;
+  top: 172px;
+  width: 68px;
+  height: 49px;
+  z-index: 172;
+}
+.roadPlaceholder_b5_b6 {
+  background-image: url("roadPlaceholder_b5_b6.png");
+  position: absolute;
+  left: 681px;
+  top: 172px;
+  width: 68px;
+  height: 49px;
+  z-index: 171;
+}
+.roadPlaceholder_b6_b7 {
+  background-image: url("roadPlaceholder_b6_b7.png");
+  position: absolute;
+  left: 759px;
+  top: 172px;
+  width: 68px;
+  height: 49px;
+  z-index: 170;
+}
+.roadPlaceholder_b3_b4 {
+  background-image: url("roadPlaceholder_b3_b4.png");
+  position: absolute;
+  left: 524px;
+  top: 172px;
+  width: 68px;
+  height: 49px;
+  z-index: 169;
+}
+.roadPlaceholder_b4_b5 {
+  background-image: url("roadPlaceholder_b4_b5.png");
+  position: absolute;
+  left: 602px;
+  top: 172px;
+  width: 68px;
+  height: 49px;
+  z-index: 168;
+}
+.roadPlaceholder_b1_b2 {
+  background-image: url("roadPlaceholder_b1_b2.png");
+  position: absolute;
+  left: 378px;
+  top: 176px;
+  width: 68px;
+  height: 49px;
+  z-index: 167;
+}
+.roadPlaceholder_b2_b3 {
+  background-image: url("roadPlaceholder_b2_b3.png");
+  position: absolute;
+  left: 456px;
+  top: 176px;
+  width: 68px;
+  height: 49px;
+  z-index: 166;
+}
+.A {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 164;
+}
+.settlementPlaceholder_A7 {
+  background-image: url("settlementPlaceholder_A7.png");
+  position: absolute;
+  left: 878px;
+  top: 47px;
+  width: 54px;
+  height: 52px;
+  z-index: 163;
+}
+.settlementPlaceholder_A2 {
+  background-image: url("settlementPlaceholder_A2.png");
+  position: absolute;
+  left: 505px;
+  top: 9px;
+  width: 54px;
+  height: 52px;
+  z-index: 162;
+}
+.settlementPlaceholder_A1 {
+  background-image: url("settlementPlaceholder_A1.png");
+  position: absolute;
+  left: 431px;
+  top: 46px;
+  width: 54px;
+  height: 53px;
+  z-index: 161;
+}
+.settlementPlaceholder_A4 {
+  background-image: url("settlementPlaceholder_A4.png");
+  position: absolute;
+  left: 659px;
+  top: 10px;
+  width: 54px;
+  height: 53px;
+  z-index: 160;
+}
+.settlementPlaceholder_A3 {
+  background-image: url("settlementPlaceholder_A3.png");
+  position: absolute;
+  left: 585px;
+  top: 48px;
+  width: 54px;
+  height: 53px;
+  z-index: 159;
+}
+.settlementPlaceholder_A6 {
+  background-image: url("settlementPlaceholder_A6.png");
+  position: absolute;
+  left: 809px;
+  top: 9px;
+  width: 54px;
+  height: 52px;
+  z-index: 158;
+}
+.settlementPlaceholder_A5 {
+  background-image: url("settlementPlaceholder_A5.png");
+  position: absolute;
+  left: 732px;
+  top: 48px;
+  width: 54px;
+  height: 53px;
+  z-index: 157;
+}
+.cityPlaceholder_A2 {
+  background-image: url("cityPlaceholder_A2.png");
+  position: absolute;
+  left: 504px;
+  top: 9px;
+  width: 57px;
+  height: 53px;
+  z-index: 156;
+}
+.cityPlaceholder_A1 {
+  background-image: url("cityPlaceholder_A1.png");
+  position: absolute;
+  left: 430px;
+  top: 31px;
+  width: 57px;
+  height: 70px;
+  z-index: 155;
+}
+.cityPlaceholder_A4 {
+  background-image: url("cityPlaceholder_A4.png");
+  position: absolute;
+  left: 658px;
+  top: 9px;
+  width: 57px;
+  height: 55px;
+  z-index: 154;
+}
+.cityPlaceholder_A3 {
+  background-image: url("cityPlaceholder_A3.png");
+  position: absolute;
+  left: 584px;
+  top: 33px;
+  width: 57px;
+  height: 70px;
+  z-index: 153;
+}
+.cityPlaceholder_A5 {
+  background-image: url("cityPlaceholder_A5.png");
+  position: absolute;
+  left: 730px;
+  top: 33px;
+  width: 57px;
+  height: 70px;
+  z-index: 152;
+}
+.cityPlaceholder_A6 {
+  background-image: url("cityPlaceholder_A6.png");
+  position: absolute;
+  left: 808px;
+  top: 9px;
+  width: 57px;
+  height: 54px;
+  z-index: 151;
+}
+.cityPlaceholder_A7 {
+  background-image: url("cityPlaceholder_A7.png");
+  position: absolute;
+  left: 880px;
+  top: 31px;
+  width: 57px;
+  height: 70px;
+  z-index: 150;
+}
+.roadPlaceholder_a1_a2 {
+  background-image: url("roadPlaceholder_a1_a2.png");
+  position: absolute;
+  left: 455px;
+  top: 41px;
+  width: 68px;
+  height: 49px;
+  z-index: 149;
+}
+.roadPlaceholder_a2_a3 {
+  background-image: url("roadPlaceholder_a2_a3.png");
+  position: absolute;
+  left: 533px;
+  top: 41px;
+  width: 68px;
+  height: 49px;
+  z-index: 148;
+}
+.roadPlaceholder_a3_a4 {
+  background-image: url("roadPlaceholder_a3_a4.png");
+  position: absolute;
+  left: 609px;
+  top: 43px;
+  width: 68px;
+  height: 49px;
+  z-index: 147;
+}
+.roadPlaceholder_a4_a5 {
+  background-image: url("roadPlaceholder_a4_a5.png");
+  position: absolute;
+  left: 687px;
+  top: 43px;
+  width: 68px;
+  height: 49px;
+  z-index: 146;
+}
+.roadPlaceholder_a5_a6 {
+  background-image: url("roadPlaceholder_a5_a6.png");
+  position: absolute;
+  left: 759px;
+  top: 41px;
+  width: 68px;
+  height: 49px;
+  z-index: 145;
+}
+.roadPlaceholder_a6_a7 {
+  background-image: url("roadPlaceholder_a6_a7.png");
+  position: absolute;
+  left: 837px;
+  top: 41px;
+  width: 68px;
+  height: 49px;
+  z-index: 144;
+}
