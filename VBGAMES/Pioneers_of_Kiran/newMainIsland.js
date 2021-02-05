@@ -1,25 +1,4 @@
 
-import { SVG } from '@svgdotjs/svg.js'
-import { SVG, extend as SVGextend, Element as SVGElement } from '@svgdotjs/svg.js'
-var draw = SVG().addTo('body').size('100%', '100%');
-var rect = draw.rect(400,200).attr({ fill: '#bcd69a' });
-
-var islandGeneratedSVG =
-
-
-SVG.on(document, 'DOMContentLoaded', function() {
-  var draw = SVG().addTo('body')
-})
-
-
-
-let svg = document.getElementsByTagName('svg');
-let hexPath = document.getElementsByTagName('path');
-let islandSVG = document.getElementsByClassName('islandSVG');
-
-const idTileA = document.getElementById('idTileA');
-var rect = group.findOne('path.hexTile').fill('#999006')
-console.log(rect)
 /* //this function will generate the idTile[x]
 // value located alongside the hexLetter value for
 // each array item 

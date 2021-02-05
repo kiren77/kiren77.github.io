@@ -8,6 +8,21 @@ $brickTile: "gameAssetsOfficial/brick1.png";
 $desertTile: "gameAssetsOfficial/desert1.png";
 
 
+$cityTemplatePawn: "gameAssetsOfficial/cityTemplatePawn.png";
+$settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
+
+$roadTemplatePawnVert:"gameAssetsOfficial/roadTemplatePawnVert.png";
+$roadTemplatePawn-hL-lR:"gameAssetsOfficial/roadTemplatePawn-hL-lR.png";
+$roadTemplatePawn-lL-hR:"gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
+
+
+
+$setZ: 402;
+$citZ: 401;
+$rodZ: 400;
+
+
+
 $pcMinWidth: 1366px;
 $pcMinHeight: 768px;
 
@@ -686,7 +701,7 @@ position: relative;
   top: 689.908px;
   min-width: 55.039px;
   min-height: 17px;
-  z-index: $setZ;;
+  z-index: $setZ;
 }
 
 #SKIP {
@@ -705,7 +720,7 @@ position: relative;
   top: 748.908px;
   min-width: 62.664px;
   min-height: 17px;
-  z-index: $cityZ;;
+  z-index: $cityZ;
 }
 
 #TRADE {
@@ -724,7 +739,7 @@ position: relative;
   top: 730.408px;
   min-width: 88.336px;
   min-height: 17px;
-  z-index: $setZ;;
+  z-index: $setZ;
 }
 
 
@@ -732,6 +747,7 @@ $cHBULeft: 948px;
 $cHBUTop: 460px;
 $cHBUWidth: 418px;
 $cHBUHeight: 308px;
+$cHBUzIndex: 96;
 
 
   #colorHandBigUnderBlue {
@@ -742,7 +758,7 @@ $cHBUHeight: 308px;
     top: $cHBUTop;
     width: $cHBUWidth;
     height: $cHBUHeight;
-    z-index: 96;
+    z-index: $cHBUzIndex;
     background-repeat: no-repeat;
   }
  
@@ -754,7 +770,7 @@ $cHBUHeight: 308px;
     top: $cHBUTop;
     width: $cHBUWidth;
     height: $cHBUHeight;
-    z-index: 95;
+    z-index: $cHBUzIndex;
     background-repeat: no-repeat;
   }
 
@@ -766,7 +782,7 @@ $cHBUHeight: 308px;
     top: $cHBUTop;
     width: $cHBUWidth;
     height: $cHBUHeight;
-    z-index: 93;
+    z-index: $cHBUzIndex;
     border: none;
     background-repeat: no-repeat;
   }
@@ -779,7 +795,7 @@ $cHBUHeight: 308px;
     top: $cHBUTop;
     width: $cHBUWidth;
     height: $cHBUHeight;
-    z-index: 93;
+    z-index: $cHBUzIndex;
     border: none;
     background-repeat: no-repeat;
   }
@@ -1488,16 +1504,19 @@ $cHBUHeight: 308px;
   border: none;
 }
 
-#island_hexes {
-  position: absolute;
-  left: -32px;
-  top: -16px;
-  min-width: 1407px;
-  min-height: 802px;
-  z-index: 28;
 
 
-#sheep1 {
+/* 6/02/21
+replaced the following with equivalent 
+placeholders 
+ */
+
+ .tilePlaceholder {
+ $hexPlaceholder_Z-index: 500;
+ z-index: $hexPlaceholder_Z-index;
+
+
+#A {
   background-image: url($sheepTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1505,10 +1524,9 @@ $cHBUHeight: 308px;
   top: 44px;
   min-width: 172px;
   min-height: 187px;
-  z-index: 27;
-}
+ }
 
-#sheep2 {
+#B {
   background-image: url($sheepTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1516,10 +1534,9 @@ $cHBUHeight: 308px;
   top: 44px;
   min-width: 171px;
   min-height: 187px;
-  z-index: 26;
-}
+ }
 
-#sheep3 {
+#C {
   background-image: url($sheepTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1527,10 +1544,9 @@ $cHBUHeight: 308px;
   top: 42px;
   min-width: 171px;
   min-height: 187px;
-  z-index: 25;
-}
+ }
 
-#sheep4 {
+#D {
   background-image: url($sheepTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1538,10 +1554,9 @@ $cHBUHeight: 308px;
   top: 176px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 24;
-}
+ }
 
-#wood1 {
+#E {
   background-image: url($woodTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1549,10 +1564,9 @@ $cHBUHeight: 308px;
   top: 176px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 23;
-}
+ }
 
-#wood2 {
+#F {
   background-image: url($woodTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1560,10 +1574,9 @@ $cHBUHeight: 308px;
   top: 176px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 22;
-}
+ }
 
-#wood3 {
+#G {
   background-image: url($woodTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1571,10 +1584,9 @@ $cHBUHeight: 308px;
   top: 176px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 21;
-}
+ }
 
-#wood4 {
+#H {
   background-image: url($woodTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1582,10 +1594,10 @@ $cHBUHeight: 308px;
   top: 308px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 20;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#wheat1 {
+#I {
   background-image: url($wheatTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1593,10 +1605,10 @@ $cHBUHeight: 308px;
   top: 308px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 19;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#wheat2 {
+#J {
   background-image: url($wheatTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1604,10 +1616,10 @@ $cHBUHeight: 308px;
   top: 308px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 18;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#wheat3 {
+#K {
   background-image: url($wheatTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1615,10 +1627,10 @@ $cHBUHeight: 308px;
   top: 308px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 17;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#wheat4 {
+#L {
   background-image: url($wheatTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1626,10 +1638,10 @@ $cHBUHeight: 308px;
   top: 308px;
   min-width: 168px;
   min-height: 188px;
-  z-index: 16;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#ore1 {
+#M {
   background-image: url($oreTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1637,10 +1649,10 @@ $cHBUHeight: 308px;
   top: 441px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 15;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#ore2 {
+#N {
   background-image: url($oreTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1648,10 +1660,10 @@ $cHBUHeight: 308px;
   top: 441px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 14;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#ore3 {
+#O {
   background-image: url($oreTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1659,10 +1671,10 @@ $cHBUHeight: 308px;
   top: 441px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 13;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#brick1 {
+#P {
   background-image: url($brickTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1670,10 +1682,10 @@ $cHBUHeight: 308px;
   top: 441px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 12;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#brick2 {
+#Q {
   background-image: url($brickTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1681,10 +1693,10 @@ $cHBUHeight: 308px;
   top: 573px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 11;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#brick3 {
+#R {
   background-image: url($brickTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1692,10 +1704,10 @@ $cHBUHeight: 308px;
   top: 573px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 10;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-#desert1 {
+#S {
   background-image: url($desertTile);
   background-repeat: no-repeat;
   position: absolute;
@@ -1703,10 +1715,33 @@ $cHBUHeight: 308px;
   top: 573px;
   min-width: 172px;
   min-height: 188px;
-  z-index: 9;
+  z-index: $hexPlaceholder_Z-index;
   border: none;
 }
-} /* end island Hex Tiles */
+} /* endTile Placeholder */
+
+
+#island_hexes {
+  position: absolute;
+  left: -32px;
+  top: -16px;
+  min-width: 1407px;
+  min-height: 802px;
+  z-index: 28;
+  $islandHexIndex: 30;
+
+
+/* #sheep1 
+ect ect
+ect
+ect
+ect
+
+
+*/
+
+}
+ /* end island_hexes */
 
 
 
@@ -1765,19 +1800,6 @@ $cHBUHeight: 308px;
   z-index: 2;
   border: none;
 }
-
-$cityTemplatePawn: "gameAssetsOfficial/cityTemplatePawn.png";
-$settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
-
-$roadTemplatePawnVert:"gameAssetsOfficial/roadTemplatePawnVert.png";
-$roadTemplatePawn-hL-lR:"gameAssetsOfficial/roadTemplatePawn-hL-lR.png";
-$roadTemplatePawn-lL-hR:"gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
-
-
-
-$setZ: 402;
-$citZ: 401;
-$rodZ: 400;
 
 .allPlaceholdersPawn {
    position: absolute;
