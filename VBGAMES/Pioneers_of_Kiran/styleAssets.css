@@ -54,10 +54,14 @@
 }
  */
 body {
-  background-color: #1958a0;
+  background-color: #0f5581;
 }
 
 /* body */
+/* 
+.wrapper  {
+
+} /* wrapper */
 .islandBackdrop {
   background-image: url("gameAssetsOfficial/islandBackground.png");
   background-repeat: no-repeat;
@@ -66,7 +70,7 @@ body {
   border: none;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
+  z-index: 0;
   top: 0px;
   left: auto;
   border: none;
@@ -1553,8 +1557,7 @@ Height is measured from top */
 }
 
 .islandBackdrop #tp_A {
-  /*   background-image: url($sheepTile);
- */
+  background-image: url("gameAssetsOfficial/sheep1.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 470px;
@@ -3781,5 +3784,5 @@ Height is measured from top */
   z-index: 402;
 }
 
-/* gameContainer */
+/* islandBackdrop  */
 /*# sourceMappingURL=styleAssets.css.map */

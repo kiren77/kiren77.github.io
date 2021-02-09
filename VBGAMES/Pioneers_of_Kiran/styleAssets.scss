@@ -78,10 +78,16 @@ $viewportWidth: $pcMinWidth;
  
 
 body {
- background-color: #1958a0;
+ background-color: #0f5581;
 }/* body */
 
-.islandBackdrop { 
+
+/* 
+.wrapper  {
+
+} /* wrapper */
+
+.islandBackdrop{ 
   
   background-image: url("gameAssetsOfficial/islandBackground.png");
   background-repeat: no-repeat;
@@ -90,17 +96,14 @@ body {
   border: none;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
   
-  
-  
-
-
+  z-index: 0;
   top:0px;
   left:auto;
   border: none;
   z-index: 2;
   background-size: auto;
+
   
 
   /* /* is not impacted by size or background size */
@@ -1688,8 +1691,8 @@ z-index: $hexPlaceholder_Z-index;
 
 
 #tp_A {
-/*   background-image: url($sheepTile);
- */
+   background-image: url("gameAssetsOfficial/sheep1.png");
+ 
   background-repeat: no-repeat;
   position: absolute;
   left: 470px;
@@ -3700,5 +3703,5 @@ $aHigh: 0px;
     height: 49px;
     z-index: $setZ;
   }
-}/* gameContainer */
+}/* islandBackdrop  */
 
