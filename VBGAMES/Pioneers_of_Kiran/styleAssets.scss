@@ -77,16 +77,20 @@ $viewportWidth: $pcMinWidth;
  */
  
 
-
-
+body {
+ background-color: #1958a0;
+}/* body */
 
 .islandBackdrop { 
   
   background-image: url("gameAssetsOfficial/islandBackground.png");
   background-repeat: no-repeat;
-
   width: 1366px; 
   height: 768px; 
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
   
   
   
@@ -692,6 +696,7 @@ left: 80px;
 
 
 
+
   #left {
     font-size: 20px;
     font-family: "Arial Rounded MT Bold";
@@ -765,8 +770,8 @@ left: 80px;
 
 
 }
-/* 
-#pawnsContainer {
+
+#pawnsContainerBox {
   border-width: 9.56px;
   border-color: #343434;
   border-style: solid;
@@ -779,7 +784,7 @@ left: 80px;
   min-height: 275.88px;
   z-index: 500;
   border: none;
-} */
+} 
 
 
 .cityMarket {
@@ -943,8 +948,9 @@ $cHBUzIndex: 96;
 
 #tradeShips {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  top: 10px;
+
+  left: 10px;
   min-width: $pcMinWidth;
   min-height: $pcMinHeight;
   z-index: 90;
@@ -1365,7 +1371,7 @@ $cHBUzIndex: 96;
 #Development_Cards {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 10px;
   min-width: $pcMinWidth;
   min-height: $pcMinHeight;
   z-index: 47;
@@ -3695,3 +3701,4 @@ $aHigh: 0px;
     z-index: $setZ;
   }
 }/* gameContainer */
+

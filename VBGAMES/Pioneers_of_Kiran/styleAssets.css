@@ -53,11 +53,20 @@
   text-align: center;
 }
  */
+body {
+  background-color: #1958a0;
+}
+
+/* body */
 .islandBackdrop {
   background-image: url("gameAssetsOfficial/islandBackground.png");
   background-repeat: no-repeat;
   width: 1366px;
   height: 768px;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
   top: 0px;
   left: auto;
   border: none;
@@ -131,21 +140,6 @@ all other rules are nested
   min-width: 57px;
   min-height: 71px;
   z-index: 135;
-} */
-  /* 
-#pawnsContainer {
-  border-width: 9.56px;
-  border-color: #343434;
-  border-style: solid;
-  border-radius: 27px;
-  background-color: #494949;
-  opacity: 0.5;
-  position: absolute;
-  top: 139px;
-  min-width: 111.88px;
-  min-height: 275.88px;
-  z-index: 500;
-  border: none;
 } */
   /* 
 
@@ -770,6 +764,21 @@ Height is measured from top */
   z-index: 500;
 }
 
+.islandBackdrop #pawnsContainerBox {
+  border-width: 9.56px;
+  border-color: #343434;
+  border-style: solid;
+  border-radius: 27px;
+  background-color: #494949;
+  opacity: 0.5;
+  position: absolute;
+  top: 139px;
+  min-width: 111.88px;
+  min-height: 275.88px;
+  z-index: 500;
+  border: none;
+}
+
 .islandBackdrop .cityMarket {
   position: absolute;
   left: 60px;
@@ -911,8 +920,8 @@ Height is measured from top */
 
 .islandBackdrop #tradeShips {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  top: 10px;
+  left: 10px;
   min-width: auto;
   min-height: auto;
   z-index: 90;
@@ -1321,7 +1330,7 @@ Height is measured from top */
 .islandBackdrop #Development_Cards {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 10px;
   min-width: auto;
   min-height: auto;
   z-index: 47;
