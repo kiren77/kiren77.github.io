@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
 $woodTile: "gameAssetsOfficial/wood1.png";
 $sheepTile: "gameAssetsOfficial/sheep1.png";
 $wheatTile: "gameAssetsOfficial/wheat1.png";
@@ -5,28 +8,104 @@ $oreTile: "gameAssetsOfficial/ore1.png";
 $brickTile: "gameAssetsOfficial/brick1.png";
 $desertTile: "gameAssetsOfficial/desert1.png";
 
+/* city placeholder asset*/
 $cityTemplatePawn: "gameAssetsOfficial/cityTemplatePawn.png";
+/* settlement pawn asset*/
 $settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
-
+/* 3 different road assets (vertical and both slopes) */
 $roadTemplatePawnVert: "gameAssetsOfficial/roadTemplatePawnVert.png";
 $roadTemplatePawn-hL-lR: "gameAssetsOfficial/roadTemplatePawn-hL-lR.png";
 $roadTemplatePawn-lL-hR: "gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
 
-$setZ: 402;
+/* z-index for road,city and settlement assets */
+$setZ: 402; /* for cosmetic purposes only: placed settlements above cities */
 $cityZ: 401;
-$rodZ: 400;
+$rodZ: 400; /* roads look best when placed an index under the other pawns */
 
-$pcMinWidth: 1366px;
-$pcMinHeight: 768px;
+/* index of All cards (highest items) */
+$allCards: 500;
 
-.gameContainer {
-  position: absolute !important;
-}
-/*all other rules are nested
-     inside the container*/
+$pcMinWidth: auto; /* 1366px; */
+$pcMinHeight:auto; /*  768px; */
+
+$viewportWidth: $pcMinWidth;
 
 /* 
+.buttonContainer {
+  position: absolute;
+  width: 50%;
+  z-index:1000;
+}
 
+.myButton {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index:1001;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  z-index: 1002;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  z-index:1000;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ */
+ 
+
+
+
+
+.islandBackdrop { 
+  
+  background-image: url("gameAssetsOfficial/islandBackground.png");
+  background-repeat: no-repeat;
+
+  width: 1366px; 
+  height: 768px; 
+  
+  
+  
+
+
+  top:0px;
+  left:auto;
+  border: none;
+  z-index: 2;
+  background-size: auto;
+  
+
+  /* /* is not impacted by size or background size */
+  /* width:   $viewportWidth; */
+/*
+all other rules are nested
+     inside the container
+     */
+/*
 #resCardRobTradeBuy {
   position: absolute;
   left: 0px;
@@ -35,14 +114,13 @@ $pcMinHeight: 768px;
   min-height: $pcMinHeight;
   border: none;
 } */
-
 .resourceCards {
   position: absolute;
   left: 0px;
   top: 0px;
   min-width: $pcMinWidth;
   min-height: $pcMinHeight;
-  z-index: 380;
+  z-index: $allCards;
   border: none;
 
   #sheepCard {
@@ -53,7 +131,7 @@ $pcMinHeight: 768px;
     top: 597px;
     min-width: 172px;
     min-height: 152px;
-    z-index: 379;
+    z-index: $allCards;
     border: none;
   }
 
@@ -100,7 +178,7 @@ $pcMinHeight: 768px;
     top: 533px;
     min-width: 168px;
     min-height: 167px;
-    z-index: 376;
+    z-index: $allCards;
     border: none;
   }
 
@@ -146,7 +224,7 @@ $pcMinHeight: 768px;
     top: 485px;
     min-width: 154px;
     min-height: 170px;
-    z-index: 373;
+    z-index: $allCards;
     border: none;
   }
 
@@ -191,7 +269,7 @@ $pcMinHeight: 768px;
     top: 460px;
     min-width: 132px;
     min-height: 166px;
-    z-index: 370;
+    z-index: $allCards;
     border: none;
   }
 
@@ -236,14 +314,14 @@ $pcMinHeight: 768px;
     top: 459px;
     min-width: 100px;
     min-height: 151px;
-    z-index: 367;
+    z-index: $allCards;
     border: none;
   }
 
   #totalBrickDiamond {
     background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     left: 1299px;
     top: 601px;
     min-width: 49px;
@@ -274,7 +352,61 @@ $pcMinHeight: 768px;
   }
 } /* resourcecards */
 
+
+
+
+#Buyable_Items_Logo {
+
+  width:200px
+} /* end Buyable Items logo */
+
 #playerOrange {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 768px;
+  z-index: 500;
+
+#devCardOrange {
+  background-image: url("devCardOrange.png");
+  position: absolute;
+  left: 1255px;
+  top: 350px;
+  width: 42px;
+  height: 50px;
+  z-index: 500;
+}
+#roadOrange {
+  background-image: url("roadOrange.png");
+  position: absolute;
+  left: 1253px;
+  top: 311px;
+  width: 71px;
+  height: 19px;
+  z-index: 500;
+}
+#settlementOrange {
+  background-image: url("settlementOrange.png");
+  position: absolute;
+  left: 1252px;
+  top: 233px;
+  width: 55px;
+  height: 53px;
+  z-index: 500;
+}
+#cityOrange {
+  background-image: url("cityOrange.png");
+  position: absolute;
+  left: 1251px;
+  top: 149px;
+  width: 57px;
+  height: 71px;
+  z-index: 500;
+}
+}
+
+/* #playerOrange {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -325,7 +457,7 @@ $pcMinHeight: 768px;
   min-width: 57px;
   min-height: 71px;
   z-index: 135;
-}
+} */
 
 #playerWhite {
   position: absolute;
@@ -487,14 +619,34 @@ $pcMinHeight: 768px;
   border: none;
 }
 
-#victoryPointsCounterBox {
-  position: absolute;
-  left: 1000px;
-  top: 0px;
-  min-width: $pcMinWidth;
-  min-height: $pcMinHeight;
-  z-index: 500;
 
+
+
+
+  .victoryPointsCounterBox {
+    border-width: 9.56px;
+      border-color: rgb(52, 52, 52);
+      border-style: solid;
+      background-color: rgb(73, 73, 73);
+      opacity: 0.729;
+      position: absolute;
+      left: 1220px;
+      top: 10px;
+      width: 134.88px;
+      height: 58.88px;
+      z-index: 1000;
+
+  
+    
+    #victoryPoints {
+position: absolute;
+top: -60px;
+left: 80px;
+
+    }
+  }  
+    
+  
   #myVPs {
     font-size: 16px;
     font-family: "Arial Rounded MT Bold";
@@ -502,85 +654,84 @@ $pcMinHeight: 768px;
     text-transform: uppercase;
     line-height: 2.5;
     text-align: left;
-    position: relative;
-    left: 1231px;
+    position: inherit;
+    right: 0px;
     top: 47.6px;
     min-width: 72px;
     min-height: 53px;
     z-index: 500;
   }
+
   #vpCounter {
-    font-size: 30px;
+    font-size: 50px;
     font-family: "Arial Rounded MT Bold";
     color: #eae3e2;
-    text-transform: uppercase;
-    line-height: 1.333;
+    text-transform:none;
+    line-height: 0.4;
     text-align: left;
-    position: absolute;
-    left: 1296px;
-    top: 65.08px;
-    min-width: 16px;
-    min-height: 23px;
-    z-index: 500;
-  }
-
-  #victoryPoints {
-    border-width: 9.56px;
-    border-color: #343434;
-    border-style: solid;
-    background-color: #494949;
-    opacity: 0.729;
-    position: absolute;
-    left: 1213px;
-    top: 1px;
-    min-width: 134.88px;
-    min-height: 58.88px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    
     z-index: 500;
     border: none;
   }
-}
+
+
 
 #pawnsCounterContainer {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: $pcMinWidth;
-  min-height: $pcMinHeight;
-  z-index: 110;
+  width: $pcMinWidth;
+  height: $pcMinHeight;
+  z-index: 500;
   border: none;
+  $leftCounters: 1289px;
 
-  #settlementsLeft {
+
+
+
+  #left {
     font-size: 20px;
     font-family: "Arial Rounded MT Bold";
-    color: #eae3e2;
+    color: rgb(234, 227, 226);
     text-transform: uppercase;
     line-height: 2;
     text-align: left;
     position: absolute;
-    left: 1289px;
-    top: 190.688px;
-    min-width: 49px;
-    min-height: 16px;
-    z-index: 109;
-    border: none;
+    left: $leftCounters +20px;
+    top: 140px;
+    width: 49px;
+    height: 16px;
+    z-index: 500;
   }
 
-  #devCardTotal {
+  #citiesLeft {
     font-size: 30px;
     font-family: "Arial Rounded MT Bold";
-    color: #eae3e2;
+    color: rgb(234, 227, 226);
     text-transform: uppercase;
     line-height: 1.333;
     text-align: left;
     position: absolute;
-    left: 1329px;
-    top: 411.08px;
-    min-width: 16px;
-    min-height: 23px;
-    z-index: 108;
-    border: none;
+    left: 1328.062px;
+    top: 195.08px;
+    z-index: 500;
   }
 
+  #settlementsLeft {
+    font-size: 30px;
+    font-family: "Arial Rounded MT Bold";
+    color: rgb(234, 227, 226);
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 1328.062px;
+    top: 250.08px;
+    z-index: 500;
+  }
   #roadsLeft {
     font-size: 30px;
     font-family: "Arial Rounded MT Bold";
@@ -589,77 +740,68 @@ $pcMinHeight: 768px;
     line-height: 1.333;
     text-align: left;
     position: absolute;
-    left: 1327.578px;
-    top: 356.08px;
-    min-width: 34px;
-    min-height: 23px;
-    z-index: 107;
+    left: 1325px;
+    top: 306.08px;
+    
+    z-index: 500;
     border: none;
   }
-
-  #settlementsLeft {
-    font-size: 30px;
+  #devCardTotal {
+    font-size: 35px;
     font-family: "Arial Rounded MT Bold";
-    color: #eae3e2;
-    text-transform: uppercase;
-    line-height: 1.333;
-    text-align: left;
-    position: absolute;
-    left: 1326.062px;
-    top: 303.08px;
-    min-width: 16px;
-    min-height: 22px;
-    z-index: 105;
-    border: none;
-    font-size: 30px;
-    font-family: "Arial Rounded MT Bold";
-    color: #eae3e2;
-    text-transform: uppercase;
-    line-height: 1.333;
-    text-align: left;
-    position: absolute;
-    left: 1327.062px;
-    top: 303.08px;
-    min-width: 16px;
-    min-height: 22px;
-    z-index: 106;
-    border: none;
-  }
-
-  #citiesLeft {
-    font-size: 30px;
-    font-family: "Arial Rounded MT Bold";
-    color: #eae3e2;
+    color: rgb(234, 227, 226);
     text-transform: uppercase;
     line-height: 1.333;
     text-align: left;
     position: absolute;
     left: 1328.062px;
-    top: 241.08px;
-    min-width: 16px;
-    min-height: 22px;
-    z-index: 105;
-    border: none;
+    top: 367.08px;
+    z-index: 500;
   }
 
-  #pawnsContainer {
-    border-width: 9.56px;
-    border-color: #343434;
-    border-style: solid;
-    border-radius: 27px;
-    background-color: #494949;
-    opacity: 0.5;
-    position: absolute;
-    left: 1241px;
-    top: 139px;
-    min-width: 111.88px;
-    min-height: 275.88px;
-    z-index: 104;
-    border: none;
-  }
+
+  
+
+
+
+}
+/* 
+#pawnsContainer {
+  border-width: 9.56px;
+  border-color: #343434;
+  border-style: solid;
+  border-radius: 27px;
+  background-color: #494949;
+  opacity: 0.5;
+  position: absolute;
+  top: 139px;
+  min-width: 111.88px;
+  min-height: 275.88px;
+  z-index: 500;
+  border: none;
+} */
+
+
+.cityMarket {
+  position: absolute;
+  left: 60px;
+}
+.settlementMarket { 
+  position: absolute;
+  left: 10px;
+}
+.roadMarket {
+  position: absolute;
+  left: 10px;
+}
+.devCardMarket {
+  position: absolute;
+  left: 10px;
 }
 
-#buySkipTrade {
+
+
+.buySkipTrade {
   position: absolute;
   left: 0px;
   top: 20px;
@@ -668,7 +810,6 @@ $pcMinHeight: 768px;
   z-index: 500;
 
   #fullTBS {
-    bottom: 0px;
     z-index: 500;
   }
 }
@@ -706,7 +847,7 @@ $pcMinHeight: 768px;
   top: 748.908px;
   min-width: 62.664px;
   min-height: 17px;
-  z-index: 100;
+  z-index: 500;
 }
 
 #TRADE {
@@ -725,7 +866,7 @@ $pcMinHeight: 768px;
   top: 730.408px;
   min-width: 88.336px;
   min-height: 17px;
-  z-index: 100;
+  z-index: 500;
 }
 
 $cHBULeft: 948px;
@@ -734,11 +875,17 @@ $cHBUWidth: 418px;
 $cHBUHeight: 308px;
 $cHBUzIndex: 96;
 
-#myButton {
+
+
+/* 
+
+  #myButton {
   z-index: 600;
   bottom: 0px;
-  right: 0px;
+  right: 100px;
 }
+ */
+
 
 #colorHandBigUnderBlue {
   background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
@@ -748,7 +895,7 @@ $cHBUzIndex: 96;
   top: $cHBUTop;
   width: $cHBUWidth;
   height: $cHBUHeight;
-  z-index: $cHBUzIndex ;
+  z-index: $cHBUzIndex;
   border: none;
 
   background-repeat: no-repeat;
@@ -789,7 +936,7 @@ $cHBUzIndex: 96;
   top: $cHBUTop;
   width: $cHBUWidth;
   height: $cHBUHeight;
-  z-index: /* $cHBUzIndex; */ 1;
+  z-index:  $cHBUzIndex;
   border: none;
   background-repeat: no-repeat;
 }
@@ -968,7 +1115,7 @@ $cHBUzIndex: 96;
   border: none;
 }
 
-#hexNumbers {
+.hexNumbers {
   position: absolute;
 
   #n2 {
@@ -1180,17 +1327,19 @@ $cHBUzIndex: 96;
       min-height: $pcMinHeight;
       z-index: 53;
     } */
-#largestArmyLongestRoad {
+.largestArmyLongestRoad {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: $pcMinWidth;
-  min-height: $pcMinHeight;
-  z-index: 51;
+  
+  width: auto;
+  height: auto;
+   
+   z-index: 501;
   border: none;
-}
 
-#largestArmyLongestRoad #Longest_Road {
+
+#Longest_Road {
   background-image: url("gameAssetsOfficial/Longest Road.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -1198,10 +1347,10 @@ $cHBUzIndex: 96;
   top: 279px;
   min-width: 106px;
   min-height: 159px;
-  z-index: 50;
+  z-index: 501;
 }
 
-#largestArmyLongestRoad #Biggest_Army {
+#Biggest_Army {
   background-image: url("gameAssetsOfficial/Biggest Army.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -1209,7 +1358,8 @@ $cHBUzIndex: 96;
   top: 124px;
   min-width: 105px;
   min-height: 160px;
-  z-index: 49;
+  z-index: 501;
+}
 }
 
 #Development_Cards {
@@ -1277,6 +1427,20 @@ $cHBUzIndex: 96;
   z-index: 42;
 }
 
+
+span:hover + div {
+  display: block;
+}
+
+#myButton {
+  position: absolute;
+  background-color: royalblue;
+  top: 1200px;
+  border:rgb(44, 36, 36);
+  z-index: 900;
+}
+
+
 #Buying_Interface {
   position: absolute;
   left: 0px;
@@ -1320,16 +1484,17 @@ $cHBUzIndex: 96;
   font-size: 18px;
   font-family: "Courier";
   color: rgb(44, 36, 36);
-  text-transform: uppercase;
+  text-transform:none;
   line-height: 1.111;
   text-align: left;
   position: absolute;
   left: 17px;
-  right: 2300px;
-  top: 620.746px;
-  min-width: 162px;
-  min-height: 12px;
+   
+   top: 620.746px;
+   min-width: 200px;
+   max-width: 250px;
   z-index: 37;
+
 }
 
 #Other {
@@ -1485,7 +1650,8 @@ $cHBUzIndex: 96;
     #eeeeee 50%,
     #d2d2d2 100%
   );
-  /*   background-image: url("gameAssetsOfficial/box3.png");
+
+  /*   background-image: url("gameAssetsOfficial/box2.png");
  */
   background-repeat: no-repeat;
   position: absolute;
@@ -1493,8 +1659,7 @@ $cHBUzIndex: 96;
   top: 710px;
   min-width: 81.3px;
   min-height: 45.3px;
-  z-index: 30;
-  border: none;
+  z-index: 31;
 }
 
 /* 6/02/21
@@ -1508,15 +1673,15 @@ $hexPlaceholder_Z-index: 500;
 
 .tilePlaceholder {
   position: absolute;
-  visibility: hidden;
-
+  visibility: visible;
+z-index: $hexPlaceholder_Z-index;
 
 /* All tiles will be set to "visible after shuffling is done"*/
 }
 
 
 
-#A {
+#tp_A {
 /*   background-image: url($sheepTile);
  */
   background-repeat: no-repeat;
@@ -1528,7 +1693,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#B {
+#tp_B {
   /*   background-image: url($sheepTile);
  */
 
@@ -1541,7 +1706,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#C {
+#tp_C {
   /*   background-image: url($sheepTile);
  */
 
@@ -1554,7 +1719,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#D {
+#tp_D {
   /*   background-image: url($sheepTile);
  */
 
@@ -1567,7 +1732,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#E {
+#tp_E {
   /*   background-image: url($woodTile);
  */   
 
@@ -1582,7 +1747,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#F {
+#tp_F {
   /*   background-image: url($woodTile);
  */
   background-repeat: no-repeat;
@@ -1594,7 +1759,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#G {
+#tp_G {
   /*   background-image: url($woodTile);
  */
   background-repeat: no-repeat;
@@ -1606,7 +1771,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#H {
+#tp_H {
   /*   background-image: url($woodTile);
  */
   background-repeat: no-repeat;
@@ -1618,7 +1783,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#I {
+#tp_I {
   /*   background-image: url($wheatTile);
  */
   background-repeat: no-repeat;
@@ -1630,7 +1795,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#J {
+#tp_J {
   /*   background-image: url($wheatTile);
  */
   background-repeat: no-repeat;
@@ -1642,7 +1807,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#K {
+#tp_K {
   /*   background-image: url($wheatTile);
  */
   background-repeat: no-repeat;
@@ -1654,7 +1819,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#L {
+#tp_L {
   /*   background-image: url($wheatTile);
  */
   background-repeat: no-repeat;
@@ -1666,7 +1831,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#M {
+#tp_M {
   /*   background-image: url($oreTile);
  */
   background-repeat: no-repeat;
@@ -1678,7 +1843,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#N {
+#tp_N {
   /*   background-image: url($oreTile);
  */
   background-repeat: no-repeat;
@@ -1690,7 +1855,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#O {
+#tp_O {
   /*   background-image: url($oreTile);
  */
   background-repeat: no-repeat;
@@ -1702,7 +1867,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#P {
+#tp_P {
   /*   background-image: url($brickTile);
  */
   background-repeat: no-repeat;
@@ -1714,7 +1879,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#Q {
+#tp_Q {
   /*   background-image: url($brickTile);
  */
   background-repeat: no-repeat;
@@ -1726,7 +1891,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#R {
+#tp_R {
   /*   background-image: url($brickTile);
  */
   background-repeat: no-repeat;
@@ -1738,7 +1903,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: $hexPlaceholder_Z-index;
 }
 
-#S {
+#tp_S {
   /*   background-image: url($desertTile);
  */
   background-repeat: no-repeat;
@@ -1765,11 +1930,12 @@ $hexPlaceholder_Z-index: 500;
   position: absolute;
   left: 32px;
   top: 16px;
-  min-width: 1407px;
-  min-height: 802px;
+  width: auto;
+  height: auto;
+  /* min-width: 1407px;
+  min-height: 802px; */
   z-index: 28;
   $islandHexIndex: 30;
-
   #sheep1 {
     background-image: $sheepTile;
   }
@@ -1833,6 +1999,7 @@ $hexPlaceholder_Z-index: 500;
   z-index: 7;
 }
 
+
 #bankChestTop {
   background-image: url("gameAssetsOfficial/bankChestTop.png");
   background-repeat: no-repeat;
@@ -1867,19 +2034,43 @@ $hexPlaceholder_Z-index: 500;
   border: none;
 }
 
-#islandBackground {
-  background-image: url("gameAssetsOfficial/islandBackground.png");
-  background-repeat: no-repeat;
+
+
+
+.allPawnsPhParent {
   position: absolute;
-  left: -15px;
-  top: -9px;
-  min-width: 1381px;
-  min-height: 785px;
-  z-index: 2;
-  border: none;
+  top: 10px;
+  left: 275px;
+} 
+/* allPawnsPhParent */
 
-}
+/* Below: Height of placeholder pawns
+Height is measured from top */
+$fLow: 682px;
+/* subtract 30px; */
+$fHigh: 652px;
+/* subtract 10px; */
 
+$eLow: 562px;
+/* subtract 40px; */
+$eHigh: 522px;
+/* subtract 10px; */
+
+$dLow: 432px;
+/* subtract 40px; */
+$dHigh: 390px;
+
+/* subtract 10px; */
+$cLow: 303px;
+/* subtract 40px; */
+$cHigh: 265px;
+
+$bLow: 172px; /* expected 255 ?*/
+$bHigh: 124px;
+
+$aLow: 40px; 
+/* subtract 40px; */
+$aHigh: 0px;
 
 
 
@@ -1887,7 +2078,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 382px;
-    top: 693px;
+    top: $fLow+10px;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1896,7 +2087,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 465px;
-    top: 653px;
+    top: $fHigh + 10px;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1905,7 +2096,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 607px;
-    top: 653px;
+    top: $fHigh;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1914,7 +2105,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 533px;
-    top: 695px;
+    top: $fLow+10px;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1923,7 +2114,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 158px;
-    top: 652px;
+    top: $fHigh;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1932,7 +2123,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 226px;
-    top: 694px;
+    top: $fLow;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1941,7 +2132,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($settlementTemplatePawn);
     position: absolute;
     left: 314px;
-    top: 651px;
+    top: $fHigh;
     width: 54px;
     height: 53px;
     z-index: $setZ;
@@ -1950,7 +2141,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 464px;
-    top: 638px;
+    top: $fHigh;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -1959,7 +2150,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 610px;
-    top: 638px;
+    top: $fHigh;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -1968,7 +2159,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 536px;
-    top: 680px;
+    top: $fLow;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -1977,7 +2168,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 157px;
-    top: 637px;
+    top: $fHigh;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -1986,7 +2177,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 229px;
-    top: 679px;
+    top: $fLow;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -1995,7 +2186,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 313px;
-    top: 636px;
+    top: $fHigh;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -2004,7 +2195,7 @@ $hexPlaceholder_Z-index: 500;
     background-image: url($cityTemplatePawn);
     position: absolute;
     left: 385px;
-    top: 678px;
+    top: $fLow;
     width: 57px;
     height: 70px;
     z-index: $cityZ;
@@ -3503,4 +3694,4 @@ $hexPlaceholder_Z-index: 500;
     height: 49px;
     z-index: $setZ;
   }
-
+}/* gameContainer */
