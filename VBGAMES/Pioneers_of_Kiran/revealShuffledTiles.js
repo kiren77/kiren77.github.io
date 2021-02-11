@@ -370,7 +370,7 @@ mergedArrs.forEach(mergedRow => {
 /* mergedArrs[0].hexId.style.backgroundImage = "url('gameAssetsOfficial/sheep1.png')"
 console.log(mergedArrs[0].hexId.hasAttribute("background-image"))
  */
-function displayImage() {
+function shuffleButton() {
  
  
 /* I need to fix the hexId array as I now trimmed 
@@ -380,31 +380,49 @@ me with just "element" with quotation marks.
 )
 */
 var hexId1 = mergedArrs[0].hexId
-var hexId2 = mergedArrs[0].hexId
-var hexId3 = mergedArrs[0].hexId
-var hexId4 = mergedArrs[0].hexId
-var hexId5 = mergedArrs[0].hexId
-var hexId6 = mergedArrs[0].hexId
-var hexId7 = mergedArrs[0].hexId
-var hexId8 = mergedArrs[0].hexId
-var hexId9 = mergedArrs[0].hexId
-var hexId10 = mergedArrs[0].hexId
-var hexId12 = mergedArrs[0].hexId
-var hexId13 = mergedArrs[0].hexId
-var hexId14 = mergedArrs[0].hexId
-var hexId15 = mergedArrs[0].hexId
-var hexId16 = mergedArrs[0].hexId
-var hexId17 = mergedArrs[0].hexId
-var hexId18 = mergedArrs[0].hexId
-var hexId19 = mergedArrs[0].hexId
+var hexId2 = mergedArrs[1].hexId
+var hexId3 = mergedArrs[2].hexId
+var hexId4 = mergedArrs[3].hexId
+var hexId5 = mergedArrs[4].hexId
+var hexId6 = mergedArrs[5].hexId
+var hexId7 = mergedArrs[6].hexId
+var hexId8 = mergedArrs[7].hexId
+var hexId9 = mergedArrs[8].hexId
+var hexId10 = mergedArrs[9].hexId
+var hexId11 = mergedArrs[10].hexId
+var hexId12 = mergedArrs[11].hexId
+var hexId13 = mergedArrs[12].hexId
+var hexId14 = mergedArrs[13].hexId
+var hexId15 = mergedArrs[14].hexId
+var hexId16 = mergedArrs[15].hexId
+var hexId17 = mergedArrs[16].hexId
+var hexId18 = mergedArrs[17].hexId
+var hexId19 = mergedArrs[18].hexId
 
 console.log(mergedArrs)
 
 
-  document.getElementById("tp_J").style.background =  "url('"  +  mergedArrs[0].tileURL  +    "')"; 
-/*   mergedArrs[0].hexId .style.background="url('"  +  mergedArrs[].tileURL  +    "')";      
- */
-  document.getElementById(hexId1).style.background = "url('"  +  mergedArrs[0].tileURL  +    "')"; 
+   
+  document.getElementById(hexId1).style.background =   "url('"  +  mergedArrs[0].tileURL  +    "')";
+  document.getElementById(hexId2).style.background =   "url('"  +  mergedArrs[1].tileURL  +    "')";
+  document.getElementById(hexId3).style.background =   "url('"  +  mergedArrs[2].tileURL  +    "')"; 
+  document.getElementById(hexId4).style.background =   "url('"  +  mergedArrs[3].tileURL  +    "')"; 
+  document.getElementById(hexId5).style.background =   "url('"  +  mergedArrs[4].tileURL  +    "')"; 
+  document.getElementById(hexId6).style.background =   "url('"  +  mergedArrs[5].tileURL  +    "')"; 
+  document.getElementById(hexId7).style.background =   "url('"  +  mergedArrs[6].tileURL  +    "')"; 
+  document.getElementById(hexId8).style.background =   "url('"  +  mergedArrs[7].tileURL  +    "')"; 
+  document.getElementById(hexId9).style.background =   "url('"  +  mergedArrs[8].tileURL  +    "')"; 
+  document.getElementById(hexId10).style.background =  "url('"  +  mergedArrs[9].tileURL  +    "')";
+  document.getElementById(hexId11).style.background =  "url('"  +  mergedArrs[10].tileURL  +    "')";
+  document.getElementById(hexId12).style.background =  "url('"  +  mergedArrs[11].tileURL  +    "')";
+  document.getElementById(hexId13).style.background =  "url('"  +  mergedArrs[12].tileURL  +    "')";
+  document.getElementById(hexId14).style.background =  "url('"  +  mergedArrs[13].tileURL  +    "')";
+  document.getElementById(hexId15).style.background =  "url('"  +  mergedArrs[14].tileURL  +    "')";
+  document.getElementById(hexId16).style.background =  "url('"  +  mergedArrs[15].tileURL  +    "')";
+  document.getElementById(hexId17).style.background =  "url('"  +  mergedArrs[16].tileURL  +    "')";
+  document.getElementById(hexId18).style.background =  "url('"  +  mergedArrs[17].tileURL  +    "')";
+  document.getElementById(hexId19).style.background =  "url('"  +  mergedArrs[18].tileURL  +    "')";
+
   console.log('"' + hexId1 + '"')
 
 /*   console.log('"' + mergedArrs[0].hexId + '"' == )

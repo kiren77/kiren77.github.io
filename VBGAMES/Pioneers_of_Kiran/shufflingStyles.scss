@@ -41,12 +41,27 @@ body {
   background-color: rgb(82, 80, 80);
 }
 
+#indication {
+  top: 100px;
+  color: white;
+}
 
-#miniTestSheep {
+#shuffleButton1 {
+  text-align: center;
   width: 170px;
   height: $tileHeight;
 background-color: orange;
+font-size: 25px;;
 }
+/* #shuffleButton2 {
+  text-align: center;
+
+  width: 170px;
+  height: $tileHeight;
+background-color: blue;
+color: yellow;
+font-size: 25px;;
+} */
 
 #changeBackground {
   position: relative;
@@ -2180,4 +2195,10 @@ $aHigh: 0px;
   width: 68px;
   height: 49px;
   z-index: $setZ;
+}
+footer {
+  color: white;
+  text-align: left;
+  margin-top: 90%;
+  top: 100%;
 }
