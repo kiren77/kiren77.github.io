@@ -51,7 +51,7 @@ body {
   width: 170px;
   height: $tileHeight;
 background-color: orange;
-font-size: 25px;;
+font-size:$tileHeight/6;
 }
 /* #shuffleButton2 {
   text-align: center;
@@ -344,7 +344,7 @@ width: $tileWidth ;
 
 #island_hexes {
   position: absolute;
-  left: 32px;
+  left: 0px;
   top: 300px;
   
   /* min-width: 1407px;
@@ -2199,6 +2199,6 @@ $aHigh: 0px;
 footer {
   color: white;
   text-align: left;
-  margin-top: 90%;
-  top: 100%;
+  
+  margin-top: 50%;
 }
