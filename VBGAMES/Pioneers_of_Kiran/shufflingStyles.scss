@@ -31,31 +31,62 @@ $pcMinHeight: 500px/* 768px */;
 $viewportWidth: $pcMinWidth;
 $viewportHeight: 100vh;
 
+$tileWidth : 147px;
+$tileHeight: 170px;
+
+
+
 body {
   font-family: "Courier New", Courier, monospace;
+  background-color: rgb(82, 80, 80);
 }
+
+
+#miniTestSheep {
+  width: 170px;
+  height: $tileHeight;
+background-color: orange;
+}
+
+#changeBackground {
+  position: relative;
+color: brown;
+background-color: chartreuse;
+  min-width: 100px;
+  min-height:100px;
+  top: 0px;
+  left: 25%;
+  z-index: 1000;
+}
+#changeBackground:hover{
+background-color: coral;
+}
+
+
+
 
 .wrapper {
-  background-color: grey;
+/*   background-color: grey;
+ */
+top: auto;
+left: auto;
+width: auto;
+height: auto;
 }
 
-.tilePlaceholder {
-  position: absolute;
-  visibility: visible;
-  z-index: $hexPlaceholder_Z-index;
 
   /* All tiles will be set to "visible after shuffling is done"*/
-}
+
 
 #tp_A {
-/*   background-image: url($sheepTile);
+/*    background-image: url($sheepTile);
  */
   background-repeat: no-repeat;
   position: absolute;
   left: 470px;
   top: 44px;
-  min-width: 172px;
-  min-height: 187px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
@@ -67,8 +98,8 @@ body {
   position: absolute;
   left: 627px;
   top: 44px;
-  min-width: 171px;
-  min-height: 187px;
+  min-width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
@@ -80,46 +111,47 @@ body {
   position: absolute;
   left: 781px;
   top: 42px;
-  min-width: 171px;
-  min-height: 187px;
+  min-width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_D {
-  background-image: $woodTile;
-background-size: 400px;
 
-  background-repeat: no-repeat;
+/*    background-image: url($woodTile);
+ */ 
+ /* background-size: 400px;  background-color: grey;
+ */
+
+   background-repeat: no-repeat;
   position: absolute;
   left: 393px;
   top: 176px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_E {
-  /*   background-image: url($woodTile);
- */
+
 
   background-repeat: no-repeat;
   position: absolute;
   left: 547px;
   top: 176px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_F {
-  /*   background-image: url($woodTile);
- */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 703px;
   top: 176px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
@@ -130,219 +162,367 @@ background-size: 400px;
   position: absolute;
   left: 859px;
   top: 176px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_H {
-  /*   background-image: url($woodTile);
- */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 316px;
   top: 308px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_I {
   /*   background-image: url($wheatTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 470px;
   top: 308px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_J {
   /*   background-image: url($wheatTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 626px;
   top: 308px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_K {
   /*   background-image: url($wheatTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 781px;
   top: 308px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_L {
   /*   background-image: url($wheatTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 936px;
   top: 308px;
-  min-width: 168px;
-  min-height: 188px;
+  min-width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_M {
   /*   background-image: url($oreTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 393px;
   top: 441px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_N {
   /*   background-image: url($oreTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 548px;
   top: 441px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_O {
   /*   background-image: url($oreTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 703px;
   top: 441px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_P {
   /*   background-image: url($brickTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 859px;
   top: 441px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_Q {
-  /*   background-image: url($brickTile);
- */
+  /*    background-image: url($brickTile);
+  */
   background-repeat: no-repeat;
   position: absolute;
   left: 470px;
   top: 573px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_R {
-  /*   background-image: url($brickTile);
- */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 626px;
   top: 573px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
 }
 
 #tp_S {
   /*   background-image: url($desertTile);
  */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 781px;
   top: 573px;
-  min-width: 172px;
-  min-height: 188px;
+width: $tileWidth ;
+  height: $tileHeight;
   z-index: $hexPlaceholder_Z-index;
   border: none;
 }
-/* endTile Placeholder */
+
+
+
+
+
+
+
+
 
 #island_hexes {
   position: absolute;
   left: 32px;
-  top: 16px;
-  width:auto;
-  height: auto;
+  top: 300px;
+  
   /* min-width: 1407px;
   min-height: 802px; */
-  z-index: 28;
-  $islandHexIndex: 30;
+  z-index: 100;
 
   #sheep1 {
-    background-image: $sheepTile;
-  }
+    /* background-image:url($sheepTile); */
+  width:148px;
+height: 170px;
+
+}
+
+  
   #sheep2 {
-    background-image: $sheepTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($sheepTile); */
+  
+
+}
+ 
+  
   #sheep3 {
-    background-image: $sheepTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($sheepTile); */
+  
+
+}
+  
+  
   #sheep4 {
-    background-image: $sheepTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($sheepTile); */
+  
+
+}
+  
+  
   #wood1 {
-    background-image: $woodTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($woodTile); */
+  
+
+}
+  
+  
   #wood2 {
-    background-image: $woodTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($woodTile); */
+  
+
+}
+  
+  
   #wood3 {
-    background-image: $woodTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($woodTile); */      
+  
+
+}
+  
+  
   #wood4 {
-    background-image: $woodTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($woodTile); */      
+ 
+
+}
+  
+  
   #wheat1 {
-    background-image: $wheatTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($wheatTile); */     
+  
+
+}
+  
+  
   #wheat2 {
-    background-image: $wheatTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($wheatTile); */     
+ 
+
+}
+ 
+  
   #wheat3 {
-    background-image: $wheatTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($wheatTile); */     
+ 
+
+}
+ 
+  
   #wheat4 {
-    background-image: $wheatTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($wheatTile); */     
+ 
+
+}
+  
+  
   #brick1 {
-    background-image: $brickTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  background-image:url($brickTile);     
+  
+
+}
+  
+  
   #brick2 {
-    background-image: $brickTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  background-image:url($brickTile);     
+ 
+
+}
+  
+  
   #brick3 {
-    background-image: $brickTile;
-  }
+  
+  
+  background-image:url($brickTile);     
+  width:148px;
+height: 170px;
+
+}
+  
+  
   #ore1 {
-    background-image: $oreTile;
-  }
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($oreTile); */     
+  
+
+}
+
+#ore2 {
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($oreTile); */     
+  
+
+}
+  
+
+#ore3 {
+  width:148px;
+  height: 170px;
+  
+  /* background-image:url($oreTile); */     
+  
+
+}
+  
+  
+  
   #desert1 {
-    background-image: $desertTile;
-  }
+  
+/*   background-image:url($desertTile);
+ */ 
+  width:148px;
+  height: 170px;
+ 
+
+}
 }
 /* end island_hexes */
 

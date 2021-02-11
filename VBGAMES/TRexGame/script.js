@@ -1,8 +1,15 @@
 
+
+
+
+
 //Gets the HTML elent with id ('element')
 const dino = document.getElementById('dino')
 const rock = document.getElementById('rock')
 const score = document.getElementById('score')
+
+
+
 
 function jump() {
     /*set duration of the jump-animation to 500ms 
@@ -38,6 +45,9 @@ we get the value with getPropertyValue of those two assets
 in real time (the values we want to parse is 'top' and 'left')
 we can use console.log(dinoTop or rockLeft) to see their position relative to the top*/
 setInterval(() => {
+
+
+
     // at the close of this setInterval function
     // we have the interval of 50ms
    
@@ -50,6 +60,10 @@ setInterval(() => {
     /*check rock's left position*/
     const rockLeft = parseInt(window.getComputedStyle(rock).getPropertyValue('left'));
 
+
+
+
+
 // we want the rock to not go out of the game's border
 // so we will make sure the rock is hidden when it becomes a negative value
     if (rockLeft < 0) {
@@ -58,6 +72,12 @@ setInterval(() => {
 
     rock.style.display = '';
     }   
+
+
+
+
+
+
 
 // Collision detection
 //we make a condition for a collision

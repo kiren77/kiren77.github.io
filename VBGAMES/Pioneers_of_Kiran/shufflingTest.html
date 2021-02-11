@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Test of Tile Shuffling</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="shufflingStyles.css">
-        <script src="revealShuffledTiles.js"></script>
-    </head>
-    <body>
-<div class="wrapper"> 
 
-<div class="tilePlaceholder" id="#tp_A">#tp_A</div>
-<div class="tilePlaceholder" id="#tp_C">#tp_B</div>
-<div class="tilePlaceholder" id="#tp_D">#tp_C</div>
-<div class="tilePlaceholder" id="#tp_E">#tp_D</div>
-<div class="tilePlaceholder" id="#tp_F">#tp_E</div>
-<div class="tilePlaceholder" id="#tp_G">#tp_F</div>
-<div class="tilePlaceholder" id="#tp_H">#tp_G</div>
-<div class="tilePlaceholder" id="#tp_I">#tp_H</div>
-<div class="tilePlaceholder" id="#tp_J">#tp_I</div>
-<div class="tilePlaceholder" id="#tp_K">#tp_J</div>
-<div class="tilePlaceholder" id="#tp_L">#tp_K</div>
-<div class="tilePlaceholder" id="#tp_M">#tp_L</div>
-<div class="tilePlaceholder" id="#tp_N">#tp_M</div>
-<div class="tilePlaceholder" id="#tp_O">#tp_N</div>
-<div class="tilePlaceholder" id="#tp_B">#tp_O</div>
-<div class="tilePlaceholder" id="#tp_P">#tp_P</div>
-<div class="tilePlaceholder" id="#tp_Q">#tp_Q</div>
-<div class="tilePlaceholder" id="#tp_R">#tp_R</div>
-<div class="tilePlaceholder" id="#tp_S">#tp_S</div>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Test of Tile Shuffling</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="shufflingStyles.css" />
+    <script src="revealShuffledTiles.js"></script>
 
-<div id="island_hexes">
-    <div id="desert1">desert1</div>
-    <div id="ore1">ore1</div>
-    <div id="ore2">ore2</div>
-    <div id="ore3">ore3</div>
-    <div id="sheep1">sheep1</div>
-    <div id="sheep2">sheep2</div>
-    <div id="sheep3">sheep3</div>
-    <div id="sheep4">sheep4</div>
-    <div id="wheat1">wheat1</div>
-    <div id="wheat2">wheat2</div>
-    <div id="wheat3">wheat3</div>
-    <div id="wheat4">wheat4</div>
-    <div id="wood1">wood1</div>
-    <div id="wood2">wood2</div>
-    <div id="wood3">wood3</div>
-    <div id="wood4">wood4</div>
-    <div id="brick1">brick1</div>
-    <div id="brick2">brick2</div>
-    <div id="brick3">brick3</div>
-</div><!-- end islandHexes -->
+    <!-- if i need a refresher on replacing imgs -->
+    <!-- <script src="manualTile.js"></script> -->
 
-</div>
+    <!--         <link rel="stylesheet" href="flipTileReveal.css">
+ -->
+</head>
+
+<body>
+    
+    <div id="miniTestSheep">miniTestSheep</div>
+
+    <label>
+        <button type="button">shuffle tiles</button>
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+    </label>
+
+    <h1>Hello World!</h1>
+    <button type="button" onclick="myFunction()">Get background image</button>
+    <button type="displayImage" onclick="displayImage(1)">Display Image!</button>
 
 
+    <script>
+        function myFunction() {
+            alert(document.body.style.backgroundImage);
+        }
+    </script>
 
+    <div class="tilePlaceholder" id="tp_A">place</div>
+    <div class="tilePlaceholder" id="tp_C">place</div>
+    <div class="tilePlaceholder" id="tp_D">place</div>
+    <div class="tilePlaceholder" id="tp_E">place</div>
+    <div class="tilePlaceholder" id="tp_F">place</div>
+    <div class="tilePlaceholder" id="tp_G">place</div>
+    <div class="tilePlaceholder" id="tp_H">place</div>
+    <div class="tilePlaceholder" id="tp_I">place</div>
+    <div class="tilePlaceholder" id="tp_J">place</div>
+    <div class="tilePlaceholder" id="tp_K">place</div>
+    <div class="tilePlaceholder" id="tp_L">place</div>
+    <div class="tilePlaceholder" id="tp_M">place</div>
+    <div class="tilePlaceholder" id="tp_N">place</div>
+    <div class="tilePlaceholder" id="tp_O">place</div>
+    <div class="tilePlaceholder" id="tp_B">place</div>
+    <div class="tilePlaceholder" id="tp_P">place</div>
+    <div class="tilePlaceholder" id="tp_Q">place</div>
+    <div class="tilePlaceholder" id="tp_R">place</div>
+    <div class="tilePlaceholder" id="tp_S">place</div>
 
-<label>
-    <input type="checkbox"  />
-    <div class="card">
-        <div class="front">Front</div>
-        <div class="back">Back</div>
+    <div id="island_hexes">
+        <div id="desert1"></div>
+        <div id="ore1"></div>
+        <div id="ore2"></div>
+        <div id="ore3"></div>
+        <div id="sheep1"></div>
+        <div id="sheep2"></div>
+        <div id="sheep3"></div>
+        <div id="sheep4"></div>
+        <div id="wheat1"></div>
+        <div id="wheat2"></div>
+        <div id="wheat3"></div>
+        <div id="wheat4"></div>
+        <div id="wood1"></div>
+        <div id="wood2"></div>
+        <div id="wood3"></div>
+        <div id="wood4"></div>
+        <div id="brick1"></div>
+        <div id="brick2"></div>
+        <div id="brick3"></div>
     </div>
-</label>
+    <!-- end islandHexes -->
+</body>
 
-    </body>
 </html>
