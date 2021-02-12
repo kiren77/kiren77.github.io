@@ -37,25 +37,27 @@ var tileType, tileURL;
 
 // tileType are the variables representing the tiles, and unique Tile is the index for each paired #id.backgroundimage
 
-
+//each variable of the same 
+//type is associated with 
+// corresponding /"asset"1.png
 var sheep1  = 'gameAssetsOfficial/sheep1.png';
-var sheep2  = 'gameAssetsOfficial/sheep2.png';
-var sheep3  = 'gameAssetsOfficial/sheep3.png';
-var sheep4  = 'gameAssetsOfficial/sheep4.png';
+var sheep2  = 'gameAssetsOfficial/sheep1.png';
+var sheep3  = 'gameAssetsOfficial/sheep1.png';
+var sheep4  = 'gameAssetsOfficial/sheep1.png';
 var wood1   = 'gameAssetsOfficial/wood1.png';
-var wood2   = 'gameAssetsOfficial/wood2.png';
-var wood3   = 'gameAssetsOfficial/wood3.png';
-var wood4   = 'gameAssetsOfficial/wood4.png';
+var wood2   = 'gameAssetsOfficial/wood1.png';
+var wood3   = 'gameAssetsOfficial/wood1.png';
+var wood4   = 'gameAssetsOfficial/wood1.png';
 var wheat1  = 'gameAssetsOfficial/wheat1.png';
-var wheat2  = 'gameAssetsOfficial/wheat2.png';
-var wheat3  = 'gameAssetsOfficial/wheat3.png';
-var wheat4  = 'gameAssetsOfficial/wheat4.png';
+var wheat2  = 'gameAssetsOfficial/wheat1.png';
+var wheat3  = 'gameAssetsOfficial/wheat1.png';
+var wheat4  = 'gameAssetsOfficial/wheat1.png';
 var ore1    = 'gameAssetsOfficial/ore1.png';
-var ore2    = 'gameAssetsOfficial/ore2.png';
-var ore3    = 'gameAssetsOfficial/ore3.png';
+var ore2    = 'gameAssetsOfficial/ore1.png';
+var ore3    = 'gameAssetsOfficial/ore1.png';
 var brick1  = 'gameAssetsOfficial/brick1.png';
-var brick2  = 'gameAssetsOfficial/brick2.png';
-var brick3  = 'gameAssetsOfficial/brick3.png';
+var brick2  = 'gameAssetsOfficial/brick1.png';
+var brick3  = 'gameAssetsOfficial/brick1.png';
 var desert1 = 'gameAssetsOfficial/desert1.png';
 
 
