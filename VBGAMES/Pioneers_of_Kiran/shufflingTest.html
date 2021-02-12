@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="shufflingStyles.css" />
     <script src="revealShuffledTiles.js"></script>
 
+<!--     <meta http-equiv="refresh" content="3">
+ -->
     <!-- if i need a refresher on replacing imgs -->
     <!-- <script src="manualTile.js"></script> -->
 
@@ -17,21 +19,8 @@
  -->
 </head>
 
-<body>
-    
-    <div id="shuffleButton1" onclick="shuffleButton()"> Press this orange square to shuffle the tiles</div>
-<!--     <div id="shuffleButton2" onclick="shuffle(hexArrPlaceholders)"> Press this orange square to shuffle the tiles</div>
- -->
-
-
-    <h2 id="indication"> Refresh the page <br> (control/cmd + R)<br> to shuffle the tiles again! <br> :D </h2>
-
-
-    <script>
-        function myFunction() {
-            alert(document.body.style.backgroundImage);
-        }
-    </script>
+<body> <!--  onload="shuffleOnLoad()" -->
+   
 
     <div class="tilePlaceholder" id="tp_A"><!-- place --></div>
     <div class="tilePlaceholder" id="tp_C"><!-- place --></div>
@@ -52,6 +41,13 @@
     <div class="tilePlaceholder" id="tp_Q"><!-- place --></div>
     <div class="tilePlaceholder" id="tp_R"><!-- place --></div>
     <div class="tilePlaceholder" id="tp_S"><!-- place --></div>
+ 
+    <div id="shuffleButton1" onclick="shuffleOnClick()"> Press this orange square to shuffle the tiles</div>
+<!--     <div id="shuffleButton2" onclick="shuffle(hexArrPlaceholders)"> Press this orange square to shuffle the tiles</div>
+ -->
+    <h2 id="indication"> Refresh the page <br> (control/cmd + R)<br> to shuffle the tiles again! <br> :D </h2>
+
+
 
    <!--  <div id="island_hexes">
         <div id="desert1"></div>

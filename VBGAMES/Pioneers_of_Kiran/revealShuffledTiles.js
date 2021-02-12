@@ -131,7 +131,19 @@ for (const hexLetter in hexArrPlaceholders) {
 }
 */
 
+function shuffleOnClick() {
+/* shuffleOnClick first performs logic using:
+1) function shuffle(array)
+after it's definition with "array" parameter
+we instantiate the function with the argument 
+"hexArrPlaceholders" which shuffles the array items
+'hexLetter' and 'hexId'.
+(we only shuffle hex ArrPlaceholders, no need to also
+  shuffle remainingTilesNew)
 
+2) 
+
+*/
 
 
 
@@ -232,7 +244,9 @@ function revealShuffledTiles(id) {
 
 
 //EXAMPLE
-/*  {tileType: brickTile2,       tileURL: "url('gameAssetsOfficial/brick2.png')",      }
+
+/* mergedArrs
+  {tileType: brickTile2, tileURL: "url('gameAssetsOfficial/brick2.png')",      }
 
     {hexLetter : "E",        hexId : 'document.getElementById("tp_E")}'  */
 
@@ -242,49 +256,13 @@ value from it's paired shuffled value */
 
 
 
-
-
-
-/* for (let index = 0; index < mergedArrs.length; index++) {
- *//* console.log(mergedArrs[index].hexId);
-console.log(mergedArrs[index].tileURL); */
-/* 
-function changeBackground(mergedArrs, index, hexID, tileURL) {
-  var process = mergedArrs[index].hexId.style.backgroundImage = mergedArrs[index].tileURL
-  return process;
-  /* "url('smiley.gif') lightblue repeat-x center" }*/
-/* changeBackground(mergedArrs, index, hexID, tileURL)  */
-
-/*  mergedArrs[0].hexId.backgroundImage = mergedArrs[0].tileURL; */
-
-/* 
-mergedArrs.forEach(element => {
-  
-  mergedArrs[element].hexId.backgroundImage = mergedArrs[element].tileURL
-});
-console.table(mergedArrs[0].hexId.style.backgroundImage);
-console.log(mergedArrs[0].tileURL); */
-
-
-
 console.table(mergedArrs[4].tileURL);
 
  console.log(mergedArrs[4].hexId);
-  /*  
- var miniTestSheep = document.getElementById("miniTestSheep");
-  miniTestSheep.style.backgroundImage = "url('gameAssetsOfficial/sheep1.png')";
-*/
-/* hexArrPlaceholders {hexLetter : "A", hexId : 'document.getElementById("tp_A")'}, */
-// in example we take placeholder A
-// and associate 
-/* 
-function modify(A) { 
-  //add style attribute to element "tagLine" 
-  mergedArrs[0].tileURL; 
-  B.setAttribute("style", `background-Image: ${mergedArrs[0].tileURL}`); 
-  /* "style", `background-color:${mergedArrs[0].hexId.style.backgroundImage}`) } */ 
+  
 
-/* console.log(mergedArrs[0].tileURL); */
+
+
 /* 
 var images = ['../images/ploutarxos.jpg',
   '../images/xatzigiannhs.jpg',
@@ -325,22 +303,6 @@ array.forEach(element => {
 
 
 
-/* 
-for (let x = 0; x < mergedArrs.length; x++) {
-
-
-  let x = 0;
-  let thisHexId = mergedArrs[x].hexId;
-  let thisTileURL= mergedArrs[x].tileURL;
-
- let thisBackground = thisHexId.setAttribute("background", thisTileURL)
- return thisBackground;
-
- img.innerText = tileURL[x];
-
-}
-console.log(thisBackground); 
-*/
 
 for (let x = 0; x < 19/* mergedArrs.length */; x++) {
 
@@ -350,35 +312,23 @@ let thisTileURL= mergedArrs[x].hexId;
 /* let thisBackground = thisHexId.setAttribute("background", thisTileURL)
  */}
 
-/* console.log(document.getElementById("tp_A").hasAttribute("width"));
- */
-/* let thisBackground = thisHexId.setAttribute("background", thisTileURL)
- */
-
-/* img.innerText = tileURL[x];
- */
-
-/* 
-for (let index = 0; index < mergedArrs.length; index++) {
-  mergedRow = Object.assign(hexArrPlaceholders[index], remainingTilesNew[index]);
-mergedArrs.forEach(mergedRow => {
-    Object.assign(hexArrPlaceholders[index], remainingTilesNew[index]);
-});
- */
 
 
-/* mergedArrs[0].hexId.style.backgroundImage = "url('gameAssetsOfficial/sheep1.png')"
-console.log(mergedArrs[0].hexId.hasAttribute("background-image"))
- */
-function shuffleButton() {
+
+
  
- 
+// Something to keep in mind when doing DOM manipulation
 /* I need to fix the hexId array as I now trimmed 
 the getelementbyid(" ") surrounding text, leaving
 me with just "element" with quotation marks.
 
 )
 */
+
+
+//TO-DO: replace redundancy with "For" loops
+//where the script generates would generate the key value pairs
+
 var hexId1 = mergedArrs[0].hexId
 var hexId2 = mergedArrs[1].hexId
 var hexId3 = mergedArrs[2].hexId
@@ -423,34 +373,7 @@ console.log(mergedArrs)
   document.getElementById(hexId18).style.background =  "url('"  +  mergedArrs[17].tileURL  +    "')";
   document.getElementById(hexId19).style.background =  "url('"  +  mergedArrs[18].tileURL  +    "')";
 
-  console.log('"' + hexId1 + '"')
+ } 
 
-/*   console.log('"' + mergedArrs[0].hexId + '"' == )
- */} 
-                                //mergedArrs[0].tileURL
+
 console.log(hexArrPlaceholders[0].hexId)
-
-
-
-
-/* document.getElementById("tp_H").addEventListener("click", tileChange()); 
- */
-
-/* mergedArrs[1].hexId. */
-/* mergedArrs[2].hexId. */
-/* mergedArrs[3].hexId. */
-/* mergedArrs[4].hexId. */
-/* mergedArrs[5].hexId. */
-/* mergedArrs[6].hexId. */
-/* mergedArrs[7].hexId. */
-/* mergedArrs[8].hexId. */
-/* mergedArrs[9].hexId. */
-/* mergedArrs[10].hexId  */ 
-/* mergedArrs[11].hexId  */ 
-/* mergedArrs[12].hexId  */ 
-/* mergedArrs[13].hexId  */ 
-/* mergedArrs[14].hexId  */ 
-/* mergedArrs[15].hexId  */ 
-/* mergedArrs[16].hexId  */ 
-/* mergedArrs[17].hexId  */ 
-/* mergedArrs[18].hexId  */ 
