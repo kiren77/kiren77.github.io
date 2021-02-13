@@ -11,6 +11,8 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: #525050;
+  width: auto;
+  height: auto;
 }
 
 #indication {
