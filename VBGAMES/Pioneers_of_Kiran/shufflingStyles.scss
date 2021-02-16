@@ -20,7 +20,7 @@ $cityZ: 401;
 $rodZ: 400; /* roads look best when placed an index under the other pawns */
 
 /* hexPlaceholder */
-$hexPlaceholder_Z-index: 500;
+$hexPlaceholder_Z-index: 1;
 
 /* index of All cards (highest items) */
 $allCards: 500;
@@ -28,33 +28,18 @@ $allCards: 500;
 $pcMinWidth: 500px/* 1366px */;
 $pcMinHeight: 500px/* 768px */;
 
-$viewportWidth: $pcMinWidth;
-$viewportHeight: 100vh;
+/* $viewportWidth: 200px;
+$viewportHeight: 100vh; */
 
 $tileWidth : 147px;
 $tileHeight: 170px;
 
 
 
-body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: rgb(82, 80, 80);
-width: auto;
-height: auto;
-}
 
-#indication {
-  top: 100px;
-  color: white;
-}
 
-#shuffleButton1 {
-  text-align: center;
-  width: 170px;
-  height: $tileHeight;
-background-color: orange;
-font-size:$tileHeight/6;
-}
+
+
 /* #shuffleButton2 {
   text-align: center;
 
@@ -65,30 +50,12 @@ color: yellow;
 font-size: 25px;;
 } */
 
-#changeBackground {
-  position: relative;
-color: brown;
-background-color: chartreuse;
-  min-width: 100px;
-  min-height:100px;
-  top: 0px;
-  left: 25%;
-  z-index: 1000;
-}
-#changeBackground:hover{
-background-color: coral;
-}
 
 
 
+.tileContainer {
+  background-color: darkcyan;
 
-.wrapper {
-/*   background-color: grey;
- */
-top: auto;
-left: auto;
-width: auto;
-height: auto;
 }
 
 
@@ -96,8 +63,7 @@ height: auto;
 
 
 #tp_A {
-/*    background-image: url($sheepTile);
- */
+
   background-repeat: no-repeat;
   position: absolute;
   left: 470px;
@@ -108,8 +74,7 @@ width: $tileWidth ;
 }
 
 #tp_B {
-  /*   background-image: url($sheepTile);
- */
+  
 
   background-repeat: no-repeat;
   position: absolute;
@@ -121,8 +86,7 @@ width: $tileWidth ;
 }
 
 #tp_C {
-  /*   background-image: url($sheepTile);
- */
+  
 
   background-repeat: no-repeat;
   position: absolute;
@@ -2198,9 +2162,4 @@ $aHigh: 0px;
   height: 49px;
   z-index: $setZ;
 }
-footer {
-  color: white;
-  text-align: left;
-  
-  margin-top: 50%;
-}
+

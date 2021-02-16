@@ -313,33 +313,24 @@ let thisHexId = mergedArrs[x].hexId;
 let thisTileURL= mergedArrs[x].hexId;
 /* let thisBackground = thisHexId.setAttribute("background", thisTileURL)
  */}
-
-
-
-
-
- 
 // Something to keep in mind when doing DOM manipulation
 /* I need to fix the hexId array as I now trimmed 
 the getelementbyid(" ") surrounding text, leaving
 me with just "element" with quotation marks.
-
 )
 */
-
-
 //TO-DO: replace redundancy with "For" loops
 //where the script generates would generate the key value pairs
 
-var hexId1 = mergedArrs[0].hexId
-var hexId2 = mergedArrs[1].hexId
-var hexId3 = mergedArrs[2].hexId
-var hexId4 = mergedArrs[3].hexId
-var hexId5 = mergedArrs[4].hexId
-var hexId6 = mergedArrs[5].hexId
-var hexId7 = mergedArrs[6].hexId
-var hexId8 = mergedArrs[7].hexId
-var hexId9 = mergedArrs[8].hexId
+var hexId1  = mergedArrs[0].hexId
+var hexId2  = mergedArrs[1].hexId
+var hexId3  = mergedArrs[2].hexId
+var hexId4  = mergedArrs[3].hexId
+var hexId5  = mergedArrs[4].hexId
+var hexId6  = mergedArrs[5].hexId
+var hexId7  = mergedArrs[6].hexId
+var hexId8  = mergedArrs[7].hexId
+var hexId9  = mergedArrs[8].hexId
 var hexId10 = mergedArrs[9].hexId
 var hexId11 = mergedArrs[10].hexId
 var hexId12 = mergedArrs[11].hexId
@@ -356,6 +347,7 @@ console.log(mergedArrs)
 
    
   document.getElementById(hexId1).style.background =   "url('"  +  mergedArrs[0].tileURL  +    "')";
+  //perform animation for 
   document.getElementById(hexId2).style.background =   "url('"  +  mergedArrs[1].tileURL  +    "')";
   document.getElementById(hexId3).style.background =   "url('"  +  mergedArrs[2].tileURL  +    "')"; 
   document.getElementById(hexId4).style.background =   "url('"  +  mergedArrs[3].tileURL  +    "')"; 
@@ -375,7 +367,15 @@ console.log(mergedArrs)
   document.getElementById(hexId18).style.background =  "url('"  +  mergedArrs[17].tileURL  +    "')";
   document.getElementById(hexId19).style.background =  "url('"  +  mergedArrs[18].tileURL  +    "')";
 
+
+  
+return hexId1, hexId2, hexId3, hexId4, hexId5, hexId6, hexId7, hexId8, hexId9, hexId10, hexId11, hexId12, hexId13, hexId14, hexId15, hexId16, hexId17, hexId18, hexId19;
+
+
+
  } 
 
-
-console.log(hexArrPlaceholders[0].hexId)
+ /* 
+ if (hexId1) {
+  console.log("hexId1's image is loaded")  }
+  */

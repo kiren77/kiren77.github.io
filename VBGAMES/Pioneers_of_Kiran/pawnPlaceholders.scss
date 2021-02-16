@@ -1,0 +1,1675 @@
+
+/* z-index for road,city and settlement assets */
+$setZ: 402; /* for cosmetic purposes only: placed settlements above cities */
+$cityZ: 401;
+$rodZ: 400; /* roads look best when placed an index under the other pawns */
+
+
+/* city placeholder asset*/
+$cityTemplatePawn: "gameAssetsOfficial/cityTemplatePawn.png";
+/* settlement pawn asset*/
+$settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
+/* 3 different road assets (vertical and both slopes) */
+$roadTemplatePawnVert: "gameAssetsOfficial/roadTemplatePawnVert.png";
+$roadTemplatePawn-hL-lR: "gameAssetsOfficial/roadTemplatePawn-hL-lR.png";
+$roadTemplatePawn-lL-hR: "gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
+
+.allPawnsPhParent {
+    position: absolute;
+    top: 10px;
+    left: 275px;
+    opacity:75%;
+    z-index: 600
+  } 
+  /* allPawnsPhParent */
+  
+  /* Below: Height of placeholder pawns
+  Height is measured from top */
+  $fLow: 682px;
+  /* subtract 30px; */
+  $fHigh: 652px;
+  /* subtract 10px; */
+  
+  $eLow: 562px;
+  /* subtract 40px; */
+  $eHigh: 522px;
+  /* subtract 10px; */
+  
+  $dLow: 432px;
+  /* subtract 40px; */
+  $dHigh: 390px;
+  
+  /* subtract 10px; */
+  $cLow: 303px;
+  /* subtract 40px; */
+  $cHigh: 265px;
+  
+  $bLow: 172px; /* expected 255 ?*/
+  $bHigh: 124px;
+  
+  $aLow: 40px; 
+  /* subtract 40px; */
+  $aHigh: 0px;
+  
+  
+  
+    #settlementPlaceholder_F4 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 382px;
+      top: $fLow+10px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_F5 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 465px;
+      top: $fHigh + 10px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_F7 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 607px;
+      top: $fHigh;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_F6 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 533px;
+      top: $fLow+10px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_F1 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 158px;
+      top: $fHigh;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_F2 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 226px;
+      top: $fLow;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_F3 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 314px;
+      top: $fHigh;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #cityPlaceholder_F5 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 464px;
+      top: $fHigh;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_F7 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 610px;
+      top: $fHigh;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_F6 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 536px;
+      top: $fLow;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_F1 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 157px;
+      top: $fHigh;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_F2 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 229px;
+      top: $fLow;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_F3 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 313px;
+      top: $fHigh;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_F4 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 385px;
+      top: $fLow;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #roadPlaceholder_f7_e8 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 627px;
+      top: 608px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f5_e6 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 479px;
+      top: 608px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f6_f7 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 571px;
+      top: 688px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f5_f6 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 490px;
+      top: 687px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f1_e2 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 172px;
+      top: 607px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f2_f3 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 264px;
+      top: 687px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f1_f2 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 183px;
+      top: 686px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f3_e4 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 328px;
+      top: 606px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f4_f5 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 420px;
+      top: 686px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_f3_f4 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 339px;
+      top: 685px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e6_e7 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 496px;
+      top: 559px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e5_e6 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 415px;
+      top: 558px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #settlementPlaceholder_E7 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 547px;
+      top: 520px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E9 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 689px;
+      top: 520px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E8 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 615px;
+      top: 562px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E5 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 390px;
+      top: 524px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E6 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 458px;
+      top: 566px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E3 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 231px;
+      top: 522px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E4 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 299px;
+      top: 564px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E1 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 75px;
+      top: 522px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_E2 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 143px;
+      top: 564px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #cityPlaceholder_E7 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 546px;
+      top: 505px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E9 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 692px;
+      top: 505px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E8 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 618px;
+      top: 547px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E5 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 389px;
+      top: 509px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E6 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 461px;
+      top: 551px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E3 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 230px;
+      top: 507px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E4 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 302px;
+      top: 549px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E1 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 74px;
+      top: 507px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_E2 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 146px;
+      top: 549px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #roadPlaceholder_e9_d10 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 709px;
+      top: 475px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e7_d8 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 561px;
+      top: 475px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e8_e9 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 653px;
+      top: 555px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e7_e8 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 572px;
+      top: 554px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e5_d6 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 404px;
+      top: 479px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e3_d4 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 245px;
+      top: 477px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e4_e5 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 337px;
+      top: 557px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e3_e4 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 256px;
+      top: 556px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e1_d2 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 89px;
+      top: 477px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e2_e3 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 181px;
+      top: 557px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_e1_e2 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 100px;
+      top: 556px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d9_d10 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 645px;
+      top: 428px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #settlementPlaceholder_D1 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 1px;
+      top: 390px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D2 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 69px;
+      top: 432px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D3 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 152px;
+      top: 390px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D4 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 220px;
+      top: 432px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D5 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 311px;
+      top: 390px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D7 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 470px;
+      top: 390px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D8 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 538px;
+      top: 432px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D9 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 620px;
+      top: 394px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D11 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 762px;
+      top: 394px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D10 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 688px;
+      top: 436px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_D6 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 379px;
+      top: 432px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #cityPlaceholder_D1 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 0px;
+      top: 375px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D2 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 72px;
+      top: 417px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D3 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 151px;
+      top: 375px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D4 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 223px;
+      top: 417px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D5 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 310px;
+      top: 375px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D6 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 382px;
+      top: 417px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D7 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 469px;
+      top: 375px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D8 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 541px;
+      top: 417px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D9 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 619px;
+      top: 379px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D11 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 765px;
+      top: 379px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_D10 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 691px;
+      top: 421px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #roadPlaceholder_d1_d2 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 26px;
+      top: 424px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d1_c1 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 15px;
+      top: 345px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d2_d3 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 107px;
+      top: 425px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d3_c3 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 166px;
+      top: 345px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d4_d5 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 258px;
+      top: 425px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d3_d4 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 177px;
+      top: 424px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d5_c5 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 325px;
+      top: 345px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d6_d7 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 417px;
+      top: 425px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d5_d6 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 336px;
+      top: 424px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d7_c7 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 484px;
+      top: 345px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d8_d9 {
+      background-image: url($roadTemplatePawn-lL-hR); /* lL-hR */
+      position: absolute;
+      left: 576px;
+      top: 425px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d7_d8 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 495px;
+      top: 424px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d11_c11 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 782px;
+      top: 349px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d9_c9 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 634px;
+      top: 349px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_d10_d11 {
+      background-image: url($roadTemplatePawn-lL-hR); /*lL-hR*/
+      position: absolute;
+      left: 726px;
+      top: 429px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #settlementPlaceholder_C2 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 75px;
+      top: 265px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C1 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 1px;
+      top: 303px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C4 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 226px;
+      top: 265px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C3 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 152px;
+      top: 303px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C6 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 385px;
+      top: 265px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C5 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 311px;
+      top: 303px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C8 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 544px;
+      top: 265px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C7 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 470px;
+      top: 303px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C10 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 694px;
+      top: 269px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C9 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 620px;
+      top: 307px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_C11 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 762px;
+      top: 307px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #cityPlaceholder_C1 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 0px;
+      top: 288px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C4 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 225px;
+      top: 250px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C3 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 151px;
+      top: 288px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C6 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 384px;
+      top: 250px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C5 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 310px;
+      top: 288px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C8 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 543px;
+      top: 250px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C7 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 469px;
+      top: 288px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C10 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 693px;
+      top: 254px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C9 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 619px;
+      top: 292px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C11 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 765px;
+      top: 292px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_C2 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 74px;
+      top: 250px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #roadPlaceholder_c10_b9 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 706px;
+      top: 212px;
+      width: 19px;
+      height: 71px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c8_b7 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 555px;
+      top: 210px;
+      width: 19px;
+      height: 71px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c6_b5 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 399px;
+      top: 210px;
+      width: 19px;
+      height: 71px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c4_b3 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 242px;
+      top: 210px;
+      width: 19px;
+      height: 71px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c2_b1 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 96px;
+      top: 214px;
+      width: 19px;
+      height: 71px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c1_c2 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 25px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c2_c3 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 103px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c3_c4 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 176px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c4_c5 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 254px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c5_c6 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 335px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c6_c7 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 413px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c7_c8 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 494px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c8_c9 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 572px;
+      top: 298px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c9_c10 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 644px;
+      top: 302px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_c10_c11 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 722px;
+      top: 302px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B9 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 688px;
+      top: 172px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B8 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 605px;
+      top: 124px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B7 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 531px;
+      top: 166px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B6 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 459px;
+      top: 130px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B5 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 385px;
+      top: 168px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B4 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 302px;
+      top: 130px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B3 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 228px;
+      top: 168px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B2 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 156px;
+      top: 134px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_B1 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 82px;
+      top: 172px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #cityPlaceholder_B8 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 608px;
+      top: 109px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B7 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 534px;
+      top: 151px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B9 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 689px;
+      top: 155px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B6 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 459px;
+      top: 115px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B5 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 384px;
+      top: 153px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B4 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 302px;
+      top: 115px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B3 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 227px;
+      top: 153px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B2 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 155px;
+      top: 119px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_B1 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 81px;
+      top: 157px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #roadPlaceholder_b8_a7 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 625px;
+      top: 79px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b2_a1 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 173px;
+      top: 79px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b4_a3 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 327px;
+      top: 81px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b6_a5 {
+      background-image: url($roadTemplatePawnVert); /* vertical */
+      position: absolute;
+      left: 477px;
+      top: 79px;
+      width: 19px;
+      height: 71px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b7_b8 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 565px;
+      top: 163px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b8_b9 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 643px;
+      top: 163px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b5_b6 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 409px;
+      top: 163px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b6_b7 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 487px;
+      top: 163px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b3_b4 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 252px;
+      top: 163px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b4_b5 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 330px;
+      top: 163px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b1_b2 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 106px;
+      top: 167px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #roadPlaceholder_b2_b3 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 184px;
+      top: 167px;
+      width: 68px;
+      height: 49px;
+      z-index: $rodZ;
+    }
+    #settlementPlaceholder_A7 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 606px;
+      top: 38px;
+      width: 54px;
+      height: 52px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_A2 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 233px;
+      top: 0px;
+      width: 54px;
+      height: 52px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_A1 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 159px;
+      top: 37px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_A4 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 387px;
+      top: 1px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_A3 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 313px;
+      top: 39px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_A6 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 537px;
+      top: 0px;
+      width: 54px;
+      height: 52px;
+      z-index: $setZ;
+    }
+    #settlementPlaceholder_A5 {
+      background-image: url($settlementTemplatePawn);
+      position: absolute;
+      left: 460px;
+      top: 39px;
+      width: 54px;
+      height: 53px;
+      z-index: $setZ;
+    }
+    #cityPlaceholder_A2 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 232px;
+      top: 0px;
+      width: 57px;
+      height: 53px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_A1 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 158px;
+      top: 22px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_A4 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 386px;
+      top: 0px;
+      width: 57px;
+      height: 55px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_A3 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 312px;
+      top: 24px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_A5 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 458px;
+      top: 24px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_A6 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 536px;
+      top: 0px;
+      width: 57px;
+      height: 54px;
+      z-index: $cityZ;
+    }
+    #cityPlaceholder_A7 {
+      background-image: url($cityTemplatePawn);
+      position: absolute;
+      left: 608px;
+      top: 22px;
+      width: 57px;
+      height: 70px;
+      z-index: $cityZ;
+    }
+    #roadPlaceholder_a1_a2 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 183px;
+      top: 32px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_a2_a3 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 261px;
+      top: 32px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_a3_a4 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 337px;
+      top: 34px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_a4_a5 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 415px;
+      top: 34px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_a5_a6 {
+      background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
+      position: absolute;
+      left: 487px;
+      top: 32px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }
+    #roadPlaceholder_a6_a7 {
+      background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
+      position: absolute;
+      left: 565px;
+      top: 30px;
+      width: 68px;
+      height: 49px;
+      z-index: $setZ;
+    }

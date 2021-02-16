@@ -8,69 +8,47 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="shufflingStyles.css" />
+    <link rel="stylesheet" href="flipTileReveal.css"/>
     <script src="revealShuffledTiles.js"></script>
-
-<!--     <meta http-equiv="refresh" content="3">
- -->
-    <!-- if i need a refresher on replacing imgs -->
-    <!-- <script src="manualTile.js"></script> -->
-
-    <!--         <link rel="stylesheet" href="flipTileReveal.css">
- -->
 </head>
 
 <body> <!--  onload="shuffleOnLoad()" -->
    
-
-    <div class="tilePlaceholder" id="tp_A"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_C"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_D"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_E"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_F"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_G"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_H"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_I"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_J"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_K"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_L"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_M"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_N"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_O"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_B"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_P"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_Q"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_R"><!-- place --></div>
-    <div class="tilePlaceholder" id="tp_S"><!-- place --></div>
+   
+    <div class="tileContainer">
+        
+   
+   
+    <div class="tilePlaceholder" class="tileFlip" id="tp_A"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_C"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_D"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_E"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_F"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_G"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_H"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_I"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_J"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_K"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_L"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_M"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_N"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_O"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_B"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_P"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_Q"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_R"><!-- place --></div>
+    <div class="tilePlaceholder" class="tileFlip" id="tp_S"><!-- place --></div>
  
     <div id="shuffleButton1" onclick="shuffleOnClick()"> Press this orange square to shuffle the tiles</div>
-<!--     <div id="shuffleButton2" onclick="shuffle(hexArrPlaceholders)"> Press this orange square to shuffle the tiles</div>
- -->
-    <h2 id="indication"> Refresh the page <br> (control/cmd + R)<br> to shuffle the tiles again! <br> :D </h2>
 
 
 
-   <!--  <div id="island_hexes">
-        <div id="desert1"></div>
-        <div id="ore1"></div>
-        <div id="ore2"></div>
-        <div id="ore3"></div>
-        <div id="sheep1"></div>
-        <div id="sheep2"></div>
-        <div id="sheep3"></div>
-        <div id="sheep4"></div>
-        <div id="wheat1"></div>
-        <div id="wheat2"></div>
-        <div id="wheat3"></div>
-        <div id="wheat4"></div>
-        <div id="wood1"></div>
-        <div id="wood2"></div>
-        <div id="wood3"></div>
-        <div id="wood4"></div>
-        <div id="brick1"></div>
-        <div id="brick2"></div>
-        <div id="brick3"></div>
-    </div> -->
-    <!-- end islandHexes -->
+    <div class="tileBox"  />
+        <div class="tileFlip">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div> <!-- endTileContainer -->
 </body>
 <footer>
    <p>by Kiren van den Brandeler</p> 

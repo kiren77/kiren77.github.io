@@ -1,10 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-/* city placeholder asset*/
-/* settlement pawn asset*/
-/* 3 different road assets (vertical and both slopes) */
-/* z-index for road,city and settlement assets */
-/* for cosmetic purposes only: placed settlements above cities */
-/* roads look best when placed an index under the other pawns */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ */
 /* index of All cards (highest items) */
 /* 1366px; */
 /*  768px; */
@@ -54,29 +49,15 @@
 }
  */
 body {
-  background-color: #0f5581;
+  font-family: "Courier New", Courier, monospace;
+  /*  background-color: #0f5581;
+ */
+  background-color: #132357;
 }
 
 /* body */
-/* 
-.wrapper  {
-
-} /* wrapper */
-.islandBackdrop {
-  background-image: url("gameAssetsOfficial/islandBackground.png");
-  background-repeat: no-repeat;
-  width: 1366px;
-  height: 768px;
-  border: none;
-  margin: 0px;
-  padding: 0px;
-  z-index: 0;
-  top: 0px;
-  left: auto;
-  border: none;
-  z-index: 2;
-  background-size: auto;
-  overflow-wrap: normal;
+.wrapper {
+  /* islandBackdrop  */
   /* /* is not impacted by size or background size */
   /* width:   $viewportWidth; */
   /*
@@ -88,8 +69,8 @@ all other rules are nested
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: $pcMinWidth;
-  min-height: $pcMinHeight;
+  width: $totalMinWidth;
+  min-height: $totalMinHeight;
   border: none;
 } */
   /* resourcecards */
@@ -98,8 +79,8 @@ all other rules are nested
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: $pcMinWidth;
-  min-height: $pcMinHeight;
+  width: $totalMinWidth;
+  min-height: $totalMinHeight;
   z-index: 139;
 }
 
@@ -109,7 +90,7 @@ all other rules are nested
   position: absolute;
   left: 1255px;
   top: 350px;
-  min-width: 42px;
+  width: 42px;
   min-height: 50px;
   z-index: 138;
 }
@@ -120,7 +101,7 @@ all other rules are nested
   position: absolute;
   left: 1253px;
   top: 311px;
-  min-width: 71px;
+  width: 71px;
   min-height: 19px;
   z-index: 137;
 }
@@ -131,7 +112,7 @@ all other rules are nested
   position: absolute;
   left: 1252px;
   top: 233px;
-  min-width: 55px;
+  width: 55px;
   min-height: 53px;
   z-index: 136;
 }
@@ -142,7 +123,7 @@ all other rules are nested
   position: absolute;
   left: 1251px;
   top: 149px;
-  min-width: 57px;
+  width: 57px;
   min-height: 71px;
   z-index: 135;
 } */
@@ -159,74 +140,314 @@ all other rules are nested
       position: absolute;
       left: 0px;
       top: 0px;
-      min-width: $pcMinWidth;
-      min-height: $pcMinHeight;
+      width: $totalMinWidth;
+      min-height: $totalMinHeight;
       z-index: 53;
     } */
+  /* development Cards */
   /* 
   #Buying_Interface_copy {
     position: absolute;
     left: 0px;
     top: 0px;
-    min-width: $pcMinWidth;
-    min-height: $pcMinHeight;
+    width: $totalMinWidth;
+    min-height: $totalMinHeight;
     z-index: 35;
   } */
   /* 6/02/21
 replaced the following with equivalent 
 placeholders 
  */
-  /* endTile Placeholder */
-  /* end island_hexes */
-  /* allPawnsPhParent */
-  /* Below: Height of placeholder pawns
-Height is measured from top */
-  /* subtract 30px; */
-  /* subtract 10px; */
-  /* subtract 40px; */
-  /* subtract 10px; */
-  /* subtract 40px; */
-  /* subtract 10px; */
-  /* subtract 40px; */
-  /* expected 255 ?*/
-  /* subtract 40px; */
+  /*
+#tp_A {
+
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 470px;
+  top: 44px;
+  width: 172px;
+  min-height: 187px;
+  z-index: $hexPlaceholder_Z-index;
 }
 
-.islandBackdrop .resourceCards {
+#tp_B {
+  
+
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 627px;
+  top: 44px;
+  width: 171px;
+  min-height: 187px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_C {
+  
+
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 781px;
+  top: 42px;
+  width: 171px;
+  min-height: 187px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_D {
+  
+
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 393px;
+  top: 176px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_E {
+     
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 547px;
+  top: 176px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_F {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 703px;
+  top: 176px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_G {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 859px;
+  top: 176px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_H {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 316px;
+  top: 308px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_I {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 470px;
+  top: 308px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_J {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 626px;
+  top: 308px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_K {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 781px;
+  top: 308px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_L {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 936px;
+  top: 308px;
+  width: 168px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_M {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 393px;
+  top: 441px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_N {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 548px;
+  top: 441px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_O {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 703px;
+  top: 441px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_P {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 859px;
+  top: 441px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_Q {
+
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 470px;
+  top: 573px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_R {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 626px;
+  top: 573px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+}
+
+#tp_S {
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 781px;
+  top: 573px;
+  width: 172px;
+  min-height: 188px;
+  z-index: $hexPlaceholder_Z-index;
+  border: none;
+}
+
+
+
+
+*/
+  /* island_Hexes */
+}
+
+.wrapper .islandBackdrop {
+  background-repeat: no-repeat;
+  background-position: 5px 10px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: none;
+  z-index: 0;
+}
+
+.wrapper #imageIsland {
+  position: absolute;
+  top: 10px;
+  left: 3px;
+}
+
+.wrapper #shuffleButton1 {
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  width: 170px;
+  text-overflow: clip;
+  top: 800px;
+  left: 600px;
+  background-color: orange;
+  font-size: 2em;
+  z-index: 501;
+}
+
+.wrapper #shuffleButton1:hover {
+  background-color: darkorange;
+  cursor: pointer;
+}
+
+.wrapper .resourceCards {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
+  min-height: 100%;
   z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #sheepCard {
+.wrapper .resourceCards #sheepCard {
   background-image: url("gameAssetsOfficial/sheepCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 983px;
   top: 597px;
-  min-width: 172px;
+  width: 172px;
   min-height: 152px;
-  z-index: 500;
+  z-index: 501;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalSheepDiamond {
+.wrapper .resourceCards #totalSheepDiamond {
   background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1117px;
   top: 693px;
-  min-width: 55px;
+  width: 55px;
   min-height: 54px;
   z-index: 377;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalSheepDiamond #sheepTotalNull {
+.wrapper .resourceCards #totalSheepDiamond #sheepTotalNull {
   font-size: 24px;
   font-family: "Roboto Slab";
   color: #cccccc;
@@ -234,45 +455,42 @@ Height is measured from top */
   line-height: 0.583;
   text-align: center;
   text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -moz-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -webkit-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
-  -ms-transform: matrix(0.5, -0.86603, 0.86603, 0.5, 0, 0);
+  rotate: -50deg;
   position: relative;
   left: 0px;
   top: 20px;
-  min-width: 10.859px;
+  width: 60.859px;
   min-height: 17px;
-  z-index: 378;
+  z-index: 500;
   border: none;
   background-repeat: no-repeat;
 }
 
-.islandBackdrop .resourceCards #woodCard {
+.wrapper .resourceCards #woodCard {
   background-image: url("gameAssetsOfficial/woodCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1033px;
   top: 533px;
-  min-width: 168px;
+  width: 168px;
   min-height: 167px;
-  z-index: 500;
+  z-index: 502;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalWoodDiamond {
+.wrapper .resourceCards #totalWoodDiamond {
   background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1152px;
   top: 651px;
-  min-width: 53px;
+  width: 53px;
   min-height: 55px;
-  z-index: 374;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalWoodDiamond #woodTotalNull {
+.wrapper .resourceCards #totalWoodDiamond #woodTotalNull {
   font-size: 24px;
   font-family: "Roboto Slab";
   color: #cccccc;
@@ -280,45 +498,41 @@ Height is measured from top */
   line-height: 0.583;
   text-align: center;
   text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-  transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-  -moz-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-  -webkit-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
-  -ms-transform: matrix(0.70711, -0.70711, 0.70711, 0.70711, 0, 0);
+  rotate: -40deg;
   position: relative;
   left: 0px;
   top: 20px;
-  min-width: 10.859px;
+  width: 60.859px;
   min-height: 17px;
-  z-index: 375;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #wheatCard {
+.wrapper .resourceCards #wheatCard {
   background-image: url("gameAssetsOfficial/wheatCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1102px;
   top: 485px;
-  min-width: 154px;
+  width: 154px;
   min-height: 170px;
-  z-index: 500;
+  z-index: 503;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalWheatDiamond {
+.wrapper .resourceCards #totalWheatDiamond {
   background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1196px;
   top: 619px;
-  min-width: 53px;
+  width: 53px;
   min-height: 56px;
-  z-index: 371;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalWheatDiamond #wheatTotalNull {
+.wrapper .resourceCards #totalWheatDiamond #wheatTotalNull {
   font-size: 24px;
   font-family: "Roboto Slab";
   color: #cccccc;
@@ -326,44 +540,41 @@ Height is measured from top */
   line-height: 0.583;
   text-align: center;
   text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -moz-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -webkit-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
-  -ms-transform: matrix(0.86603, -0.5, 0.5, 0.86603, 0, 0);
+  rotate: -30deg;
   position: relative;
   left: 0px;
   top: 20px;
-  min-width: 10.859px;
+  width: 60.859px;
   min-height: 17px;
-  z-index: 372;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #oreCard {
+.wrapper .resourceCards #oreCard {
   background-image: url("gameAssetsOfficial/oreCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1184px;
   top: 460px;
-  min-width: 132px;
+  width: 132px;
   min-height: 166px;
-  z-index: 500;
+  z-index: 504;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalOreDiamond {
+.wrapper .resourceCards #totalOreDiamond {
   background-image: url("gameAssetsOfficial/totalOreDiamond.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1248px;
   top: 602px;
-  min-width: 50px;
+  width: 50px;
   min-height: 57px;
-  z-index: 368;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalOreDiamond #oreTotalNull {
+.wrapper .resourceCards #totalOreDiamond #oreTotalNull {
   font-size: 24px;
   font-family: "Roboto Slab";
   color: #cccccc;
@@ -378,37 +589,37 @@ Height is measured from top */
   position: relative;
   left: 0px;
   top: 20px;
-  min-width: 10.859px;
+  width: 50.859px;
   min-height: 17px;
-  z-index: 369;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #brickCard {
+.wrapper .resourceCards #brickCard {
   background-image: url("gameAssetsOfficial/brickCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1272px;
   top: 459px;
-  min-width: 100px;
+  width: 100px;
   min-height: 151px;
-  z-index: 500;
+  z-index: 505;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalBrickDiamond {
+.wrapper .resourceCards #totalBrickDiamond {
   background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
   background-repeat: no-repeat;
   position: relative;
   left: 1299px;
   top: 601px;
-  min-width: 49px;
+  width: 49px;
   min-height: 54px;
-  z-index: 365;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop .resourceCards #totalBrickDiamond #brickTotalNull {
+.wrapper .resourceCards #totalBrickDiamond #brickTotalNull {
   font-size: 24px;
   font-family: "Roboto Slab";
   color: #cccccc;
@@ -416,233 +627,230 @@ Height is measured from top */
   line-height: 0.583;
   text-align: center;
   text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-  transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -moz-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.9901, 0, 0, 1, 0, 0);
-  -ms-transform: matrix(0.9901, 0, 0, 1, 0, 0);
+  rotate: 0deg;
   position: relative;
   left: 0px;
-  top: 20px;
-  min-width: 10.859px;
+  top: 15px;
+  width: 50.859px;
   min-height: 17px;
-  z-index: 366;
+  z-index: 501;
   border: none;
 }
 
-.islandBackdrop #Buyable_Items_Logo {
+.wrapper #Buyable_Items_Logo {
   width: 200px;
 }
 
-.islandBackdrop #playerOrange {
+.wrapper #playerOrange {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 1366px;
-  height: 768px;
-  z-index: 500;
+  min-width: auto;
+  min-height: auto;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerOrange #devCardOrange {
+.wrapper #playerOrange #devCardOrange {
   background-image: url("devCardOrange.png");
   position: absolute;
   left: 1255px;
   top: 350px;
-  width: 42px;
-  height: 50px;
-  z-index: 500;
+  width: auto;
+  height: auto;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerOrange #roadOrange {
+.wrapper #playerOrange #roadOrange {
   background-image: url("roadOrange.png");
   position: absolute;
   left: 1253px;
   top: 311px;
   width: 71px;
   height: 19px;
-  z-index: 500;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerOrange #settlementOrange {
+.wrapper #playerOrange #settlementOrange {
   background-image: url("settlementOrange.png");
   position: absolute;
   left: 1252px;
   top: 233px;
   width: 55px;
   height: 53px;
-  z-index: 500;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerOrange #cityOrange {
+.wrapper #playerOrange #cityOrange {
   background-image: url("cityOrange.png");
   position: absolute;
   left: 1251px;
   top: 149px;
   width: 57px;
   height: 71px;
-  z-index: 500;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerWhite {
+.wrapper #playerWhite {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
-  z-index: 133;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1100;
 }
 
-.islandBackdrop #devCardWhite {
+.wrapper #devCardWhite {
   background-image: url("gameAssetsOfficial/devCardWhite.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
   top: 354px;
-  min-width: 42px;
+  width: 42px;
   min-height: 50px;
-  z-index: 132;
+  z-index: 1100;
 }
 
-.islandBackdrop #roadWhite {
+.wrapper #roadWhite {
   background-image: url("gameAssetsOfficial/roadWhite.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1253px;
   top: 317px;
-  min-width: 71px;
+  width: 71px;
   min-height: 19px;
-  z-index: 131;
+  z-index: 1100;
 }
 
-.islandBackdrop #settleWhite {
+.wrapper #settleWhite {
   background-image: url("gameAssetsOfficial/settlementWhite.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1252px;
   top: 239px;
-  min-width: 55px;
+  width: 55px;
   min-height: 53px;
-  z-index: 130;
+  z-index: 1100;
 }
 
-.islandBackdrop #cityWhite {
+.wrapper #cityWhite {
   background-image: url("gameAssetsOfficial/cityWhite.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1251px;
   top: 155px;
-  min-width: 57px;
+  width: 57px;
   min-height: 71px;
-  z-index: 129;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerRed {
+.wrapper #playerRed {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
-  z-index: 127;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1100;
 }
 
-.islandBackdrop #devCardRed {
+.wrapper #devCardRed {
   background-image: url("gameAssetsOfficial/devCardRed.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
   top: 358px;
-  min-width: 42px;
+  width: 42px;
   min-height: 50px;
-  z-index: 126;
+  z-index: 1100;
 }
 
-.islandBackdrop #roadRed {
+.wrapper #roadRed {
   background-image: url("gameAssetsOfficial/roadRed.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1253px;
   top: 321px;
-  min-width: 71px;
+  width: 71px;
   min-height: 19px;
-  z-index: 125;
+  z-index: 1100;
 }
 
-.islandBackdrop #settleRed {
+.wrapper #settleRed {
   background-image: url("gameAssetsOfficial/settlementRed.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1252px;
   top: 243px;
-  min-width: 55px;
+  width: 55px;
   min-height: 53px;
-  z-index: 124;
+  z-index: 1100;
 }
 
-.islandBackdrop #cityRed {
+.wrapper #cityRed {
   background-image: url("gameAssetsOfficial/cityRed.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1251px;
   top: 159px;
-  min-width: 57px;
+  width: 57px;
   min-height: 71px;
-  z-index: 123;
+  z-index: 1100;
 }
 
-.islandBackdrop #playerBlue {
+.wrapper #playerBlue {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
-  z-index: 121;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1100;
 }
 
-.islandBackdrop #devCardBlue {
+.wrapper #devCardBlue {
   background-image: url("gameAssetsOfficial/devCardBlue.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
   top: 362px;
-  min-width: 42px;
+  width: 42px;
   min-height: 50px;
-  z-index: 120;
+  z-index: 1100;
 }
 
-.islandBackdrop #roadBLue {
+.wrapper #roadBLue {
   background-image: url("gameAssetsOfficial/roadBLue.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1256px;
   top: 329px;
-  min-width: 65px;
+  width: 65px;
   min-height: 13px;
-  z-index: 119;
+  z-index: 1100;
 }
 
-.islandBackdrop #settleBlue {
+.wrapper #settleBlue {
   background-image: url("gameAssetsOfficial/settlementBlue.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
   top: 251px;
-  min-width: 49px;
+  width: 49px;
   min-height: 47px;
-  z-index: 118;
+  z-index: 1100;
 }
 
-.islandBackdrop #cityBlue {
+.wrapper #cityBlue {
   background-image: url("gameAssetsOfficial/cityBlue.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1254px;
   top: 167px;
-  min-width: 51px;
+  width: 51px;
   min-height: 65px;
-  z-index: 117;
+  z-index: 1100;
   border: none;
 }
 
-.islandBackdrop .victoryPointsCounterBox {
+.wrapper .victoryPointsCounterBox {
   border-width: 9.56px;
   border-color: #343434;
   border-style: solid;
@@ -656,13 +864,13 @@ Height is measured from top */
   z-index: 1000;
 }
 
-.islandBackdrop .victoryPointsCounterBox #victoryPoints {
+.wrapper .victoryPointsCounterBox #victoryPoints {
   position: absolute;
   top: -60px;
   left: 80px;
 }
 
-.islandBackdrop #myVPs {
+.wrapper #myVPs {
   font-size: 16px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -672,12 +880,12 @@ Height is measured from top */
   position: inherit;
   right: 0px;
   top: 47.6px;
-  min-width: 72px;
+  width: 72px;
   min-height: 53px;
   z-index: 500;
 }
 
-.islandBackdrop #vpCounter {
+.wrapper #vpCounter {
   font-size: 50px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -691,17 +899,17 @@ Height is measured from top */
   border: none;
 }
 
-.islandBackdrop #pawnsCounterContainer {
+.wrapper #pawnsCounterContainer {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: 500;
   border: none;
 }
 
-.islandBackdrop #pawnsCounterContainer #left {
+.wrapper #pawnsCounterContainer #left {
   font-size: 20px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -716,7 +924,7 @@ Height is measured from top */
   z-index: 500;
 }
 
-.islandBackdrop #pawnsCounterContainer #citiesLeft {
+.wrapper #pawnsCounterContainer #citiesLeft {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -729,7 +937,7 @@ Height is measured from top */
   z-index: 500;
 }
 
-.islandBackdrop #pawnsCounterContainer #settlementsLeft {
+.wrapper #pawnsCounterContainer #settlementsLeft {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -742,7 +950,7 @@ Height is measured from top */
   z-index: 500;
 }
 
-.islandBackdrop #pawnsCounterContainer #roadsLeft {
+.wrapper #pawnsCounterContainer #roadsLeft {
   font-size: 30px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -756,7 +964,7 @@ Height is measured from top */
   border: none;
 }
 
-.islandBackdrop #pawnsCounterContainer #devCardTotal {
+.wrapper #pawnsCounterContainer #devCardTotal {
   font-size: 35px;
   font-family: "Arial Rounded MT Bold";
   color: #eae3e2;
@@ -769,7 +977,7 @@ Height is measured from top */
   z-index: 500;
 }
 
-.islandBackdrop #pawnsContainerBox {
+.wrapper #pawnsContainerBox {
   border-width: 9.56px;
   border-color: #343434;
   border-style: solid;
@@ -778,46 +986,51 @@ Height is measured from top */
   opacity: 0.5;
   position: absolute;
   top: 139px;
-  min-width: 111.88px;
+  left: 1250px;
+  width: 111.88px;
   min-height: 275.88px;
-  z-index: 500;
+  z-index: 0;
   border: none;
 }
 
-.islandBackdrop .cityMarket {
+.wrapper .cityMarket {
   position: absolute;
   left: 60px;
+  z-index: 1100;
 }
 
-.islandBackdrop .settlementMarket {
+.wrapper .settlementMarket {
   position: absolute;
   left: 10px;
+  z-index: 1100;
 }
 
-.islandBackdrop .roadMarket {
+.wrapper .roadMarket {
   position: absolute;
   left: 10px;
+  z-index: 1100;
 }
 
-.islandBackdrop .devCardMarket {
+.wrapper .devCardMarket {
   position: absolute;
   left: 10px;
+  z-index: 1100;
 }
 
-.islandBackdrop .buySkipTrade {
+.wrapper .buySkipTrade {
   position: absolute;
   left: 0px;
   top: 20px;
-  min-width: auto;
-  min-height: auto;
-  z-index: 500;
+  width: 100%;
+  min-height: 100%;
+  z-index: 600;
 }
 
-.islandBackdrop .buySkipTrade #fullTBS {
-  z-index: 500;
+.wrapper .buySkipTrade #fullTBS {
+  z-index: 300;
 }
 
-.islandBackdrop #BUY {
+.wrapper #BUY {
   font-size: 24px;
   font-family: "Arial Black";
   background-image: url("BUY.png");
@@ -828,12 +1041,12 @@ Height is measured from top */
   height: 48px;
   left: 1256.269px;
   top: 689.908px;
-  min-width: 55.039px;
+  width: 55.039px;
   min-height: 17px;
-  z-index: 100;
+  z-index: 1000;
 }
 
-.islandBackdrop #SKIP {
+.wrapper #SKIP {
   font-size: 24px;
   font-family: "Arial Black";
   color: #343434;
@@ -847,12 +1060,12 @@ Height is measured from top */
   position: absolute;
   left: 1256.101px;
   top: 748.908px;
-  min-width: 62.664px;
+  width: 62.664px;
   min-height: 17px;
-  z-index: 500;
+  z-index: 1000;
 }
 
-.islandBackdrop #TRADE {
+.wrapper #TRADE {
   font-size: 24px;
   font-family: "Arial Black";
   color: #343434;
@@ -866,12 +1079,12 @@ Height is measured from top */
   position: absolute;
   left: 1165.601px;
   top: 730.408px;
-  min-width: 88.336px;
+  width: 88.336px;
   min-height: 17px;
-  z-index: 500;
+  z-index: 1000;
 }
 
-.islandBackdrop #colorHandBigUnderBlue {
+.wrapper #colorHandBigUnderBlue {
   background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -879,12 +1092,12 @@ Height is measured from top */
   top: 460px;
   width: 418px;
   height: 308px;
-  z-index: 96;
+  z-index: 2;
   border: none;
   background-repeat: no-repeat;
 }
 
-.islandBackdrop #colorHandBigUnderRed {
+.wrapper #colorHandBigUnderRed {
   background-image: url("gameAssetsOfficial/colorHandBigUnderRed.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -892,12 +1105,12 @@ Height is measured from top */
   top: 460px;
   width: 418px;
   height: 308px;
-  z-index: 96;
+  z-index: 2;
   border: none;
   background-repeat: no-repeat;
 }
 
-.islandBackdrop #colorHandBigUnderWhite {
+.wrapper #colorHandBigUnderWhite {
   background-image: url("gameAssetsOfficial/colorHandBigUnderWhite.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -905,12 +1118,12 @@ Height is measured from top */
   top: 460px;
   width: 418px;
   height: 308px;
-  z-index: 96;
+  z-index: 2;
   border: none;
   background-repeat: no-repeat;
 }
 
-.islandBackdrop #colorHandBigUnderOrange {
+.wrapper #colorHandBigUnderOrange {
   background-image: url("gameAssetsOfficial/colorHandBigUnderOrange.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -918,159 +1131,159 @@ Height is measured from top */
   top: 460px;
   width: 418px;
   height: 308px;
-  z-index: 96;
+  z-index: 2;
   border: none;
   background-repeat: no-repeat;
 }
 
-.islandBackdrop #tradeShips {
+.wrapper #tradeShips {
   position: absolute;
   top: 10px;
   left: 10px;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
+  min-height: 100%;
   z-index: 90;
   border: none;
 }
 
-.islandBackdrop #any3_1A {
+.wrapper #any3_1A {
   background-image: url("gameAssetsOfficial/any3_1A.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 954px;
   top: 1px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 89;
 }
 
-.islandBackdrop #any3_1B {
+.wrapper #any3_1B {
   background-image: url("gameAssetsOfficial/any3_1B.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 971px;
   top: 1px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 88;
   border: none;
 }
 
-.islandBackdrop #any3_1C {
+.wrapper #any3_1C {
   background-image: url("gameAssetsOfficial/any3_1C.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 993px;
   top: 1px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 87;
   border: none;
 }
 
-.islandBackdrop #any3_1D {
+.wrapper #any3_1D {
   background-image: url("gameAssetsOfficial/any3_1D.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1011px;
   top: 1px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 86;
   border: none;
 }
 
-.islandBackdrop #brick_2_1 {
+.wrapper #brick_2_1 {
   background-image: url("gameAssetsOfficial/brick-2_1.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 983px;
   top: 73px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 85;
   border: none;
 }
 
-.islandBackdrop #ore_2_1 {
+.wrapper #ore_2_1 {
   background-image: url("gameAssetsOfficial/ore-2_1.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 990px;
   top: 73px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 84;
   border: none;
 }
 
-.islandBackdrop #sheep_2_1 {
+.wrapper #sheep_2_1 {
   background-image: url("gameAssetsOfficial/sheep-2_1.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 997px;
   top: 73px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 83;
   border: none;
 }
 
-.islandBackdrop #wood_2_1 {
+.wrapper #wood_2_1 {
   background-image: url("gameAssetsOfficial/wood-2_1.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1004px;
   top: 73px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 82;
   border: none;
 }
 
-.islandBackdrop #wheat_2_1 {
+.wrapper #wheat_2_1 {
   background-image: url("gameAssetsOfficial/wheat-2_1.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1011px;
   top: 73px;
-  min-width: 125px;
+  width: 125px;
   min-height: 85px;
   z-index: 81;
   border: none;
 }
 
-.islandBackdrop #currentPlayerTimerClock {
+.wrapper #currentPlayerTimerClock {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
+  min-height: 100%;
   z-index: 79;
 }
 
-.islandBackdrop #timerArrow {
+.wrapper #timerArrow {
   background-color: #643f0f;
   position: absolute;
   left: 1156px;
   top: 25px;
-  min-width: 11px;
+  width: 11px;
   min-height: 33px;
   z-index: 78;
 }
 
-.islandBackdrop #timerBG {
+.wrapper #timerBG {
   background-image: url("gameAssetsOfficial/timerBG.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1120px;
   top: 4px;
-  min-width: 84px;
+  width: 84px;
   min-height: 84px;
   z-index: 77;
 }
 
-.islandBackdrop #Ellipse {
+.wrapper #Ellipse {
   border-width: 9.56px;
   border-color: #eae2e2;
   border-style: solid;
@@ -1079,329 +1292,127 @@ Height is measured from top */
   position: absolute;
   left: 1125px;
   top: 10px;
-  min-width: 72.88px;
+  width: 72.88px;
   min-height: 72.88px;
   z-index: 76;
   border: none;
 }
 
-.islandBackdrop #robber {
+.wrapper #robber {
   background-image: url("gameAssetsOfficial/robber.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 808px;
   top: 596px;
-  min-width: 71px;
+  width: 71px;
   min-height: 111px;
   z-index: 74;
   border: none;
 }
 
-.islandBackdrop .hexNumbers {
-  position: absolute;
-}
-
-.islandBackdrop .hexNumbers #n2 {
-  background-image: url("gameAssetsOfficial/n2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 632px;
-  top: 250px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 72;
-}
-
-.islandBackdrop .hexNumbers #n3_1 {
-  background-image: url("gameAssetsOfficial/n3_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 635px;
-  top: 257px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 71;
-}
-
-.islandBackdrop .hexNumbers #n3_2 {
-  background-image: url("gameAssetsOfficial/n3_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 635px;
-  top: 265px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 70;
-}
-
-.islandBackdrop .hexNumbers #n4_1 {
-  background-image: url("gameAssetsOfficial/n4_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 637px;
-  top: 272px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 69;
-}
-
-.islandBackdrop .hexNumbers #n4_2 {
-  background-image: url("gameAssetsOfficial/n4_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 283px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 68;
-}
-
-.islandBackdrop .hexNumbers #n5_1 {
-  background-image: url("gameAssetsOfficial/n5_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 290px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 67;
-}
-
-.islandBackdrop .hexNumbers #n5_2 {
-  background-image: url("gameAssetsOfficial/n5_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 299px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 66;
-}
-
-.islandBackdrop .hexNumbers #n6_1 {
-  background-image: url("gameAssetsOfficial/n6_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 644px;
-  top: 301px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 65;
-}
-
-.islandBackdrop .hexNumbers #n6_2 {
-  background-image: url("gameAssetsOfficial/n6_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 644px;
-  top: 305px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 64;
-}
-
-.islandBackdrop .hexNumbers #n8_1 {
-  background-image: url("gameAssetsOfficial/n8_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 305px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 63;
-}
-
-.islandBackdrop .hexNumbers #n8_2 {
-  background-image: url("gameAssetsOfficial/n8_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 642px;
-  top: 314px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 62;
-}
-
-.islandBackdrop .hexNumbers #n9_1 {
-  background-image: url("gameAssetsOfficial/n9_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 637px;
-  top: 314px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 61;
-}
-
-.islandBackdrop .hexNumbers #n9_2 {
-  background-image: url("gameAssetsOfficial/n9_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 321px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 60;
-}
-
-.islandBackdrop .hexNumbers #n10_1 {
-  background-image: url("gameAssetsOfficial/n10_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 328px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 59;
-}
-
-.islandBackdrop .hexNumbers #n10_2 {
-  background-image: url("gameAssetsOfficial/n10_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 638px;
-  top: 332px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 58;
-}
-
-.islandBackdrop .hexNumbers #n11_1 {
-  background-image: url("gameAssetsOfficial/n11_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 334px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 57;
-}
-
-.islandBackdrop .hexNumbers #n11_2 {
-  background-image: url("gameAssetsOfficial/n11_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 341px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 56;
-}
-
-.islandBackdrop .hexNumbers #n12 {
-  background-image: url("gameAssetsOfficial/n12.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 347px;
-  min-width: 69px;
-  min-height: 69px;
-  z-index: 55;
-  border: none;
-}
-
-.islandBackdrop .largestArmyLongestRoad {
+.wrapper .largestArmyLongestRoad {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: auto;
-  height: auto;
-  z-index: 501;
-  border: none;
+  width: 500px;
+  height: 500px;
+  z-index: 500;
 }
 
-.islandBackdrop .largestArmyLongestRoad #Longest_Road {
+.wrapper .largestArmyLongestRoad #Longest_Road {
   background-image: url("gameAssetsOfficial/Longest Road.png");
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   left: 1135px;
   top: 279px;
-  min-width: 106px;
+  width: 106px;
   min-height: 159px;
-  z-index: 501;
+  z-index: 500;
 }
 
-.islandBackdrop .largestArmyLongestRoad #Biggest_Army {
+.wrapper .largestArmyLongestRoad #Biggest_Army {
   background-image: url("gameAssetsOfficial/Biggest Army.png");
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   left: 1135px;
   top: 124px;
-  min-width: 105px;
+  width: 105px;
   min-height: 160px;
-  z-index: 501;
+  z-index: 500;
 }
 
-.islandBackdrop #Development_Cards {
+.wrapper #Development_Cards {
   position: absolute;
   left: 0px;
   top: 10px;
-  min-width: auto;
-  min-height: auto;
-  z-index: 47;
+  width: 100%;
+  min-height: 100%;
+  z-index: 500;
   border: none;
 }
 
-.islandBackdrop #Development_Cards #knightCard {
+.wrapper #Development_Cards :hover {
+  cursor: pointer;
+  width: 110%;
+  background-color: #e3d55d;
+}
+
+.wrapper #Development_Cards #knightCard {
   background-image: url("gameAssetsOfficial/knightCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 5px;
   top: -1px;
-  min-width: 101px;
+  width: 101px;
   min-height: 151px;
-  z-index: 46;
+  z-index: 500;
 }
 
-.islandBackdrop #Development_Cards #monopolyCard {
+.wrapper #Development_Cards #monopolyCard {
   background-image: url("gameAssetsOfficial/monopolyCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 105px;
   top: -1px;
-  min-width: 101px;
+  width: 101px;
   min-height: 151px;
-  z-index: 45;
+  z-index: 500;
 }
 
-.islandBackdrop #Development_Cards #yearofplentyCard {
+.wrapper #Development_Cards #yearofplentyCard {
   background-image: url("gameAssetsOfficial/yearofplentyCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 206px;
   top: -1px;
-  min-width: 101px;
+  width: 101px;
   min-height: 151px;
-  z-index: 44;
+  z-index: 500;
 }
 
-.islandBackdrop #Development_Cards #oneVPCard {
+.wrapper #Development_Cards #oneVPCard {
   background-image: url("gameAssetsOfficial/oneVPCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 5px;
   top: 149px;
-  min-width: 101px;
+  width: 101px;
   min-height: 151px;
-  z-index: 43;
+  z-index: 500;
 }
 
-.islandBackdrop #Development_Cards #roadCard {
+.wrapper #Development_Cards #roadCard {
   background-image: url("gameAssetsOfficial/roadCard.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 105px;
   top: 148px;
-  min-width: 101px;
+  width: 101px;
   min-height: 151px;
-  z-index: 42;
+  z-index: 500;
 }
 
-.islandBackdrop span:hover + div {
-  display: block;
-}
-
-.islandBackdrop #myButton {
+.wrapper #myButton {
   position: absolute;
   background-color: royalblue;
   top: 1200px;
@@ -1409,16 +1420,16 @@ Height is measured from top */
   z-index: 900;
 }
 
-.islandBackdrop #Buying_Interface {
+.wrapper #Buying_Interface {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
+  min-height: 100%;
   z-index: 40;
 }
 
-.islandBackdrop #Yes {
+.wrapper #Yes {
   font-size: 20px;
   font-family: "Roboto Slab";
   color: #0e0e0e;
@@ -1428,12 +1439,12 @@ Height is measured from top */
   position: absolute;
   left: 289.549px;
   top: 657.013px;
-  min-width: 40px;
+  width: 40px;
   min-height: 15px;
   z-index: 39;
 }
 
-.islandBackdrop #No {
+.wrapper #No {
   font-size: 20px;
   font-family: "Roboto Slab";
   color: #0e0e0e;
@@ -1443,12 +1454,12 @@ Height is measured from top */
   position: absolute;
   left: 288.185px;
   top: 710.013px;
-  min-width: 30px;
+  width: 30px;
   min-height: 15px;
   z-index: 38;
 }
 
-.islandBackdrop #mainChat {
+.wrapper #mainChat {
   font-size: 18px;
   font-family: "Courier";
   color: #2c2424;
@@ -1458,12 +1469,11 @@ Height is measured from top */
   position: absolute;
   left: 17px;
   top: 620.746px;
-  min-width: 200px;
-  max-width: 250px;
+  width: 250px;
   z-index: 37;
 }
 
-.islandBackdrop #Other {
+.wrapper #Other {
   font-size: 20px;
   font-family: "Roboto Slab";
   color: #0e0e0e;
@@ -1473,12 +1483,12 @@ Height is measured from top */
   position: absolute;
   left: 287.953px;
   top: 762.013px;
-  min-width: 72px;
+  width: 72px;
   min-height: 15px;
   z-index: 36;
 }
 
-.islandBackdrop #Chat {
+.wrapper #Chat {
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
@@ -1491,12 +1501,12 @@ Height is measured from top */
   position: absolute;
   left: -1px;
   top: 604px;
-  min-width: 273.3px;
+  width: 273.3px;
   min-height: 151.3px;
   z-index: 33;
 }
 
-.islandBackdrop #box1 {
+.wrapper #box1 {
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
@@ -1509,12 +1519,12 @@ Height is measured from top */
   position: absolute;
   left: 271px;
   top: 604px;
-  min-width: 90.3px;
+  width: 90.3px;
   min-height: 44.3px;
   z-index: 32;
 }
 
-.islandBackdrop #box2 {
+.wrapper #box2 {
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
@@ -1527,12 +1537,12 @@ Height is measured from top */
   position: absolute;
   left: 280px;
   top: 657px;
-  min-width: 81.3px;
+  width: 81.3px;
   min-height: 45.3px;
   z-index: 31;
 }
 
-.islandBackdrop #box3 {
+.wrapper #box3 {
   border-width: 6.35px;
   border-color: #726869;
   border-style: solid;
@@ -1545,2245 +1555,69 @@ Height is measured from top */
   position: absolute;
   left: 280px;
   top: 710px;
-  min-width: 81.3px;
+  width: 81.3px;
   min-height: 45.3px;
   z-index: 31;
 }
 
-.islandBackdrop .tilePlaceholder {
+.wrapper .tilePlaceholder {
   position: absolute;
   visibility: visible;
-  z-index: 500;
+  z-index: 1;
   /* All tiles will be set to "visible after shuffling is done"*/
 }
 
-.islandBackdrop #tp_A {
-  background-image: url("gameAssetsOfficial/sheep1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 470px;
-  top: 44px;
-  min-width: 172px;
-  min-height: 187px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_B {
-  /*   background-image: url($sheepTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 627px;
-  top: 44px;
-  min-width: 171px;
-  min-height: 187px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_C {
-  /*   background-image: url($sheepTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 781px;
-  top: 42px;
-  min-width: 171px;
-  min-height: 187px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_D {
-  /*   background-image: url($sheepTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 393px;
-  top: 176px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_E {
-  /*   background-image: url($woodTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 547px;
-  top: 176px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_F {
-  /*   background-image: url($woodTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 703px;
-  top: 176px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_G {
-  /*   background-image: url($woodTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 859px;
-  top: 176px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_H {
-  /*   background-image: url($woodTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 316px;
-  top: 308px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_I {
-  /*   background-image: url($wheatTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 470px;
-  top: 308px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_J {
-  /*   background-image: url($wheatTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 626px;
-  top: 308px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_K {
-  /*   background-image: url($wheatTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 781px;
-  top: 308px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_L {
-  /*   background-image: url($wheatTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 936px;
-  top: 308px;
-  min-width: 168px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_M {
-  /*   background-image: url($oreTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 393px;
-  top: 441px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_N {
-  /*   background-image: url($oreTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 548px;
-  top: 441px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_O {
-  /*   background-image: url($oreTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 703px;
-  top: 441px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_P {
-  /*   background-image: url($brickTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 859px;
-  top: 441px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_Q {
-  /*   background-image: url($brickTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 470px;
-  top: 573px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_R {
-  /*   background-image: url($brickTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 626px;
-  top: 573px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-}
-
-.islandBackdrop #tp_S {
-  /*   background-image: url($desertTile);
- */
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 781px;
-  top: 573px;
-  min-width: 172px;
-  min-height: 188px;
-  z-index: 500;
-  border: none;
-}
-
-.islandBackdrop #island_hexes {
+.wrapper #island_hexes {
   position: absolute;
   left: 32px;
   top: 16px;
   width: auto;
   height: auto;
-  /* min-width: 1407px;
-  min-height: 802px; */
   z-index: 28;
 }
 
-.islandBackdrop #island_hexes #sheep1 {
-  background-image: "gameAssetsOfficial/sheep1.png";
-}
-
-.islandBackdrop #island_hexes #sheep2 {
-  background-image: "gameAssetsOfficial/sheep1.png";
-}
-
-.islandBackdrop #island_hexes #sheep3 {
-  background-image: "gameAssetsOfficial/sheep1.png";
-}
-
-.islandBackdrop #island_hexes #sheep4 {
-  background-image: "gameAssetsOfficial/sheep1.png";
-}
-
-.islandBackdrop #island_hexes #wood1 {
-  background-image: "gameAssetsOfficial/wood1.png";
-}
-
-.islandBackdrop #island_hexes #wood2 {
-  background-image: "gameAssetsOfficial/wood1.png";
-}
-
-.islandBackdrop #island_hexes #wood3 {
-  background-image: "gameAssetsOfficial/wood1.png";
-}
-
-.islandBackdrop #island_hexes #wood4 {
-  background-image: "gameAssetsOfficial/wood1.png";
-}
-
-.islandBackdrop #island_hexes #wheat1 {
-  background-image: "gameAssetsOfficial/wheat1.png";
-}
-
-.islandBackdrop #island_hexes #wheat2 {
-  background-image: "gameAssetsOfficial/wheat1.png";
-}
-
-.islandBackdrop #island_hexes #wheat3 {
-  background-image: "gameAssetsOfficial/wheat1.png";
-}
-
-.islandBackdrop #island_hexes #wheat4 {
-  background-image: "gameAssetsOfficial/wheat1.png";
-}
-
-.islandBackdrop #island_hexes #brick1 {
-  background-image: "gameAssetsOfficial/brick1.png";
-}
-
-.islandBackdrop #island_hexes #brick2 {
-  background-image: "gameAssetsOfficial/brick1.png";
-}
-
-.islandBackdrop #island_hexes #brick3 {
-  background-image: "gameAssetsOfficial/brick1.png";
-}
-
-.islandBackdrop #island_hexes #ore1 {
-  background-image: "gameAssetsOfficial/ore1.png";
-}
-
-.islandBackdrop #island_hexes #desert1 {
-  background-image: "gameAssetsOfficial/desert1.png";
-}
-
-.islandBackdrop #bankChest {
+.wrapper #bankChest {
   position: absolute;
   left: 0px;
   top: 0px;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
+  min-height: 100%;
   z-index: 7;
 }
 
-.islandBackdrop #bankChestTop {
+.wrapper #bankChestTop {
   background-image: url("gameAssetsOfficial/bankChestTop.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 5px;
   top: 407px;
-  min-width: 219px;
+  width: 219px;
   min-height: 53px;
   z-index: 6;
 }
 
-.islandBackdrop #bankChestBottom {
+.wrapper #bankChestBottom {
   background-image: url("gameAssetsOfficial/bankChestBottom.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 7px;
   top: 451px;
-  min-width: 215px;
+  width: 215px;
   min-height: 82px;
   z-index: 5;
 }
 
-.islandBackdrop #bankChestInside {
+.wrapper #bankChestInside {
   background-image: url("gameAssetsOfficial/bankChestInside.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 13px;
   top: 417px;
-  min-width: 200px;
+  width: 200px;
   min-height: 43px;
   z-index: 4;
   border: none;
 }
 
-.islandBackdrop .allPawnsPhParent {
-  position: absolute;
-  top: 10px;
-  left: 275px;
-}
-
-.islandBackdrop #settlementPlaceholder_F4 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 382px;
-  top: 692px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_F5 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 465px;
-  top: 662px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_F7 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 607px;
-  top: 652px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_F6 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 533px;
-  top: 692px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_F1 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 158px;
-  top: 652px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_F2 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 226px;
-  top: 682px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_F3 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 314px;
-  top: 652px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #cityPlaceholder_F5 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 464px;
-  top: 652px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_F7 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 610px;
-  top: 652px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_F6 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 536px;
-  top: 682px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_F1 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 157px;
-  top: 652px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_F2 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 229px;
-  top: 682px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_F3 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 313px;
-  top: 652px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_F4 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 385px;
-  top: 682px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #roadPlaceholder_f7_e8 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 627px;
-  top: 608px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f5_e6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 479px;
-  top: 608px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f6_f7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 571px;
-  top: 688px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f5_f6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 490px;
-  top: 687px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f1_e2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 172px;
-  top: 607px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f2_f3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 264px;
-  top: 687px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f1_f2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 183px;
-  top: 686px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f3_e4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 328px;
-  top: 606px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f4_f5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 420px;
-  top: 686px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_f3_f4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 339px;
-  top: 685px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e6_e7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 496px;
-  top: 559px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e5_e6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 415px;
-  top: 558px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #settlementPlaceholder_E7 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 547px;
-  top: 520px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E9 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 689px;
-  top: 520px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E8 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 615px;
-  top: 562px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E5 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 390px;
-  top: 524px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E6 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 458px;
-  top: 566px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E3 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 231px;
-  top: 522px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E4 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 299px;
-  top: 564px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E1 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 75px;
-  top: 522px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_E2 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 143px;
-  top: 564px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #cityPlaceholder_E7 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 546px;
-  top: 505px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E9 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 692px;
-  top: 505px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E8 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 618px;
-  top: 547px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E5 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 389px;
-  top: 509px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E6 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 461px;
-  top: 551px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E3 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 230px;
-  top: 507px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E4 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 302px;
-  top: 549px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E1 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 74px;
-  top: 507px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_E2 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 146px;
-  top: 549px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #roadPlaceholder_e9_d10 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 709px;
-  top: 475px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e7_d8 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 561px;
-  top: 475px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e8_e9 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 653px;
-  top: 555px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e7_e8 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 572px;
-  top: 554px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e5_d6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 404px;
-  top: 479px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e3_d4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 245px;
-  top: 477px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e4_e5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 337px;
-  top: 557px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e3_e4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 256px;
-  top: 556px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e1_d2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 89px;
-  top: 477px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e2_e3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 181px;
-  top: 557px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_e1_e2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 100px;
-  top: 556px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d9_d10 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 645px;
-  top: 428px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #settlementPlaceholder_D1 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 1px;
-  top: 390px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D2 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 69px;
-  top: 432px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D3 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 152px;
-  top: 390px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D4 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 220px;
-  top: 432px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D5 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 311px;
-  top: 390px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D7 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 470px;
-  top: 390px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D8 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 538px;
-  top: 432px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D9 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 620px;
-  top: 394px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D11 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 762px;
-  top: 394px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D10 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 688px;
-  top: 436px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_D6 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 379px;
-  top: 432px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #cityPlaceholder_D1 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 0px;
-  top: 375px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D2 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 72px;
-  top: 417px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D3 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 151px;
-  top: 375px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D4 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 223px;
-  top: 417px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D5 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 310px;
-  top: 375px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D6 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 382px;
-  top: 417px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D7 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 469px;
-  top: 375px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D8 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 541px;
-  top: 417px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D9 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 619px;
-  top: 379px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D11 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 765px;
-  top: 379px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_D10 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 691px;
-  top: 421px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #roadPlaceholder_d1_d2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 26px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d1_c1 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 15px;
-  top: 345px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d2_d3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 107px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d3_c3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 166px;
-  top: 345px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d4_d5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 258px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d3_d4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 177px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d5_c5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 325px;
-  top: 345px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d6_d7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 417px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d5_d6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 336px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d7_c7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 484px;
-  top: 345px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d8_d9 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* lL-hR */
-  position: absolute;
-  left: 576px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d7_d8 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 495px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d11_c11 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 782px;
-  top: 349px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d9_c9 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 634px;
-  top: 349px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_d10_d11 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /*lL-hR*/
-  position: absolute;
-  left: 726px;
-  top: 429px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #settlementPlaceholder_C2 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 75px;
-  top: 265px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C1 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 1px;
-  top: 303px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C4 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 226px;
-  top: 265px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C3 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 152px;
-  top: 303px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C6 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 385px;
-  top: 265px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C5 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 311px;
-  top: 303px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C8 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 544px;
-  top: 265px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C7 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 470px;
-  top: 303px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C10 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 694px;
-  top: 269px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C9 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 620px;
-  top: 307px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_C11 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 762px;
-  top: 307px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #cityPlaceholder_C1 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 0px;
-  top: 288px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C4 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 225px;
-  top: 250px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C3 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 151px;
-  top: 288px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C6 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 384px;
-  top: 250px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C5 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 310px;
-  top: 288px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C8 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 543px;
-  top: 250px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C7 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 469px;
-  top: 288px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C10 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 693px;
-  top: 254px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C9 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 619px;
-  top: 292px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C11 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 765px;
-  top: 292px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_C2 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 74px;
-  top: 250px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #roadPlaceholder_c10_b9 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 706px;
-  top: 212px;
-  width: 19px;
-  height: 71px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c8_b7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 555px;
-  top: 210px;
-  width: 19px;
-  height: 71px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c6_b5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 399px;
-  top: 210px;
-  width: 19px;
-  height: 71px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c4_b3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 242px;
-  top: 210px;
-  width: 19px;
-  height: 71px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c2_b1 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 96px;
-  top: 214px;
-  width: 19px;
-  height: 71px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c1_c2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 25px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c2_c3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 103px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c3_c4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 176px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c4_c5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 254px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c5_c6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 335px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c6_c7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 413px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c7_c8 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 494px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c8_c9 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 572px;
-  top: 298px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c9_c10 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 644px;
-  top: 302px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_c10_c11 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 722px;
-  top: 302px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B9 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 688px;
-  top: 172px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B8 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 605px;
-  top: 124px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B7 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 531px;
-  top: 166px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B6 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 459px;
-  top: 130px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B5 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 385px;
-  top: 168px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B4 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 302px;
-  top: 130px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B3 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 228px;
-  top: 168px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B2 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 156px;
-  top: 134px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_B1 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 82px;
-  top: 172px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #cityPlaceholder_B8 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 608px;
-  top: 109px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B7 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 534px;
-  top: 151px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B9 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 689px;
-  top: 155px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B6 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 459px;
-  top: 115px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B5 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 384px;
-  top: 153px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B4 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 302px;
-  top: 115px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B3 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 227px;
-  top: 153px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B2 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 155px;
-  top: 119px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_B1 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 81px;
-  top: 157px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #roadPlaceholder_b8_a7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 625px;
-  top: 79px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b2_a1 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 173px;
-  top: 79px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b4_a3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 327px;
-  top: 81px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b6_a5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawnVert.png");
-  /* vertical */
-  position: absolute;
-  left: 477px;
-  top: 79px;
-  width: 19px;
-  height: 71px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b7_b8 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 565px;
-  top: 163px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b8_b9 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 643px;
-  top: 163px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b5_b6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 409px;
-  top: 163px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b6_b7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 487px;
-  top: 163px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b3_b4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 252px;
-  top: 163px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b4_b5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 330px;
-  top: 163px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b1_b2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 106px;
-  top: 167px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #roadPlaceholder_b2_b3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 184px;
-  top: 167px;
-  width: 68px;
-  height: 49px;
-  z-index: 400;
-}
-
-.islandBackdrop #settlementPlaceholder_A7 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 606px;
-  top: 38px;
-  width: 54px;
-  height: 52px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_A2 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 233px;
-  top: 0px;
-  width: 54px;
-  height: 52px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_A1 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 159px;
-  top: 37px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_A4 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 387px;
-  top: 1px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_A3 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 313px;
-  top: 39px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_A6 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 537px;
-  top: 0px;
-  width: 54px;
-  height: 52px;
-  z-index: 402;
-}
-
-.islandBackdrop #settlementPlaceholder_A5 {
-  background-image: url("gameAssetsOfficial/settlementTemplatePawn.png");
-  position: absolute;
-  left: 460px;
-  top: 39px;
-  width: 54px;
-  height: 53px;
-  z-index: 402;
-}
-
-.islandBackdrop #cityPlaceholder_A2 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 232px;
-  top: 0px;
-  width: 57px;
-  height: 53px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_A1 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 158px;
-  top: 22px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_A4 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 386px;
-  top: 0px;
-  width: 57px;
-  height: 55px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_A3 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 312px;
-  top: 24px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_A5 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 458px;
-  top: 24px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_A6 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 536px;
-  top: 0px;
-  width: 57px;
-  height: 54px;
-  z-index: 401;
-}
-
-.islandBackdrop #cityPlaceholder_A7 {
-  background-image: url("gameAssetsOfficial/cityTemplatePawn.png");
-  position: absolute;
-  left: 608px;
-  top: 22px;
-  width: 57px;
-  height: 70px;
-  z-index: 401;
-}
-
-.islandBackdrop #roadPlaceholder_a1_a2 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 183px;
-  top: 32px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_a2_a3 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 261px;
-  top: 32px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_a3_a4 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 337px;
-  top: 34px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_a4_a5 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 415px;
-  top: 34px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_a5_a6 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-lL-hR.png");
-  /* hL-hR */
-  position: absolute;
-  left: 487px;
-  top: 32px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-.islandBackdrop #roadPlaceholder_a6_a7 {
-  background-image: url("gameAssetsOfficial/roadTemplatePawn-hL-lR.png");
-  /* hL-lR */
-  position: absolute;
-  left: 565px;
-  top: 30px;
-  width: 68px;
-  height: 49px;
-  z-index: 402;
-}
-
-/* islandBackdrop  */
+/* wrapper */
 /*# sourceMappingURL=styleAssets.css.map */

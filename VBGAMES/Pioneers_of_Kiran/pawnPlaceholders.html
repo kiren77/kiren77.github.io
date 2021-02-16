@@ -4,31 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" type="text/css" href="styleAssets.css" />
-  <link rel="stylesheet" type="text/css" href="shufflingStyles.css" />
-  <link rel="stylesheet" type="text/css" href="pawnPlaceholders.css" />
-  <link rel="stylesheet" type="text/css" href="hexNumbers.css" />
-
   <link rel="stylesheet" href="shufflingStyles.css" />
-  
-
+  <link rel="stylesheet" href="flipTileReveal.css"/>
+  <link rel="stylesheet" type="text/css" href="styleAssets.css" />
 
   <script src="revealShuffledTiles.js"></script>
-
   <title>Pioneers of Kiran</title>
 </head>
 
+
+
+
 <body>
+
+
+
+
+
   <div class="wrapper">
 
-
-
-  <div 
-  class="islandBackdrop" 
-  >
-
-  <img id="imageIsland" src="gameAssetsOfficial/islandBackground.png">
+  <img class="islandBackdrop">
+  </img> <!-- islandBackdrop   --> 
 
 
 
@@ -56,32 +52,28 @@
       <div class="tilePlaceholder" class="tileFlip" id="tp_R"><!-- place --></div>
       <div class="tilePlaceholder" class="tileFlip" id="tp_S"><!-- place --></div>
    
-    </div> <!--end tileContainer -->
+      <div id="shuffleButton1" onclick="shuffleOnClick()"> Press this orange square to shuffle the tiles</div>
+  
+  
+  
+      <div class="tileBox"  />
+          <div class="tileFlip">
+              <div class="front">Front</div>
+              <div class="back">Back</div>
+          </div>
+      </div> <!-- endTileContainer -->
+   
 
-    <div id="shuffleButton1" onclick="shuffleOnClick()"> Press to change tiles</div>
-
-<!-- might be deprecated as placeholders might be
-the actual instantation of these assets -->
-    <div   id="tradeShips ">
-      <div id="any3_1A"   ></div>
-      <div id="any3_1B"   ></div>
-      <div id="any3_1C"   ></div>
-      <div id="any3_1D"   ></div>
-      <div id="brick-2_1" ></div>
-      <div id="ore-2_1"   ></div>
-      <div id="sheep-2_1" ></div>
-      <div id="wheat-2_1" ></div>
-      <div id="wood-2_1"  ></div>
-    </div>
-
-
-
-
-
-    <div id="bankChest">
-      <div id="bankChestBottom"></div>
-      <div id="bankChestInside"></div>
-      <div id="bankChestTop"></div>
+    <div id="tradeShips">
+      <div id="any3_1A"></div>
+      <div id="any3_1B"></div>
+      <div id="any3_1C"></div>
+      <div id="any3_1D"></div>
+      <div id="brick-2_1"></div>
+      <div id="ore-2_1"></div>
+      <div id="sheep-2_1"></div>
+      <div id="wheat-2_1"></div>
+      <div id="wood-2_1"></div>
     </div>
 
     <!-- end banChest -->
@@ -89,133 +81,6 @@ the actual instantation of these assets -->
     <!-- now replacing tiles and their IDs
       with equivalent position and class
     for the placeholders -->
-
-    <div class="tilePlaceholder" id="A"></div>
-    <div class="tilePlaceholder" id="B"></div>
-    <div class="tilePlaceholder" id="C"></div>
-    <div class="tilePlaceholder" id="D"></div>
-    <div class="tilePlaceholder" id="E"></div>
-    <div class="tilePlaceholder" id="F"></div>
-    <div class="tilePlaceholder" id="G"></div>
-    <div class="tilePlaceholder" id="H"></div>
-    <div class="tilePlaceholder" id="I"></div>
-    <div class="tilePlaceholder" id="J"></div>
-    <div class="tilePlaceholder" id="K"></div>
-    <div class="tilePlaceholder" id="L"></div>
-    <div class="tilePlaceholder" id="M"></div>
-    <div class="tilePlaceholder" id="N"></div>
-    <div class="tilePlaceholder" id="O"></div>
-    <div class="tilePlaceholder" id="P"></div>
-    <div class="tilePlaceholder" id="Q"></div>
-    <div class="tilePlaceholder" id="R"></div>
-    <div class="tilePlaceholder" id="S"></div>
-
-    <!-- <div id="island_hexes">
-    <div id=" desert1"></div>
-    <div id="ore1"></div>
-    <div id="ore2"></div>
-    <div id="ore3"></div>
-    <div id="sheep1"></div>
-    <div id="sheep2"></div>
-    <div id="sheep3"></div>
-    <div id="sheep4"></div>
-    <div id="wheat1"></div>
-    <div id="wheat2"></div>
-    <div id="wheat3"></div>
-    <div id="wheat4"></div>
-    <div id="wood1"></div>
-    <div id="wood2"></div>
-    <div id="wood3"></div>
-    <div id="wood4"></div>
-    <div id="brick1"></div>
-    <div id="brick2"></div>
-    <div id="brick3"></div>
-  </div>  end islandHexes  -->
-
-  <div class="largestArmyLongestRoad">
-
-    <div id="Biggest-Army"></div>
-    <div id="Longest-Road"></div>
-  </div><!-- end  largestArmyLongestRoad-->
-
-
-
-  <div id="Development_Cards">
-    <div id="knightCard"></div>
-    <div id="monopolyCard"></div>
-    <div id="yearofplentyCard"></div>
-    <div id="oneVPCard"></div>
-    <div id="roadCard"></div>
-    
-    
-    
-
-  </div>
-
-  <div id="Buying_Interface">
-    <div id="Yes">Yes</div>
-    <div id="No">No</div>
-    <div id="mainChat">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-      non optio nesciunt sequi eum possimus eaque.
-    </div>
-    <div id="Other"></div>
-    <div id="box1"></div>
-    <div id="Chat"></div>
-    <div id="box2"></div>
-    <div id="box3"></div>
-  </div>
-  <!--end Buying Interface -->
-
-  <!-- One day I'll undertand SVG ...
-someday... -->
-
-  <div class="buySkipTrade">
-    <img id="fullTBS" src="VBGAMES/Pioneers_of_Kiran/gameAssetsOfficial/svgTBS.svg" alt="" srcset="" />
-
-    <div id="TRADE"></div>
-
-    <div id="BUY"></div>
-
-    <div id="SKIP"></div>
-  </div>
-
-  <div id="playerColorHands">
-    <div id="colorHandBigUnderBlue"></div>
-    <div id="colorHandBigUnderRed"></div>
-    <div id="colorHandBigUnderWhite"></div>
-    <div id="colorHandBigUnderOrange"></div>
-  </div>
-  <!-- end player Color hands-->
-
-  <div class="resourceCards">
-    <div id="sheepCard"></div>
-    <div id="woodCard"></div>
-    <div id="wheatCard"></div>
-    <div id="brickCard"></div>
-    <div id="oreCard"></div>
-
-    <div id="totalSheepDiamond">
-      <div id="sheepTotalNull">10</div>
-    </div>
-
-    <div id="totalBrickDiamond">
-      <div id="brickTotalNull">10</div>
-    </div>
-
-    <div id="totalOreDiamond">
-      <div id="oreTotalNull">10</div>
-    </div>
-
-    <div id="totalWheatDiamond">
-      <div id="wheatTotalNull">10</div>
-    </div>
-
-    <div id="totalWoodDiamond">
-      <div id="woodTotalNull">10</div>
-    </div>
-  </div>
-  <!-- end resourceCards -->
 
   <!-- hexNumbers -->
   <div class="hexNumbers">
@@ -240,56 +105,42 @@ someday... -->
   </div>
   <!-- end hexNumbers>  -->
 
-  <div id="Buyable_Items_Logo">
-
-    <div id="playerOrange">
-      <div class="cityMarket"       id="cityOrange"></div>
-      <div class="devCardMarket"    id="devCardOrange"></div>
-      <div class="roadMarket"       id="roadOrange"></div>
-      <div class="settlementMarket" id="settleOrange"></div>
-    </div>
-<!-- 
-    <div id="playerWhite">
-      <div class="cityMarket"       id="cityWhite"></div>
-      <div class="devCardMarket"    id="devCardWhite"></div>
-      <div class="roadMarket"       id="roadWhite"></div>
-      <div class="settlementMarket" id="settleWhite"></div>
-    </div>
-
-    <div id="playerRed">
-      <div class="cityMarket"       id="cityRed"></div>
-      <div class="devCardMarket"    id="devCardRed"></div>
-      <div class="roadMarket"       id="roadRed"></div>
-      <div class="settlementMarket" id="settleRed"></div>
-    </div>
-
-    <div id="playerBlue">
-      <div class="cityMarket"       id="cityBlue"></div>
-      <div class="devCardMarket"    id="devCardBlue"></div>
-      <div class="roadMarket"       id="roadBLue"></div>
-      <div class="settlementMarket" id="settleBlue"></div>
-    </div> -->
-  </div>
-  <!-- end Buyable_Items_Logo -->
-
-  <div class="victoryPointsCounterBox">
-    <!--         this is the top-parent 
- -->
-
-    <div id="victoryPoints">
-      <div id="myVPs">
-        Victory <br>
-        Points
-      </div>
-     
-    </div>
-    <div id="vpCounter">
-      0
-    </div>
-
-  </div>
-
+  
   <div id="pawnsCounterContainer">
+    
+    <div id="Buyable_Items_Logo">
+
+      <div id="playerOrange">
+        <div class="cityMarket"       id="cityOrange"></div>
+        <div class="devCardMarket"    id="devCardOrange"></div>
+        <div class="roadMarket"       id="roadOrange"></div>
+        <div class="settlementMarket" id="settleOrange"></div>
+      </div>
+  
+      <div id="playerWhite">
+        <div class="cityMarket"       id="cityWhite"></div>
+        <div class="devCardMarket"    id="devCardWhite"></div>
+        <div class="roadMarket"       id="roadWhite"></div>
+        <div class="settlementMarket" id="settleWhite"></div>
+      </div>
+  
+      <div id="playerRed">
+        <div class="cityMarket"       id="cityRed"></div>
+        <div class="devCardMarket"    id="devCardRed"></div>
+        <div class="roadMarket"       id="roadRed"></div>
+        <div class="settlementMarket" id="settleRed"></div>
+      </div>
+  
+      <div id="playerBlue">
+        <div class="cityMarket"       id="cityBlue"></div>
+        <div class="devCardMarket"    id="devCardBlue"></div>
+        <div class="roadMarket"       id="roadBLue"></div>
+        <div class="settlementMarket" id="settleBlue"></div>
+      </div>
+    </div>
+    <!-- end Buyable_Items_Logo -->
+    
+    
     <div id="left">LEFT</div>
     <div id="citiesLeft">4</div>
     <div id="settlementsLeft">5</div>
@@ -301,11 +152,6 @@ someday... -->
 
   <div id="robber"></div>
 
-  <div id="currentPlayerTimerClock">
-    <div id="timerArrow"></div>
-    <div id="timerBG"></div>
-    <div id="Ellipse"></div>
-  </div>
 
   <div class="allPawnsPhParent">
     <div class="allPlaceholdersPawn" id="cityPlaceholder_A1"></div>
@@ -493,10 +339,9 @@ someday... -->
   <!-- end allPawnsPhParent -->
   
 
-</div> <!-- islandBackdrop   --> 
+  
+</div> <!--  wrapper -->
 
-
-</div><!--  wrapper -->
 </body>
 
 </html>
