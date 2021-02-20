@@ -1,203 +1,238 @@
 
 .hexNumbers {
-    $hexNumberzIndex: 50;
+
+
+    $hexNumberzIndex: 500;
+
+    //property used on: top
+    $row1: 90px;
+    $row2: 230px;
+    $row3: 360px;
+    $row4: 490px;
+    $row5: 610px;
+
+  //property used on: left
+    $column1: 330px;
+    $column2: 413px;
+    $column3: 490px;
+    $column4: 567px;
+    $column5: 650px; 
+    $column6: 722px;
+    $column7: 801px;
+    $column8: 879px;
+    $column9: 960px;
+    
   
-    #n2 {
-      background-image: url("gameAssetsOfficial/n2.png");
+    #nA {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 632px;
-      top: 250px;
+      left: $column3;
+      top: $row1;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n3_1 {
-      background-image: url("gameAssetsOfficial/n3_1.png");
+    #nB {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 635px;
-      top: 257px;
+      left: $column5;
+      top: $row1;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n3_2 {
-      background-image: url("gameAssetsOfficial/n3_2.png");
+    #nC {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 635px;
-      top: 265px;
+      left: $column7;
+      top: $row1;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n4_1 {
-      background-image: url("gameAssetsOfficial/n4_1.png");
+    #nD {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 637px;
-      top: 272px;
+      left: $column2;
+      top: $row2;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n4_2 {
-      background-image: url("gameAssetsOfficial/n4_2.png");
+    #nE {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 639px;
-      top: 283px;
+      left: $column4;
+      top: $row2;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n5_1 {
-      background-image: url("gameAssetsOfficial/n5_1.png");
+    #nF {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 639px;
-      top: 290px;
+      left: $column6;
+      top: $row2;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n5_2 {
-      background-image: url("gameAssetsOfficial/n5_2.png");
+    #nG {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 639px;
-      top: 299px;
+      left: $column8;
+      top: $row2;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n6_1 {
-      background-image: url("gameAssetsOfficial/n6_1.png");
+    #nH {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 644px;
-      top: 301px;
+      left: $column1;
+      top: $row3;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n6_2 {
-      background-image: url("gameAssetsOfficial/n6_2.png");
+    #nI {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 644px;
-      top: 305px;
+      left: $column3;
+      top: $row3;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n8_1 {
-      background-image: url("gameAssetsOfficial/n8_1.png");
+    #nJ {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 639px;
-      top: 305px;
+      left: $column5;
+      top: $row3;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n8_2 {
-      background-image: url("gameAssetsOfficial/n8_2.png");
+    #nK {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 642px;
-      top: 314px;
+      left: $column7;
+      top: $row3;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
   
-    #n9_1 {
-      background-image: url("gameAssetsOfficial/n9_1.png");
+    #nL {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 637px;
-      top: 314px;
+      left: $column9;
+      top: $row3;
       width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
     }
-  
-    #n9_2 {
-      background-image: url("gameAssetsOfficial/n9_2.png");
+
+
+    #nM {
+      background-color: grey;
       background-repeat: no-repeat;
       position: absolute;
-      left: 639px;
-      top: 321px;
+      left: $column2; 
+      top: $row4;  
       width: 69px;
-      min-height: 69px;
-      z-index: $hexNumberzIndex;
-    }
-  
-    #n10_1 {
-      background-image: url("gameAssetsOfficial/n10_1.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 639px;
-      top: 328px;
-      width: 69px;
-      min-height: 69px;
-      z-index: $hexNumberzIndex;
-    }
-  
-    #n10_2 {
-      background-image: url("gameAssetsOfficial/n10_2.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 638px;
-      top: 332px;
-      width: 69px;
-      min-height: 69px;
-      z-index: $hexNumberzIndex;
-    }
-  
-    #n11_1 {
-      background-image: url("gameAssetsOfficial/n11_1.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 641px;
-      top: 334px;
-      width: 69px;
-      min-height: 69px;
-      z-index: $hexNumberzIndex;
-    }
-  
-    #n11_2 {
-      background-image: url("gameAssetsOfficial/n11_2.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 641px;
-      top: 341px;
-      width: 69px;
-      min-height: 69px;
-      z-index: $hexNumberzIndex;
-    }
-  
-    #n12 {
-      background-image: url("gameAssetsOfficial/n12.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 641px;
-      top: 347px;
-      width: 69px;
-      min-height: 69px;
+      height: 69px;
       z-index: $hexNumberzIndex;
       border: none;
+  }
+
+  #nN {
+    background-color: grey;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: $column4; 
+    top: $row4;  
+    width: 69px;
+    height: 69px;
+    z-index: $hexNumberzIndex;
+    border: none;
+  }
+  
+    #nO {
+      background-color: grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column6;
+      top: $row4;
+      width: 69px;
+      height: 69px;
+      z-index: $hexNumberzIndex;
     }
+  
+    #nP {
+      background-color: grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column8;
+      top: $row4;
+      width: 69px;
+      height: 69px;
+      z-index: $hexNumberzIndex;
+    }
+  
+    #nQ {
+      background-color: grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column3;
+      top: $row5;
+      width: 69px;
+      height: 69px;
+      z-index: $hexNumberzIndex;
+    }
+  
+    #nR {
+      background-color: grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column5;
+      top: $row5;
+      width: 69px;
+      height: 69px;
+      z-index: $hexNumberzIndex;
+    }
+  
+    #nS {
+      background-color: grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column7;
+      top: $row5;
+      width: 69px;
+      height: 69px;
+      z-index: $hexNumberzIndex;
+    }
+  
   }

@@ -5,30 +5,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+  <!-- styling (colors/images here) -->
   <link rel="stylesheet" type="text/css" href="styleAssets.css" />
   <link rel="stylesheet" type="text/css" href="shufflingStyles.css" />
   <link rel="stylesheet" type="text/css" href="pawnPlaceholders.css" />
   <link rel="stylesheet" type="text/css" href="hexNumbers.css" />
+  <!-- put all sizing dimension stuff here -->
+<!--   <link rel="stylesheet" type="text/css" href="responsivePok.css" />
+ -->
+  <!--   <link rel="stylesheet" type="text/css" href="debugCSS.min.css" />
+ -->
 
-  <link rel="stylesheet" href="shufflingStyles.css" />
-  
-
-
+ 
+  <!-- SCRIPTS BELOW -->
+<!--   <script src="jquery-3.5.1.min.js"></script>
+ -->
+  <script src="pawnPlaceholders.js"></script>
   <script src="revealShuffledTiles.js"></script>
+
+
+<!--   <link rel="stylesheet" type="text/css" href="flipTileReveal.css" />
+ 
+ -->
 
   <title>Pioneers of Kiran</title>
 </head>
 
 <body>
+
+<header><h1>Pioneers of Kiran</h1></header>
+
+
   <div class="wrapper">
 
 
 
   <div 
-  class="islandBackdrop" 
+  class="islandWater" 
   >
 
-  <img id="imageIsland" src="gameAssetsOfficial/islandBackground.png">
+  <img id="imageIsland" src="gameAssetsOfficial/islandBackdropCropped.png" style="left: 70%">
 
 
 
@@ -59,7 +76,11 @@
     </div> <!--end tileContainer -->
 
     <div id="shuffleButton1" onclick="shuffleOnClick()"> Press to change tiles</div>
+    
+    
+    <div id="nodeAdjacentRoadsButton" onclick="nodeAdjacentRoads()"> Node's adjacent Roads</div>
 
+    
 <!-- might be deprecated as placeholders might be
 the actual instantation of these assets -->
     <div   id="tradeShips ">
@@ -134,8 +155,8 @@ the actual instantation of these assets -->
 
   <div class="largestArmyLongestRoad">
 
-    <div id="Biggest-Army"></div>
-    <div id="Longest-Road"></div>
+    <div id="Largest_Army"></div>
+    <div id="Longest_Road"></div>
   </div><!-- end  largestArmyLongestRoad-->
 
 
@@ -146,13 +167,9 @@ the actual instantation of these assets -->
     <div id="yearofplentyCard"></div>
     <div id="oneVPCard"></div>
     <div id="roadCard"></div>
-    
-    
-    
-
   </div>
 
-  <div id="Buying_Interface">
+  <!-- <div class="Buying_Interface">
     <div id="Yes">Yes</div>
     <div id="No">No</div>
     <div id="mainChat">
@@ -164,23 +181,22 @@ the actual instantation of these assets -->
     <div id="Chat"></div>
     <div id="box2"></div>
     <div id="box3"></div>
-  </div>
+  </div> -->
+
+
   <!--end Buying Interface -->
 
   <!-- One day I'll undertand SVG ...
 someday... -->
 
-  <div class="buySkipTrade">
-    <img id="fullTBS" src="VBGAMES/Pioneers_of_Kiran/gameAssetsOfficial/svgTBS.svg" alt="" srcset="" />
 
-    <div id="TRADE"></div>
+<div class="lowRightInterface">
+    <div class="buySkipTrade" id="BUY"><p>BUY</p></div>
+    <div class="buySkipTrade" id="SKIP"><p>SKIP</p></div>
+    <div class="buySkipTrade" id="TRADE"><p>TRADE</p></div>
 
-    <div id="BUY"></div>
 
-    <div id="SKIP"></div>
-  </div>
-
-  <div id="playerColorHands">
+  <div class="playerColorHands">
     <div id="colorHandBigUnderBlue"></div>
     <div id="colorHandBigUnderRed"></div>
     <div id="colorHandBigUnderWhite"></div>
@@ -189,58 +205,70 @@ someday... -->
   <!-- end player Color hands-->
 
   <div class="resourceCards">
-    <div id="sheepCard"></div>
+<!-- 
+    <div class="resCardInHand" id="sheepTotalNull">10</div>
+    <div class="resCardInHand" id="brickTotalNull">10</div>
+    <div class="resCardInHand" id="wheatTotalNull">10</div>
+    <div class="resCardInHand" id="oreTotalNull">10</div>
+    <div class="resCardInHand" id="woodTotalNull">10</div>
+ -->
+   <div id="sheepCard"></div>
     <div id="woodCard"></div>
     <div id="wheatCard"></div>
     <div id="brickCard"></div>
     <div id="oreCard"></div>
 
-    <div id="totalSheepDiamond">
-      <div id="sheepTotalNull">10</div>
-    </div>
+    
+    
+  
+    <div id="totalSheepDiamond"><p>00</p></div>
 
-    <div id="totalBrickDiamond">
-      <div id="brickTotalNull">10</div>
-    </div>
+    <div id="totalBrickDiamond"><p>00</p></div>
 
-    <div id="totalOreDiamond">
-      <div id="oreTotalNull">10</div>
-    </div>
+    <div id="totalOreDiamond"><p>00</p></div>
 
-    <div id="totalWheatDiamond">
-      <div id="wheatTotalNull">10</div>
-    </div>
+    <div id="totalWheatDiamond"><p>00</p></div>
 
-    <div id="totalWoodDiamond">
-      <div id="woodTotalNull">10</div>
-    </div>
+    <div id="totalWoodDiamond"><p>00</p></div>
+
   </div>
   <!-- end resourceCards -->
 
+</div><!-- end lowRightInterface -->
+
+
+
+
   <!-- hexNumbers -->
   <div class="hexNumbers">
-    <div id="n2"></div>
-    <div id="n3_1"></div>
-    <div id="n3_2"></div>
-    <div id="n4_1"></div>
-    <div id="n4_2"></div>
-    <div id="n5_1"></div>
-    <div id="n5_2"></div>
-    <div id="n6_1"></div>
-    <div id="n6_2"></div>
-    <div id="n8_1"></div>
-    <div id="n8_2"></div>
-    <div id="n9_1"></div>
-    <div id="n9_2"></div>
-    <div id="n10_1"></div>
-    <div id="n10_2"></div>
-    <div id="n11_1"></div>
-    <div id="n11_2"></div>
-    <div id="n12"></div>
+    <!-- one hexNumber will be desert
+    and thus will be skipped
+    on that tile there will 
+     -->
+    <div id="nA"></div>
+    <div id="nB"></div>
+    <div id="nC"></div>
+    <div id="nD"></div>
+    <div id="nE"></div>
+    <div id="nF"></div>
+    <div id="nG"></div>
+    <div id="nH"></div>
+    <div id="nI"></div>
+    <div id="nJ"></div>
+    <div id="nK"></div>
+    <div id="nL"></div>
+    <div id="nM"></div>
+    <div id="nN"></div>
+    <div id="nO"></div>
+    <div id="nP"></div>
+    <div id="nQ"></div>
+    <div id="nR"></div>
+    <div id="nS"></div>
+
   </div>
   <!-- end hexNumbers>  -->
 
-  <div id="Buyable_Items_Logo">
+  <div class="buyableItems">
 
     <div id="playerOrange">
       <div class="cityMarket"       id="cityOrange"></div>
@@ -248,7 +276,7 @@ someday... -->
       <div class="roadMarket"       id="roadOrange"></div>
       <div class="settlementMarket" id="settleOrange"></div>
     </div>
-<!-- 
+
     <div id="playerWhite">
       <div class="cityMarket"       id="cityWhite"></div>
       <div class="devCardMarket"    id="devCardWhite"></div>
@@ -268,7 +296,7 @@ someday... -->
       <div class="devCardMarket"    id="devCardBlue"></div>
       <div class="roadMarket"       id="roadBLue"></div>
       <div class="settlementMarket" id="settleBlue"></div>
-    </div> -->
+    </div> 
   </div>
   <!-- end Buyable_Items_Logo -->
 
@@ -284,8 +312,7 @@ someday... -->
      
     </div>
     <div id="vpCounter">
-      0
-    </div>
+      0</div>
 
   </div>
 
@@ -308,188 +335,197 @@ someday... -->
   </div>
 
   <div class="allPawnsPhParent">
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A1"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A2"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A3"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A4"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A5"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A6"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_A7"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B1"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B2"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B3"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B4"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B5"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B6"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B7"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B8"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_B9"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C1"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C2"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C3"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C4"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C5"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C6"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C7"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C8"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C9"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C10"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_C11"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D1"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D2"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D3"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D4"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D5"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D6"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D7"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D8"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D9"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D10"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_D11"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E1"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E2"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E3"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E4"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E5"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E6"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E7"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E8"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_E9"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F1"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F2"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F3"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F4"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F5"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F6"></div>
-    <div class="allPlaceholdersPawn" id="cityPlaceholder_F7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_a1_a2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_a2_a3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_a3_a4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_a4_a5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_a5_a6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_a6_a7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b1_b2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b2_a1"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b2_b3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b3_b4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b4_a3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b4_b5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b5_b6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b6_a5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b6_b7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b7_b8"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b8_a7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_b8_b9"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c1_c2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c2_b1"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c2_c3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c3_c4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c4_b3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c4_c5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c5_c6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c6_b5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c6_c7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c7_c8"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c8_b7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c8_c9"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c9_c10"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c10_b9"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_c10_c11"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d1_c1"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d1_d2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d2_d3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d3_c3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d3_d4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d4_d5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d5_c5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d5_d6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d6_d7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d7_d8"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d7_c7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d8_d9"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d9_c9"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d9_d10"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d10_d11"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_d11_c11"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e1_d2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e1_e2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e2_e3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e3_d4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e3_e4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e4_e5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e5_d6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e5_e6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e6_e7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e7_d8"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e7_e8"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e8_e9"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_e9_d10"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f1_e2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f1_f2"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f2_f3"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f3_f4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f3_e4"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f4_f5"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f5_e6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f5_f6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f5-e6"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f6_f7"></div>
-    <div class="allPlaceholdersPawn" id="roadPlaceholder_f7_e8"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A1"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A2"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A3"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A4"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A5"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A6"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_A7"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B1"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B2"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B3"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B4"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B5"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B6"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B7"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B8"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_B9"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C1"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C2"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C3"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C4"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C5"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C6"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C7"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C8"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C9"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C10"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_C11"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D1"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D2"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D3"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D4"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D5"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D6"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D7"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D8"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D9"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D10"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_D11"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E1"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E2"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E3"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E4"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E5"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E6"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E7"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E8"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_E9"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F1"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F2"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F3"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F4"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F5"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F6"></div>
-    <div class="allPlaceholdersPawn" id="settlementPlaceholder_F7"></div>
-  </div>
+
+    <!-- city nodes below -->
+    <div class="node nodeA1 allPlaceholdersPawn" id="city_A1">            </div>
+    <div class="node nodeA2 allPlaceholdersPawn" id="city_A2">            </div>
+    <div class="node nodeA3 allPlaceholdersPawn" id="city_A3">            </div>
+    <div class="node nodeA4 allPlaceholdersPawn" id="city_A4">            </div>
+    <div class="node nodeA5 allPlaceholdersPawn" id="city_A5">            </div>
+    <div class="node nodeA6 allPlaceholdersPawn" id="city_A6">            </div>
+    <div class="node nodeA7 allPlaceholdersPawn" id="city_A7">            </div>
+    <div class="node nodeB1 allPlaceholdersPawn" id="city_B1">            </div>
+    <div class="node nodeB2 allPlaceholdersPawn" id="city_B2">            </div>
+    <div class="node nodeB3 allPlaceholdersPawn" id="city_B3">            </div>
+    <div class="node nodeB4 allPlaceholdersPawn" id="city_B4">            </div>
+    <div class="node nodeB5 allPlaceholdersPawn" id="city_B5">            </div>
+    <div class="node nodeB6 allPlaceholdersPawn" id="city_B6">            </div>
+    <div class="node nodeB7 allPlaceholdersPawn" id="city_B7">            </div>
+    <div class="node nodeB8 allPlaceholdersPawn" id="city_B8">            </div>
+    <div class="node nodeB9 allPlaceholdersPawn" id="city_B9">            </div>
+    <div class="node nodeC1 allPlaceholdersPawn" id="city_C1">            </div>
+    <div class="node nodeC2 allPlaceholdersPawn" id="city_C2">            </div>
+    <div class="node nodeC3 allPlaceholdersPawn" id="city_C3">            </div>
+    <div class="node nodeC4 allPlaceholdersPawn" id="city_C4">            </div>
+    <div class="node nodeC5 allPlaceholdersPawn" id="city_C5">            </div>
+    <div class="node nodeC6 allPlaceholdersPawn" id="city_C6">            </div>
+    <div class="node nodeC7 allPlaceholdersPawn" id="city_C7">            </div>
+    <div class="node nodeC8 allPlaceholdersPawn" id="city_C8">            </div>
+    <div class="node nodeC9 allPlaceholdersPawn" id="city_C9">            </div>
+    <div class="node nodeC10 allPlaceholdersPawn" id="city_C10">           </div>
+    <div class="node nodeC11 allPlaceholdersPawn" id="city_C11">           </div>
+    <div class="node nodeD1 allPlaceholdersPawn" id="city_D1">            </div>
+    <div class="node nodeD2 allPlaceholdersPawn" id="city_D2">            </div>
+    <div class="node nodeD3 allPlaceholdersPawn" id="city_D3">            </div>
+    <div class="node nodeD4 allPlaceholdersPawn" id="city_D4">            </div>
+    <div class="node nodeD5 allPlaceholdersPawn" id="city_D5">            </div>
+    <div class="node nodeD6 allPlaceholdersPawn" id="city_D6">            </div>
+    <div class="node nodeD7 allPlaceholdersPawn" id="city_D7">            </div>
+    <div class="node nodeD8 allPlaceholdersPawn" id="city_D8">            </div>
+    <div class="node nodeD9 allPlaceholdersPawn" id="city_D9">            </div>
+    <div class="node nodeD10 allPlaceholdersPawn" id="city_D10">           </div>
+    <div class="node nodeD11 allPlaceholdersPawn" id="city_D11">           </div>
+    <div class="node nodeE1 allPlaceholdersPawn" id="city_E1">            </div>
+    <div class="node nodeE2 allPlaceholdersPawn" id="city_E2">            </div>
+    <div class="node nodeE3 allPlaceholdersPawn" id="city_E3">            </div>
+    <div class="node nodeE4 allPlaceholdersPawn" id="city_E4">            </div>
+    <div class="node nodeE5 allPlaceholdersPawn" id="city_E5">            </div>
+    <div class="node nodeE6 allPlaceholdersPawn" id="city_E6">            </div>
+    <div class="node nodeE7 allPlaceholdersPawn" id="city_E7">            </div>
+    <div class="node nodeE8 allPlaceholdersPawn" id="city_E8">            </div>
+    <div class="node nodeE9 allPlaceholdersPawn" id="city_E9">            </div>
+    <div class="node nodeF1 allPlaceholdersPawn" id="city_F1">            </div>
+    <div class="node nodeF2 allPlaceholdersPawn" id="city_F2">            </div>
+    <div class="node nodeF3 allPlaceholdersPawn" id="city_F3">            </div>
+    <div class="node nodeF4 allPlaceholdersPawn" id="city_F4">            </div>
+    <div class="node nodeF5 allPlaceholdersPawn" id="city_F5">            </div>
+    <div class="node nodeF6 allPlaceholdersPawn" id="city_F6">            </div>
+    <div class="node nodeF7 allPlaceholdersPawn" id="city_F7">            </div>
+   
+    <!-- settlement nodes below -->
+    <div class="nodeA1 allPlaceholdersPawn" id="setl_A1">            </div>
+    <div class="nodeA2 allPlaceholdersPawn" id="setl_A2">            </div>
+    <div class="nodeA3 allPlaceholdersPawn" id="setl_A3">            </div>
+    <div class="nodeA4 allPlaceholdersPawn" id="setl_A4">            </div>
+    <div class="nodeA5 allPlaceholdersPawn" id="setl_A5">            </div>
+    <div class="nodeA6 allPlaceholdersPawn" id="setl_A6">            </div>
+    <div class="nodeA7 allPlaceholdersPawn" id="setl_A7">            </div>
+    <div class="nodeB1 allPlaceholdersPawn" id="setl_B1">            </div>
+    <div class="nodeB2 allPlaceholdersPawn" id="setl_B2">            </div>
+    <div class="nodeB3 allPlaceholdersPawn" id="setl_B3">            </div>
+    <div class="nodeB4 allPlaceholdersPawn" id="setl_B4">            </div>
+    <div class="nodeB5 allPlaceholdersPawn" id="setl_B5">            </div>
+    <div class="nodeB6 allPlaceholdersPawn" id="setl_B6">            </div>
+    <div class="nodeB7 allPlaceholdersPawn" id="setl_B7">            </div>
+    <div class="nodeB8 allPlaceholdersPawn" id="setl_B8">            </div>
+    <div class="nodeB9 allPlaceholdersPawn" id="setl_B9">            </div>
+    <div class="nodeC1 allPlaceholdersPawn" id="setl_C1">            </div>
+    <div class="nodeC2 allPlaceholdersPawn" id="setl_C2">            </div>
+    <div class="nodeC3 allPlaceholdersPawn" id="setl_C3">            </div>
+    <div class="nodeC4 allPlaceholdersPawn" id="setl_C4">            </div>
+    <div class="nodeC5 allPlaceholdersPawn" id="setl_C5">            </div>
+    <div class="nodeC6 allPlaceholdersPawn" id="setl_C6">            </div>
+    <div class="nodeC7 allPlaceholdersPawn" id="setl_C7">            </div>
+    <div class="nodeC8 allPlaceholdersPawn" id="setl_C8">            </div>
+    <div class="nodeC9 allPlaceholdersPawn" id="setl_C9">            </div>
+    <div class="nodeC10 allPlaceholdersPawn" id="setl_C10">           </div>
+    <div class="nodeC11 allPlaceholdersPawn" id="setl_C11">           </div>
+    <div class="nodeD1 allPlaceholdersPawn" id="setl_D1">            </div>
+    <div class="nodeD2 allPlaceholdersPawn" id="setl_D2">            </div>
+    <div class="nodeD3 allPlaceholdersPawn" id="setl_D3">            </div>
+    <div class="nodeD4 allPlaceholdersPawn" id="setl_D4">            </div>
+    <div class="nodeD5 allPlaceholdersPawn" id="setl_D5">            </div>
+    <div class="nodeD6 allPlaceholdersPawn" id="setl_D6">            </div>
+    <div class="nodeD7 allPlaceholdersPawn" id="setl_D7">            </div>
+    <div class="nodeD8 allPlaceholdersPawn" id="setl_D8">            </div>
+    <div class="nodeD9 allPlaceholdersPawn" id="setl_D9">            </div>
+    <div class="nodeD10 allPlaceholdersPawn" id="setl_D10">           </div>
+    <div class="nodeD11 allPlaceholdersPawn" id="setl_D11">           </div>
+    <div class="nodeE1 allPlaceholdersPawn" id="setl_E1">            </div>
+    <div class="nodeE2 allPlaceholdersPawn" id="setl_E2">            </div>
+    <div class="nodeE3 allPlaceholdersPawn" id="setl_E3">            </div>
+    <div class="nodeE4 allPlaceholdersPawn" id="setl_E4">            </div>
+    <div class="nodeE5 allPlaceholdersPawn" id="setl_E5">            </div>
+    <div class="nodeE6 allPlaceholdersPawn" id="setl_E6">            </div>
+    <div class="nodeE7 allPlaceholdersPawn" id="setl_E7">            </div>
+    <div class="nodeE8 allPlaceholdersPawn" id="setl_E8">            </div>
+    <div class="nodeE9 allPlaceholdersPawn" id="setl_E9">            </div>
+    <div class="nodeF1 allPlaceholdersPawn" id="setl_F1">            </div>
+    <div class="nodeF2 allPlaceholdersPawn" id="setl_F2">            </div>
+    <div class="nodeF3 allPlaceholdersPawn" id="setl_F3">            </div>
+    <div class="nodeF4 allPlaceholdersPawn" id="setl_F4">            </div>
+    <div class="nodeF5 allPlaceholdersPawn" id="setl_F5">            </div>
+    <div class="nodeF6 allPlaceholdersPawn" id="setl_F6">            </div>
+    <div class="nodeF7 allPlaceholdersPawn" id="setl_F7">            </div>
+   
+    <!-- roads below -->
+    <div class="road allPlaceholdersPawn" id="a1a2">         </div>
+    <div class="road allPlaceholdersPawn" id="a2a3">         </div>
+    <div class="road allPlaceholdersPawn" id="a3a4">         </div>
+    <div class="road allPlaceholdersPawn" id="a4a5">         </div>
+    <div class="road allPlaceholdersPawn" id="a5a6">         </div>
+    <div class="road allPlaceholdersPawn" id="a6a7">         </div>
+    <div class="road allPlaceholdersPawn" id="b1b2">         </div>
+    <div class="road allPlaceholdersPawn" id="b2a1">         </div>
+    <div class="road allPlaceholdersPawn" id="b2b3">         </div>
+    <div class="road allPlaceholdersPawn" id="b3b4">         </div>
+    <div class="road allPlaceholdersPawn" id="b4a3">         </div>
+    <div class="road allPlaceholdersPawn" id="b4b5">         </div>
+    <div class="road allPlaceholdersPawn" id="b5b6">         </div>
+    <div class="road allPlaceholdersPawn" id="b6a5">         </div>
+    <div class="road allPlaceholdersPawn" id="b6b7">         </div>
+    <div class="road allPlaceholdersPawn" id="b7b8">         </div>
+    <div class="road allPlaceholdersPawn" id="b8a7">         </div>
+    <div class="road allPlaceholdersPawn" id="b8b9">         </div>
+    <div class="road allPlaceholdersPawn" id="c1c2">         </div>
+    <div class="road allPlaceholdersPawn" id="c2b1">         </div>
+    <div class="road allPlaceholdersPawn" id="c2c3">         </div>
+    <div class="road allPlaceholdersPawn" id="c3c4">         </div>
+    <div class="road allPlaceholdersPawn" id="c4b3">         </div>
+    <div class="road allPlaceholdersPawn" id="c4c5">         </div>
+    <div class="road allPlaceholdersPawn" id="c5c6">         </div>
+    <div class="road allPlaceholdersPawn" id="c6b5">         </div>
+    <div class="road allPlaceholdersPawn" id="c6c7">         </div>
+    <div class="road allPlaceholdersPawn" id="c7c8">         </div>
+    <div class="road allPlaceholdersPawn" id="c8b7">         </div>
+    <div class="road allPlaceholdersPawn" id="c8c9">         </div>
+    <div class="road allPlaceholdersPawn" id="c9c10">        </div>
+    <div class="road allPlaceholdersPawn" id="c10b9">        </div>
+    <div class="road allPlaceholdersPawn" id="c10c11">       </div>
+    <div class="road allPlaceholdersPawn" id="d1c1">         </div>
+    <div class="road allPlaceholdersPawn" id="d1d2">         </div>
+    <div class="road allPlaceholdersPawn" id="d2d3">         </div>
+    <div class="road allPlaceholdersPawn" id="d3c3">         </div>
+    <div class="road allPlaceholdersPawn" id="d3d4">         </div>
+    <div class="road allPlaceholdersPawn" id="d4d5">         </div>
+    <div class="road allPlaceholdersPawn" id="d5c5">         </div>
+    <div class="road allPlaceholdersPawn" id="d5d6">         </div>
+    <div class="road allPlaceholdersPawn" id="d6d7">         </div>
+    <div class="road allPlaceholdersPawn" id="d7d8">         </div>
+    <div class="road allPlaceholdersPawn" id="d7c7">         </div>
+    <div class="road allPlaceholdersPawn" id="d8d9">         </div>
+    <div class="road allPlaceholdersPawn" id="d9c9">         </div>
+    <div class="road allPlaceholdersPawn" id="d9d10">        </div>
+    <div class="road allPlaceholdersPawn" id="d10d11">       </div>
+    <div class="road allPlaceholdersPawn" id="d11c11">       </div>
+    <div class="road allPlaceholdersPawn" id="e1d2">         </div>
+    <div class="road allPlaceholdersPawn" id="e1e2">         </div>
+    <div class="road allPlaceholdersPawn" id="e2e3">         </div>
+    <div class="road allPlaceholdersPawn" id="e3d4">         </div>
+    <div class="road allPlaceholdersPawn" id="e3e4">         </div>
+    <div class="road allPlaceholdersPawn" id="e4e5">         </div>
+    <div class="road allPlaceholdersPawn" id="e5d6">         </div>
+    <div class="road allPlaceholdersPawn" id="e5e6">         </div>
+    <div class="road allPlaceholdersPawn" id="e6e7">         </div>
+    <div class="road allPlaceholdersPawn" id="e7d8">         </div>
+    <div class="road allPlaceholdersPawn" id="e7e8">         </div>
+    <div class="road allPlaceholdersPawn" id="e8e9">         </div>
+    <div class="road allPlaceholdersPawn" id="e9d10">        </div>
+    <div class="road allPlaceholdersPawn" id="f1e2">         </div>
+    <div class="road allPlaceholdersPawn" id="f1f2">         </div>
+    <div class="road allPlaceholdersPawn" id="f2f3">         </div>
+    <div class="road allPlaceholdersPawn" id="f3f4">         </div>
+    <div class="road allPlaceholdersPawn" id="f3e4">         </div>
+    <div class="road allPlaceholdersPawn" id="f4f5">         </div>
+    <div class="road allPlaceholdersPawn" id="f5e6">         </div>
+    <div class="road allPlaceholdersPawn" id="f5f6">         </div>
+    <div class="road allPlaceholdersPawn" id="f5e6">         </div>
+    <div class="road allPlaceholdersPawn" id="f6f7">         </div>
+    <div class="road allPlaceholdersPawn" id="f7e8">         </div>
+    
+    
+    
+    </div>
   <!-- end allPawnsPhParent -->
   
 

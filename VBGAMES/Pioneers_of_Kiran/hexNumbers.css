@@ -1,199 +1,211 @@
-.hexNumbers #n2 {
-  background-image: url("gameAssetsOfficial/n2.png");
+.hexNumbers #nA {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 632px;
-  top: 250px;
+  left: 490px;
+  top: 90px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n3_1 {
-  background-image: url("gameAssetsOfficial/n3_1.png");
+.hexNumbers #nB {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 635px;
-  top: 257px;
+  left: 650px;
+  top: 90px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n3_2 {
-  background-image: url("gameAssetsOfficial/n3_2.png");
+.hexNumbers #nC {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 635px;
-  top: 265px;
+  left: 801px;
+  top: 90px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n4_1 {
-  background-image: url("gameAssetsOfficial/n4_1.png");
+.hexNumbers #nD {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 637px;
-  top: 272px;
+  left: 413px;
+  top: 230px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n4_2 {
-  background-image: url("gameAssetsOfficial/n4_2.png");
+.hexNumbers #nE {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 639px;
-  top: 283px;
+  left: 567px;
+  top: 230px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n5_1 {
-  background-image: url("gameAssetsOfficial/n5_1.png");
+.hexNumbers #nF {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 639px;
-  top: 290px;
+  left: 722px;
+  top: 230px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n5_2 {
-  background-image: url("gameAssetsOfficial/n5_2.png");
+.hexNumbers #nG {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 639px;
-  top: 299px;
+  left: 879px;
+  top: 230px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n6_1 {
-  background-image: url("gameAssetsOfficial/n6_1.png");
+.hexNumbers #nH {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 644px;
-  top: 301px;
+  left: 330px;
+  top: 360px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n6_2 {
-  background-image: url("gameAssetsOfficial/n6_2.png");
+.hexNumbers #nI {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 644px;
-  top: 305px;
+  left: 490px;
+  top: 360px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n8_1 {
-  background-image: url("gameAssetsOfficial/n8_1.png");
+.hexNumbers #nJ {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 639px;
-  top: 305px;
+  left: 650px;
+  top: 360px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n8_2 {
-  background-image: url("gameAssetsOfficial/n8_2.png");
+.hexNumbers #nK {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 642px;
-  top: 314px;
+  left: 801px;
+  top: 360px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n9_1 {
-  background-image: url("gameAssetsOfficial/n9_1.png");
+.hexNumbers #nL {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 637px;
-  top: 314px;
+  left: 960px;
+  top: 360px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
 }
 
-.hexNumbers #n9_2 {
-  background-image: url("gameAssetsOfficial/n9_2.png");
+.hexNumbers #nM {
+  background-color: grey;
   background-repeat: no-repeat;
   position: absolute;
-  left: 639px;
-  top: 321px;
+  left: 413px;
+  top: 490px;
   width: 69px;
-  min-height: 69px;
-  z-index: 50;
-}
-
-.hexNumbers #n10_1 {
-  background-image: url("gameAssetsOfficial/n10_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 639px;
-  top: 328px;
-  width: 69px;
-  min-height: 69px;
-  z-index: 50;
-}
-
-.hexNumbers #n10_2 {
-  background-image: url("gameAssetsOfficial/n10_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 638px;
-  top: 332px;
-  width: 69px;
-  min-height: 69px;
-  z-index: 50;
-}
-
-.hexNumbers #n11_1 {
-  background-image: url("gameAssetsOfficial/n11_1.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 334px;
-  width: 69px;
-  min-height: 69px;
-  z-index: 50;
-}
-
-.hexNumbers #n11_2 {
-  background-image: url("gameAssetsOfficial/n11_2.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 341px;
-  width: 69px;
-  min-height: 69px;
-  z-index: 50;
-}
-
-.hexNumbers #n12 {
-  background-image: url("gameAssetsOfficial/n12.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 641px;
-  top: 347px;
-  width: 69px;
-  min-height: 69px;
-  z-index: 50;
+  height: 69px;
+  z-index: 500;
   border: none;
+}
+
+.hexNumbers #nN {
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 567px;
+  top: 490px;
+  width: 69px;
+  height: 69px;
+  z-index: 500;
+  border: none;
+}
+
+.hexNumbers #nO {
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 722px;
+  top: 490px;
+  width: 69px;
+  height: 69px;
+  z-index: 500;
+}
+
+.hexNumbers #nP {
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 879px;
+  top: 490px;
+  width: 69px;
+  height: 69px;
+  z-index: 500;
+}
+
+.hexNumbers #nQ {
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 490px;
+  top: 610px;
+  width: 69px;
+  height: 69px;
+  z-index: 500;
+}
+
+.hexNumbers #nR {
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 650px;
+  top: 610px;
+  width: 69px;
+  height: 69px;
+  z-index: 500;
+}
+
+.hexNumbers #nS {
+  background-color: grey;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 801px;
+  top: 610px;
+  width: 69px;
+  height: 69px;
+  z-index: 500;
 }
 /*# sourceMappingURL=hexNumbers.css.map */

@@ -8,17 +8,49 @@ $oreTile: "gameAssetsOfficial/ore1.png";
 $brickTile: "gameAssetsOfficial/brick1.png";
 $desertTile: "gameAssetsOfficial/desert1.png";
 
+/* market */
+$leftCounters: 1289px;
+
+/* ColorHands */
+$cHBUWidth: 418px;
+$cHBUHeight: 308px;
+$cHBULeft: 1040px;
+$cHBUTop: 660px;
 
 /* index of All cards (highest items) */
-$allCards: 500;
 
-$totalMinWidth: 100%; /* 1366px; */
-$totalMinHeight:100%; /*  768px; */
+
+
+$robberIndex: 550;
+$cHBUzIndex: 1000;
+$bstIndex: 1001;
+$allCards: 1002;
+$playerMarket: 1100;
+/* testingInterface should always be highest */
+$testingInterface: 1500;
+
+/* Max */
+$totalMaxWidth: 1458px;
+$totalMaxHeight: 968px;
+/* Safe */
+$safeTop: + 10px;
+$safeBottom: $totalMaxWidth - 10px;
+/* Min */
+$totalMinWidth: 50%; 
+$totalMinHeight:50%; 
+
 
 $viewportWidth: $totalMinWidth;
 
-$playerMarket: 1100;
 
+
+
+
+
+$topAbs: 0px;//set to relative
+$bottomAbs: $totalMaxHeight;//(value of Top:)set to relative
+$leftAbs: 0px;//set to relative
+$rightAbs: $totalMaxWidth; //(value of Left:)set to relative
 /* 
 .buttonContainer {
   position: absolute;
@@ -64,93 +96,160 @@ $playerMarket: 1100;
   text-align: center;
 }
  */
+
+ html {
+display: grid;
+}
+
+header {
+  background-color: khaki;
+}
  
 body  {
- 
+
   font-family: "Courier New", Courier, monospace;
 /*  background-color: #0f5581;
  */
+background-color: slategray;
 
- background-color: rgb(19, 35, 87);
-}/* body */
+ $coastalColor: #246892;
+ $seaColor: #1e5f88;
+ $oceanColor: #052d85;
+
+ background-image: radial-gradient($coastalColor 25%, $seaColor 45%, $oceanColor 80%);
+ 
+
+ background-repeat: no-repeat;
+ background-size: $totalMaxWidth $totalMaxHeight;
+ max-width: $totalMaxWidth;
+ max-height: $totalMaxHeight;
+
+/* 
+  background-image: -webkit-gradient(
+  
+  linear,
+  left top,
+  right top,
+  from($oceanColor),
+  color-stop(50%, $coastalColor),
+  to($oceanColor)
+); 
+background-image: linear-gradient(
+  90deg,
+  $oceanColor 0% ,
+  $coastalColor 50%,
+  $oceanColor 100%
+);
+background-image: -ms-linear-gradient(
+  90deg,
+  $oceanColor 0%,
+  $coastalColor 50%,
+  $oceanColor 100%
+);
+ */
+
+
+
+
+}
+/* body */
 
 
 
 
 
 .wrapper {
+position: absolute;
+  background-size: $totalMaxWidth $totalMaxHeight;
+ max-width: $totalMaxWidth;
+ max-height: $totalMaxHeight;
+  /* height: $bottomAbs;
+  width: $rightAbs; */
+  /* top: 100%;
+  left: 100%; */
 
- 
-.islandBackdrop{ 
-  
+
+.islandWater{ 
   
   background-repeat: no-repeat;
-  background-position: 5px 10px;
-  position: relative; 
-
-  top: 0px;
-  left: 0px;
-  border: none;
+  background-position:center;
+  position: inherit; 
+  
+  
+  
+  
   z-index: 0;
+  /* max-width: 100vw; */
+/*   max-height:100vh; 
+ */  
+
 
   }/* islandBackdrop  */
 
   #imageIsland {
+    opacity: 100%;
+    background-image: url("/gameAssetsOfficial/islandBackdropCropped.png");
     position:absolute;
+    
     top:10px;
-    left:3px;
+    left:0px;
+
+    
   }
 
 
   #shuffleButton1 {
   
-    position: absolute;
+    background-repeat: no-repeat;
+  
+  position: absolute;
+  font-size: 1rem;
   font-weight: bold;
-    text-align: center;
-    width: 170px;
-    text-overflow:clip;
-    top: 800px;
-    left: 600px;
-  background-color: orange;
-  font-size:2em;
-  z-index: 501;
+  text-align: center;
+  width: auto;
+  height: auto;
+  text-overflow:clip;
+  left: 1250px;
+  top: 520px;
+  color: rgb(211, 218, 177);
+background-color: rgb(113, 148, 68);
+z-index: $testingInterface;
   }
   #shuffleButton1:hover{
+   
     background-color: darkorange;
     cursor:pointer;
     }
 
 
-  /* /* is not impacted by size or background size */
-  /* width:   $viewportWidth; */
 /*
 all other rules are nested
      inside the container
      */
-/*
-#resCardRobTradeBuy {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  border: none;
-} */
+
+
+.lowRightInterface {
+  position: static;
+  right: 15vh;
+  bottom: 10vh;
+}
+
 .resourceCards {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
+  position:absolute;
+  left: -10px;
+  top: 210px;
+ 
   z-index: $allCards;
-  border: none;
+
+
+
 
 
   #sheepCard {
     background-image: url("gameAssetsOfficial/sheepCard.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 983px;
+    left: 983px + 100px;
     top: 597px;
     width: 172px;
     min-height: 152px;
@@ -163,14 +262,14 @@ all other rules are nested
     background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 1117px;
+    left: 1117px + 100px;
     top: 693px;
     width: 55px;
     min-height: 54px;
-    z-index: 377;
+    z-index: $allCards;
     border: none;
-
-    #sheepTotalNull {
+    
+    p {
       font-size: 24px;
       font-family: "Roboto Slab";
       color: #cccccc;
@@ -178,25 +277,24 @@ all other rules are nested
       line-height: 0.583;
       text-align: center;
       text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
       
-      rotate:-50deg;
       position: relative;
-      left: 0px;
-      top: 20px;
-
-      width: 60.859px;
-      min-height: 17px;
-      z-index: $allCards;
-      border: none;
-      background-repeat: no-repeat;
+      top:0px;
+      left: 8px;
+      rotate: -40deg;
+      
     }
+    
+
+    
   }
 
   #woodCard {
     background-image: url("gameAssetsOfficial/woodCard.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 1033px;
+    left: 1033px + 100px;
     top: 533px;
     width: 168px;
     min-height: 167px;
@@ -208,14 +306,14 @@ all other rules are nested
     background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 1152px;
+    left: 1152px + 100px;
     top: 651px;
     width: 53px;
     min-height: 55px;
     z-index: $allCards;
     border: none;
 
-    #woodTotalNull {
+    p {
       font-size: 24px;
       font-family: "Roboto Slab";
       color: #cccccc;
@@ -223,15 +321,13 @@ all other rules are nested
       line-height: 0.583;
       text-align: center;
       text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
       
-      rotate:-40deg;
       position: relative;
-      left: 0px;
-      top: 20px;
-      width: 60.859px;
-      min-height: 17px;
-      z-index: $allCards;
-      border: none;
+      top:0px;
+      left: 4px;
+      rotate: -40deg;
+      
     }
   }
 
@@ -239,26 +335,29 @@ all other rules are nested
     background-image: url("gameAssetsOfficial/wheatCard.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 1102px;
-    top: 485px;
+    left: 1102px + 100px;
+    top: 485px ;
     width: 154px;
     min-height: 170px;
     z-index: $allCards+3;
     border: none;
+
+    
+
   }
 
   #totalWheatDiamond {
     background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 1196px;
+    left: 1196px + 100px;
     top: 619px;
     width: 53px;
     min-height: 56px;
     z-index: $allCards;
     border: none;
 
-    #wheatTotalNull {
+    p {
       font-size: 24px;
       font-family: "Roboto Slab";
       color: #cccccc;
@@ -266,41 +365,19 @@ all other rules are nested
       line-height: 0.583;
       text-align: center;
       text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
       
-      rotate:-30deg;
       position: relative;
+      top:0px;
       left: 0px;
-      top: 20px;
-      width: 60.859px;
-      min-height: 17px;
-      z-index: $allCards;
-      border: none;
+      rotate: -20deg;
+      
     }
+    
   }
 
-  #oreCard {
-    background-image: url("gameAssetsOfficial/oreCard.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 1184px;
-    top: 460px;
-    width: 132px;
-    min-height: 166px;
-    z-index: $allCards+4;
-    border: none;
-  }
 
-  #totalOreDiamond {
-    background-image: url("gameAssetsOfficial/totalOreDiamond.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 1248px;
-    top: 602px;
-    width: 50px;
-    min-height: 57px;
-    z-index: $allCards;
-    border: none;
-
+/* 
     #oreTotalNull {
       font-size: 24px;
       font-family: "Roboto Slab";
@@ -314,20 +391,143 @@ all other rules are nested
       -webkit-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
       -ms-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
       position: relative;
-      left: 0px;
+      left: 0px + 100px;
       top: 20px;
       width: 50.859px;
       min-height: 17px;
       z-index: $allCards;
       border: none;
+    } */
+
+    /* #brickTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      
+      rotate:0deg;
+      position: absolute;
+      left: 0px + 100px;
+      top: 15px;
+      width: 50.859px;
+      min-height: 17px;
+      z-index: $allCards+1;
+      border: none;
     }
+
+    #wheatTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      rotate:-30deg;
+      position: relative;
+      left: 0px + 100px;
+      top: 20px;
+      width: 60.859px;
+      min-height: 17px;
+      z-index: $allCards;
+      border: none;
+    }
+
+    #woodTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      
+      rotate:-40deg;
+      position: absolute;
+      left: 0px + 200px;
+      top: 20px;
+      width: 60.859px;
+      min-height: 17px;
+      z-index: $allCards;
+      border: none;
+    } */
+
+    /* #sheepTotalNull {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      
+      rotate:-50deg;
+      position: absolute;
+      left: 0px + 100px;
+      top: 20px;
+
+      width: 60.859px;
+      min-height: 17px;
+      z-index: $allCards;
+      border: none;
+      background-repeat: no-repeat;
+    } */
+
+  
+
+  #oreCard {
+    background-image: url("gameAssetsOfficial/oreCard.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1184px + 100px;
+    top: 460px;
+    width: 132px;
+    min-height: 166px;
+    z-index: $allCards+4;
+    border: none;
+
+    
+
+  }
+
+  #totalOreDiamond {
+    background-image: url("gameAssetsOfficial/totalOreDiamond.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1248px + 100px;
+    top: 602px;
+    width: 50px;
+    min-height: 57px;
+    z-index: $allCards;
+    border: none;
+
+    p {
+      font-size: 24px;
+      font-family: "Roboto Slab";
+      color: #cccccc;
+      text-transform: uppercase;
+      line-height: 0.583;
+      text-align: center;
+      text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+      
+      position: relative;
+      top:0px;
+      left: 0px;
+      rotate: -10deg;
+      
+    }
+    
   }
 
   #brickCard {
     background-image: url("gameAssetsOfficial/brickCard.png");
     background-repeat: no-repeat;
     position: absolute;
-    left: 1272px;
+    left: 1272px + 100px;
     top: 459px;
     width: 100px;
     min-height: 151px;
@@ -338,15 +538,15 @@ all other rules are nested
   #totalBrickDiamond {
     background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
     background-repeat: no-repeat;
-    position: relative;
-    left: 1299px;
-    top: 601px;
+    position: absolute;
+    left: 1299px + 100px;
+    top: 600px;
     width: 49px;
     min-height: 54px;
     z-index: $allCards;
     border: none;
 
-    #brickTotalNull {
+    p {
       font-size: 24px;
       font-family: "Roboto Slab";
       color: #cccccc;
@@ -354,15 +554,13 @@ all other rules are nested
       line-height: 0.583;
       text-align: center;
       text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+      transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
       
-      rotate:0deg;
       position: relative;
+      top:-5px;
       left: 0px;
-      top: 15px;
-      width: 50.859px;
-      min-height: 17px;
-      z-index: $allCards+1;
-      border: none;
+      rotate: 15deg;
+      
     }
   }
 } /* resourcecards */
@@ -370,65 +568,11 @@ all other rules are nested
 
 
 
-#Buyable_Items_Logo {
+.buyableItems {
 
-  width:200px
-} /* end Buyable Items logo */
+  visibility: visible;
+ /* end Buyable Items logo */
 
-#playerOrange {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  min-width: auto;
-  min-height: auto;
-  z-index: $playerMarket;
-
-#devCardOrange {
-  background-image: url("devCardOrange.png");
-  position: absolute;
-  left: 1255px;
-  top: 350px;
-  width: auto;
-  height: auto;
-  z-index: $playerMarket;
-}
-#roadOrange {
-  background-image: url("roadOrange.png");
-  position: absolute;
-  left: 1253px;
-  top: 311px;
-  width: 71px;
-  height: 19px;
-  z-index: $playerMarket;
-}
-#settlementOrange {
-  background-image: url("settlementOrange.png");
-  position: absolute;
-  left: 1252px;
-  top: 233px;
-  width: 55px;
-  height: 53px;
-  z-index: $playerMarket;
-}
-#cityOrange {
-  background-image: url("cityOrange.png");
-  position: absolute;
-  left: 1251px;
-  top: 149px;
-  width: 57px;
-  height: 71px;
-  z-index: $playerMarket;
-}
-}
-
-/* #playerOrange {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: 139;
-}
 
 #devCardOrange {
   background-image: url("gameAssetsOfficial/devCardOrange.png");
@@ -438,18 +582,18 @@ all other rules are nested
   top: 350px;
   width: 42px;
   min-height: 50px;
-  z-index: 138;
+  z-index: $playerMarket;
 }
 
 #roadOrange {
   background-image: url("gameAssetsOfficial/roadOrange.png");
   background-repeat: no-repeat;
   position: absolute;
-  left: 1253px;
-  top: 311px;
-  width: 71px;
-  min-height: 19px;
-  z-index: 137;
+  left: 1256px;
+  top: 329px;
+  width: 65px;
+  min-height: 13px;
+  z-index: $playerMarket;
 }
 
 #settleOrange {
@@ -460,7 +604,7 @@ all other rules are nested
   top: 233px;
   width: 55px;
   min-height: 53px;
-  z-index: 136;
+  z-index: $playerMarket;
 }
 
 #cityOrange {
@@ -472,23 +616,14 @@ all other rules are nested
   width: 57px;
   min-height: 71px;
   z-index: 135;
-} */
-
-#playerWhite {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: $playerMarket;
-}
+} 
 
 #devCardWhite {
   background-image: url("gameAssetsOfficial/devCardWhite.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
-  top: 354px;
+  top: 350px;
   width: 42px;
   min-height: 50px;
   z-index: $playerMarket;
@@ -498,10 +633,10 @@ all other rules are nested
   background-image: url("gameAssetsOfficial/roadWhite.png");
   background-repeat: no-repeat;
   position: absolute;
-  left: 1253px;
-  top: 317px;
-  width: 71px;
-  min-height: 19px;
+  left: 1256px;
+  top: 329px;
+  width: 65px;
+  min-height: 13px;
   z-index: $playerMarket;
 }
 
@@ -510,7 +645,7 @@ all other rules are nested
   background-repeat: no-repeat;
   position: absolute;
   left: 1252px;
-  top: 239px;
+  top: 233px;
   width: 55px;
   min-height: 53px;
   z-index: $playerMarket;
@@ -521,27 +656,20 @@ all other rules are nested
   background-repeat: no-repeat;
   position: absolute;
   left: 1251px;
-  top: 155px;
+  top: 149px;
   width: 57px;
   min-height: 71px;
-  z-index: $playerMarket;
+  z-index: $playerMarket;;
 }
 
-#playerRed {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: $playerMarket;
-}
+
 
 #devCardRed {
   background-image: url("gameAssetsOfficial/devCardRed.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
-  top: 358px;
+  top: 350px;
   width: 42px;
   min-height: 50px;
   z-index: $playerMarket;
@@ -551,10 +679,10 @@ all other rules are nested
   background-image: url("gameAssetsOfficial/roadRed.png");
   background-repeat: no-repeat;
   position: absolute;
-  left: 1253px;
-  top: 321px;
-  width: 71px;
-  min-height: 19px;
+  left: 1256px;
+  top: 329px;
+  width: 65px;
+  min-height: 13px;
   z-index: $playerMarket;
 }
 
@@ -563,7 +691,7 @@ all other rules are nested
   background-repeat: no-repeat;
   position: absolute;
   left: 1252px;
-  top: 243px;
+  top: 233px;
   width: 55px;
   min-height: 53px;
   z-index: $playerMarket;
@@ -574,18 +702,9 @@ all other rules are nested
   background-repeat: no-repeat;
   position: absolute;
   left: 1251px;
-  top: 159px;
+  top: 149px;
   width: 57px;
   min-height: 71px;
-  z-index: $playerMarket;
-}
-
-#playerBlue {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
   z-index: $playerMarket;
 }
 
@@ -594,7 +713,7 @@ all other rules are nested
   background-repeat: no-repeat;
   position: absolute;
   left: 1255px;
-  top: 362px;
+  top: 350px;
   width: 42px;
   min-height: 50px;
   z-index: $playerMarket;
@@ -615,10 +734,10 @@ all other rules are nested
   background-image: url("gameAssetsOfficial/settlementBlue.png");
   background-repeat: no-repeat;
   position: absolute;
-  left: 1255px;
-  top: 251px;
-  width: 49px;
-  min-height: 47px;
+  left: 1252px;
+  top: 233px;
+  width: 55px;
+  min-height: 53px;
   z-index: $playerMarket;
 }
 
@@ -626,15 +745,15 @@ all other rules are nested
   background-image: url("gameAssetsOfficial/cityBlue.png");
   background-repeat: no-repeat;
   position: absolute;
-  left: 1254px;
-  top: 167px;
-  width: 51px;
-  min-height: 65px;
+  left: 1251px;
+  top: 149px;
+  width: 57px;
+  min-height: 71px;
   z-index: $playerMarket;
   border: none;
 }
 
-
+} /* end .buyableItems */
 
 
 
@@ -685,7 +804,7 @@ left: 80px;
     line-height: 0.4;
     text-align: left;
     position: relative;
-    left: 100px;
+    left: 95px;
     top: 20px;
     
     z-index: 500;
@@ -694,15 +813,7 @@ left: 80px;
 
 
 
-#pawnsCounterContainer {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  height: $totalMinHeight;
-  z-index: 500;
-  border: none;
-  $leftCounters: 1289px;
+  
 
 
 
@@ -714,9 +825,9 @@ left: 80px;
     color: rgb(234, 227, 226);
     text-transform: uppercase;
     line-height: 2;
-    text-align: left;
+    text-align: right;
     position: absolute;
-    left: $leftCounters +20px;
+    left: $rightAbs - 100px;
     top: 140px;
     width: 49px;
     height: 16px;
@@ -780,7 +891,7 @@ left: 80px;
 
 
 
-}
+
 
 #pawnsContainerBox {
   border-width: 9.56px;
@@ -799,10 +910,10 @@ left: 80px;
 
 } 
 
-
+/* 
 .cityMarket {
   position: absolute;
-  left: 60px;
+  left: 40px;
   z-index: $playerMarket;
 }
 .settlementMarket { 
@@ -823,158 +934,183 @@ left: 80px;
   z-index: $playerMarket;
 
 }
+ */
 
-
-
-.buySkipTrade {
-  position: absolute;
-  left: 0px;
-  top: 20px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: 600;
-
-  #fullTBS {
-    z-index: 300;
-  }
-}
 
 #BUY {
-  font-size: 24px;
-  font-family: "Arial Black";
-  background-image: url("BUY.png");
+    font-size: 24px;
+    font-family: "Arial Black";
+    color: rgb(52, 52, 52);
+    text-shadow: 1px 2px 3px white;
+    text-transform: uppercase;
+    line-height: 0.583;
+    text-align: center;
+    
+    position: absolute;
+    left: 1380px;
+    top: 850px;
+    width: 65px;
+    height: 17px;
+    z-index: $bstIndex;
+    
+  
+  
+
+  /* background-image: url("gameAssetsOfficial/BUY.svg");
   position: absolute;
-  left: 1271px;
-  top: 664px;
-  width: 96px;
-  height: 48px;left: 1256.269px;
-  top: 689.908px;
-  width: 55.039px;
-  min-height: 17px;
-  z-index: 1000;
+  left: $rightAbs - 150px;
+  top: $bottomAbs - 100px;
+  width: 80px;
+  height: 20px;
+  z-index: $bstIndex; */
 
   
 }
 
 #SKIP {
-  font-size: 24px;
-  font-family: "Arial Black";
-  color: #343434;
-  text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  transform: matrix(0.99937, -0.03544, 0.03544, 0.99937, 0, 0);
-  -moz-transform: matrix(0.99937, -0.03544, 0.03544, 0.99937, 0, 0);
-  -webkit-transform: matrix(0.99937, -0.03544, 0.03544, 0.99937, 0, 0);
-  -ms-transform: matrix(0.99937, -0.03544, 0.03544, 0.99937, 0, 0);
+
+  p {
+  
+    font-size: 24px;
+    font-family: "Arial Black";
+    text-shadow: 1px 2px 3px white;
+
+    color: rgb(52, 52, 52);
+    text-transform: uppercase;
+    line-height: 0.583;
+    text-align: center;
+    
+  }
+
   position: absolute;
-  left: 1256.101px;
-  top: 748.908px;
-  width: 62.664px;
-  min-height: 17px;
-  z-index: 1000;
+  left: 1380px;
+  top: 900px;
+    width: 62.664px;
+    height: 17px;
+    z-index: $bstIndex;
+  
+  
+  /* background-image: url("gameAssetsOfficial/SKIP.svg");
+  position: absolute;
+  left: $rightAbs;
+  top: $bottomAbs;
+  width: 80px;
+  height: 20px;
+  z-index: $bstIndex; */
 }
 
 #TRADE {
-  font-size: 24px;
-  font-family: "Arial Black";
-  color: #343434;
+
+  p {
+
+    font-size: 24px;
+    font-family: "Arial Black";
+    
+    color: rgb(52, 52, 52);
+    text-shadow: 1px 2px 3px white;
+    text-transform: uppercase;
+    line-height: 0.583;
+    text-align: center;
+    rotate: -40deg;
+  }
+    position: absolute;
+    left: 1290px;
+    top: 890px;
+
+    
+    
+    width: 90px;
+    height: 17px;
+    z-index: $bstIndex;
+  
+  
+  
+  
+  /* background-image: url("gameAssetsOfficial/TRADE.svg");
   text-transform: uppercase;
-  line-height: 0.583;
-  text-align: center;
-  transform: matrix(0.69112, -0.72274, 0.72274, 0.69112, 0, 0);
-  -moz-transform: matrix(0.69112, -0.72274, 0.72274, 0.69112, 0, 0);
-  -webkit-transform: matrix(0.69112, -0.72274, 0.72274, 0.69112, 0, 0);
-  -ms-transform: matrix(0.69112, -0.72274, 0.72274, 0.69112, 0, 0);
+
   position: absolute;
-  left: 1165.601px;
-  top: 730.408px;
-  width: 88.336px;
-  min-height: 17px;
-  z-index: 1000;
-}
-
-$cHBULeft: 948px;
-$cHBUTop: 460px;
-$cHBUWidth: 418px;
-$cHBUHeight: 308px;
-$cHBUzIndex: 2;
+  left: $rightAbs;
+  top: $bottomAbs;
+  width: 80px;
+  height: 20px; */
+  }
 
 
+  
 
-/* 
-
-  #myButton {
-  z-index: 600;
-  bottom: 0px;
-  right: 100px;
-}
- */
-
-
-#colorHandBigUnderBlue {
-  background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: $cHBULeft;
-  top: $cHBUTop;
+.playerColorHands {
   width: $cHBUWidth;
   height: $cHBUHeight;
-  z-index: $cHBUzIndex;
-  border: none;
+  left: 100px;
+  top: 1000px;
 
-  background-repeat: no-repeat;
-}
+
+
+z-index: $cHBUzIndex;
 
 #colorHandBigUnderRed {
   background-image: url("gameAssetsOfficial/colorHandBigUnderRed.png");
-  background-repeat: no-repeat;
+  mix-blend-mode:color-dodge;
   position: absolute;
   left: $cHBULeft;
   top: $cHBUTop;
   width: $cHBUWidth;
-  height: $cHBUHeight;
+height: $cHBUHeight;
   z-index: $cHBUzIndex;
-  border: none;
-
   background-repeat: no-repeat;
 }
 
 #colorHandBigUnderWhite {
   background-image: url("gameAssetsOfficial/colorHandBigUnderWhite.png");
-  background-repeat: no-repeat;
+  mix-blend-mode:color-dodge;
   position: absolute;
   left: $cHBULeft;
   top: $cHBUTop;
   width: $cHBUWidth;
-  height: $cHBUHeight;
+height: $cHBUHeight;
   z-index: $cHBUzIndex;
-  border: none;
   background-repeat: no-repeat;
+  
 }
 
+#colorHandBigUnderBlue {
+  background-image: url("gameAssetsOfficial/colorHandBigUnderBlue.png");
+  mix-blend-mode:color-dodge;
+  position: absolute;
+  left: $cHBULeft;
+  top: $cHBUTop;
+  width: $cHBUWidth;
+height: $cHBUHeight;
+  z-index: $cHBUzIndex;
+  background-repeat: no-repeat;
+
+}
+ 
 #colorHandBigUnderOrange {
   background-image: url("gameAssetsOfficial/colorHandBigUnderOrange.png");
-  background-repeat: no-repeat;
+  mix-blend-mode:color-dodge;
   position: absolute;
   left: $cHBULeft;
   top: $cHBUTop;
   width: $cHBUWidth;
-  height: $cHBUHeight;
-  z-index:  $cHBUzIndex;
-  border: none;
+height: $cHBUHeight;
+  z-index: $cHBUzIndex;
   background-repeat: no-repeat;
+
 }
 
+
+} /* end playerColorHands */
+
+
+
+
+
+/* 
 #tradeShips {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: 90;
-  border: none;
-}
+  
+} */
 
 #any3_1A {
   background-image: url("gameAssetsOfficial/any3_1A.png");
@@ -1086,7 +1222,7 @@ $cHBUzIndex: 2;
 #currentPlayerTimerClock {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: $safeTop;
   width: $totalMinWidth;
   min-height: $totalMinHeight;
   z-index: 79;
@@ -1096,7 +1232,7 @@ $cHBUzIndex: 2;
   background-color: #643f0f;
   position: absolute;
   left: 1156px;
-  top: 25px;
+  top: 21px;
   width: 11px;
   min-height: 33px;
   z-index: 78;
@@ -1107,7 +1243,7 @@ $cHBUzIndex: 2;
   background-repeat: no-repeat;
   position: absolute;
   left: 1120px;
-  top: 4px;
+  top: 0px;
   width: 84px;
   min-height: 84px;
   z-index: 77;
@@ -1121,7 +1257,7 @@ $cHBUzIndex: 2;
   background-color: #e3d55d;
   position: absolute;
   left: 1125px;
-  top: 10px;
+  top: 6px;
   width: 72.88px;
   min-height: 72.88px;
   z-index: 76;
@@ -1136,7 +1272,7 @@ $cHBUzIndex: 2;
   top: 596px;
   width: 71px;
   min-height: 111px;
-  z-index: 74;
+  z-index: $robberIndex;
   border: none;
 }
 
@@ -1150,34 +1286,33 @@ $cHBUzIndex: 2;
       min-height: $totalMinHeight;
       z-index: 53;
     } */
+
+    /* 
 .largestArmyLongestRoad {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  /* right: 0vw;
+  top: 0vh; 
   
-  width: 500px;
-  height: 500px;
-   
-   z-index: $allCards;
-
+   z-index: $allCards;*/
+ 
 
 #Longest_Road {
   background-image: url("gameAssetsOfficial/Longest Road.png");
   background-repeat: no-repeat;
-  position: relative;
-  left: 1135px;
-  top: 279px;
-  width: 106px;
-  min-height: 159px;
+  position: absolute;
+  left: 5px;
+  top: 310px;
+  width: 105px;
+  min-height: 160px;
   z-index: $allCards;
 }
 
-#Biggest_Army {
+#Largest_Army {
   background-image: url("gameAssetsOfficial/Biggest Army.png");
   background-repeat: no-repeat;
-  position: relative;
-  left: 1135px;
-  top: 124px;
+  position: absolute;
+  left: 110px;
+  top: 310px;
   width: 105px;
   min-height: 160px;
   z-index: $allCards;
@@ -1187,11 +1322,10 @@ $cHBUzIndex: 2;
 #Development_Cards {
   position: absolute;
   left: 0px;
-  top: 10px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
+  top: $safeBottom;
   z-index: $allCards;
   border: none;
+  
   :hover {
     cursor: pointer;
 width: 110%;
@@ -1260,24 +1394,12 @@ width: 110%;
 }/* development Cards */
 
 
-
-#myButton {
-  position: absolute;
-  background-color: royalblue;
-  top: 1200px;
-  border:rgb(44, 36, 36);
-  z-index: 900;
-}
-
-
-#Buying_Interface {
-  position: absolute;
+.Buying_Interface {
+  position: fixed;
   left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: 40;
-}
+ bottom: 0px;
+  z-index: 400;
+
 
 #Yes {
   font-size: 20px;
@@ -1286,8 +1408,8 @@ width: 110%;
   text-transform: uppercase;
   line-height: 2;
   text-align: center;
-  position: absolute;
-  left: 289.549px;
+/*   position: absolute;
+ */  left: 289.549px;
   top: 657.013px;
   width: 40px;
   min-height: 15px;
@@ -1301,8 +1423,8 @@ width: 110%;
   text-transform: uppercase;
   line-height: 2;
   text-align: center;
-  position: absolute;
-  left: 288.185px;
+/*   position: absolute;
+ */  left: 288.185px;
   top: 710.013px;
   width: 30px;
   min-height: 15px;
@@ -1316,10 +1438,10 @@ width: 110%;
   text-transform:none;
   line-height: 1.111;
   text-align: left;
-  position: absolute;
-  left: 17px;
+/*   position: absolute;
+ */  left: 17px;
    
-   top: 620.746px;
+   bottom: 620.746px;
    width: 250px;
   z-index: 37;
 
@@ -1332,8 +1454,8 @@ width: 110%;
   text-transform: uppercase;
   line-height: 2;
   text-align: center;
-  position: absolute;
-  left: 287.953px;
+/*   position: absolute;
+ */  left: 287.953px;
   top: 762.013px;
   width: 72px;
   min-height: 15px;
@@ -1490,249 +1612,15 @@ width: 110%;
   z-index: 31;
 }
 
-/* 6/02/21
-replaced the following with equivalent 
-placeholders 
- */
+} /* end Buying Interface */
 
-
-
-$hexPlaceholder_Z-index: 1;
-
-.tilePlaceholder {
-  position: absolute;
-  visibility: visible;
-z-index: $hexPlaceholder_Z-index;
-
-/* All tiles will be set to "visible after shuffling is done"*/
-}
-
-/*
-#tp_A {
-
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 470px;
-  top: 44px;
-  width: 172px;
-  min-height: 187px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_B {
-  
-
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 627px;
-  top: 44px;
-  width: 171px;
-  min-height: 187px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_C {
-  
-
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 781px;
-  top: 42px;
-  width: 171px;
-  min-height: 187px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_D {
-  
-
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 393px;
-  top: 176px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_E {
-     
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 547px;
-  top: 176px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_F {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 703px;
-  top: 176px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_G {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 859px;
-  top: 176px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_H {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 316px;
-  top: 308px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_I {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 470px;
-  top: 308px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_J {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 626px;
-  top: 308px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_K {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 781px;
-  top: 308px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_L {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 936px;
-  top: 308px;
-  width: 168px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_M {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 393px;
-  top: 441px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_N {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 548px;
-  top: 441px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_O {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 703px;
-  top: 441px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_P {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 859px;
-  top: 441px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_Q {
-
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 470px;
-  top: 573px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_R {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 626px;
-  top: 573px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-}
-
-#tp_S {
-  
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 781px;
-  top: 573px;
-  width: 172px;
-  min-height: 188px;
-  z-index: $hexPlaceholder_Z-index;
-  border: none;
-}
-
-
-
-
-*/
 
 
 #island_hexes {
   position: absolute;
-  left: 32px;
+  left: 0px;
   top: 16px;
-  width: auto;
-  height: auto;
+  
   
   z-index: 28;
   $islandHexIndex: 30;  
@@ -1742,10 +1630,8 @@ z-index: $hexPlaceholder_Z-index;
 #bankChest {
   position: absolute;
   left: 0px;
-  top: 0px;
-  width: $totalMinWidth;
-  min-height: $totalMinHeight;
-  z-index: 7;
+  top: 80px;
+  z-index: 2;
 }
 
 
@@ -1757,7 +1643,7 @@ z-index: $hexPlaceholder_Z-index;
   top: 407px;
   width: 219px;
   min-height: 53px;
-  z-index: 6;
+  z-index: 2;
 }
 
 #bankChestBottom {
@@ -1768,7 +1654,7 @@ z-index: $hexPlaceholder_Z-index;
   top: 451px;
   width: 215px;
   min-height: 82px;
-  z-index: 5;
+  z-index: 2;
 }
 
 #bankChestInside {
@@ -1779,13 +1665,11 @@ z-index: $hexPlaceholder_Z-index;
   top: 417px;
   width: 200px;
   min-height: 43px;
-  z-index: 4;
+  z-index: 2;
   border: none;
 }
 
 
 
-   /* island_Hexes */
 
   
-} /* wrapper */

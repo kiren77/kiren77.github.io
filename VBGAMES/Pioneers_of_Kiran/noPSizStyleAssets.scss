@@ -1,4 +1,37 @@
 
+/* ALL BOOTSTRAP */
+
+
+
+/* Bootstrap Variables Start */
+$grid-columns:      12;
+$grid-gutter-width: 1.5rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+/* Bootstrap Variables END */
+
+
+/* BOOTSTRAP END */
+//
+//
+/* beginning pawn placeholder section */
+
 /* z-index for road,city and settlement assets */
 $setZ: 402; /* for cosmetic purposes only: placed settlements above cities */
 $cityZ: 401;
@@ -30,35 +63,13 @@ $roadTemplatePawn-lL-hR: "gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
 $testingInterface: 1500;
 
 
-
-#nodeAdjacentRoadsButton {
-    background-repeat: no-repeat;
   
-  position: absolute;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  width: auto;
-  height: auto;
-  text-overflow:clip;
-  left: 1250px;
-  top: 420px;
-  color: rgb(201, 235, 235);
-background-color: rgb(122, 53, 120);
-z-index: $testingInterface;
-}
-#nodeAdjacentRoadsButton:hover{
-    background-repeat: no-repeat;
- 
-  background-color: rgb(154, 45, 209);
-  cursor:pointer;
-  }
 
 .allPawnsPhParent {
     background-repeat: no-repeat;
     position: absolute;
     top: 10px;
-    left: 275px;
+    left: 0px;
     opacity:80%;
     z-index: $setZ
 
@@ -94,6 +105,10 @@ z-index: $testingInterface;
   /* subtract 40px; */
   $aHigh: 0px;
   
+
+  .tileContainer {
+
+
   .tilePlaceholder {
     background-repeat: no-repeat;
 
@@ -1903,3 +1918,9 @@ z-index: $testingInterface;
       height: 49px;
       z-index: $setZ;
     }
+/* end pawn placeholder section */
+
+} /* tileContainer */
+
+//
+//
