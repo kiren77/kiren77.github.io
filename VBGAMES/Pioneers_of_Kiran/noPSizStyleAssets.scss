@@ -7,21 +7,45 @@
 $grid-columns:      12;
 $grid-gutter-width: 1.5rem;
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+$grid-breakpoints: ( //for less breakpoints: remove variables
+  xs: 0,      /* //only px (no rem, em %)  */
+  md: 720px,  /* //only px (no rem, em %) */
+  lg: 960px,  /* //only px (no rem, em %) */
+  xl: 1140px, /* //only px (no rem, em %) */
+  xxl: 1320px /* //only px (no rem, em %) */
+  sm: 576px,  /* //only px (no rem, em %)  */
+  md: 720px,  /* //only px (no rem, em %) */
+  lg: 960px,  /* //only px (no rem, em %) */
+  xl: 1140px, /* //only px (no rem, em %) */
+  xxl: 1320px /* //only px (no rem, em %)  */
+  md: 768px,  /* //only px (no rem, em %)  */
+  md: 720px,  /* //only px (no rem, em %) */
+  lg: 960px,  /* //only px (no rem, em %) */
+  xl: 1140px, /* //only px (no rem, em %) */
+  xxl: 1320px /* //only px (no rem, em %) */
+  lg: 992px,  /* //only px (no rem, em %)  */
+  md: 720px,  /*   //only px (no rem, em %) */
+  lg: 960px,  /*   //only px (no rem, em %) */
+  xl: 1140px, /*   //only px (no rem, em %) */
+  xxl: 1320px /*   //only px (no rem, em %) */
+  xl: 1200px, /* //only px (no rem, em %)  */
+  md: 720px,  /*   //only px (no rem, em %) */
+  lg: 960px,  /*   //only px (no rem, em %) */
+  xl: 1140px, /*   //only px (no rem, em %) */
+  xxl: 1320px /*   //only px (no rem, em %) */
+  xxl: 1400px /* //only px (no rem, em %)  */
+  md: 720px,  /*   //only px (no rem, em %) */
+  lg: 960px,  /*   //only px (no rem, em %) */
+  xl: 1140px, /*   //only px (no rem, em %) */
+  xxl: 1320px /*   //only px (no rem, em %) */
 );
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  sm: 540px,    //only px (no rem, em %) 
+  md: 720px,    //only px (no rem, em %)
+  lg: 960px,    //only px (no rem, em %)
+  xl: 1140px,   //only px (no rem, em %)
+  xxl: 1320px   //only px (no rem, em %)
 );
 
 /* Bootstrap Variables END */

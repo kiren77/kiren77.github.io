@@ -1,4 +1,316 @@
-.wrapper {
-  background-color: purple;
+.resourceCards {
+  /*  position:relative;
+    left: -10px;
+    top: 210px; */
+  z-index: 1002;
+  /* 
+      #oreTotalNull {
+        font-size: 24px;
+        font-family: "Roboto Slab";
+        color: #cccccc;
+        text-transform: uppercase;
+        line-height: 0.583;
+        text-align: center;
+        text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+        transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        -moz-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        -webkit-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        -ms-transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        position: absolute;
+        left: 0px ;
+        top: 20px;
+        width: 50.859px;
+        min-height: 17px;
+        z-index: $allCards;
+        border: none;
+      } */
+  /* #brickTotalNull {
+        font-size: 24px;
+        font-family: "Roboto Slab";
+        color: #cccccc;
+        text-transform: uppercase;
+        line-height: 0.583;
+        text-align: center;
+        text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+        
+        rotate:0deg;
+        position: absolute;
+        left: 0px ;
+        top: 15px;
+        width: 50.859px;
+        min-height: 17px;
+        z-index: $allCards+1;
+        border: none;
+      }
+  
+      #wheatTotalNull {
+        font-size: 24px;
+        font-family: "Roboto Slab";
+        color: #cccccc;
+        text-transform: uppercase;
+        line-height: 0.583;
+        text-align: center;
+        text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+        rotate:-30deg;
+        position: absolute;
+        left: 0px ;
+        top: 20px;
+        width: 60.859px;
+        min-height: 17px;
+        z-index: $allCards;
+        border: none;
+      }
+  
+      #woodTotalNull {
+        font-size: 24px;
+        font-family: "Roboto Slab";
+        color: #cccccc;
+        text-transform: uppercase;
+        line-height: 0.583;
+        text-align: center;
+        text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+        
+        rotate:-40deg;
+        position: absolute;
+        left: 0px + 200px;
+        top: 20px;
+        width: 60.859px;
+        min-height: 17px;
+        z-index: $allCards;
+        border: none;
+      } */
+  /* #sheepTotalNull {
+        font-size: 24px;
+        font-family: "Roboto Slab";
+        color: #cccccc;
+        text-transform: uppercase;
+        line-height: 0.583;
+        text-align: center;
+        text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+        
+        rotate:-50deg;
+        position: absolute;
+        left: 0px ;
+        top: 20px;
+  
+        width: 60.859px;
+        min-height: 17px;
+        z-index: $allCards;
+        border: none;
+        background-repeat: no-repeat;
+      } */
 }
+
+.resourceCards #sheepCard {
+  background-image: url("gameAssetsOfficial/sheepCard.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /* left: 83px ;
+      top: 197px;
+      width: 172px;
+      min-height: 152px;
+      z-index: $allCards+1;
+      border: none;              */
+}
+
+.resourceCards #totalSheepDiamond {
+  background-image: url("gameAssetsOfficial/totalSheepDiamond.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /* left: 217px ;
+      top: 293px;
+      width: 55px;
+      min-height: 54px;
+      z-index: $allCards;
+      border: none;          */
+}
+
+.resourceCards #totalSheepDiamond p {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  /*         transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        
+        position: absolute;
+        top:0px;
+        left: 8px;
+        rotate: -40deg; */
+}
+
+.resourceCards #woodCard {
+  background-image: url("gameAssetsOfficial/woodCard.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /*  left: 133px ;
+      top: 133px;
+      width: 168px;
+      min-height: 167px;
+      z-index: $allCards+2;
+      border: none; */
+}
+
+.resourceCards #totalWoodDiamond {
+  background-image: url("gameAssetsOfficial/totalWoodDiamond.png");
+  background-repeat: no-repeat;
+  /* position: absolute;
+      left: 252px ;
+      top: 651px;
+      width: 53px;
+      min-height: 55px;
+      z-index: $allCards;
+      border: none; */
+}
+
+.resourceCards #totalWoodDiamond p {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  /* transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        
+        position: absolute;
+        top:0px;
+        left: 4px;
+        rotate: -40deg;
+         */
+}
+
+.resourceCards #wheatCard {
+  background-image: url("gameAssetsOfficial/wheatCard.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /* left: 202px ;
+      top: 485px ;
+      width: 154px;
+      min-height: 170px;
+      z-index: $allCards+3;
+      border: none; */
+}
+
+.resourceCards #totalWheatDiamond {
+  background-image: url("gameAssetsOfficial/totalWheatDiamond.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /* left:296px ;
+      top: 619px;
+      width: 53px;
+      min-height: 56px;
+      z-index: $allCards;
+      border: none; */
+}
+
+.resourceCards #totalWheatDiamond p {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  /*  transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        
+        position: absolute;
+        top:0px;
+        left: 0px;
+        rotate: -20deg; */
+}
+
+.resourceCards #oreCard {
+  background-image: url("gameAssetsOfficial/oreCard.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /*  left: 284px ;
+      top: 460px;
+      width: 132px;
+      min-height: 166px;
+      z-index: $allCards+4;
+      border: none; */
+}
+
+.resourceCards #totalOreDiamond {
+  background-image: url("gameAssetsOfficial/totalOreDiamond.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /* left: 348px ;
+      top: 202px;
+      width: 50px;
+      min-height: 57px;
+      z-index: $allCards;
+      border: none;
+   */
+}
+
+.resourceCards #totalOreDiamond p {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  /* transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        
+        position: absolute;
+        top:0px;
+        left: 0px;
+        rotate: -10deg; */
+}
+
+.resourceCards #brickCard {
+  background-image: url("gameAssetsOfficial/brickCard.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /*  left: 372px ;
+      top: 059px;
+      width: 100px;
+      min-height: 151px;
+      z-index: $allCards+5;
+      border: none; */
+}
+
+.resourceCards #totalBrickDiamond {
+  background-image: url("gameAssetsOfficial/totalBrickDiamond.png");
+  background-repeat: no-repeat;
+  /*       position: absolute;
+ */
+  /* left: 399px ;
+      top: 200px;
+      width: 49px;
+      min-height: 54px;
+      z-index: $allCards;
+      border: none; */
+}
+
+.resourceCards #totalBrickDiamond p {
+  font-size: 24px;
+  font-family: "Roboto Slab";
+  color: #cccccc;
+  text-transform: uppercase;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
+  /* transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+        
+        position: absolute;
+        top:-5px;
+        left: 0px;
+        rotate: 15deg; */
+}
+
+/* resourcecards */
 /*# sourceMappingURL=absoluteAssets.css.map */
