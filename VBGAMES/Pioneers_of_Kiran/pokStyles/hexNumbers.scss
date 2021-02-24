@@ -1,8 +1,10 @@
 
 .hexNumbers {
-
+ 
 
     $hexNumberzIndex: 500;
+
+    $hexCoinSize: 69px;
 
     //property used on: top
     $row1: 90px;
@@ -29,8 +31,8 @@
       position: absolute;
       left: $column3;
       top: $row1;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -40,8 +42,8 @@
       position: absolute;
       left: $column5;
       top: $row1;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -51,8 +53,8 @@
       position: absolute;
       left: $column7;
       top: $row1;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -62,8 +64,8 @@
       position: absolute;
       left: $column2;
       top: $row2;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -73,8 +75,8 @@
       position: absolute;
       left: $column4;
       top: $row2;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -84,8 +86,8 @@
       position: absolute;
       left: $column6;
       top: $row2;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -95,8 +97,8 @@
       position: absolute;
       left: $column8;
       top: $row2;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -106,8 +108,8 @@
       position: absolute;
       left: $column1;
       top: $row3;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -117,8 +119,8 @@
       position: absolute;
       left: $column3;
       top: $row3;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -128,8 +130,8 @@
       position: absolute;
       left: $column5;
       top: $row3;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -139,8 +141,8 @@
       position: absolute;
       left: $column7;
       top: $row3;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -150,8 +152,8 @@
       position: absolute;
       left: $column9;
       top: $row3;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
 
@@ -162,8 +164,8 @@
       position: absolute;
       left: $column2; 
       top: $row4;  
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
       border: none;
   }
@@ -174,8 +176,8 @@
     position: absolute;
     left: $column4; 
     top: $row4;  
-    width: 69px;
-    height: 69px;
+    width: $hexCoinSize;
+    height: $hexCoinSize;
     z-index: $hexNumberzIndex;
     border: none;
   }
@@ -186,8 +188,8 @@
       position: absolute;
       left: $column6;
       top: $row4;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -197,8 +199,8 @@
       position: absolute;
       left: $column8;
       top: $row4;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -208,8 +210,8 @@
       position: absolute;
       left: $column3;
       top: $row5;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -219,8 +221,8 @@
       position: absolute;
       left: $column5;
       top: $row5;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   
@@ -230,8 +232,8 @@
       position: absolute;
       left: $column7;
       top: $row5;
-      width: 69px;
-      height: 69px;
+      width: $hexCoinSize;
+      height: $hexCoinSize;
       z-index: $hexNumberzIndex;
     }
   

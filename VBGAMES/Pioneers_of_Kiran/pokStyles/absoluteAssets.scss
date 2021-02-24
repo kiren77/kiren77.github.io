@@ -1,3 +1,57 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ */
+
+ $woodTile: "gameAssetsOfficial/wood1.png";
+ $sheepTile: "gameAssetsOfficial/sheep1.png";
+ $wheatTile: "gameAssetsOfficial/wheat1.png";
+ $oreTile: "gameAssetsOfficial/ore1.png";
+ $brickTile: "gameAssetsOfficial/brick1.png";
+ $desertTile: "gameAssetsOfficial/desert1.png";
+ 
+ /* market */
+ $leftCounters: 1289px;
+ 
+ /* ColorHands */
+ $cHBUWidth: 418px;
+ $cHBUHeight: 308px;
+ $cHBULeft: 1040px;
+ $cHBUTop: 660px;
+ 
+ /* index of All cards (highest items) */
+ 
+ 
+ 
+ $robberIndex: 550;
+ $cHBUzIndex: 1000;
+ $bstIndex: 1001;
+ $allCards: 1002;
+ $playerMarket: 1100;
+ /* testingInterface should always be highest */
+ $testingInterface: 1500;
+ 
+ /* Max */
+ $totalMaxWidth: 1458px;
+ $totalMaxHeight: 968px;
+ /* Safe */
+ $safeTop: + 10px;
+ $safeBottom: $totalMaxWidth - 10px;
+ /* Min */
+ $totalMinWidth: 50%; 
+ $totalMinHeight:50%; 
+ 
+ 
+ $viewportWidth: $totalMinWidth;
+ 
+ 
+ 
+ 
+ 
+ 
+ $topAbs: 0px;//set to relative
+ $bottomAbs: $totalMaxHeight;//(value of Top:)set to relative
+ $leftAbs: 0px;//set to relative
+ $rightAbs: $totalMaxWidth; //(value of Left:)set to relative
+
 $allCards: 1002;
 
 .resourceCards {
@@ -6,7 +60,7 @@ $allCards: 1002;
     top: 210px; */
    
     z-index: $allCards;
-  
+  position: relative;
   
   
   

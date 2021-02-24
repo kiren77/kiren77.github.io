@@ -8,33 +8,11 @@
 /* settlement pawn asset*/
 /* 3 different road assets (vertical and both slopes) */
 /* testingInterface should always be highest */
-#nodeAdjacentRoadsButton {
-  background-repeat: no-repeat;
-  position: absolute;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  width: auto;
-  height: auto;
-  text-overflow: clip;
-  left: 1250px;
-  top: 420px;
-  color: #c9ebeb;
-  background-color: #7a3578;
-  z-index: 1500;
-}
-
-#nodeAdjacentRoadsButton:hover {
-  background-repeat: no-repeat;
-  background-color: #9a2dd1;
-  cursor: pointer;
-}
-
 .allPawnsPhParent {
   background-repeat: no-repeat;
-  position: absolute;
-  top: 10px;
-  left: 275px;
+  position: relative;
+  top: 0px;
+  left: 0px;
   opacity: 80%;
   z-index: 402;
 }
