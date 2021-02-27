@@ -7,18 +7,23 @@ width/height = 109%
 */
 .absoluteAssets {
   /* ocean backdrop should comfortably encircle island to accomodate the tradships */
+  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
   top: 0px;
   left: 360.5px;
-  width: 721px;
-  height: 91%;
+  min-width: 1442px;
   padding-top: 91%;
   background-size: cover;
   /* insert everything with position absolute in absolute Assets */
 }
 
 .absoluteAssets #imageIsland {
-  position: absolute;
+  position: relative;
   background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
+  top: 0px;
+  left: 360.5px;
+  min-width: 1442px;
+  padding-top: 91%;
+  background-size: cover;
   /* 
     First apply background cover
     
@@ -28,20 +33,10 @@ width/height = 109%
 
     what we want to do is apply that percentage to padding-top (no height needed).
     */
-  top: 0px;
-  left: 360.5px;
-  width: 721px;
-  padding-top: 91%;
-  background-size: cover;
-  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
-  top: 0px;
-  left: 360.5px;
-  min-width: 1442px;
-  padding-top: 91%;
-  background-size: cover;
 }
 
 .absoluteAssets .allPawnsPhParent {
+  position: relative;
   width: 721px;
   padding-top: 91%;
   background-size: cover;

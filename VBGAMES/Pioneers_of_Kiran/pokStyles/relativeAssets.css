@@ -2,18 +2,17 @@
  */
 /* index of All cards (highest items) */
 /* testingInterface should always be highest */
-/* Max */
-/* Safe */
-/* Min */
 #allMyButtons #shuffleButton1 {
   background-repeat: no-repeat;
   position: relative;
   text-overflow: clip;
-  left: 0px;
+  left: 100px;
   top: 0px;
   color: #d3dab1;
   background-color: #719444;
   z-index: 1500;
+  width: 75px;
+  height: 110px;
 }
 
 #allMyButtons #shuffleButton1:hover {
@@ -24,11 +23,13 @@
 #allMyButtons #nodeAdjacentRoadsButton {
   background-repeat: no-repeat;
   position: relative;
-  left: 0px;
+  left: 100px;
   top: 0px;
   color: #c9ebeb;
   background-color: #7a3578;
   z-index: 1500;
+  width: 75px;
+  height: 110px;
 }
 
 #allMyButtons #nodeAdjacentRoadsButton:hover {
@@ -185,7 +186,7 @@
 }
 
 .interface-overlay-wrapper .resourceCards {
-  bottom: 0px;
+  bottom: 200px;
   left: 50%;
   z-index: 1002;
   /* end SheepCard */
@@ -581,15 +582,15 @@
 }
 
 /* end Market interface */
-/* 
-        #island_Dice_Numbers {
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          width: $totalMinWidth;
-          min-height: $totalMinHeight;
-          z-index: 53;
-        } */
+#island_Dice_Numbers {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: auto;
+  min-height: auto;
+  z-index: 53;
+}
+
 #largestArmyLongestRoad {
   position: relativein;
   left: 20px;
@@ -644,6 +645,20 @@
   max-width: 37.5px;
   height: 110px;
   z-index: 1002;
+}
+
+#Development_Cards #knightCard p {
+  top: 75px;
+  left: 5px;
+  font-size: 2em;
+  font-family: "Courier";
+  color: #cccccc;
+  line-height: 0.583;
+  text-align: left;
+  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
+  position: relative;
+  /* top: 0px;
+          left: 8px; */
 }
 
 #Development_Cards #monopolyCard {

@@ -51,6 +51,120 @@ $tileHeight: 170px;
 
 
 
+    #tradeShips {
+      position:absolute; 
+      z-index: $tradeShip_index;
+    
+     } 
+    
+     #any3_1A {
+      background-image: url("../gameAssetsOfficial/any3_1A.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 954px;
+      top: 1px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+    }
+    
+    #any3_1B {
+      background-image: url("../gameAssetsOfficial/any3_1B.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 971px;
+      top: 1px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+    #any3_1C {
+      background-image: url("../gameAssetsOfficial/any3_1C.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 993px;
+      top: 1px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+    #any3_1D {
+      background-image: url("../gameAssetsOfficial/any3_1D.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 1011px;
+      top: 1px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+    #brick_2_1 {
+      background-image: url("../gameAssetsOfficial/brick-2_1.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 983px;
+      top: 73px;
+      width: 125px;
+      min-height: 85px;
+      z-index: 85;
+      border: none;
+    }
+    
+    #ore_2_1 {
+      background-image: url("../gameAssetsOfficial/ore-2_1.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 990px;
+      top: 73px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+    #sheep_2_1 {
+      background-image: url("../gameAssetsOfficial/sheep-2_1.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 997px;
+      top: 73px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+    #wood_2_1 {
+      background-image: url("../gameAssetsOfficial/wood-2_1.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 1004px;
+      top: 73px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+    #wheat_2_1 {
+      background-image: url("../gameAssetsOfficial/wheat-2_1.png");
+      background-repeat: no-repeat;
+    /*   position: absolute;
+     */  left: 1011px;
+      top: 73px;
+      width: 125px;
+      min-height: 85px;
+      z-index: $tradeShip_index;
+      border: none;
+    }
+    
+
 
 /* #shuffleButton2 {
   text-align: center;

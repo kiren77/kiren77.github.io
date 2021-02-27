@@ -30,12 +30,9 @@ $cardBackgroundSizeHeight: /* 20vh */ 110px ;
  
  
  
- $topAbs: 0px;//set to relative
- $bottomAbs: $totalMaxHeight;//(value of Top:)set to relative
 
  $allCards: 1002;
  $allCards_index: 1002;
-
  $allDevCard_Width: auto;
  
 
@@ -47,11 +44,14 @@ $cardBackgroundSizeHeight: /* 20vh */ 110px ;
       position: relative;
       
       text-overflow: clip;
-      left: 0px;
+      left: 100px;
       top: 0px;
       color: rgb(211, 218, 177);
       background-color: rgb(113, 148, 68);
       z-index: $testingInterface;
+              width: $cardBackgroundSizeWidth;
+              height: $cardBackgroundSizeHeight;
+
     }
     
     #shuffleButton1:hover {
@@ -63,12 +63,14 @@ $cardBackgroundSizeHeight: /* 20vh */ 110px ;
       background-repeat: no-repeat;
     
     position: relative;
-    left: 0px;
+    left: 100px;
     top: 0px;
     
     color: rgb(201, 235, 235);
     background-color: rgb(122, 53, 120);
-    z-index: $testingInterface;
+    z-index: $testingInterface;  
+     width: $cardBackgroundSizeWidth;
+    height: $cardBackgroundSizeHeight;
     }
     
     #nodeAdjacentRoadsButton:hover{
@@ -243,7 +245,7 @@ $cardBackgroundSizeHeight: /* 20vh */ 110px ;
      */
     
           .resourceCards {
-            bottom: 0px; 
+            bottom: 200px; 
             left: 50%;
             z-index: $allCards_index;
             
@@ -427,6 +429,7 @@ max-width: $cardBackgroundSizeWidth ;
           .buyableItems {
             background-color: red;
     
+            
             #playerOrange{
     
             #devCardOrange {
@@ -742,6 +745,7 @@ max-width: $cardBackgroundSizeWidth ;
       padding: 0px;
       max-width: 550px;
       bottom: 0px;
+      
 
       /*   top: $safeBottom;
      */
@@ -766,6 +770,23 @@ max-width: $cardBackgroundSizeWidth ;
         min-width: $cardBackgroundSizeWidth;
 max-width: $cardBackgroundSizeWidth / 2;        height: $cardBackgroundSizeHeight;
         z-index: $allCards_index;
+
+
+        p {
+          top: 75px;
+          left: 5px;
+          font-size: 2em;
+          font-family: "Courier";
+          color: #cccccc;
+          line-height: 0.583;
+          text-align: left;
+      
+          text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
+    
+          position: relative;
+          /* top: 0px;
+          left: 8px; */
+        }
       }
     
       #monopolyCard {

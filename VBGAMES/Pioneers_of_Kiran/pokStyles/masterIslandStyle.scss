@@ -15,18 +15,32 @@ width/height = 109%
 /* ocean backdrop should comfortably encircle island to accomodate the tradships */
     
 
+$coastalColor: #246892;
+$seaColor: #1e5f88;
+$oceanColor: #052d85;
+
+background-image: radial-gradient(
+  $coastalColor 25%,
+  $seaColor 45%,
+  $oceanColor 80%
+);
 top: $originIsland_top;
-    left: $originIsland_left;
-    width: $islandWidth;
-    height: $islandHeight;
-    padding-top: 91%;
-    background-size: cover;
+left: $originIsland_left;
+min-width: $islandWidth * 2;
+padding-top: 91%;
+background-size: cover;
+
 
 
 #imageIsland {
-    position: absolute;
+    position: relative;
 
     background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
+    top: $originIsland_top;
+    left: $originIsland_left;
+    min-width: $islandWidth * 2;
+    padding-top: 91%;
+    background-size: cover;
     /* 
     First apply background cover
     
@@ -36,33 +50,15 @@ top: $originIsland_top;
 
     what we want to do is apply that percentage to padding-top (no height needed).
     */
-    top: $originIsland_top;
-    left: $originIsland_left;
-    width: $islandWidth;
-    padding-top: 91%;
-    background-size: cover;
-
-
-
 
   
-    $coastalColor: #246892;
-    $seaColor: #1e5f88;
-    $oceanColor: #052d85;
-  
-    background-image: radial-gradient(
-      $coastalColor 25%,
-      $seaColor 45%,
-      $oceanColor 80%
-    );
-    top: $originIsland_top;
-    left: $originIsland_left;
-    min-width: $islandWidth * 2;
-    padding-top: 91%;
-    background-size: cover;
+        
 }
+
+
   
 .allPawnsPhParent {
+    position: relative;
 width: $islandWidth;
     padding-top: 91%;
     background-size: cover;
