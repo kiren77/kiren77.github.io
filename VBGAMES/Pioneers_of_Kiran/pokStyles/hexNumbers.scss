@@ -1,6 +1,11 @@
 
+
+
 .hexNumbers {
- 
+ top: 0px;
+ left: 40px;
+ font-size: 200%;
+ text-align: center;
 
     $hexNumberzIndex: 500;
 
@@ -14,21 +19,23 @@
     $row5: 610px;
 
   //property used on: left
-    $column1: 330px;
-    $column2: 413px;
-    $column3: 490px;
-    $column4: 567px;
-    $column5: 650px; 
-    $column6: 722px;
-    $column7: 801px;
-    $column8: 879px;
-    $column9: 960px;
+    $column1: 330px - 330px;
+    $column2: 413px - 330px;
+    $column3: 490px - 330px;
+    $column4: 567px - 330px;
+    $column5: 650px - 330px;
+    $column6: 722px - 330px;
+    $column7: 801px - 330px;
+    $column8: 879px - 330px;
+    $column9: 960px - 330px;
     
   
     #nA {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column3;
       top: $row1;
       width: $hexCoinSize;
@@ -37,9 +44,11 @@
     }
   
     #nB {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column5;
       top: $row1;
       width: $hexCoinSize;
@@ -48,9 +57,11 @@
     }
   
     #nC {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column7;
       top: $row1;
       width: $hexCoinSize;
@@ -59,9 +70,11 @@
     }
   
     #nD {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column2;
       top: $row2;
       width: $hexCoinSize;
@@ -70,9 +83,11 @@
     }
   
     #nE {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column4;
       top: $row2;
       width: $hexCoinSize;
@@ -81,9 +96,11 @@
     }
   
     #nF {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column6;
       top: $row2;
       width: $hexCoinSize;
@@ -92,9 +109,11 @@
     }
   
     #nG {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column8;
       top: $row2;
       width: $hexCoinSize;
@@ -103,9 +122,12 @@
     }
   
     #nH {
-      background-color: grey;
+      background-color: rgb(190, 192, 79);
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
+      border-radius: 33px;
       left: $column1;
       top: $row3;
       width: $hexCoinSize;
@@ -114,9 +136,11 @@
     }
   
     #nI {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column3;
       top: $row3;
       width: $hexCoinSize;
@@ -125,9 +149,11 @@
     }
   
     #nJ {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column5;
       top: $row3;
       width: $hexCoinSize;
@@ -136,9 +162,11 @@
     }
   
     #nK {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column7;
       top: $row3;
       width: $hexCoinSize;
@@ -147,9 +175,11 @@
     }
   
     #nL {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column9;
       top: $row3;
       width: $hexCoinSize;
@@ -159,9 +189,11 @@
 
 
     #nM {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column2; 
       top: $row4;  
       width: $hexCoinSize;
@@ -171,9 +203,11 @@
   }
 
   #nN {
-    background-color: grey;
+     background-color: rgb(190, 192, 79);;
     background-repeat: no-repeat;
     position: absolute;
+ border-radius: 33px;
+
     left: $column4; 
     top: $row4;  
     width: $hexCoinSize;
@@ -183,9 +217,11 @@
   }
   
     #nO {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column6;
       top: $row4;
       width: $hexCoinSize;
@@ -194,9 +230,11 @@
     }
   
     #nP {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column8;
       top: $row4;
       width: $hexCoinSize;
@@ -205,9 +243,11 @@
     }
   
     #nQ {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column3;
       top: $row5;
       width: $hexCoinSize;
@@ -216,9 +256,11 @@
     }
   
     #nR {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column5;
       top: $row5;
       width: $hexCoinSize;
@@ -227,9 +269,11 @@
     }
   
     #nS {
-      background-color: grey;
+       background-color: rgb(190, 192, 79);;
       background-repeat: no-repeat;
       position: absolute;
+ border-radius: 33px;
+
       left: $column7;
       top: $row5;
       width: $hexCoinSize;

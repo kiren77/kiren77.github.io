@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styling (colors/images here) -->
-    <link rel="stylesheet" type="text/css" href="./pokStyles/absoluteAssets.css" />
-    <link rel="stylesheet" type="text/css" href="./pokStyles/relativeAssets.css" />
-    <link rel="stylesheet" type="text/css" href="./pokStyles/shufflingStyles.css" />
-    <link rel="stylesheet" type="text/css" href="./pokStyles/pawnPlaceholders.css" />
-    <link rel="stylesheet" type="text/css" href="./pokStyles/hexNumbers.css" />
+    <link rel="stylesheet" type="text/css" href="./pokStyles/absoluteAssets.css"    />
+    <link rel="stylesheet" type="text/css" href="./pokStyles/relativeAssets.css"    />
+    <link rel="stylesheet" type="text/css" href="./pokStyles/shufflingStyles.css"   />
+    <link rel="stylesheet" type="text/css" href="./pokStyles/pawnPlaceholders.css"  />
+    <link rel="stylesheet" type="text/css" href="./pokStyles/hexNumbers.css"        />
+    <link rel="stylesheet" type="text/css" href="./pokStyles/masterIslandStyle.css" />
     <!-- Bootstrap below -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -22,9 +23,10 @@
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
       integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
       crossorigin="anonymous"
-      async
-    ></script>
-    <!-- put all sizing dimension stuff here -->
+      async></script>
+    <!-- isotope Below (needs license if commercial use)-->
+<!--     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+ -->    <!-- put all sizing dimension stuff here -->
     <!--   <link rel="stylesheet" type="text/css" href="responsivePok.css" />
  -->
     <!--   <link rel="stylesheet" type="text/css" href="debugCSS.min.css" />
@@ -45,24 +47,23 @@
 
   <body>
     <header>
-      <h2 class="bg-transparent">Pioneers of Kiran</h2>
+      <h1>Pioneers of Kiran</h1>
     </header>
 
-    <div class="absoluteAssets">
+    <div class="absoluteAssets position-absolute">
       <!-- absoluteAssets
   all things located in absolute Assets should have absolute positioning.
 container should contain:
 (as opposed to interface-overlay-wrapper where everything is relative) -->
 
-      <div class="container-fluid islandWater">
-
-      <img class="align-self-center"
-        id="imageIsland"
-        src="gameAssetsOfficial/islandBackdropCropped.png"
-      />
+      
 
 
-      <div class="allPawnsPhParent">
+      <div class="position-absolute"
+        id="imageIsland">   </div>
+
+
+      <div class="allPawnsPhParent position-absolute">
         <!-- city nodes below -->
         <div class="node nodeA1 allPlaceholdersPawn" id="city_A1"></div>
         <div class="node nodeA2 allPlaceholdersPawn" id="city_A2"></div>
@@ -253,30 +254,30 @@ container should contain:
       <!-- end allPawnsPhParent -->
 
       <!-- hexNumbers -->
-      <div class="hexNumbers">
+      <div class="hexNumbers position-absolute">
         <!-- one hexNumber will be desert
     and thus will be skipped
     on that tile there will 
      -->
-        <div id="nA"></div>
-        <div id="nB"></div>
-        <div id="nC"></div>
-        <div id="nD"></div>
-        <div id="nE"></div>
-        <div id="nF"></div>
-        <div id="nG"></div>
-        <div id="nH"></div>
-        <div id="nI"></div>
-        <div id="nJ"></div>
-        <div id="nK"></div>
-        <div id="nL"></div>
-        <div id="nM"></div>
-        <div id="nN"></div>
-        <div id="nO"></div>
-        <div id="nP"></div>
-        <div id="nQ"></div>
-        <div id="nR"></div>
-        <div id="nS"></div>
+        <div id="nA">A</div>
+        <div id="nB">B</div>
+        <div id="nC">C</div>
+        <div id="nD">D</div>
+        <div id="nE">E</div>
+        <div id="nF">F</div>
+        <div id="nG">G</div>
+        <div id="nH">H</div>
+        <div id="nI">I</div>
+        <div id="nJ">J</div>
+        <div id="nK">K</div>
+        <div id="nL">L</div>
+        <div id="nM">M</div>
+        <div id="nN">N</div>
+        <div id="nO">O</div>
+        <div id="nP">P</div>
+        <div id="nQ">Q</div>
+        <div id="nR">R</div>
+        <div id="nS">S</div>
       </div>
       <!-- end hexNumbers>  -->
 
@@ -302,7 +303,7 @@ container should contain:
       <div class="tilePlaceholder" id="S"></div>
     </div> -->
 
-      <div class="tileContainer">
+      <div class="tileContainer position-absolute">
         <div class="tilePlaceholder" class="tileFlip" id="tp_A">
           <!-- place -->
         </div>
@@ -361,24 +362,41 @@ container should contain:
           <!-- place -->
         </div>
       </div>
+
+
+      <!-- might be deprecated as placeholders might be
+the actual instantation of these assets -->
+<div class="position-absolute" id="tradeShips">
+  <div id="any3_1A"></div>
+  <div id="any3_1B"></div>
+  <div id="any3_1C"></div>
+  <div id="any3_1D"></div>
+  <div id="brick-2_1"></div>
+  <div id="ore-2_1"></div>
+  <div id="sheep-2_1"></div>
+  <div id="wheat-2_1"></div>
+  <div id="wood-2_1"></div>
+</div>
       <!--end tileContainer -->
 
 
-    </div> <!-- end container islandWater -->
 
 
 
     </div>
     <!-- end absoluteAssets -->
 
-    <div class="row-cols-2 interface-overlay-wrapper">
-      <div class="row-cols-2 bg-success" id="myVictoryPoints">
+    <div class=" interface-overlay-wrapper">
+      <div class="row bg-success" id="myVictoryPoints">
         <div class="col-sm-1 bg-secondary" id="myVPs">My Victory Points</div>
         <div class="col-sm-1 vpCounter bg-danger">0</div>
 
         <div class="container-fluid text-wrap text-start" id="allMyButtons">
           <h4>All my testing Buttons</h4>
           <div class="col" id="shuffleButton1" onclick="shuffleOnClick()">
+            Press to change tiles
+          </div>
+          <div class="col" id="shuffleButtonNum" onclick="shuffleNumOnClick()">
             Press to change tiles
           </div>
           <div
@@ -396,27 +414,9 @@ container should contain:
         </div>
         <!-- end  largestArmyLongestRoad-->
 
-        <div class="row-cols-sm-3 bg-secondary" id="Development_Cards">
-          <div class="col bg-white" id="knightCard"></div>
-          <div class="col bg-warning" id="monopolyCard"></div>
-          <div class="col bg-white" id="yearofplentyCard"></div>
-          <div class="col bg-warning" id="oneVPCard"></div>
-          <div class="col bg-white" id="roadCard"></div>
-        </div>
+       
 
-        <!-- might be deprecated as placeholders might be
-the actual instantation of these assets -->
-        <div id="tradeShips">
-          <div id="any3_1A"></div>
-          <div id="any3_1B"></div>
-          <div id="any3_1C"></div>
-          <div id="any3_1D"></div>
-          <div id="brick-2_1"></div>
-          <div id="ore-2_1"></div>
-          <div id="sheep-2_1"></div>
-          <div id="wheat-2_1"></div>
-          <div id="wood-2_1"></div>
-        </div>
+        
 
         <div class="img-fluid bg-warning float-end" id="bankChest">
           <div id="bankChestInside float-end"></div>
@@ -424,33 +424,33 @@ the actual instantation of these assets -->
           <div id="bankChestBottom float-end"></div>
         </div>
         <!-- end bankChest -->
-
-        <div class="row resourceCards">
-          <div class="col-1 bg-secondary" id="sheepCard">
+ <div class="row position-fixed">
+        <div class="resourceCards">
+          <div class="col " id="sheepCard">
             <div id="totalSheepDiamond">
               <p>00</p>
             </div>
           </div>
 
-          <div class="col-1 bg-success" id="woodCard">
+          <div class="col " id="woodCard">
             <div id="totalWoodDiamond">
               <p>00</p>
             </div>
           </div>
 
-          <div class="col-1 bg-secondary" id="wheatCard">
+          <div class="col " id="wheatCard">
             <div id="totalWheatDiamond">
               <p>00</p>
             </div>
           </div>
 
-          <div class="col-1 bg-success" id="brickCard">
+          <div class="col " id="brickCard">
             <div id="totalBrickDiamond">
               <p>00</p>
             </div>
           </div>
 
-          <div class="col-1 bg-secondary" id="oreCard">
+          <div class="col " id="oreCard">
             <div id="totalOreDiamond">
               <p>00</p>
             </div>
@@ -458,6 +458,14 @@ the actual instantation of these assets -->
         </div>
         <!-- end resourceCards -->
 
+        <div class="row position-fixed" id="Development_Cards">
+          <div class="col-1 " id="knightCard"></div>
+          <div class="col-1 " id="monopolyCard"></div>
+          <div class="col-1 " id="yearofplentyCard"></div>
+          <div class="col-1 " id="oneVPCard"></div>
+          <div class="col-1 " id="roadCard"></div>
+        </div>
+      </div>
       </div>
       <!-- end interface-overlay-wrapper-->
 

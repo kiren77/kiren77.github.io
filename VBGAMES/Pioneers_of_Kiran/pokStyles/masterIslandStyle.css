@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* influences  */
+/*  */
+/* island backdrop cropped: 821 x 753 px 
+height/width = 91%
+width/height = 109%
+*/
+.absoluteAssets {
+  /* ocean backdrop should comfortably encircle island to accomodate the tradships */
+  top: 0px;
+  left: 360.5px;
+  width: 721px;
+  height: 91%;
+  padding-top: 91%;
+  background-size: cover;
+  /* insert everything with position absolute in absolute Assets */
+}
+
+.absoluteAssets #imageIsland {
+  position: absolute;
+  background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
+  /* 
+    First apply background cover
+    
+    821 × 753 px
+    for ratio in % : height / width * 100
+    753 / 821 * 100 = 91% (almost square image as 100% is square)
+
+    what we want to do is apply that percentage to padding-top (no height needed).
+    */
+  top: 0px;
+  left: 360.5px;
+  width: 721px;
+  padding-top: 91%;
+  background-size: cover;
+  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  top: 0px;
+  left: 360.5px;
+  min-width: 1442px;
+  padding-top: 91%;
+  background-size: cover;
+}
+
+.absoluteAssets .allPawnsPhParent {
+  width: 721px;
+  padding-top: 91%;
+  background-size: cover;
+}
+
+.absoluteAssets .hexNumbers {
+  top: -10px;
+  width: 721px;
+}
+
+.absoluteAssets .tileContainer {
+  top: 0px;
+  left: 360.5px;
+  width: 721px;
+  padding-top: 91%;
+  background-size: cover;
+}
+/*# sourceMappingURL=masterIslandStyle.css.map */

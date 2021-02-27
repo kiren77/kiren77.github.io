@@ -5,23 +5,22 @@
 /* for cosmetic purposes only: placed settlements above cities */
 /* roads look best when placed an index under the other pawns */
 /* hexPlaceholder */
-/* index of All cards (highest items) */
-/* 1366px */
-/* 768px */
 /* $viewportWidth: 200px;
 $viewportHeight: 100vh; */
 /* #shuffleButton2 {
   text-align: center;
 
-  width: 170px;
+  width: $tileHeight;
   height: $tileHeight;
 background-color: blue;
 color: yellow;
 font-size: 25px;;
 } */
 .tileContainer {
-  position: absolute;
-  left: -15px;
+  /* position: fixed */
+  /* left:   -15px;
+ */
+  z-index: 2;
   /* .tilePlaceholder {
 
 
@@ -33,31 +32,31 @@ font-size: 25px;;
 .tileContainer #tp_A {
   background-repeat: no-repeat;
   position: absolute;
-  left: 470px;
-  top: 44px;
+  left: 160px;
+  top: 24px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_B {
   background-repeat: no-repeat;
   position: absolute;
-  left: 627px;
-  top: 44px;
+  left: 316px;
+  top: 24px;
   min-width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_C {
   background-repeat: no-repeat;
   position: absolute;
-  left: 781px;
-  top: 42px;
+  left: 471px;
+  top: 24px;
   min-width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_D {
@@ -67,31 +66,31 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 393px;
-  top: 176px;
+  left: 83px;
+  top: 156px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_E {
   background-repeat: no-repeat;
   position: absolute;
-  left: 547px;
-  top: 176px;
+  left: 238px;
+  top: 156px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_F {
   background-repeat: no-repeat;
   position: absolute;
-  left: 703px;
-  top: 176px;
+  left: 393px;
+  top: 156px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_G {
@@ -99,21 +98,21 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 859px;
-  top: 176px;
+  left: 547px;
+  top: 156px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_H {
   background-repeat: no-repeat;
   position: absolute;
-  left: 316px;
-  top: 308px;
+  left: 6px;
+  top: 288px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_I {
@@ -121,11 +120,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 470px;
-  top: 308px;
+  left: 160px;
+  top: 288px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_J {
@@ -133,11 +132,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 626px;
-  top: 308px;
+  left: 316px;
+  top: 288px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_K {
@@ -145,11 +144,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 781px;
-  top: 308px;
+  left: 471px;
+  top: 288px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_L {
@@ -157,11 +156,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 936px;
-  top: 308px;
+  left: 626px;
+  top: 288px;
   min-width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_M {
@@ -169,11 +168,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 393px;
-  top: 441px;
+  left: 83px;
+  top: 421px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_N {
@@ -181,11 +180,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 548px;
-  top: 441px;
+  left: 238px;
+  top: 421px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_O {
@@ -193,11 +192,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 703px;
-  top: 441px;
+  left: 393px;
+  top: 421px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_P {
@@ -205,11 +204,11 @@ font-size: 25px;;
  */
   background-repeat: no-repeat;
   position: absolute;
-  left: 859px;
-  top: 441px;
+  left: 547px;
+  top: 421px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_Q {
@@ -217,178 +216,35 @@ font-size: 25px;;
   */
   background-repeat: no-repeat;
   position: absolute;
-  left: 470px;
-  top: 573px;
+  left: 160px;
+  top: 553px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_R {
   background-repeat: no-repeat;
   position: absolute;
-  left: 626px;
-  top: 573px;
+  left: 316px;
+  top: 553px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .tileContainer #tp_S {
   /*   background-image: url($desertTile);
  */
   background-repeat: no-repeat;
-  position: relative;
-  left: 781px;
-  top: 573px;
+  position: absolute;
+  left: 471px;
+  top: 553px;
   width: 147px;
   height: 170px;
-  z-index: 1;
+  z-index: 2;
   border: none;
 }
 
 /* tileContainer */
-#island_hexes {
-  position: absolute;
-  left: 0px;
-  top: 300px;
-  /* min-width: 1407px;
-  min-height: 802px; */
-  z-index: 100;
-}
-
-#island_hexes #sheep1 {
-  /* background-image:url($sheepTile); */
-  width: 148px;
-  height: 170px;
-}
-
-#island_hexes #sheep2 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($sheepTile); */
-}
-
-#island_hexes #sheep3 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($sheepTile); */
-}
-
-#island_hexes #sheep4 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($sheepTile); */
-}
-
-#island_hexes #wood1 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($woodTile); */
-}
-
-#island_hexes #wood2 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($woodTile); */
-}
-
-#island_hexes #wood3 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($woodTile); */
-}
-
-#island_hexes #wood4 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($woodTile); */
-}
-
-#island_hexes #wheat1 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($wheatTile); */
-}
-
-#island_hexes #wheat2 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($wheatTile); */
-}
-
-#island_hexes #wheat3 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($wheatTile); */
-}
-
-#island_hexes #wheat4 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($wheatTile); */
-}
-
-#island_hexes #brick1 {
-  width: 148px;
-  height: 170px;
-  background-image: url("gameAssetsOfficial/brick1.png");
-}
-
-#island_hexes #brick2 {
-  width: 148px;
-  height: 170px;
-  background-image: url("gameAssetsOfficial/brick1.png");
-}
-
-#island_hexes #brick3 {
-  background-image: url("gameAssetsOfficial/brick1.png");
-  width: 148px;
-  height: 170px;
-}
-
-#island_hexes #ore1 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($oreTile); */
-}
-
-#island_hexes #ore2 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($oreTile); */
-}
-
-#island_hexes #ore3 {
-  width: 148px;
-  height: 170px;
-  /* background-image:url($oreTile); */
-}
-
-#island_hexes #desert1 {
-  /*   background-image:url($desertTile);
- */
-  width: 148px;
-  height: 170px;
-}
-
-/* end island_hexes */
-.allPawnsPhParent {
-  position: absolute;
-  top: 10px;
-  left: 275px;
-}
-
-/* allPawnsPhParent */
-/* Below: Height of placeholder pawns
-Height is measured from top */
-/* subtract 30px; */
-/* subtract 10px; */
-/* subtract 40px; */
-/* subtract 10px; */
-/* subtract 40px; */
-/* subtract 10px; */
-/* subtract 40px; */
-/* expected 255 ?*/
-/* subtract 40px; */
 /*# sourceMappingURL=shufflingStyles.css.map */

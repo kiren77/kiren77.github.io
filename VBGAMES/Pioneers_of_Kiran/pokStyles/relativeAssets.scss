@@ -8,14 +8,6 @@
  $brickTile: "../gameAssetsOfficial/brick1.png";
  $desertTile: "../gameAssetsOfficial/desert1.png";
  
- /* market */
- $leftCounters: 1289px;
- 
- /* ColorHands */
- $cHBUWidth: 418px;
- $cHBUHeight: 308px;
- $cHBULeft: 1040px;
- $cHBUTop: 660px;
  
  /* index of All cards (highest items) */
  
@@ -29,33 +21,22 @@
  /* testingInterface should always be highest */
  $testingInterface: 1500;
  
- /* Max */
- $totalMaxWidth: 1458px;
- $totalMaxHeight: 968px;
- /* Safe */
- $safeTop: + 10px;
- $safeBottom: $totalMaxWidth - 10px;
- /* Min */
- $totalMinWidth: 50%; 
- $totalMinHeight:50%; 
  
  
- $viewportWidth: $totalMinWidth;
  
- 
+$cardBackgroundSizeWidth : /* 6vw */  75px ;
+$cardBackgroundSizeHeight: /* 20vh */ 110px ;
  
  
  
  
  $topAbs: 0px;//set to relative
  $bottomAbs: $totalMaxHeight;//(value of Top:)set to relative
- $leftAbs: 0px;//set to relative
- $rightAbs: $totalMaxWidth; //(value of Left:)set to relative
 
  $allCards: 1002;
  $allCards_index: 1002;
 
- $allDevCard_Width: 100%;
+ $allDevCard_Width: auto;
  
 
   #allMyButtons {
@@ -183,11 +164,11 @@
       width: 80px;
       height: 20px; */
     }
-    
+    /* 
     .playerColorHands {
       width: $cHBUWidth;
       height: $cHBUHeight;
-      position:relative;
+      position:static;
       left: 100px;
       top: 1000px;
     
@@ -243,7 +224,7 @@
     } /* end playerColorHands */
     
     
-    
+     
     
     
     
@@ -252,21 +233,20 @@
     
          .interface-overlay-wrapper {
     
-    
+    /* 
           .lowRightInterface {
             position: static;
             right: 15vh;
             bottom: 10vh;
           }
         
-    
+     */
     
           .resourceCards {
-            position: relative;
-            /* left: 0px;
-            top: 0px; */
-          
+            bottom: 0px; 
+            left: 50%;
             z-index: $allCards_index;
+            
           
             #sheepCard {
               background-image: url("../gameAssetsOfficial/straightenedResourcecards/sheepCard.png");
@@ -274,93 +254,84 @@
               position: relative;
               /* left: 983px + 100px;
               top: 597px; */
-              width: $allDevCard_Width;
-              z-index: $allCards_index + 1;
-              border: none;
+              background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
+              
+            
+              left: 10px;
+        top: 0px;
+        min-width: $cardBackgroundSizeWidth / 2;
+max-width: $cardBackgroundSizeWidth ;       
+ height: $cardBackgroundSizeHeight;
+        z-index: $allCards_index;
+          
             
           
-            #totalSheepDiamond {
-              background-image: url("../gameAssetsOfficial/totalSheepDiamond.png");
-              background-repeat: no-repeat;
-              position: relative;
-              /* left: 1117px + 100px;
-              top: 693px; */
-              width: 55px;
-              z-index: $allCards_index;
-              border: none;
-          
               p {
-                font-size: 24px;
-                font-family: "Roboto Slab";
+                top: 75px;
+                left: 5px;
+                font-size: 2em;
+                font-family: "Courier";
                 color: #cccccc;
-                text-transform: uppercase;
                 line-height: 0.583;
                 text-align: left;
-                text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-                transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+            
+                text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
           
                 position: relative;
                 /* top: 0px;
                 left: 8px; */
-                rotate: -40deg;
               }
-            }
+            
           } /* end SheepCard */
           
             #woodCard {
               background-image: url("../gameAssetsOfficial/straightenedResourcecards/woodCard.png");
               background-repeat: no-repeat;
               position: relative;
-              /* left: 1033px + 100px;
-              top: 533px; */
-              width: $allDevCard_Width;
-              z-index: $allCards_index + 2;
-              border: none;
+              left: 10px;
+              background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
+        top: 0px;
+        min-width: $cardBackgroundSizeWidth / 2;
+max-width: $cardBackgroundSizeWidth ;       
+ height: $cardBackgroundSizeHeight;
+        z-index: $allCards_index;
             
           
-            #totalWoodDiamond {
-              background-image: url("../gameAssetsOfficial/totalWoodDiamond.png");
-              background-repeat: no-repeat;
-              position: relative;
-          /*  left: 1152px + 100px;
-              top: 651px;*/
-              width: 53px; 
-              z-index: $allCards_index;
-              border: none;
-          
-              p {
-                font-size: 24px;
-                font-family: "Roboto Slab";
-                color: #cccccc;
-                text-transform: uppercase;
-                line-height: 0.583;
-                text-align: left;
-                text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-                transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-          
-                position: relative;
-               /*  top: 0px;
-                left: 4px; */
-                rotate: -40deg;
-              }
-            }
+        p {
+          top: 75px;
+          left: 5px;
+          font-size: 2em;
+          font-family: "Courier";
+          color: #cccccc;
+          line-height: 0.583;
+          text-align: left;
+      
+          text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
+    
+          position: relative;
+          /* top: 0px;
+          left: 8px; */
+        }
+              
+            
           } /* end WoodCard */
           
             #wheatCard {
               background-image: url("../gameAssetsOfficial/straightenedResourcecards/wheatCard.png");
               background-repeat: no-repeat;
               position: relative;
-              /* left: 1102px + 100px;
-              top: 485px;*/
-              width: $allDevCard_Width; 
-              z-index: $allCards_index + 3;
-              border: none;
+              left: 10px;
+              background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
+        top: 0px;
+        min-width: $cardBackgroundSizeWidth;
+max-width: $cardBackgroundSizeWidth ;       
+ height: $cardBackgroundSizeHeight;
+        z-index: $allCards_index;
             
           
-            #totalWheatDiamond {
-              background-image: url("../gameAssetsOfficial/totalWheatDiamond.png");
-              background-repeat: no-repeat;
-              position: relative;
               /* left: 1196px + 100px;
               top: 619px; */
               width: 53px;
@@ -369,22 +340,20 @@
               border: none;
           
               p {
-                font-size: 24px;
-                font-family: "Roboto Slab";
+                top: 75px;
+                left: 5px;
+                font-size: 2em;
+                font-family: "Courier";
                 color: #cccccc;
-                text-transform: uppercase;
                 line-height: 0.583;
                 text-align: left;
-                text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-                transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
+            
+                text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
           
                 position: relative;
                 /* top: 0px;
-                left: 0px; */
-                rotate: -20deg;
+                left: 8px; */
               }
-    
-            } /* end wheatDiamond */
     
           }
           
@@ -393,80 +362,61 @@
                 background-image: url("../gameAssetsOfficial/straightenedResourcecards/oreCard.png");
                 background-repeat: no-repeat;
                 position: relative;
-                /* left: 1184px + 100px;
-                top: 460px; */
-                width: $allDevCard_Width;
-                min-height: 166px;
-                z-index: $allCards_index + 4;
-                border: none;
-              
+                left: 10px;
+                background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
+        top: 0px;
+        min-width: $cardBackgroundSizeWidth / 2;
+max-width: $cardBackgroundSizeWidth ;       
+ height: $cardBackgroundSizeHeight;
+        z-index: $allCards_index;
     
-          
-              #totalOreDiamond {
-                background-image: url("../gameAssetsOfficial/totalOreDiamond.png");
-                background-repeat: no-repeat;
-                position: relative;
-                /* left: 1248px + 100px;
-                top: 602px; */
-                width: 50px;
-                min-height: 57px;
-                z-index: $allCards_index;
-                border: none;
-          
-                p {
-                  font-size: 24px;
-                  font-family: "Roboto Slab";
-                  color: #cccccc;
-                  text-transform: uppercase;
-                  line-height: 0.583;
-                  text-align: left;
-                  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-                  transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-          
-                  position: relative;
-                  /* top: 0px;
-                  left: 0px; */
-                  rotate: -10deg;
-                }
-              }
+        p {
+          top: 75px;
+          left: 5px;
+          font-size: 2em;
+          font-family: "Courier";
+          color: #cccccc;
+          line-height: 0.583;
+          text-align: left;
+      
+          text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
+    
+          position: relative;
+          /* top: 0px;
+          left: 8px; */
+        }
             } /* end oreCard */
           
               #brickCard {
                 background-image: url("../gameAssetsOfficial/straightenedResourcecards/brickCard.png");
                 background-repeat: no-repeat;
                 position: relative;
-                 width: $allDevCard_Width;
-                z-index: $allCards_index + 5;
-                 border: none; 
+                background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
+                left: 10px;
+                
+        top: 0px;
+        min-width: $cardBackgroundSizeWidth / 2;
+max-width: $cardBackgroundSizeWidth ;       
+ height: $cardBackgroundSizeHeight;
+        z-index: $allCards_index;
               
-          
-              #totalBrickDiamond {
-                background-image: url("../gameAssetsOfficial/totalBrickDiamond.png");
-                background-repeat: no-repeat;
-                position: relative;
-                /* left: 1299px + 100px;
-                top: 600px; */
-                width: 49px;
-                min-height: 54px;
-                z-index: $allCards_index;
-                border: none;
-          
-                p {
-                  font-size: 24px;
-                  font-family: "Roboto Slab";
-                  color: #cccccc;
-                  text-transform: uppercase;
-                  line-height: 0.583;
-                  text-align: left;
-                  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.61);
-                  transform: matrix(0.96593, -0.25882, 0.25882, 0.96593, 0, 0);
-          
-                  position: relative;
-                  top: -5px;
-                  left: 0px;
-                  rotate: 15deg;
-                }
-              }
+        p {
+          top: 75px;
+          left: 5px;
+          font-size: 2em;
+          font-family: "Courier";
+          color: #cccccc;
+          line-height: 0.583;
+          text-align: left;
+      
+          text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
+    
+          position: relative;
+          /* top: 0px;
+          left: 8px; */
+        }
     
             } /* end BrickCard */
             
@@ -748,22 +698,21 @@
     
     
     
-    /* 
+    
         #island_Dice_Numbers {
           position: absolute;
           left: 0px;
           top: 0px;
-          width: $totalMinWidth;
-          min-height: $totalMinHeight;
+          width: auto;
+          min-height: auto;
           z-index: 53;
-        } */
+        } 
     
     #largestArmyLongestRoad {
-      position: relative;
+      position: relativein;
       left: 20px;
       top: 0px;
       padding: 0px;
-      max-width: auto;
     
       z-index: $allCards_index;
     
@@ -789,8 +738,11 @@
     }
     
     #Development_Cards {
-      left: 0px;
-      padding: 10px;
+      margin: 0px;
+      padding: 0px;
+      max-width: 550px;
+      bottom: 0px;
+
       /*   top: $safeBottom;
      */
       z-index: $allCards_index;
@@ -798,16 +750,21 @@
       :hover {
         cursor: pointer;
         background-color: #e3d55d;
+        box-sizing: border-box;
+
       }
     
       #knightCard {
         background-image: url("../gameAssetsOfficial/knightCard.png");
         background-repeat: no-repeat;
         position: relative;
+
+        background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
         left: 10px;
         top: 0px;
-        width: $allDevCard_Width;
-        min-height: 151px;
+        min-width: $cardBackgroundSizeWidth;
+max-width: $cardBackgroundSizeWidth / 2;        height: $cardBackgroundSizeHeight;
         z-index: $allCards_index;
       }
     
@@ -815,10 +772,13 @@
         background-image: url("../gameAssetsOfficial/monopolyCard.png");
         background-repeat: no-repeat;
         position: relative;
+
+        background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
         left: 10px;
         top: 0px;
-        width: $allDevCard_Width;
-        min-height: 151px;
+        min-width: $cardBackgroundSizeWidth;
+        height: $cardBackgroundSizeHeight;
         z-index: $allCards_index;
       }
     
@@ -826,10 +786,13 @@
         background-image: url("../gameAssetsOfficial/yearofplentyCard.png");
         background-repeat: no-repeat;
         position: relative;
+
+        background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
         left: 10px;
         top: 0px;
-        width: $allDevCard_Width;
-        min-height: 151px;
+        min-width: $cardBackgroundSizeWidth;
+max-width: $cardBackgroundSizeWidth / 2;        height: $cardBackgroundSizeHeight;
         z-index: $allCards_index;
       }
     
@@ -837,10 +800,13 @@
         background-image: url("../gameAssetsOfficial/oneVPCard.png");
         background-repeat: no-repeat;
         position: relative;
+
+        background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
         left: 10px;
-        top: 0px;
-        width: 101px;
-        min-height: 151px;
+        top: auto;
+        min-width: $cardBackgroundSizeWidth;
+max-width: $cardBackgroundSizeWidth / 2;        height: $cardBackgroundSizeHeight;
         z-index: $allCards_index;
       }
     
@@ -848,11 +814,13 @@
         background-image: url("../gameAssetsOfficial/roadCard.png");
         background-repeat: no-repeat;
         position: relative;
+
+        background-size: $cardBackgroundSizeWidth $cardBackgroundSizeHeight;
+
         left: 10px;
         top: 0px;
-        width: $allDevCard_Width;
-        /*   min-height: 151px;
-     */
+        min-width: $cardBackgroundSizeWidth;
+max-width: $cardBackgroundSizeWidth / 2;        height: $cardBackgroundSizeHeight;
         z-index: $allCards_index;
       }
     } /* development Cards */

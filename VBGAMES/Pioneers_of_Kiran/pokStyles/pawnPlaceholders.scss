@@ -1,8 +1,11 @@
+/* moved to absolute assets
+and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
+
 
 /* z-index for road,city and settlement assets */
-$setZ: 402; /* for cosmetic purposes only: placed settlements above cities */
-$cityZ: 401;
-$rodZ: 400; /* roads look best when placed an index under the other pawns */
+$setZ: 3; /* for cosmetic purposes only: placed settlements above cities */
+$cityZ: 3;
+$rodZ: 3; /* roads look best when placed an index under the other pawns */
 
 $seventy: 70px;
 $fiftyfour: 57px;
@@ -18,13 +21,13 @@ $nineteen: 19px;
   
 
 /* city placeholder asset*/
-$cityTemplatePawn: "gameAssetsOfficial/cityTemplatePawn.png";
+$cityTemplatePawn: "../gameAssetsOfficial/cityTemplatePawn.png";
 /* settlement pawn asset*/
-$settlementTemplatePawn: "gameAssetsOfficial/settlementTemplatePawn.png";
+$settlementTemplatePawn: "../gameAssetsOfficial/settlementTemplatePawn.png";
 /* 3 different road assets (vertical and both slopes) */
-$roadTemplatePawnVert: "gameAssetsOfficial/roadTemplatePawnVert.png";
-$roadTemplatePawn-hL-lR: "gameAssetsOfficial/roadTemplatePawn-hL-lR.png";
-$roadTemplatePawn-lL-hR: "gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
+$roadTemplatePawnVert: "../gameAssetsOfficial/roadTemplatePawnVert.png";
+$roadTemplatePawn-hL-lR: "../gameAssetsOfficial/roadTemplatePawn-hL-lR.png";
+$roadTemplatePawn-lL-hR: "../gameAssetsOfficial/roadTemplatePawn-lL-hR.png";
 
 /* testingInterface should always be highest */
 $testingInterface: 1500;
@@ -33,9 +36,9 @@ $testingInterface: 1500;
 
 .allPawnsPhParent {
     background-repeat: no-repeat;
-    position: relative;
-    top: 0px;
-    left: 0px;
+/*     position: relative;
+ */    top: -10px;
+    left: -22px;
     opacity:80%;
     z-index: $setZ
 
