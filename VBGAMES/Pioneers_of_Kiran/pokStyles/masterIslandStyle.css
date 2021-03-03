@@ -1,29 +1,51 @@
 @charset "UTF-8";
+/* @viewport { width: auto; }
+@media (max-width: 600px) {
+@viewport { width: 620px; }
+}
+ */
+/* 821px */
+/* 753px */
 /* influences  */
 /*  */
+/* $islandHeight + $sideGutters * 2  */
+/* + $sideGutters + $sideGutters */
 /* island backdrop cropped: 821 x 753 px 
 height/width = 91%
 width/height = 109%
 */
 .absoluteAssets {
   /* ocean backdrop should comfortably encircle island to accomodate the tradships */
-  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
-  top: 0px;
-  left: 360.5px;
-  min-width: 1442px;
-  padding-top: 91%;
-  background-size: cover;
+  position: absolute;
+  margin: 10%;
+  right: auto;
+  /*     margin: $sideGutters * 4;
+ */
   /* insert everything with position absolute in absolute Assets */
 }
 
+.absoluteAssets #imageOcean {
+  position: absolute;
+  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  top: 0vh;
+  left: -100px;
+  width: 1231.5px;
+  padding-top: 100vh;
+  background-size: 1231.5px 753px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
 .absoluteAssets #imageIsland {
-  position: relative;
+  position: absolute;
   background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
   top: 0px;
-  left: 360.5px;
-  min-width: 1442px;
-  padding-top: 91%;
-  background-size: cover;
+  left: -40px;
+  width: 821px;
+  margin-left: 100px;
+  padding-top: 753px;
+  background-size: 821px;
+  background-repeat: no-repeat;
   /* 
     First apply background cover
     
@@ -33,25 +55,32 @@ width/height = 109%
 
     what we want to do is apply that percentage to padding-top (no height needed).
     */
+  z-index: 1;
 }
 
 .absoluteAssets .allPawnsPhParent {
-  position: relative;
-  width: 721px;
-  padding-top: 91%;
-  background-size: cover;
+  position: absolute;
+  left: 40px;
+  height: 753px;
+  width: 821px;
 }
 
 .absoluteAssets .hexNumbers {
-  top: -10px;
-  width: 721px;
+  top: 0px;
+  width: 821px;
+  height: 100vh;
+  background-size: 821px 753px;
+  /*     left: $sideGutters;  
+ */
 }
 
 .absoluteAssets .tileContainer {
+  position: absolute;
   top: 0px;
-  left: 360.5px;
-  width: 721px;
-  padding-top: 91%;
-  background-size: cover;
+  width: 821px;
+  padding-top: 93%;
+  left: 50px;
+  background-size: 821px 753px;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=masterIslandStyle.css.map */

@@ -1,9 +1,17 @@
-$islandWidth: 721px;
-$islandHeight: 91%;
-$originIsland_left: $islandWidth / 2; /* influences  */
+/* @viewport { width: auto; }
+@media (max-width: 600px) {
+@viewport { width: 620px; }
+}
+ */
+
+$islandWidth: 821px/* 821px */;
+$islandHeight: 753px /* 753px */;
+$originIsland_left: 300px; /* influences  */
 $originIsland_top: 0px; /*  */
+$sideGutters: 100px;
 
-
+$oceanWidth: $islandWidth + $islandWidth / 2;
+$oceanHeight: 100vh /* $islandHeight + $sideGutters * 2  *//* + $sideGutters + $sideGutters */;
 
 /* island backdrop cropped: 821 x 753 px 
 height/width = 91%
@@ -13,7 +21,15 @@ width/height = 109%
 
 .absoluteAssets {
 /* ocean backdrop should comfortably encircle island to accomodate the tradships */
+    position:absolute;
+    margin: 10%;
+    right: auto;
     
+/*     margin: $sideGutters * 4;
+ */
+
+    #imageOcean {
+        position:absolute;
 
 $coastalColor: #246892;
 $seaColor: #1e5f88;
@@ -24,23 +40,32 @@ background-image: radial-gradient(
   $seaColor 45%,
   $oceanColor 80%
 );
-top: $originIsland_top;
-left: $originIsland_left;
-min-width: $islandWidth * 2;
-padding-top: 91%;
-background-size: cover;
 
+
+
+top: 0vh/* $originIsland_top */;
+ left: - $sideGutters;
+width: $oceanWidth;
+padding-top: $oceanHeight;
+
+background-size: $oceanWidth $islandHeight;
+background-repeat: no-repeat;
+z-index: 0;
+    }
 
 
 #imageIsland {
-    position: relative;
+    position: absolute;
 
     background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
     top: $originIsland_top;
-    left: $originIsland_left;
-    min-width: $islandWidth * 2;
-    padding-top: 91%;
-    background-size: cover;
+    margin-left: $sideGutters * 4;
+    max-width: $islandWidth;
+    margin-left: $sideGutters;
+
+    padding-top: $islandHeight;
+    background-size: $islandWidth;
+    background-repeat: no-repeat;
     /* 
     First apply background cover
     
@@ -50,31 +75,41 @@ background-size: cover;
 
     what we want to do is apply that percentage to padding-top (no height needed).
     */
-
-  
+    z-index: 1;
         
 }
 
 
+
+
   
 .allPawnsPhParent {
-    position: relative;
-width: $islandWidth;
-    padding-top: 91%;
-    background-size: cover;
-}
-.hexNumbers {
-top: -10px;
+    position: absolute;
+    left: 40px;
+height: $islandHeight;
 width: $islandWidth;
 
+}
+.hexNumbers {
+
+top: 0px;
+width: $islandWidth;
+height: $oceanHeight;
+background-size: $islandWidth $islandHeight;
+
+/*     left: $sideGutters;  
+ */
 }
 
 .tileContainer {
+    position: absolute;
     top: $originIsland_top;
-    left: $originIsland_left;
     width: $islandWidth;
-    padding-top: 91%;
-    background-size: cover;
+    padding-top: 93%;
+
+    left: 50px;  
+    background-size: $islandWidth $islandHeight;
+    background-repeat: no-repeat;
 
 }
 

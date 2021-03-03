@@ -7,6 +7,109 @@
 /* hexPlaceholder */
 /* $viewportWidth: 200px;
 $viewportHeight: 100vh; */
+.tradeShips {
+  position: absolute;
+}
+
+.tradeShips #ts10 {
+  background-image: url("../gameAssetsOfficial/any3_1A.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20.5px;
+  top: 156px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts8 {
+  background-image: url("../gameAssetsOfficial/any3_1B.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20.5px;
+  top: 463.5px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts3 {
+  background-image: url("../gameAssetsOfficial/any3_1C.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 861.2px;
+  top: 288px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts4 {
+  background-image: url("../gameAssetsOfficial/any3_1D.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 751px;
+  top: 591px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts1 {
+  background-image: url("../gameAssetsOfficial/brick 2_1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 751px;
+  top: 66.5px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts6 {
+  background-image: url("../gameAssetsOfficial/ore 2_1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 441px;
+  top: 723px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts7 {
+  background-image: url("../gameAssetsOfficial/sheep 2_1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: 723px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #wood_2_1 {
+  background-image: url("../gameAssetsOfficial/wood 2_1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 393px;
+  top: -61px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+.tradeShips #ts11 {
+  background-image: url("../gameAssetsOfficial/wheat 2_1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: -73.75px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
 /* #shuffleButton2 {
   text-align: center;
 
