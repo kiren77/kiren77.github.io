@@ -26,6 +26,10 @@ $tradeShip_index: 3;
 $tradeShip_width: 125px;
 $tradeShip_height: 85px;
 
+
+
+
+
 /* $viewportWidth: 200px;
 $viewportHeight: 100vh; */
 
@@ -55,31 +59,22 @@ $tileHeight: 170px;
 .tradeShips {
 position: absolute;
 
-    
-     #ts10 {
-      background-image: url("../gameAssetsOfficial/any3_1A.png");
+     
+    #ts1 {
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
       position: absolute;
-      left: $column2 - $tradeShip_width / 2;
-      top: $row2;
+      left: $column9 + $tradeShip_width;
+      top: $row1 + $tradeShip_height / 2;
       width: $tradeShip_width;
       height: $tradeShip_height;
       z-index: $tradeShip_index;
     }
     
-    #ts8 {
-      background-image: url("../gameAssetsOfficial/any3_1B.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: $column2 - $tradeShip_width / 2;
-      top: $row4 + $tradeShip_height / 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
-      z-index: $tradeShip_index;
-    }
+    
     
     #ts3 {
-      background-image: url("../gameAssetsOfficial/any3_1C.png");
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
       position: absolute;
       left: $column9 + $tileWidth * 1.6;
@@ -90,7 +85,7 @@ position: absolute;
     }
     
     #ts4 {
-      background-image: url("../gameAssetsOfficial/any3_1D.png");
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
       position: absolute;
       left: $column9 + $tradeShip_width;
@@ -99,20 +94,10 @@ position: absolute;
       height: $tradeShip_height;
       z-index: $tradeShip_index;
     }
-    
-    #ts1 {
-      background-image: url("../gameAssetsOfficial/brick 2_1.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: $column9 + $tradeShip_width;
-      top: $row1 + $tradeShip_height / 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
-      z-index: $tradeShip_index;
-    }
+   
     
     #ts6 {
-      background-image: url("../gameAssetsOfficial/ore 2_1.png");
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
       position: absolute;
       left: $column5 + $tradeShip_width ;
@@ -123,7 +108,7 @@ position: absolute;
     }
     
     #ts7 {
-      background-image: url("../gameAssetsOfficial/sheep 2_1.png");
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
       position: absolute;
       left: $column3;
@@ -132,20 +117,32 @@ position: absolute;
       height: $tradeShip_height;
       z-index: $tradeShip_index;
     }
-    
-    #wood_2_1 {
-      background-image: url("../gameAssetsOfficial/wood 2_1.png");
+
+    #ts8 {
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
       position: absolute;
-      left: $column6;
-      top: $row1 - $tradeShip_height;
+      left: $column2 - $tradeShip_width / 2;
+      top: $row4 + $tradeShip_height / 2;
+      width: $tradeShip_width;
+      height: $tradeShip_height;
+      z-index: $tradeShip_index;
+    }
+
+    #ts10 {
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column2 - $tradeShip_width / 2;
+      top: $row2;
       width: $tradeShip_width;
       height: $tradeShip_height;
       z-index: $tradeShip_index;
     }
     
+    
     #ts11 {
-      background-image: url("../gameAssetsOfficial/wheat 2_1.png");
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
       background-repeat: no-repeat;
      position: absolute;
      left: $column3;
@@ -154,6 +151,19 @@ position: absolute;
       height: $tradeShip_height;
       z-index: $tradeShip_index;
     }
+
+
+    #ts12 {
+      background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      left: $column5 + $tradeShip_width;
+      top: $row1 - $tradeShip_height * 1.2;
+      width: $tradeShip_width;
+      height: $tradeShip_height;
+      z-index: $tradeShip_index;
+    }
+
     }
 
 

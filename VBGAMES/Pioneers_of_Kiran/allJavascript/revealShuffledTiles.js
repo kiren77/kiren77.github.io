@@ -133,7 +133,17 @@ for (const hexLetter in hexArrPlaceholders) {
 }
 */
 
+function tileInit() {
+  return tileInit.called = true;
+}
+
 function shuffleOnClick() {
+
+  //check that the function has been called
+  
+
+  tileInit();
+
 /* shuffleOnClick first performs logic using:
 1) function shuffle(array)
 after it's definition with "array" parameter
@@ -258,9 +268,8 @@ value from it's paired shuffled value */
 
 
 
-console.table(mergedArrs[4].tileURL);
+console.table(mergedArrs);
 
- console.log(mergedArrs[4].hexId);
   
 
 
@@ -369,11 +378,12 @@ console.log(mergedArrs)
 
 
   
-return hexId1, hexId2, hexId3, hexId4, hexId5, hexId6, hexId7, hexId8, hexId9, hexId10, hexId11, hexId12, hexId13, hexId14, hexId15, hexId16, hexId17, hexId18, hexId19;
+return hexId1, hexId2, hexId3, hexId4, hexId5, hexId6, hexId7, hexId8, hexId9, hexId10, hexId11, hexId12, hexId13, hexId14, hexId15, hexId16, hexId17, hexId18, hexId19, mergedArrs;
 
 
 
  } 
+
 
  /* 
  if (hexId1) {

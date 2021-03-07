@@ -5,13 +5,13 @@
  */
 
 $islandWidth: 821px/* 821px */;
-$islandHeight: 753px /* 753px */;
-$originIsland_left: 300px; /* influences  */
+$islandHeight: $islandWidth * 0.91 /* 753px */;
+$originIsland_left: 30px; /* influences  */
 $originIsland_top: 0px; /*  */
 $sideGutters: 100px;
 
-$oceanWidth: $islandWidth + $islandWidth / 2;
-$oceanHeight: 100vh /* $islandHeight + $sideGutters * 2  *//* + $sideGutters + $sideGutters */;
+$oceanWidth: $islandWidth * 1.5;
+$oceanHeight: $oceanWidth * 0.91; /* $islandHeight + $sideGutters * 2  *//* + $sideGutters + $sideGutters */
 
 /* island backdrop cropped: 821 x 753 px 
 height/width = 91%
@@ -19,41 +19,59 @@ width/height = 109%
 */
 
 
-.absoluteAssets {
-/* ocean backdrop should comfortably encircle island to accomodate the tradships */
-    position:absolute;
-    margin: 10%;
-    right: auto;
-    
-/*     margin: $sideGutters * 4;
+/* 
+.interface-overlay-wrapper {
+
+
+}
  */
 
-    #imageOcean {
-        position:absolute;
 
-$coastalColor: #246892;
-$seaColor: #1e5f88;
-$oceanColor: #052d85;
+#logHTML {
+    bottom: 0px;
+    background-color: lightgrey;
+    color: black;
+}
 
-background-image: radial-gradient(
-  $coastalColor 25%,
-  $seaColor 45%,
-  $oceanColor 80%
-);
+ .imageOcean {
+    position: relative;
+    overflow:hidden ;
+    $coastalColor: #246892;
+    $seaColor: #1e5f88;
+    $oceanColor: #052d85;
+    
+    background-image: radial-gradient(
+    $coastalColor 25%,
+    $seaColor 45%,
+    $oceanColor 80%,
+    );
+    
+    
+    /* top: 0vh/* $originIsland_top */
+    width: $oceanWidth /* $islandWidth * 2 */;
+    min-height: $oceanHeight;
+    height: $oceanHeight;
+
+
+    max-height: $oceanHeight;
+    /* padding-top: $sideGutters;
+     */
+    padding-bottom: $sideGutters;
+    
+    background-size: $oceanWidth $oceanHeight;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-size: cover;
+    resize: both;
+
+}/* end imageOcean */
 
 
 
-top: 0vh/* $originIsland_top */;
- left: - $sideGutters;
-width: $oceanWidth;
-padding-top: $oceanHeight;
+    
+   
 
-background-size: $oceanWidth $islandHeight;
-background-repeat: no-repeat;
-z-index: 0;
-    }
-
-
+/* 
 #imageIsland {
     position: absolute;
 
@@ -74,27 +92,30 @@ z-index: 0;
     753 / 821 * 100 = 91% (almost square image as 100% is square)
 
     what we want to do is apply that percentage to padding-top (no height needed).
-    */
-    z-index: 1;
-        
+    
+     z-index: 3;
+         
 }
-
+ */
 
 
 
   
 .allPawnsPhParent {
+    margin: $sideGutters;
+
     position: absolute;
-    left: 40px;
-height: $islandHeight;
+    left: 29px;
 width: $islandWidth;
 
 }
 .hexNumbers {
+    margin: $sideGutters;
 
-top: 0px;
+position: fixed;
+top: -10px;
+left: 100px;
 width: $islandWidth;
-height: $oceanHeight;
 background-size: $islandWidth $islandHeight;
 
 /*     left: $sideGutters;  
@@ -102,18 +123,24 @@ background-size: $islandWidth $islandHeight;
 }
 
 .tileContainer {
+    margin: $sideGutters;
+
     position: absolute;
     top: $originIsland_top;
-    width: $islandWidth;
-    padding-top: 93%;
-
+    min-width: $islandWidth;
+    max-width: $oceanWidth;
+    min-height: $islandHeight;
     left: 50px;  
+    background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
     background-size: $islandWidth $islandHeight;
     background-repeat: no-repeat;
 
 }
 
+.tradeShips {
+    margin: $sideGutters;
+    }
 
 
-/* insert everything with position absolute in absolute Assets */
-}
+
+

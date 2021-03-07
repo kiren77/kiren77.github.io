@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en ">
+  
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- styling (colors/images here) -->
-    <link rel="stylesheet" type="text/css" href="./pokStyles/absoluteAssets.css"    />
-    <link rel="stylesheet" type="text/css" href="./pokStyles/relativeAssets.css"    />
+<!--     <link rel="stylesheet" type="text/css" href="./pokStyles/absoluteAssets.css"    />
+ -->    <link rel="stylesheet" type="text/css" href="./pokStyles/relativeAssets.css"    />
+ <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="landscape.css">
+      <link rel="stylesheet" media="screen and (max-width: 600px)" href="portrait.css"> -->
     <link rel="stylesheet" type="text/css" href="./pokStyles/shufflingStyles.css"   />
     <link rel="stylesheet" type="text/css" href="./pokStyles/pawnPlaceholders.css"  />
     <link rel="stylesheet" type="text/css" href="./pokStyles/hexNumbers.css"        />
@@ -33,14 +36,17 @@
  -->
 
     <!-- SCRIPTS BELOW -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="pawnPlaceholders.js"></script>
-    <script src="revealShuffledTiles.js"></script>
-
-    <!--   <link rel="stylesheet" type="text/css" href="flipTileReveal.css" />
- 
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  -->
+    <script src="allJavascript/pawnPlaceholders.js"></script>
+    <script src="allJavascript/revealShuffledTiles.js"></script>
+    <script src="allJavascript/revealShuffledHexNumbers.js"></script>
+    <script src="allJavascript/revealShuffledTradeShips.js"></script>
+
+
+<!--        <link rel="stylesheet" type="text/css" href="flipTileReveal.css" />
+ --> 
+ 
 
 
     <title>Pioneers of Kiran</title>
@@ -51,6 +57,8 @@
       <h1>Pioneers of Kiran</h1>
     </header>
 
+    <div class="imageOcean">
+<!--     <div class="imageOcean">    </div>  end imageOcean -->
     <div class="absoluteAssets">
       <!-- absoluteAssets
   all things located in absolute Assets should have absolute positioning.
@@ -63,8 +71,7 @@ container should contain:
       <div 
         id="imageIsland">   </div>
 
-        <div 
-        id="imageOcean ">  </div>
+
 
 
       <div class="allPawnsPhParent">
@@ -263,25 +270,25 @@ container should contain:
     and thus will be skipped
     on that tile there will 
      -->
-        <div id="nA">A</div>
-        <div id="nB">B</div>
-        <div id="nC">C</div>
-        <div id="nD">D</div>
-        <div id="nE">E</div>
-        <div id="nF">F</div>
-        <div id="nG">G</div>
-        <div id="nH">H</div>
-        <div id="nI">I</div>
-        <div id="nJ">J</div>
-        <div id="nK">K</div>
-        <div id="nL">L</div>
-        <div id="nM">M</div>
-        <div id="nN">N</div>
-        <div id="nO">O</div>
-        <div id="nP">P</div>
-        <div id="nQ">Q</div>
-        <div id="nR">R</div>
-        <div id="nS">S</div>
+        <div id="nA"></div>
+        <div id="nB"></div>
+        <div id="nC"></div>
+        <div id="nD"></div>
+        <div id="nE"></div>
+        <div id="nF"></div>
+        <div id="nG"></div>
+        <div id="nH"></div>
+        <div id="nI"></div>
+        <div id="nJ"></div>
+        <div id="nK"></div>
+        <div id="nL"></div>
+        <div id="nM"></div>
+        <div id="nN"></div>
+        <div id="nO"></div>
+        <div id="nP"></div>
+        <div id="nQ"></div>
+        <div id="nR"></div>
+        <div id="nS"></div>
       </div>
       <!-- end hexNumbers>  -->
 
@@ -371,92 +378,87 @@ container should contain:
       <!-- might be deprecated as placeholders might be
 the actual instantation of these assets -->
 <div class="tradeShips">
-  <div id="ts10">10</div>
-  <div id="ts8">8</div>
+  <div id="ts1">1</div>
   <div id="ts3">3</div>
   <div id="ts4">4</div>
-  <div id="ts1">1</div>
   <div id="ts6">6</div>
   <div id="ts7">7</div>
+  <div id="ts8">8</div>
+  <div id="ts10">10</div>
   <div id="ts11">11</div>
-  <div id="wood_2_1">12</div>
+  <div id="ts12">12</div>
 </div>
       <!--end tileContainer -->
 
-
-
+ 
+  <span class="position-absolute container-fluid" id="logHTML">
+    Text of log
+  </span>
 
 
     </div>
     <!-- end absoluteAssets -->
+      </div> <!-- imageOcean -->
+
 
     <div class=" container-fluid interface-overlay-wrapper">
-      <div class="container" id="myVictoryPoints">
-        <div class="row" id="myVPs">My Victory Points</div>
-        <div class="row vpCounter ">0</div>
-      </div>
+      
 
 
-        <div class="row-cols-3" id="allMyButtons">
-          <div class="col button" id="shuffleButton1" onclick="shuffleOnClick()">
+        <div class="row" id="allMyButtons">
+          <div class="col " id="shuffleButton1" onclick="shuffleOnClick()">
             Press to change tiles
           </div>
-          <div class="col button" id="shuffleButtonNum" onclick="shuffleNumOnClick()">
+          <div class="col" id="shuffleButton2" onclick="shuffleOnNumClick()">
             Press to shuffle numbers
           </div>
-          <div class="col button" id="nodeAdjacentRoadsButton">
-            Node's adjacent Roads
+          <div class="col" id="shuffleTradeShips" onclick="shuffleOnTSClick()">
+            Press to shuffle ships
           </div>
+            <div class="row myVPs">My Victory Points
+              <div class="col vpCounter ">0000</div>
+
+            </div>
+          
+         
         </div>
 
-        <div id="largestArmyLongestRoad">
-          <div id="Largest_Army"></div>
-          <div id="Longest_Road"></div>
+        <div class="largestArmyLongestRoad">
+          <div class="Largest_Army"></div>
+          <div class="Longest_Road"></div>
         </div>
         <!-- end  largestArmyLongestRoad-->
 
        
 
+        <div class="container">
+          
+          
+          <div class="row resourceCards">
+            <div class="col-1" id="sheepCard">       <div class="scoreCard"><p>00</p></div></div>
+            <div class="col-1" id="woodCard">        <div class="scoreCard"><p>00</p></div></div>
+            <div class="col-1" id="wheatCard">       <div class="scoreCard"><p>00</p></div></div>
+            <div class="col-1" id="brickCard">       <div class="scoreCard"><p>00</p></div></div>
+            <div class="col-1" id="oreCard">         <div class="scoreCard"><p>00</p></div></div>
+          </div>
+          <div class="row developmentCards">
+            <div class="col-1" id="knightCard">      <div class="scoreCard"><p>00</p></div></div>
+            <div class="col-1" id="monopolyCard">    <div class="scoreCard"><p>00</p></div></div>
+            <div class="col" id="yearofplentyCard"><div class="scoreCard"><p>00</p></div></div>
+            <div class="col" id="oneVPCard">       <div class="scoreCard"><p>00</p></div></div>
+            <div class="col" id="roadCard">        <div class="scoreCard"><p>00</p></div></div>
+          </div><!-- end developmentCards -->
         
-
-        <div class="img-fluid float-end" id="bankChest">
-          <div id="bankChestInside float-end"></div>
-          <div id="bankChestTop float-end"></div>
-          <div id="bankChestBottom float-end"></div>
-        </div>
-        <!-- end bankChest -->
- <div class="container">
-        <div class="row align align-content-around resourceCards">
-          <div class="col " id="sheepCard">       <div class="scoreCard"><p>00</p></div></div>
-          <div class="col " id="woodCard">        <div class="scoreCard"><p>00</p></div></div>
-          <div class="col " id="wheatCard">       <div class="scoreCard"><p>00</p></div></div>
-          <div class="col " id="brickCard">       <div class="scoreCard"><p>00</p></div></div>
-          <div class="col " id="oreCard">         <div class="scoreCard"><p>00</p></div></div>
-        </div>
         <!-- end resourceCards -->
-
-        <div class="row" id="Development_Cards">
-          <div class="col-1 " id="knightCard">      <div class="scoreCard"><p>00</p></div></div>
-          <div class="col-1 " id="monopolyCard">    <div class="scoreCard"><p>00</p></div></div>
-          <div class="col-1 " id="yearofplentyCard"><div class="scoreCard"><p>00</p></div></div>
-          <div class="col-1 " id="oneVPCard">       <div class="scoreCard"><p>00</p></div></div>
-          <div class="col-1 " id="roadCard">        <div class="scoreCard"><p>00</p></div></div>
         </div>
-      </div>
+          
+
+        
+        
+      
 
 
 
-      <div class="col-md-8 themed-grid-col">
-        <div class="pb-3">
-          .col-md-8
-        </div>
-        <div class="row">
-          <div class="col-md-6 themed-grid-col">.col-md-6</div>
-          <div class="col-md-6 themed-grid-col">.col-md-6</div>
-        </div>
-      </div>
-      <div class="col-md-4 themed-grid-col">.col-md-4</div>
-    
 
 
       <!-- end interface-overlay-wrapper-->

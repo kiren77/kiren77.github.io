@@ -14,39 +14,52 @@
 height/width = 91%
 width/height = 109%
 */
-.absoluteAssets {
-  /* ocean backdrop should comfortably encircle island to accomodate the tradships */
-  position: absolute;
-  margin: 10%;
-  right: auto;
-  /*     margin: $sideGutters * 4;
+/* 
+.interface-overlay-wrapper {
+
+
+}
  */
-  /* insert everything with position absolute in absolute Assets */
+#logHTML {
+  bottom: 0px;
+  background-color: lightgrey;
+  color: black;
 }
 
-.absoluteAssets #imageOcean {
-  position: absolute;
+.imageOcean {
+  position: relative;
+  overflow: hidden;
   background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
-  top: 0vh;
-  left: -100px;
+  /* top: 0vh/* $originIsland_top */
   width: 1231.5px;
-  padding-top: 100vh;
-  background-size: 1231.5px 753px;
+  min-height: 1120.665px;
+  height: 1120.665px;
+  max-height: 1120.665px;
+  /* padding-top: $sideGutters;
+     */
+  padding-bottom: 100px;
+  background-size: 1231.5px 1120.665px;
   background-repeat: no-repeat;
   z-index: 0;
+  background-size: cover;
+  resize: both;
 }
 
-.absoluteAssets #imageIsland {
-  position: absolute;
-  background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
-  top: 0px;
-  left: -40px;
-  width: 821px;
-  margin-left: 100px;
-  padding-top: 753px;
-  background-size: 821px;
-  background-repeat: no-repeat;
-  /* 
+/* end imageOcean */
+/* 
+#imageIsland {
+    position: absolute;
+
+    background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
+    top: $originIsland_top;
+    margin-left: $sideGutters * 4;
+    max-width: $islandWidth;
+    margin-left: $sideGutters;
+
+    padding-top: $islandHeight;
+    background-size: $islandWidth;
+    background-repeat: no-repeat;
+    /* 
     First apply background cover
     
     821 × 753 px
@@ -54,33 +67,43 @@ width/height = 109%
     753 / 821 * 100 = 91% (almost square image as 100% is square)
 
     what we want to do is apply that percentage to padding-top (no height needed).
-    */
-  z-index: 1;
+    
+     z-index: 3;
+         
 }
-
-.absoluteAssets .allPawnsPhParent {
+ */
+.allPawnsPhParent {
+  margin: 100px;
   position: absolute;
-  left: 40px;
-  height: 753px;
+  left: 29px;
   width: 821px;
 }
 
-.absoluteAssets .hexNumbers {
-  top: 0px;
+.hexNumbers {
+  margin: 100px;
+  position: fixed;
+  top: -10px;
+  left: 100px;
   width: 821px;
-  height: 100vh;
-  background-size: 821px 753px;
+  background-size: 821px 747.11px;
   /*     left: $sideGutters;  
  */
 }
 
-.absoluteAssets .tileContainer {
+.tileContainer {
+  margin: 100px;
   position: absolute;
   top: 0px;
-  width: 821px;
-  padding-top: 93%;
+  min-width: 821px;
+  max-width: 1231.5px;
+  min-height: 747.11px;
   left: 50px;
-  background-size: 821px 753px;
+  background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
+  background-size: 821px 747.11px;
   background-repeat: no-repeat;
+}
+
+.tradeShips {
+  margin: 100px;
 }
 /*# sourceMappingURL=masterIslandStyle.css.map */

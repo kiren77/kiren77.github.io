@@ -1,8 +1,3 @@
-/* ALL BOOTSTRAP */
-/* Bootstrap Variables Start */
-/* Bootstrap Variables END */
-/* BOOTSTRAP END */
-/* beginning pawn placeholder section */
 /* z-index for road,city and settlement assets */
 /* for cosmetic purposes only: placed settlements above cities */
 /* roads look best when placed an index under the other pawns */
@@ -126,7 +121,7 @@
   left: 464px;
   top: 652px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -137,7 +132,7 @@
   left: 610px;
   top: 652px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -148,7 +143,7 @@
   left: 536px;
   top: 682px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -159,7 +154,7 @@
   left: 157px;
   top: 652px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -170,7 +165,7 @@
   left: 229px;
   top: 682px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -181,7 +176,7 @@
   left: 313px;
   top: 652px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -192,7 +187,7 @@
   left: 385px;
   top: 682px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -204,7 +199,7 @@
   left: 627px;
   top: 608px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -216,7 +211,7 @@
   left: 479px;
   top: 608px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -252,7 +247,7 @@
   left: 172px;
   top: 607px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -288,7 +283,7 @@
   left: 328px;
   top: 606px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -446,7 +441,7 @@
   left: 546px;
   top: 505px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -457,7 +452,7 @@
   left: 692px;
   top: 505px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -468,7 +463,7 @@
   left: 618px;
   top: 547px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -479,7 +474,7 @@
   left: 389px;
   top: 509px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -490,7 +485,7 @@
   left: 461px;
   top: 551px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -501,7 +496,7 @@
   left: 230px;
   top: 507px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -512,7 +507,7 @@
   left: 302px;
   top: 549px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -523,7 +518,7 @@
   left: 74px;
   top: 507px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -534,7 +529,7 @@
   left: 146px;
   top: 549px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -546,7 +541,7 @@
   left: 709px;
   top: 475px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -558,7 +553,7 @@
   left: 561px;
   top: 475px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -594,7 +589,7 @@
   left: 404px;
   top: 479px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -606,7 +601,7 @@
   left: 245px;
   top: 477px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -642,7 +637,7 @@
   left: 89px;
   top: 477px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -810,7 +805,7 @@
   left: 0px;
   top: 375px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -821,7 +816,7 @@
   left: 72px;
   top: 417px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -832,7 +827,7 @@
   left: 151px;
   top: 375px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -843,7 +838,7 @@
   left: 223px;
   top: 417px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -854,7 +849,7 @@
   left: 310px;
   top: 375px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -865,7 +860,7 @@
   left: 382px;
   top: 417px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -876,7 +871,7 @@
   left: 469px;
   top: 375px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -887,7 +882,7 @@
   left: 541px;
   top: 417px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -898,7 +893,7 @@
   left: 619px;
   top: 379px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -909,7 +904,7 @@
   left: 765px;
   top: 379px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -920,7 +915,7 @@
   left: 691px;
   top: 421px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -944,7 +939,7 @@
   left: 15px;
   top: 345px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -968,7 +963,7 @@
   left: 166px;
   top: 345px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1004,7 +999,7 @@
   left: 325px;
   top: 345px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1040,7 +1035,7 @@
   left: 484px;
   top: 345px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1076,7 +1071,7 @@
   left: 782px;
   top: 349px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1088,7 +1083,7 @@
   left: 634px;
   top: 349px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1232,7 +1227,7 @@
   left: 0px;
   top: 288px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1243,7 +1238,7 @@
   left: 225px;
   top: 250px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1254,7 +1249,7 @@
   left: 151px;
   top: 288px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1265,7 +1260,7 @@
   left: 384px;
   top: 250px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1276,7 +1271,7 @@
   left: 310px;
   top: 288px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1287,7 +1282,7 @@
   left: 543px;
   top: 250px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1298,7 +1293,7 @@
   left: 469px;
   top: 288px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1309,7 +1304,7 @@
   left: 693px;
   top: 254px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1320,7 +1315,7 @@
   left: 619px;
   top: 292px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1331,7 +1326,7 @@
   left: 765px;
   top: 292px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1342,7 +1337,7 @@
   left: 74px;
   top: 250px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1354,7 +1349,7 @@
   left: 706px;
   top: 212px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1366,7 +1361,7 @@
   left: 555px;
   top: 210px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 402;
 }
 
@@ -1378,7 +1373,7 @@
   left: 399px;
   top: 210px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 402;
 }
 
@@ -1390,7 +1385,7 @@
   left: 242px;
   top: 210px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 402;
 }
 
@@ -1402,7 +1397,7 @@
   left: 96px;
   top: 214px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 402;
 }
 
@@ -1632,7 +1627,7 @@
   left: 608px;
   top: 109px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1643,7 +1638,7 @@
   left: 534px;
   top: 151px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1654,7 +1649,7 @@
   left: 689px;
   top: 155px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1665,7 +1660,7 @@
   left: 459px;
   top: 115px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1676,7 +1671,7 @@
   left: 384px;
   top: 153px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1687,7 +1682,7 @@
   left: 302px;
   top: 115px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1698,7 +1693,7 @@
   left: 227px;
   top: 153px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1709,7 +1704,7 @@
   left: 155px;
   top: 119px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1720,7 +1715,7 @@
   left: 81px;
   top: 157px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1732,7 +1727,7 @@
   left: 625px;
   top: 79px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1744,7 +1739,7 @@
   left: 173px;
   top: 79px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1756,7 +1751,7 @@
   left: 327px;
   top: 81px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1768,7 +1763,7 @@
   left: 477px;
   top: 79px;
   width: 19px;
-  height: 70px;
+  height: 75px;
   z-index: 400;
 }
 
@@ -1963,7 +1958,7 @@
   left: 158px;
   top: 22px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1985,7 +1980,7 @@
   left: 312px;
   top: 24px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -1996,7 +1991,7 @@
   left: 458px;
   top: 24px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 
@@ -2018,7 +2013,7 @@
   left: 608px;
   top: 24px;
   width: 57px;
-  height: 70px;
+  height: 75px;
   z-index: 401;
 }
 

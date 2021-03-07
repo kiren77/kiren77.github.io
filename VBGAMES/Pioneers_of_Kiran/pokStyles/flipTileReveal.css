@@ -60,7 +60,7 @@ corresponding to the back of the tile
 }
 
 .tilePlaceholder:hover {
-  background-size: 0%;
+  background-size: 100%;
   /* considering a little zoom fx on hover */
   -webkit-transform: rotateX(20deg);
           transform: rotateX(20deg);
