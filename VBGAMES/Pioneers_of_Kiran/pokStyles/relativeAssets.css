@@ -7,9 +7,7 @@
 /* .row.content {height: 1050px}
  */
 .interface-overlay-wrapper {
-  position: absolute;
-  /* end Resource Cards */
-  /* development Cards */
+  /* end allCards */
 }
 
 .interface-overlay-wrapper #allMyButtons {
@@ -92,26 +90,24 @@
   background-color: darkmagenta;
 }
 
-.interface-overlay-wrapper .resourceCards {
+.interface-overlay-wrapper .allCards {
   position: relative;
-  padding: 0px;
+  /* end Resource Cards */
+  /* development Cards */
+  /* end scoreCard */
+  /* largestArmyLongestRoad */
+}
+
+.interface-overlay-wrapper .allCards .resourceCards {
+  padding-bottom: 10px;
   z-index: 1000;
-  /*  position: fixed;
-  margin-bottom: 0px;
-  margin-left: 50%;
-  margin-right: 0%;
-  max-width: $maxCardWidth;
-  padding: 0% 3% 0% 0%;
-  right: $cardBackgroundSizeWidth;
-  bottom: 0px;
-  z-index: $allCards_index; */
   /* end SheepCard */
   /* end WoodCard */
   /* end oreCard */
   /* end BrickCard */
 }
 
-.interface-overlay-wrapper .resourceCards :hover {
+.interface-overlay-wrapper .allCards .resourceCards :hover {
   cursor: pointer;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -120,74 +116,69 @@
   z-index: 1000;
 }
 
-.interface-overlay-wrapper .resourceCards #sheepCard {
+.interface-overlay-wrapper .allCards .resourceCards #sheepCard {
   background-image: url("../gameAssetsOfficial/straightenedResourcecards/sheepCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   top: 0px;
-  min-width: 75px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .resourceCards #woodCard {
+.interface-overlay-wrapper .allCards .resourceCards #woodCard {
   background-image: url("../gameAssetsOfficial/straightenedResourcecards/woodCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   top: 0px;
-  min-width: 75px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .resourceCards #wheatCard {
+.interface-overlay-wrapper .allCards .resourceCards #wheatCard {
   background-image: url("../gameAssetsOfficial/straightenedResourcecards/wheatCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   top: 0px;
-  min-width: 75px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .resourceCards #oreCard {
+.interface-overlay-wrapper .allCards .resourceCards #oreCard {
   background-image: url("../gameAssetsOfficial/straightenedResourcecards/oreCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   top: 0px;
-  min-width: 75px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .resourceCards #brickCard {
+.interface-overlay-wrapper .allCards .resourceCards #brickCard {
   background-image: url("../gameAssetsOfficial/straightenedResourcecards/brickCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   top: 0px;
-  min-width: 75px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .developmentCards {
+.interface-overlay-wrapper .allCards .developmentCards {
   position: relative;
-  padding: 0px;
+  padding-bottom: 10px;
   z-index: 1000;
   /*  position: fixed;
   margin-bottom: 0px;
@@ -202,7 +193,7 @@
      */
 }
 
-.interface-overlay-wrapper .developmentCards :hover {
+.interface-overlay-wrapper .allCards .developmentCards :hover {
   cursor: pointer;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -211,66 +202,58 @@
   z-index: 1000;
 }
 
-.interface-overlay-wrapper .developmentCards #knightCard {
+.interface-overlay-wrapper .allCards .developmentCards #knightCard {
   background-image: url("../gameAssetsOfficial/knightCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   top: 0px;
-  min-width: 75px;
-  max-width: 37.5px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .developmentCards #monopolyCard {
+.interface-overlay-wrapper .allCards .developmentCards #monopolyCard {
   background-image: url("../gameAssetsOfficial/monopolyCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   left: 0px;
   top: 0px;
-  min-width: 75px;
-  max-width: 37.5px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .developmentCards #yearofplentyCard {
+.interface-overlay-wrapper .allCards .developmentCards #yearofplentyCard {
   background-image: url("../gameAssetsOfficial/yearofplentyCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   left: 0px;
   top: 0px;
-  min-width: 75px;
-  max-width: 37.5px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .developmentCards #oneVPCard {
+.interface-overlay-wrapper .allCards .developmentCards #oneVPCard {
   background-image: url("../gameAssetsOfficial/oneVPCard.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 75px 110.29412px;
   left: 0px;
   top: 0px;
-  min-width: 75px;
-  max-width: 37.5px;
+  width: 75px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
 }
 
-.interface-overlay-wrapper .developmentCards #roadCard {
+.interface-overlay-wrapper .allCards .developmentCards #roadCard {
   background-image: url("../gameAssetsOfficial/roadCard.png");
   background-repeat: no-repeat;
   position: relative;
@@ -278,11 +261,103 @@
   left: 0px;
   top: 0px;
   min-width: 75px;
-  max-width: 37.5px;
   height: 110.29412px;
   z-index: 1000;
   padding: 0%;
-  margin-bottom: 10%;
+}
+
+.interface-overlay-wrapper .allCards .scoreCard {
+  position: relative;
+  min-width: 71.25px;
+  max-width: 37.5px;
+  padding-bottom: 0px;
+  top: 90%;
+  left: 0px;
+  padding-top: 0%;
+  background-color: #cec3c3;
+  -webkit-box-shadow: #eae3e2;
+          box-shadow: #eae3e2;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+
+.interface-overlay-wrapper .allCards .scoreCard p {
+  min-width: 71.25px;
+  max-width: 37.5px;
+  top: 0px;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  left: 0px;
+  top: 0px;
+  font-size: 1.5em;
+  font-family: "Courier";
+  color: #000000;
+  line-height: 0.583;
+  text-align: center;
+  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
+  position: relative;
+  z-index: 1;
+  /* top: 0px;
+      left: 8px; */
+}
+
+.interface-overlay-wrapper .allCards .largestArmyLongestRoad {
+  width: auto;
+  height: auto;
+  /* position: relative;
+  left: 0px;
+  top: 1200px;
+  padding: 0px;
+  width: $allDevCard_Width;
+  height: auto;
+  z-index: $allCards_index; */
+  /* end longestRoad */
+  /* end Largest Army */
+}
+
+.interface-overlay-wrapper .allCards .largestArmyLongestRoad #longestRoad {
+  background-image: url("../gameAssetsOfficial/Longest Road.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 90px 132.35294px;
+  left: 0px;
+  top: 10px;
+  width: 90px;
+  height: 132.35294px;
+  z-index: 1000;
+  padding: 0%;
+}
+
+.interface-overlay-wrapper .allCards .largestArmyLongestRoad #longestRoad :hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1000;
+}
+
+.interface-overlay-wrapper .allCards .largestArmyLongestRoad #largestArmy {
+  background-image: url("../gameAssetsOfficial/Biggest Army.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 90px 132.35294px;
+  left: 0px;
+  top: 10px;
+  width: 90px;
+  height: 132.35294px;
+  z-index: 1000;
+  padding: 0%;
+}
+
+.interface-overlay-wrapper .allCards .largestArmyLongestRoad #largestArmy :hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1000;
 }
 
 .interface-overlay-wrapper .buyableItems {
@@ -527,9 +602,7 @@
   z-index: 1100;
 }
 
-/* end interface-overlay-wrapper */
-/* end Market interface */
-#island_Dice_Numbers {
+.interface-overlay-wrapper #island_Dice_Numbers {
   position: -webkit-sticky;
   position: sticky;
   -webkit-box-pack: center;
@@ -541,73 +614,5 @@
   z-index: 53;
 }
 
-.scoreCard {
-  position: relative;
-  min-width: 71.25px;
-  max-width: 37.5px;
-  padding-bottom: 0px;
-  top: 90%;
-  left: 0px;
-  padding-top: 0%;
-  background-color: #cec3c3;
-  -webkit-box-shadow: #eae3e2;
-          box-shadow: #eae3e2;
-  border: none;
-  border-radius: 0px 0px 10px 10px;
-  z-index: 1;
-}
-
-.scoreCard p {
-  min-width: 71.25px;
-  max-width: 37.5px;
-  top: 0px;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  left: 0px;
-  top: 0px;
-  font-size: 1.5em;
-  font-family: "Courier";
-  color: #000000;
-  line-height: 0.583;
-  text-align: center;
-  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.61);
-  position: relative;
-  z-index: 1;
-  /* top: 0px;
-      left: 8px; */
-}
-
-/* end scoreCard */
-.largestArmyLongestRoad {
-  position: relative;
-  left: 200px;
-  top: 200px;
-  padding: 0px;
-  z-index: 1000;
-}
-
-.largestArmyLongestRoad .Longest_Road {
-  background-image: url("../gameAssetsOfficial/Longest Road.png");
-  background-repeat: no-repeat;
-  position: relative;
-  width: auto;
-  z-index: 1000;
-}
-
-.largestArmyLongestRoad .Largest_Army {
-  background-image: url("../gameAssetsOfficial/Biggest Army.png");
-  background-repeat: no-repeat;
-  position: relative;
-  left: 110px;
-  top: 310px;
-  width: auto;
-  z-index: 1000;
-}
-
-#island_hexes {
-  position: absolute;
-  left: 0px;
-  top: 16px;
-  z-index: 28;
-}
+/* end interface-overlay-wrapper */
 /*# sourceMappingURL=relativeAssets.css.map */

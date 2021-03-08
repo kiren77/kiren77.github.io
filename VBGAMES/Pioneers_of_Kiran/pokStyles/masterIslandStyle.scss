@@ -4,14 +4,20 @@
 }
  */
 
-$islandWidth: 821px/* 821px */;
-$islandHeight: $islandWidth * 0.91 /* 753px */;
-$originIsland_left: 30px; /* influences  */
-$originIsland_top: 0px; /*  */
-$sideGutters: 100px;
 
-$oceanWidth: $islandWidth * 1.5;
-$oceanHeight: $oceanWidth * 0.91; /* $islandHeight + $sideGutters * 2  *//* + $sideGutters + $sideGutters */
+$oceanWidth: 100vw/* $islandWidth * 1.5 */;
+$oceanHeight: 100vh; 
+
+
+$islandWidth: 66.6vw/* 821px */;
+$islandHeight: 66.6vh /* 753px */;
+
+$sideGutters: 10vw;
+
+//for "left" position
+$islandMiddleWidth: $oceanWidth / 2 - $islandWidth / 2;
+//for "top" position
+$islandMiddleHeight: $oceanHeight / 2 - $islandHeight / 2;
 
 /* island backdrop cropped: 821 x 753 px 
 height/width = 91%
@@ -34,8 +40,7 @@ width/height = 109%
 }
 
  .imageOcean {
-    position: relative;
-    overflow:hidden ;
+   position: relative;
     $coastalColor: #246892;
     $seaColor: #1e5f88;
     $oceanColor: #052d85;
@@ -47,15 +52,11 @@ width/height = 109%
     );
     
     
-    /* top: 0vh/* $originIsland_top */
     width: $oceanWidth /* $islandWidth * 2 */;
-    min-height: $oceanHeight;
     height: $oceanHeight;
-
-
     max-height: $oceanHeight;
-    /* padding-top: $sideGutters;
-     */
+     padding-bottom: $sideGutters;
+    
     padding-bottom: $sideGutters;
     
     background-size: $oceanWidth $oceanHeight;
@@ -64,6 +65,66 @@ width/height = 109%
     background-size: cover;
     resize: both;
 
+
+
+
+
+
+
+
+    .allPawnsPhParent {
+        margin: $sideGutters;
+    
+        position: absolute;
+        left: 29px;
+    width: $islandWidth;
+    height: $islandHeight;
+    background-size: $islandWidth $islandHeight;
+     div.node.allPlaceholdersPawn {
+        width: $islandWidth;
+     }
+    }
+    div.hexNumbers {
+        margin: $sideGutters;
+    
+    position: fixed;
+    top: -10px;
+    left: 100px;
+    width: $islandWidth;
+    background-size: $islandWidth $islandHeight;
+    
+    /*     left: $sideGutters;  
+     */
+    }
+
+
+
+    
+    .tileContainer {
+        margin: $sideGutters;
+    
+        position: absolute;
+        min-width: $islandWidth;
+        max-width: $oceanWidth;
+        min-height: $islandHeight;
+        left: 50px;  
+        background-size: $islandWidth $islandHeight;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .tradeShips {
+        margin: $sideGutters;
+        }
+    
+    
+        .interface-overlay-wrapper {
+            background-color: orange;
+
+        }
+    
+
+
 }/* end imageOcean */
 
 
@@ -71,19 +132,18 @@ width/height = 109%
     
    
 
-/* 
+ 
 #imageIsland {
-    position: absolute;
-
     background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
-    top: $originIsland_top;
-    margin-left: $sideGutters * 4;
-    max-width: $islandWidth;
-    margin-left: $sideGutters;
-
-    padding-top: $islandHeight;
-    background-size: $islandWidth;
+    padding: $islandMiddleHeight * 2;
+    position: absolute;
+        left: $islandMiddleWidth;
+        top: $islandMiddleHeight;
+    width: $islandWidth;
+    max-height: 700px/* $islandHeight */;
+    background-size: contain;
     background-repeat: no-repeat;
+}
     /* 
     First apply background cover
     
@@ -97,50 +157,33 @@ width/height = 109%
          
 }
  */
+ 
 
 
 
+/* 
   
-.allPawnsPhParent {
-    margin: $sideGutters;
+.imageOcean {
+    #imageIsland {
 
-    position: absolute;
-    left: 29px;
-width: $islandWidth;
-
-}
-.hexNumbers {
-    margin: $sideGutters;
-
-position: fixed;
-top: -10px;
-left: 100px;
-width: $islandWidth;
-background-size: $islandWidth $islandHeight;
-
-/*     left: $sideGutters;  
- */
-}
-
-.tileContainer {
-    margin: $sideGutters;
-
-    position: absolute;
-    top: $originIsland_top;
-    min-width: $islandWidth;
-    max-width: $oceanWidth;
-    min-height: $islandHeight;
-    left: 50px;  
-    background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
-    background-size: $islandWidth $islandHeight;
-    background-repeat: no-repeat;
-
-}
-
-.tradeShips {
-    margin: $sideGutters;
     }
+    .allPawnsPhParent {
+        .allPlaceholdersPawn {
+            
+        }
 
+    }
+    .hexNumbers {
+position: absolute;
+    }
+    .tileContainer {
 
+    }
+    .tilePlaceholder {
 
+    }
+    .tradeShips {
 
+    }
+}
+ */

@@ -307,50 +307,69 @@ me with just "element" with quotation marks.
 //TO-DO: replace redundancy with "For" loops
 //where the script generates would generate the key value pairs
 
-var hexId1  = mergedArrsNum[0].hexId
-var hexId2  = mergedArrsNum[1].hexId
-var hexId3  = mergedArrsNum[2].hexId
-var hexId4  = mergedArrsNum[3].hexId
-var hexId5  = mergedArrsNum[4].hexId
-var hexId6  = mergedArrsNum[5].hexId
-var hexId7  = mergedArrsNum[6].hexId
-var hexId8  = mergedArrsNum[7].hexId
-var hexId9  = mergedArrsNum[8].hexId
-var hexId10 = mergedArrsNum[9].hexId
-var hexId11 = mergedArrsNum[10].hexId
-var hexId12 = mergedArrsNum[11].hexId
-var hexId13 = mergedArrsNum[12].hexId
-var hexId14 = mergedArrsNum[13].hexId
-var hexId15 = mergedArrsNum[14].hexId
-var hexId16 = mergedArrsNum[15].hexId
-var hexId17 = mergedArrsNum[16].hexId
-var hexId18 = mergedArrsNum[17].hexId
-var hexId19 = mergedArrsNum[18].hexId
+var hexId1  = mergedArrsNum[0].hexId;
+var hexId2  = mergedArrsNum[1].hexId;
+var hexId3  = mergedArrsNum[2].hexId;
+var hexId4  = mergedArrsNum[3].hexId;
+var hexId5  = mergedArrsNum[4].hexId;
+var hexId6  = mergedArrsNum[5].hexId;
+var hexId7  = mergedArrsNum[6].hexId;
+var hexId8  = mergedArrsNum[7].hexId;
+var hexId9  = mergedArrsNum[8].hexId;
+var hexId10 = mergedArrsNum[9].hexId;
+var hexId11 = mergedArrsNum[10].hexId;
+var hexId12 = mergedArrsNum[11].hexId;
+var hexId13 = mergedArrsNum[12].hexId;
+var hexId14 = mergedArrsNum[13].hexId;
+var hexId15 = mergedArrsNum[14].hexId;
+var hexId16 = mergedArrsNum[15].hexId;
+var hexId17 = mergedArrsNum[16].hexId;
+var hexId18 = mergedArrsNum[17].hexId;
+var hexId19 = mergedArrsNum[18].hexId;
 
-console.log(mergedArrsNum)
+console.log(mergedArrsNum);
 
 
-   
+var sizeOfCoin = "39px 39px";
+
   document.getElementById(hexId1).style.background =   "url('"  +  mergedArrsNum[0].hnURL  +    "')";
-  //perform animation for 
+  document.getElementById(hexId1).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId2).style.background =   "url('"  +  mergedArrsNum[1].hnURL  +    "')";
+  document.getElementById(hexId2).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId3).style.background =   "url('"  +  mergedArrsNum[2].hnURL  +    "')"; 
+  document.getElementById(hexId3).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId4).style.background =   "url('"  +  mergedArrsNum[3].hnURL  +    "')"; 
+  document.getElementById(hexId4).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId5).style.background =   "url('"  +  mergedArrsNum[4].hnURL  +    "')"; 
+  document.getElementById(hexId5).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId6).style.background =   "url('"  +  mergedArrsNum[5].hnURL  +    "')"; 
+  document.getElementById(hexId6).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId7).style.background =   "url('"  +  mergedArrsNum[6].hnURL  +    "')"; 
+  document.getElementById(hexId7).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId8).style.background =   "url('"  +  mergedArrsNum[7].hnURL  +    "')"; 
+  document.getElementById(hexId8).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId9).style.background =   "url('"  +  mergedArrsNum[8].hnURL  +    "')"; 
+  document.getElementById(hexId9).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId10).style.background =  "url('"  +  mergedArrsNum[9].hnURL  +    "')";
+  document.getElementById(hexId10).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId11).style.background =  "url('"  +  mergedArrsNum[10].hnURL  +    "')";
+  document.getElementById(hexId11).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId12).style.background =  "url('"  +  mergedArrsNum[11].hnURL  +    "')";
+  document.getElementById(hexId12).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId13).style.background =  "url('"  +  mergedArrsNum[12].hnURL  +    "')";
+  document.getElementById(hexId13).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId14).style.background =  "url('"  +  mergedArrsNum[13].hnURL  +    "')";
+  document.getElementById(hexId14).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId15).style.background =  "url('"  +  mergedArrsNum[14].hnURL  +    "')";
+  document.getElementById(hexId15).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId16).style.background =  "url('"  +  mergedArrsNum[15].hnURL  +    "')";
+  document.getElementById(hexId16).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId17).style.background =  "url('"  +  mergedArrsNum[16].hnURL  +    "')";
+  document.getElementById(hexId17).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId18).style.background =  "url('"  +  mergedArrsNum[17].hnURL  +    "')";
+  document.getElementById(hexId18).style.backgroundSize = sizeOfCoin;
   document.getElementById(hexId19).style.background =  "url('"  +  mergedArrsNum[18].hnURL  +    "')";
+  document.getElementById(hexId19).style.backgroundSize = sizeOfCoin;
 
 
   

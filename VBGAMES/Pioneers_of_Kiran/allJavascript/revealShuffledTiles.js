@@ -1,41 +1,6 @@
 
-
-
-/* //this function will generate the idTile[x]
-// value located alongside the hexLetter value for
-// each array item 
-function defineId(letterAtoS) {
-// if this function has been fed a letter between 
-// A to S it will concatenate a string
-const str1 = 'document.getElementById("path#idTile'+letterAtoS+'"'+')'
-return str1;
-}
-const alphaBet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S']
-
-
-
-for (let index = 0; index < alphaBet.length; index++) {
-  const alphaIter = alphaBet[index];
-defineId(alphaIter)
-}
-console.log(alphaIter)
- */
-
-/* 
-
-QUESTION: 
-
-*/
 var tileType, tileURL;
-/*  sheepTile1, sheepTile2, sheepTile3, sheepTile4, woodTile1, woodTile2, woodTile3, woodTile4, wheatTile1, wheatTile2, wheatTile3, wheatTile4, oreTile1, oreTile2, oreTile3, brickTile1, brickTile2, brickTile3, desertTile1;
- */
 
-
-/*   let sT1, sT2, sT3, sT4, woT1, woT2, woT3, woT4, whT1,whT2, whT3, whT4, oT1, oT2, oT3, bT1, bT2, bT3, dT1; 
- */
-
-
-// tileType are the variables representing the tiles, and unique Tile is the index for each paired #id.backgroundimage
 
 //each variable of the same 
 //type is associated with 
@@ -189,9 +154,9 @@ shuffle(hexArrPlaceholders);
 //-------MERGING BELOW -----------
 
 //placeholder brackets for each merged rows
-var mergedRow = []; 
+let mergedRow = []; 
 //placeholder brackets to store final array
-var mergedArrs = [];
+let mergedArrs = [];
 //for every loop we partner up  an object[index] 
 //from hexArrPlaceholders with an object from remainingTiles
 for (let index = 0; index < hexArrPlaceholders.length; index++) {
@@ -268,7 +233,7 @@ value from it's paired shuffled value */
 
 
 
-console.table(mergedArrs);
+
 
   
 
@@ -383,6 +348,7 @@ return hexId1, hexId2, hexId3, hexId4, hexId5, hexId6, hexId7, hexId8, hexId9, h
 
 
  } 
+
 
 
  /* 

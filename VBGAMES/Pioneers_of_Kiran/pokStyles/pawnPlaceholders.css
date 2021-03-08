@@ -1,48 +1,88 @@
-/* moved to absolute assets
-and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
-/* z-index for road,city and settlement assets */
-/* for cosmetic purposes only: placed settlements above cities */
-/* roads look best when placed an index under the other pawns */
-/* $setHeight: 57px;
+@charset "UTF-8";
+/* @viewport { width: auto; }
+@media (max-width: 600px) {
+@viewport { width: 620px; }
+}
  */
-/* valuename=pixels */
+/* $islandWidth * 1.5 */
+/* 821px */
+/* 753px */
 /* city placeholder asset*/
 /* settlement pawn asset*/
 /* 3 different road assets (vertical and both slopes) */
 /* testingInterface should always be highest */
-.allPawnsPhParent {
-  background-repeat: no-repeat;
-  /*     position: relative;
+/* island backdrop cropped: 821 x 753 px 
+ height/width = 91%
+ width/height = 109%
  */
-  top: -10px;
-  left: -22px;
-  opacity: 80%;
-  z-index: 3;
-}
-
-/* allPawnsPhParent */
+/* z-index for road,city and settlement assets */
+/* for cosmetic purposes only: placed settlements above cities */
+/* roads look best when placed an index under the other pawns */
+/* valuename=pixels */
 /* Below: Height of placeholder pawns
   Height is measured from top */
-/* subtract 30px; */
-/* subtract 10px; */
-/* subtract 40px; */
-/* subtract 10px; */
-/* subtract 40px; */
-/* subtract 10px; */
-/* subtract 40px; */
-/* expected 255 ?*/
-/* subtract 40px; */
+/* 
+  regular hexagon math
+  radiusLength = diameter/2 = sideLength
+  so where x is nodeletter
+  hiLo = xHigh - xLow = sideLength / 2
+  so hiLo = diameter / 4
+
+if hex⌀ 120px 
+hilo = 30px
+
+
+
+
+  */
+/* $diagonalSideLength:  */
+/* NEXT lateral distances
+horizontal distance between adjacent xHigh-xLow
+(example a1a2)
+pythagore theorem 
+
+*/
+/* 
+vert1  0px
+hypo1
+vert2  74px
+hypo2
+vert3  148px
+hypo3
+vert4  px
+hypo4
+vert5  296px
+hypo5
+vert6  px
+hypo6
+vert7  px
+hypo7
+vert8  px
+hypo8
+vert9  592px
+hypo9
+vert10  px
+hypo10
+vert11  px (currently 
+d11c11 = 
+left: 782px;
+top: 347px;)
+*/
 .tilePlaceholder {
   background-repeat: no-repeat;
 }
 
-#setl_F4 {
+.setlNode {
+  top: setHeight;
+}
+
+.setlNode #setl_F4 {
   background-repeat: no-repeat;
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 382px;
-  top: 692px;
-  width: 57px;
+  top: 680px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -52,8 +92,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 465px;
-  top: 662px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -63,8 +103,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 607px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -74,8 +114,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 533px;
-  top: 692px;
-  width: 57px;
+  top: 680px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -85,8 +125,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 158px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -96,8 +136,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 226px;
-  top: 682px;
-  width: 57px;
+  top: 680px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -107,8 +147,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 314px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -118,8 +158,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 464px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -129,8 +169,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 610px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -140,8 +180,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 536px;
-  top: 682px;
-  width: 57px;
+  top: 680px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -151,8 +191,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 157px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -162,8 +202,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 229px;
-  top: 682px;
-  width: 57px;
+  top: 680px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -173,8 +213,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 313px;
-  top: 652px;
-  width: 57px;
+  top: 650px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -184,8 +224,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 385px;
-  top: 682px;
-  width: 57px;
+  top: 680px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -221,8 +261,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 571px;
   top: 688px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -233,8 +273,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 490px;
   top: 687px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -257,8 +297,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 264px;
   top: 687px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -269,8 +309,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 183px;
   top: 686px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -293,8 +333,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 420px;
   top: 686px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -305,8 +345,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 339px;
   top: 685px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -316,9 +356,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 496px;
-  top: 559px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -328,9 +368,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 415px;
-  top: 558px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -339,8 +379,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 547px;
-  top: 520px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -350,8 +390,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 689px;
-  top: 520px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -361,8 +401,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 615px;
-  top: 562px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -372,8 +412,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 390px;
-  top: 524px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -383,8 +423,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 458px;
-  top: 566px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -394,8 +434,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 231px;
-  top: 522px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -405,8 +445,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 299px;
-  top: 564px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -416,8 +456,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 75px;
-  top: 522px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -427,8 +467,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 143px;
-  top: 564px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -438,8 +478,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 546px;
-  top: 505px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -449,8 +489,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 692px;
-  top: 505px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -460,8 +500,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 618px;
-  top: 547px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -471,8 +511,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 389px;
-  top: 509px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -482,8 +522,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 461px;
-  top: 551px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -493,8 +533,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 230px;
-  top: 507px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -504,8 +544,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 302px;
-  top: 549px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -515,8 +555,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 74px;
-  top: 507px;
-  width: 57px;
+  top: 500px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -526,8 +566,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 146px;
-  top: 549px;
-  width: 57px;
+  top: 560px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -562,9 +602,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 653px;
-  top: 555px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -574,9 +614,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 572px;
-  top: 554px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -610,9 +650,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 337px;
-  top: 557px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -622,9 +662,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 256px;
-  top: 556px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -646,9 +686,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 181px;
-  top: 557px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -658,9 +698,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 100px;
-  top: 556px;
-  width: 68px;
-  height: 49px;
+  top: 547px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -671,8 +711,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 645px;
   top: 428px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -681,8 +721,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 1px;
-  top: 390px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -692,8 +732,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 69px;
-  top: 432px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -703,8 +743,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 152px;
-  top: 390px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -714,8 +754,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 220px;
-  top: 432px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -725,8 +765,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 311px;
-  top: 390px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -736,8 +776,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 470px;
-  top: 390px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -747,8 +787,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 538px;
-  top: 432px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -758,8 +798,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 620px;
-  top: 394px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -769,8 +809,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 762px;
-  top: 394px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -780,8 +820,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 688px;
-  top: 436px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -791,8 +831,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 379px;
-  top: 432px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -802,8 +842,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 0px;
-  top: 375px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -813,8 +853,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 72px;
-  top: 417px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -824,8 +864,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 151px;
-  top: 375px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -835,8 +875,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 223px;
-  top: 417px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -846,8 +886,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 310px;
-  top: 375px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -857,8 +897,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 382px;
-  top: 417px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -868,8 +908,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 469px;
-  top: 375px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -879,8 +919,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 541px;
-  top: 417px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -890,8 +930,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 619px;
-  top: 379px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -901,8 +941,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 765px;
-  top: 379px;
-  width: 57px;
+  top: 400px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -912,8 +952,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 691px;
-  top: 421px;
-  width: 57px;
+  top: 420px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -924,9 +964,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 26px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -936,7 +976,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* vertical */
   position: absolute;
   left: 15px;
-  top: 345px;
+  top: 347px;
   width: 19px;
   height: 70px;
   z-index: 3;
@@ -948,9 +988,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 107px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -960,7 +1000,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* vertical */
   position: absolute;
   left: 166px;
-  top: 345px;
+  top: 347px;
   width: 19px;
   height: 70px;
   z-index: 3;
@@ -972,9 +1012,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 258px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -984,9 +1024,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 177px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -996,7 +1036,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* vertical */
   position: absolute;
   left: 325px;
-  top: 345px;
+  top: 347px;
   width: 19px;
   height: 70px;
   z-index: 3;
@@ -1008,9 +1048,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 417px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1020,9 +1060,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 336px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1032,7 +1072,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* vertical */
   position: absolute;
   left: 484px;
-  top: 345px;
+  top: 347px;
   width: 19px;
   height: 70px;
   z-index: 3;
@@ -1044,9 +1084,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* lL-hR */
   position: absolute;
   left: 576px;
-  top: 425px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1056,9 +1096,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 495px;
-  top: 424px;
-  width: 68px;
-  height: 49px;
+  top: 428px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1068,7 +1108,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* vertical */
   position: absolute;
   left: 782px;
-  top: 349px;
+  top: 347px;
   width: 19px;
   height: 70px;
   z-index: 3;
@@ -1080,7 +1120,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* vertical */
   position: absolute;
   left: 634px;
-  top: 349px;
+  top: 347px;
   width: 19px;
   height: 70px;
   z-index: 3;
@@ -1093,8 +1133,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 726px;
   top: 429px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1102,9 +1142,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-repeat: no-repeat;
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
-  left: 75px;
-  top: 265px;
-  width: 57px;
+  left: 74px;
+  top: 240px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1113,9 +1153,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-repeat: no-repeat;
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
-  left: 1px;
-  top: 303px;
-  width: 57px;
+  left: 0px;
+  top: 300px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1125,8 +1165,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 226px;
-  top: 265px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1136,8 +1176,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 152px;
-  top: 303px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1147,8 +1187,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 385px;
-  top: 265px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1158,8 +1198,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 311px;
-  top: 303px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1169,8 +1209,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 544px;
-  top: 265px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1180,8 +1220,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 470px;
-  top: 303px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1191,8 +1231,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 694px;
-  top: 269px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1202,8 +1242,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 620px;
-  top: 307px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1213,8 +1253,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 762px;
-  top: 307px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1224,8 +1264,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 0px;
-  top: 288px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1235,8 +1275,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 225px;
-  top: 250px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1246,8 +1286,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 151px;
-  top: 288px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1257,8 +1297,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 384px;
-  top: 250px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1268,8 +1308,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 310px;
-  top: 288px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1279,8 +1319,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 543px;
-  top: 250px;
-  width: 57px;
+  top: 240px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1290,8 +1330,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 469px;
-  top: 288px;
-  width: 57px;
+  top: 300px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1302,7 +1342,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 693px;
   top: 254px;
-  width: 57px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1313,7 +1353,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 619px;
   top: 292px;
-  width: 57px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1324,7 +1364,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 765px;
   top: 292px;
-  width: 57px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1335,7 +1375,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 74px;
   top: 250px;
-  width: 57px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1407,8 +1447,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 25px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1419,8 +1459,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 103px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1431,8 +1471,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 176px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1443,8 +1483,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 254px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1455,8 +1495,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 335px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1467,8 +1507,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 413px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1479,8 +1519,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 494px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1491,8 +1531,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 572px;
   top: 298px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1502,9 +1542,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-hR */
   position: absolute;
   left: 644px;
-  top: 302px;
-  width: 68px;
-  height: 49px;
+  top: 300px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1514,9 +1554,9 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   /* hL-lR */
   position: absolute;
   left: 722px;
-  top: 302px;
-  width: 68px;
-  height: 49px;
+  top: 300px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1525,8 +1565,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 688px;
-  top: 172px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1536,8 +1576,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 605px;
-  top: 124px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1547,8 +1587,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 531px;
-  top: 166px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1558,8 +1598,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 459px;
-  top: 130px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1569,8 +1609,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 385px;
-  top: 168px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1580,8 +1620,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 302px;
-  top: 130px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1591,8 +1631,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 228px;
-  top: 168px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1602,8 +1642,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 156px;
-  top: 134px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1613,8 +1653,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 82px;
-  top: 172px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1624,8 +1664,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 608px;
-  top: 109px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1635,8 +1675,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 534px;
-  top: 151px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1646,8 +1686,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 689px;
-  top: 155px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1657,8 +1697,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 459px;
-  top: 115px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1668,8 +1708,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 384px;
-  top: 153px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1679,8 +1719,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 302px;
-  top: 115px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1690,8 +1730,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 227px;
-  top: 153px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1701,8 +1741,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 155px;
-  top: 119px;
-  width: 57px;
+  top: 120px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1712,8 +1752,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 81px;
-  top: 157px;
-  width: 57px;
+  top: 180px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1773,8 +1813,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 565px;
   top: 163px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1785,8 +1825,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 643px;
   top: 163px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1797,8 +1837,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 409px;
   top: 163px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1809,8 +1849,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 487px;
   top: 163px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1821,8 +1861,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 252px;
   top: 163px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1833,8 +1873,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 330px;
   top: 163px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1845,8 +1885,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 106px;
   top: 167px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1857,8 +1897,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 184px;
   top: 167px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1867,8 +1907,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 606px;
-  top: 40px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1879,7 +1919,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 233px;
   top: 0px;
-  width: 57px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1889,8 +1929,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 159px;
-  top: 37px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1901,7 +1941,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 387px;
   top: 0px;
-  width: 57px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1911,8 +1951,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 313px;
-  top: 39px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1923,7 +1963,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 537px;
   top: 0px;
-  width: 57px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1933,8 +1973,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/settlementTemplatePawn.png");
   position: absolute;
   left: 460px;
-  top: 39px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1945,7 +1985,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 232px;
   top: 0px;
-  width: 57px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -1955,8 +1995,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 158px;
-  top: 22px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1967,8 +2007,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 386px;
   top: 0px;
-  width: 57px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -1977,8 +2017,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 312px;
-  top: 24px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -1988,8 +2028,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 458px;
-  top: 24px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -2000,7 +2040,7 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 536px;
   top: 0px;
-  width: 57px;
+  width: 70px;
   height: 57px;
   z-index: 3;
 }
@@ -2010,8 +2050,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   background-image: url("../gameAssetsOfficial/cityTemplatePawn.png");
   position: absolute;
   left: 608px;
-  top: 24px;
-  width: 57px;
+  top: 60px;
+  width: 70px;
   height: 70px;
   z-index: 3;
 }
@@ -2023,8 +2063,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 183px;
   top: 32px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -2035,8 +2075,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 261px;
   top: 32px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -2047,8 +2087,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 337px;
   top: 34px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -2059,8 +2099,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 415px;
   top: 34px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -2071,8 +2111,8 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 487px;
   top: 32px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
 }
 
@@ -2083,8 +2123,20 @@ and backup as an RTF in doc/websites: pawnPlaceholders backup 24/02/21 */
   position: absolute;
   left: 565px;
   top: 30px;
-  width: 68px;
-  height: 49px;
+  width: 70px;
+  height: 70px;
   z-index: 3;
+}
+
+.allPawnsPhParent {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 16.7vw;
+  top: 16.7vh;
+  width: 66.6vw;
+  max-height: 66.6vh;
+  padding-top: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=pawnPlaceholders.css.map */
