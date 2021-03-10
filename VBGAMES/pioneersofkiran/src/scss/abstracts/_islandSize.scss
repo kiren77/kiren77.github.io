@@ -1,0 +1,11 @@
+
+
+
+$oceanWidth: 100vw/* $islandWidth * 1.5 */;
+$oceanHeight: 100vh; 
+$islandWidth: 66.6vw/* 821px */;
+$islandHeight: 66.6vh /* 753px */;
+ //for "left" position
+ $islandMiddleWidth: $oceanWidth / 2 - $islandWidth / 2;
+ //for "top" position
+ $islandMiddleHeight: $oceanHeight / 2 - $islandHeight / 2;

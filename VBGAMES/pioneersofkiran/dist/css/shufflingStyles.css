@@ -1,0 +1,327 @@
+/* can also write ' as * '  to forego namescaping */
+/* city placeholder asset*/
+/* settlement pawn asset*/
+/* 3 different road assets (vertical and both slopes) */
+/* z-index for road,city and settlement assets */
+/* for cosmetic purposes only: placed settlements above cities */
+/* roads look best when placed an index under the other pawns */
+/* hexPlaceholder */
+/* $viewportWidth: 200px;
+$viewportHeight: 100vh; */
+.tradeShips {
+  position: absolute;
+}
+.tradeShips #ts1 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 751px;
+  top: 66.5px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts3 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 861.2px;
+  top: 288px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts4 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 751px;
+  top: 591px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts6 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 441px;
+  top: 723px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts7 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: 723px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts8 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20.5px;
+  top: 463.5px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts10 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20.5px;
+  top: 156px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts11 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: -73.75px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+.tradeShips #ts12 {
+  background-image: url("../gameAssetsOfficial/tradeshipPlaceholder.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 441px;
+  top: -78px;
+  width: 125px;
+  height: 85px;
+  z-index: 3;
+}
+
+/* #shuffleButton2 {
+  text-align: center;
+
+  width: $tileHeight;
+  height: $tileHeight;
+background-color: blue;
+color: yellow;
+font-size: 25px;;
+} */
+.tileContainer {
+  /* position: fixed */
+  /* left:   -15px;
+   */
+  z-index: 2;
+  /* .tilePlaceholder {
+
+
+  } */
+  /* tilePlaceholder */
+  /* All tiles will be set to "visible after shuffling is done"*/
+}
+.tileContainer #tp_A {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: 24px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_B {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 316px;
+  top: 24px;
+  min-width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_C {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 471px;
+  top: 24px;
+  min-width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_D {
+  /*    background-image: url($woodTile);
+   */
+  /* background-size: 400px;  background-color: grey;
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 83px;
+  top: 156px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_E {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 238px;
+  top: 156px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_F {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 393px;
+  top: 156px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_G {
+  /*   background-image: url($woodTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 547px;
+  top: 156px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_H {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 6px;
+  top: 288px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_I {
+  /*   background-image: url($wheatTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: 288px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_J {
+  /*   background-image: url($wheatTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 316px;
+  top: 288px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_K {
+  /*   background-image: url($wheatTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 471px;
+  top: 288px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_L {
+  /*   background-image: url($wheatTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 626px;
+  top: 288px;
+  min-width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_M {
+  /*   background-image: url($oreTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 83px;
+  top: 421px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_N {
+  /*   background-image: url($oreTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 238px;
+  top: 421px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_O {
+  /*   background-image: url($oreTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 393px;
+  top: 421px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_P {
+  /*   background-image: url($brickTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 547px;
+  top: 421px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_Q {
+  /*    background-image: url($brickTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: 553px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_R {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 316px;
+  top: 553px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+}
+.tileContainer #tp_S {
+  /*   background-image: url($desertTile);
+  */
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 471px;
+  top: 553px;
+  width: 147px;
+  height: 170px;
+  z-index: 2;
+  border: none;
+}
+
+/* tileContainer */
+
+/*# sourceMappingURL=shufflingStyles.css.map */

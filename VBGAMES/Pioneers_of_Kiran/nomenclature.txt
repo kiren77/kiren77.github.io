@@ -1,8 +1,0 @@
-tiles
-
-
-f
-
-settlementPlaceholder-\w\d
-cityPlaceholder-\w\d
-roadPlaceholder-\w\d
