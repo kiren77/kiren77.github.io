@@ -79,8 +79,11 @@
   position: relative;
   /* end Resource Cards */
   /* development Cards */
+  /*   top: $safeBottom;
+  */
   /* end scoreCard */
-  /* largestArmyLongestRoad */
+  /* end longestRoad */
+  /* end Largest Army */
 }
 .interface-overlay-wrapper .allCards .resourceCards {
   padding-bottom: 10px;
@@ -155,25 +158,14 @@
   position: relative;
   padding-bottom: 10px;
   z-index: 1000;
-  /*  position: fixed;
-  margin-bottom: 0px;
-  margin-left: 50%;
-  margin-right: 0%;
-  max-width: $maxCardWidth;
-  padding: 0% 3% 0% 0%;
-  right: $cardBackgroundSizeWidth;
-  bottom: 0px;
-  z-index: $allCards_index; */
-  /*   top: $safeBottom;
-  */
 }
-.interface-overlay-wrapper .allCards .developmentCards :hover {
+.interface-overlay-wrapper .allCards :hover {
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
   z-index: 1000;
 }
-.interface-overlay-wrapper .allCards .developmentCards #knightCard {
+.interface-overlay-wrapper .allCards #knightCard {
   background-image: url("../gameAssetsOfficial/knightCard.png");
   background-repeat: no-repeat;
   position: relative;
@@ -184,7 +176,7 @@
   z-index: 1000;
   padding: 0%;
 }
-.interface-overlay-wrapper .allCards .developmentCards #monopolyCard {
+.interface-overlay-wrapper .allCards #monopolyCard {
   background-image: url("../gameAssetsOfficial/monopolyCard.png");
   background-repeat: no-repeat;
   position: relative;
@@ -196,7 +188,7 @@
   z-index: 1000;
   padding: 0%;
 }
-.interface-overlay-wrapper .allCards .developmentCards #yearofplentyCard {
+.interface-overlay-wrapper .allCards #yearofplentyCard {
   background-image: url("../gameAssetsOfficial/yearofplentyCard.png");
   background-repeat: no-repeat;
   position: relative;
@@ -208,7 +200,7 @@
   z-index: 1000;
   padding: 0%;
 }
-.interface-overlay-wrapper .allCards .developmentCards #oneVPCard {
+.interface-overlay-wrapper .allCards #oneVPCard {
   background-image: url("../gameAssetsOfficial/oneVPCard.png");
   background-repeat: no-repeat;
   position: relative;
@@ -220,7 +212,7 @@
   z-index: 1000;
   padding: 0%;
 }
-.interface-overlay-wrapper .allCards .developmentCards #roadCard {
+.interface-overlay-wrapper .allCards #roadCard {
   background-image: url("../gameAssetsOfficial/roadCard.png");
   background-repeat: no-repeat;
   position: relative;
@@ -265,57 +257,77 @@
   /* top: 0px;
   left: 8px; */
 }
-.interface-overlay-wrapper .allCards .largestArmyLongestRoad {
-  width: auto;
-  height: auto;
-  /* position: relative;
-  left: 0px;
-  top: 1200px;
-  padding: 0px;
-  width: $allDevCard_Width;
-  height: auto;
-  z-index: $allCards_index; */
-  /* end longestRoad */
-  /* end Largest Army */
-}
-.interface-overlay-wrapper .allCards .largestArmyLongestRoad #longestRoad {
+.interface-overlay-wrapper .allCards #longestRoad {
   background-image: url("../gameAssetsOfficial/Longest Road.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 90px 132.3529411765px;
   left: 0px;
-  top: 10px;
+  top: 0px;
   width: 90px;
   height: 132.3529411765px;
   z-index: 1000;
   padding: 0%;
 }
-.interface-overlay-wrapper .allCards .largestArmyLongestRoad #longestRoad :hover {
+.interface-overlay-wrapper .allCards #longestRoad :hover {
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
   z-index: 1000;
 }
-.interface-overlay-wrapper .allCards .largestArmyLongestRoad #largestArmy {
+.interface-overlay-wrapper .allCards #largestArmy {
   background-image: url("../gameAssetsOfficial/Biggest Army.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 90px 132.3529411765px;
   left: 0px;
-  top: 10px;
+  top: 0px;
   width: 90px;
   height: 132.3529411765px;
   z-index: 1000;
   padding: 0%;
 }
-.interface-overlay-wrapper .allCards .largestArmyLongestRoad #largestArmy :hover {
+.interface-overlay-wrapper .allCards #largestArmy :hover {
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
   z-index: 1000;
 }
-.interface-overlay-wrapper .buyableItems {
+.interface-overlay-wrapper .buyableItems #undefinedPlayer #devCardUndefinedPlayer {
+  background-image: url("../gameAssetsOfficial/devCardundefinedPlayer.png");
+  background-repeat: no-repeat;
   position: relative;
+  /* left: 1255px;
+        top: 350px; */
+  width: 42px;
+  min-height: 50px;
+  z-index: 1100;
+}
+.interface-overlay-wrapper .buyableItems #undefinedPlayer #roadUndefinedPlayer {
+  background-image: url("../gameAssetsOfficial/roadundefinedPlayer.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5vh;
+  width: 65px;
+  min-height: 13px;
+  z-index: 1100;
+}
+.interface-overlay-wrapper .buyableItems #undefinedPlayer #settleUndefinedPlayer {
+  background-image: url("../gameAssetsOfficial/settlementUndefinedPlayer.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5vh;
+  width: 55px;
+  min-height: 53px;
+  z-index: 1100;
+}
+.interface-overlay-wrapper .buyableItems #undefinedPlayer #cityUndefinedPlayer {
+  background-image: url("../gameAssetsOfficial/cityOrange.png");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 57px;
+  min-height: 71px;
+  z-index: 135;
 }
 .interface-overlay-wrapper .buyableItems #playerOrange #devCardOrange {
   background-image: url("../gameAssetsOfficial/devCardOrange.png");
@@ -425,8 +437,8 @@
   min-height: 50px;
   z-index: 1100;
 }
-.interface-overlay-wrapper .buyableItems #playerBlue #roadBLue {
-  background-image: url("../gameAssetsOfficial/roadBLue.png");
+.interface-overlay-wrapper .buyableItems #playerBlue #roadBlue {
+  background-image: url("../gameAssetsOfficial/roadBlue.png");
   background-repeat: no-repeat;
   position: relative;
   width: 65px;

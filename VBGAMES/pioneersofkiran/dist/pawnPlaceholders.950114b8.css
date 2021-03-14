@@ -1,0 +1,1978 @@
+@charset "UTF-8";
+/* valuename=pixels */
+@media only screen and (max-width: 7680px) {
+  .row-content {
+    background-color: red;
+  }
+}
+/* @viewport { width: auto; }
+@media (max-width: 600px) {
+@viewport { width: 620px; }
+}
+ */
+/* city placeholder asset*/
+/* settlement pawn asset*/
+/* 3 different road assets (vertical and both slopes) */
+/* testingInterface should always be highest */
+/* island backdrop cropped: 821 x 753 px 
+height/width = 91%
+width/height = 109%
+*/
+/* z-index for road,city and settlement assets */
+/* for cosmetic purposes only: placed settlements above cities */
+/* roads look best when placed an index under the other pawns */
+/* BnodeELow: Height of placeholder pawns
+Height is measured from top */
+/* 
+  regular hexagon math
+  radiusLength = diameter/2 = sideLength
+  so where x is nodeletter
+  hiLo = xHigh - xLow = sideLength / 2
+  so hiLo = diameter / 4
+
+if hex⌀ 120px 
+hilo = 30px
+
+
+
+
+  */
+/* $diagonalSideLength: hypotenuse  */
+/* NEXT lateral distances
+horizontal distance between adjacent xHigh-xLow
+(example a1a2)
+pythagore theorem 
+function (xfar, xclose, yfar, yclose) {
+$root of {xfar - xclose)squared + {yfar - yclose)squared}
+@return 
+}
+*/
+/* @function distanceBetween($xfar, $xclose, $yfar, $yclose) {
+
+  $xfarsquared: $xfar * $xfar;
+  $xclosesquared: $xclose * $xclose;
+  $yfarsquared: $yfar * $yfar;
+  $yclosesquared: $yclose * $yclose;
+  $distanceInBetween: math.sqrt($xfarsquared - $xclosesquared) + ($yfarsquared - $yclosesquared);
+  return {$distanceInBetween};
+}; */
+/* 
+vert1  0px
+hypo1
+vert2  74px
+hypo2
+vert3  148px
+hypo3
+vert4  px
+hypo4
+vert5  296px
+hypo5
+vert6  px
+hypo6
+vert7  px
+hypo7
+vert8  px
+hypo8
+vert9  592px
+hypo9
+vert10  px
+hypo10
+vert11  px (currently 
+d11c11 = 
+left: 782px;
+top: 347px;)
+*/
+.tilePlaceholder {
+  background-repeat: no-repeat;
+}
+
+.setlNode {
+  top: 73px;
+}
+.setlNode #setl_F4 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 382px;
+  top: 680px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_F5 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 465px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_F7 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 607px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_F6 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 533px;
+  top: 680px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_F1 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 158px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_F2 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 226px;
+  top: 680px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_F3 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 314px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E7 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 547px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E9 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 689px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E8 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 615px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E5 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 390px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E6 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 458px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E3 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 231px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E4 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 299px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E1 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 75px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_E2 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 143px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D1 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 1px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D2 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 69px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D3 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 152px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D4 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 220px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D5 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 311px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D7 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 470px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D8 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 538px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D9 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 620px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D11 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 762px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D10 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 688px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_D6 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 379px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C2 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 74px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C1 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 0px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C4 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 226px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C3 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 152px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C6 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 385px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C5 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 311px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C8 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 544px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C7 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 470px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C10 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 694px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C9 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 620px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_C11 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 762px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B9 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 688px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B8 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 605px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B7 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 531px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B6 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 459px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B5 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 385px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B4 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 302px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B3 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 228px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B2 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 156px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_B1 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 82px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A7 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 606px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A2 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 233px;
+  top: 0px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A1 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 159px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A4 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 387px;
+  top: 0px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A3 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 313px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A6 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 537px;
+  top: 0px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.setlNode #setl_A5 {
+  background-repeat: no-repeat;
+  background-image: url("/settlementTemplatePawn.34be519d.png");
+  position: absolute;
+  left: 460px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+
+/* end .setlNode
+*/
+.cityNode #city_F5 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 464px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_F7 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 610px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_F6 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 536px;
+  top: 680px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_F1 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 157px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_F2 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 229px;
+  top: 680px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_F3 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 313px;
+  top: 650px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_F4 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 385px;
+  top: 680px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E7 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 546px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E9 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 692px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E8 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 618px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E5 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 389px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E6 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 461px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E3 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 230px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E4 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 302px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E1 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 74px;
+  top: 500px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_E2 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 146px;
+  top: 560px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D1 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D2 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 72px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D3 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 151px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D4 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 223px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D5 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 310px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D6 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 382px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D7 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 469px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D8 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 541px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D9 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 619px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D11 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 765px;
+  top: 400px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_D10 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 691px;
+  top: 420px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C1 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 0px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C4 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 225px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C3 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 151px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C6 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 384px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C5 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 310px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C8 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 543px;
+  top: 240px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C7 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 469px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C10 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 693px;
+  top: 254px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C9 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 619px;
+  top: 292px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C11 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 765px;
+  top: 292px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_C2 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 74px;
+  top: 250px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B8 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 608px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B7 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 534px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B9 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 689px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B6 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 459px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B5 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 384px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B4 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 302px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B3 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 227px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B2 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 155px;
+  top: 120px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_B1 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 81px;
+  top: 160px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A2 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 232px;
+  top: 0px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A1 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 158px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A4 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 386px;
+  top: 0px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A3 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 312px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A5 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 458px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A6 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 536px;
+  top: 0px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.cityNode #city_A7 {
+  background-repeat: no-repeat;
+  background-image: url("/cityTemplatePawn.bf6aac21.png");
+  position: absolute;
+  left: 608px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+
+.allRoads #f7e8 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 627px;
+  top: 608px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f5e6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 479px;
+  top: 608px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f6f7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 571px;
+  top: 688px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f5f6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 490px;
+  top: 687px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f1e2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 172px;
+  top: 607px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f2f3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 264px;
+  top: 687px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f1f2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 183px;
+  top: 686px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f3e4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 328px;
+  top: 606px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f4f5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 420px;
+  top: 686px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #f3f4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 339px;
+  top: 685px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e6e7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 496px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e5e6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 415px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e9d10 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 709px;
+  top: 475px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e7d8 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 561px;
+  top: 475px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e8e9 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 653px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e7e8 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 572px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e5d6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 404px;
+  top: 479px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e3d4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 245px;
+  top: 477px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e4e5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 337px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e3e4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 256px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e1d2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 89px;
+  top: 477px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e2e3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 181px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #e1e2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 100px;
+  top: 547px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d9d10 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 645px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d1d2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 26px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d1c1 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 15px;
+  top: 347px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d2d3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 107px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d3c3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 166px;
+  top: 347px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d4d5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 258px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d3d4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 177px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d5c5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 325px;
+  top: 347px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d6d7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 417px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d5d6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 336px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d7c7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 484px;
+  top: 347px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d8d9 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* lL-hR */
+  position: absolute;
+  left: 576px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d7d8 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 495px;
+  top: 428px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d11c11 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 782px;
+  top: 347px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d9c9 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 634px;
+  top: 347px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #d10d11 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /*lL-hR*/
+  position: absolute;
+  left: 726px;
+  top: 429px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c10b9 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 706px;
+  top: 212px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c8b7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 555px;
+  top: 210px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c6b5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 399px;
+  top: 210px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c4b3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 242px;
+  top: 210px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c2b1 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 96px;
+  top: 214px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c1c2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 25px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c2c3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 103px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c3c4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 176px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c4c5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 254px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c5c6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 335px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c6c7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 413px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c7c8 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 494px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c8c9 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 572px;
+  top: 298px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c9c10 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 644px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #c10c11 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 722px;
+  top: 300px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b8a7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 625px;
+  top: 79px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b2a1 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 173px;
+  top: 79px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b4a3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 327px;
+  top: 81px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b6a5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawnVert.b977691a.png");
+  /* vertical */
+  position: absolute;
+  left: 477px;
+  top: 79px;
+  width: 19px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b7b8 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 565px;
+  top: 163px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b8b9 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 643px;
+  top: 163px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b5b6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 409px;
+  top: 163px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b6b7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 487px;
+  top: 163px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b3b4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 252px;
+  top: 163px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b4b5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 330px;
+  top: 163px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b1b2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 106px;
+  top: 167px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #b2b3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 184px;
+  top: 167px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #a1a2 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 183px;
+  top: 32px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #a2a3 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 261px;
+  top: 32px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #a3a4 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 337px;
+  top: 34px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #a4a5 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 415px;
+  top: 34px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #a5a6 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-lL-hR.99c7e549.png");
+  /* hL-hR */
+  position: absolute;
+  left: 487px;
+  top: 32px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+.allRoads #a6a7 {
+  background-repeat: no-repeat;
+  background-image: url("/roadTemplatePawn-hL-lR.5687a86a.png");
+  /* hL-lR */
+  position: absolute;
+  left: 565px;
+  top: 30px;
+  width: 73px;
+  height: 73px;
+  z-index: 3;
+}
+
+/* end Road */
+.allPawnsPhParent {
+  /* left: $islandMiddleWidth;
+    top: $islandMiddleHeight;
+  width: abstracts.$islandWidth;
+  max-height: abstracts.$islandHeight;
+  padding-top: abstracts.$oceanHeight; */
+}
+
+/*# sourceMappingURL=/pawnPlaceholders.950114b8.css.map */

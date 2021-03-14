@@ -1,6 +1,7 @@
 .DS_Store
 .DS_Store
 .DS_Store
+node_modules
 js-solitaire-master/.babelrc
 js-solitaire-master/.eslintrc.js
 js-solitaire-master/.gitignore

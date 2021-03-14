@@ -4,7 +4,7 @@
   "description": "Website development for the MDG.",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -17,7 +17,7 @@
   "author": "Vender Blender",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.32.8"
+    "parcel-bundler": "1.12.3",
+    "sass": "^1.32.4"
   }
 }

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* valuename=pixels */
+@media only screen and (max-width: 7680px) {
+  .row-content {
+    background-color: red;
+  }
+}
+/* @viewport { width: auto; }
+@media (max-width: 600px) {
+@viewport { width: 620px; }
+}
+ */
+#logHTML {
+  bottom: 0px;
+  background-color: lightgrey;
+  color: black;
+}
+
+.imageOcean {
+  position: relative;
+  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  padding-bottom: 10vw;
+  padding-bottom: 10vw;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: cover;
+  resize: both;
+}
+.imageOcean div.hexNumbers {
+  margin: 10vw;
+  position: fixed;
+  top: -10px;
+  left: 100px;
+  width: 66.6vw;
+  background-size: 66.6vw 66.6vh;
+  /*     left: $sideGutters;  
+   */
+}
+.imageOcean .tileContainer {
+  margin: 10vw;
+  position: absolute;
+  min-width: 66.6vw;
+  max-width: 100vw;
+  min-height: 66.6vh;
+  left: 50px;
+  background-size: 66.6vw 66.6vh;
+  background-repeat: no-repeat;
+}
+.imageOcean .tradeShips {
+  margin: 10vw;
+}
+.imageOcean .interface-overlay-wrapper {
+  background-color: orange;
+}
+
+/* end imageOcean */
+#imageIsland {
+  background-image: url("/islandBackdropCropped.670b3e15.png");
+  padding: 33.4vh;
+  position: absolute;
+  left: 16.7vw;
+  top: 16.7vh;
+  width: 66.6vw;
+  max-height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 
+    First apply background cover
+
+    821 × 753 px
+    for ratio in % : height / width * 100
+    753 / 821 * 100 = 91% (almost square image as 100% is square)
+
+    what we want to do is apply that percentage to padding-top (no height needed).
+
+     z-index: 3;
+
+}
+ */
+/* 
+
+.imageOcean {
+    #imageIsland {
+
+    }
+    .allPawnsPhParent {
+        .allPlaceholdersPawn {
+
+        }
+
+    }
+    .hexNumbers {
+position: absolute;
+    }
+    .tileContainer {
+
+    }
+    .tilePlaceholder {
+
+    }
+    .tradeShips {
+
+    }
+}
+ */
+
+/*# sourceMappingURL=/masterIslandStyle.41271327.css.map */

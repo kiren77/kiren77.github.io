@@ -1,4 +1,6 @@
-@use './abstracts';
+
+
+@use './abstracts' as abstracts;
 
 $woodTile: "../gameAssetsOfficial/wood1.png";
 $sheepTile: "../gameAssetsOfficial/sheep1.png";
@@ -26,6 +28,8 @@ $allDevCard_Width: auto;
 
 $maxCardWidth: 375px;
 
+$largestLongestWidth: $cardBackgroundSizeWidth * 1.2;
+$largestLongestHeight: $cardBackgroundSizeHeight * 1.2;
 /* .row.content {height: 1050px}
  */
 .interface-overlay-wrapper {
@@ -201,15 +205,10 @@ $maxCardWidth: 375px;
       padding-bottom: 10px;
 
       z-index: $allCards_index;
-      /*  position: fixed;
-  margin-bottom: 0px;
-  margin-left: 50%;
-  margin-right: 0%;
-  max-width: $maxCardWidth;
-  padding: 0% 3% 0% 0%;
-  right: $cardBackgroundSizeWidth;
-  bottom: 0px;
-  z-index: $allCards_index; */
+
+      
+    } /* development Cards */
+
 
       :hover {
         cursor: pointer;
@@ -290,7 +289,6 @@ $maxCardWidth: 375px;
         z-index: $allCards_index;
         padding: 0%;
       }
-    } /* development Cards */
 
     .scoreCard {
       position: relative;
@@ -327,18 +325,7 @@ $maxCardWidth: 375px;
       }
     } /* end scoreCard */
 
-  .largestArmyLongestRoad {
-    width: auto;
-    height: auto;
-    $largestLongestWidth: $cardBackgroundSizeWidth * 1.2;
-    $largestLongestHeight: $cardBackgroundSizeHeight * 1.2;
-    /* position: relative;
-  left: 0px;
-  top: 1200px;
-  padding: 0px;
-  width: $allDevCard_Width;
-  height: auto;
-  z-index: $allCards_index; */
+  
 
     #longestRoad {
       background-image: url("../gameAssetsOfficial/Longest Road.png");
@@ -347,14 +334,14 @@ $maxCardWidth: 375px;
 
       background-size: $largestLongestWidth $largestLongestHeight;
       left: 0px;
-      top: 10px;
+      top: 0px;
       width: $largestLongestWidth;
       height: $largestLongestHeight;
       z-index: $allCards_index;
       padding: 0%;
       :hover {
         cursor: pointer;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        box-shadow: 0 px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
         box-sizing: border-box;
         z-index: $allCards_index;
@@ -367,7 +354,7 @@ $maxCardWidth: 375px;
 
       background-size: $largestLongestWidth $largestLongestHeight;
       left: 0px;
-      top: 10px;
+      top: 0px;
       width: $largestLongestWidth;
       height: $largestLongestHeight;
       z-index: $allCards_index;
@@ -381,13 +368,67 @@ $maxCardWidth: 375px;
       }
     } /* end Largest Army */
 
-  }/* largestArmyLongestRoad */
 
 } /* end allCards */
 
 
-  .buyableItems {
-    position: relative;
+  /* .buyableItems { */
+    
+    #undefinedPlayer {
+      #devCardUndefinedPlayer {
+        background-image: url("../gameAssetsOfficial/devCardundefinedPlayer.png");
+        background-repeat: no-repeat;
+        position: relative;
+        left: 10px;
+
+        width: 42px;
+        min-height: 71px;
+        top: 25px;
+        z-index: $playerMarket;
+      }
+
+      #roadUndefinedPlayer {
+        background-image: url("../gameAssetsOfficial/roadundefinedPlayer.png");
+        background-repeat: no-repeat;
+        position: relative;
+        top: 60px;
+        left: 2px;
+        min-height: 71px;
+        background-size: auto;
+
+
+
+        z-index: $playerMarket;
+      }
+
+      #settleUndefinedPlayer {
+        background-image: url("../gameAssetsOfficial/settlementUndefinedPlayer.png");
+        background-repeat: no-repeat;
+        position: relative;
+        top: 25px;
+        left: 10px;
+
+
+        width: 55px;
+        min-height: 71px;
+        background-size: auto;
+
+        z-index: $playerMarket;
+      }
+
+      #cityUndefinedPlayer {
+        background-image: url("../gameAssetsOfficial/cityOrange.png");
+        background-repeat: no-repeat;
+        position: relative;
+        width: 71px;
+        top: 10px;
+        left: 10px;
+        min-height: 80px;
+        background-size: auto;
+
+        z-index: 135;
+      }
+    }
 
     #playerOrange {
       #devCardOrange {
@@ -516,8 +557,8 @@ $maxCardWidth: 375px;
         z-index: $playerMarket;
       }
 
-      #roadBLue {
-        background-image: url("../gameAssetsOfficial/roadBLue.png");
+      #roadBlue {
+        background-image: url("../gameAssetsOfficial/roadBlue.png");
         background-repeat: no-repeat;
         position: relative;
         width: 65px;
@@ -545,50 +586,40 @@ $maxCardWidth: 375px;
       }
     }
 
-    #left {
-      font-size: 20px;
-      font-family: "Arial Rounded MT Bold";
-      color: rgb(234, 227, 226);
-      text-transform: uppercase;
-      line-height: 2;
-      text-align: right;
-      position: relative;
-      height: 16px;
-      z-index: 500;
-    }
+    
 
-    #citiesLeft {
+    .citiesLeft {
       font-size: 30px;
       font-family: "Arial Rounded MT Bold";
       color: rgb(234, 227, 226);
       text-transform: uppercase;
       line-height: 1.333;
-      text-align: left;
+      text-align: center;
       position: relative;
       /* left: 1328.062px;
                 top: 195.08px; */
       z-index: 500;
     }
 
-    #settlementsLeft {
+    .settlementsLeft {
       font-size: 30px;
       font-family: "Arial Rounded MT Bold";
       color: rgb(234, 227, 226);
       text-transform: uppercase;
       line-height: 1.333;
-      text-align: left;
+      text-align: center;
       position: relative;
       /* left: 1328.062px;
                 top: 250.08px; */
       z-index: 500;
     }
-    #roadsLeft {
+    .roadsLeft {
       font-size: 30px;
       font-family: "Arial Rounded MT Bold";
       color: #eae3e2;
       text-transform: uppercase;
       line-height: 1.333;
-      text-align: left;
+      text-align: center;
       position: relative;
       /* left: 1325px;
                 top: 306.08px; */
@@ -596,40 +627,20 @@ $maxCardWidth: 375px;
       z-index: 500;
       border: none;
     }
-    #devCardTotal {
+    .devCardTotal {
       font-size: 35px;
       font-family: "Arial Rounded MT Bold";
       color: rgb(234, 227, 226);
       text-transform: uppercase;
       line-height: 1.333;
-      text-align: left;
+      text-align: center;
       position: relative;
       /* left: 1328.062px;
                 top: 367.08px; */
       z-index: 500;
     }
-  }
+  /* } end buyable items*/
 
-  .cityMarket {
-    position: relative;
-    left: 0px;
-    z-index: $playerMarket;
-  }
-  .settlementMarket {
-    position: relative;
-    left: 0px;
-    z-index: $playerMarket;
-  }
-  .roadMarket {
-    position: relative;
-    left: 0px;
-    z-index: $playerMarket;
-  }
-  .devCardMarket {
-    position: relative;
-    left: 0px;
-    z-index: $playerMarket;
-  }
 
   #island_Dice_Numbers {
     position: sticky;

@@ -8,17 +8,13 @@
 
 
 
- $oceanHeight: 100vh;
  
- 
- $islandWidth: 66.6vw/* 821px */;
- $islandHeight: 66.6vh /* 753px */;
  
  
  //for "left" position
- $islandMiddleWidth: abstracts.$oceanWidth / 2 - $islandWidth / 2;
+ $islandMiddleWidth: abstracts.$oceanWidth / 2 - abstracts.$islandWidth / 2;
  //for "top" position
- $islandMiddleHeight: $oceanHeight / 2 - $islandHeight / 2;
+ $islandMiddleHeight: abstracts.$oceanHeight / 2 - abstracts.$islandHeight / 2;
  
 
 /* city placeholder asset*/
@@ -43,25 +39,10 @@ $setZ: 3; /* for cosmetic purposes only: placed settlements above cities */
 $cityZ: 3;
 $rodZ: 3; /* roads look best when placed an index under the other pawns */
 
-$seventy: 73px;
-$fiftyfour: 57px;
-$fiftyseven: $seventy;
-$nineteen: 19px;
-
- 
- $setWidth:       $fiftyseven; /* valuename=pixels */
- $setHeight:      $seventy;
- $citHeight:      $seventy;
- $citWidth:       $fiftyseven;
- $roadVertHeight: $nineteen;
- $roadVertWidth:  $seventy;
 
 
-.allPawnsPhParent {
-  width: 100vw;
-}
     
-  /* Below: Height of placeholder pawns
+  /* BnodeELow: Height of placeholder pawns
   Height is measured from top */
   /* 
   regular hexagon math
@@ -79,20 +60,7 @@ hilo = 30px
   */
   // if hex⌀ 100px
 
-  $aHigh: 0px;
-  $aLow:  30px; 
-  $bHigh: 120px;
-  $bLow:  160px; 
-
-  $cHigh: 240px;
-  $cLow:  300px;
-  $dHigh: 400px; //
-  $dLow:  420px;
-
-  $eHigh: 500px;
-  $eLow:  560px;
-  $fHigh: 650px;  
-  $fLow:  680px;
+  
 
   /* $diagonalSideLength: hypotenuse  */
 
@@ -156,8 +124,8 @@ top: 347px;)
   
 
   .setlNode {
-    $setlPosTop: $citHeight - $setHeight;
-    top: $setHeight;
+    $setlPosTop: abstracts.$citHeight - abstracts.$setHeight;
+    top: abstracts.$setHeight;
 
     #setl_F4 {
       background-repeat: no-repeat;
@@ -165,9 +133,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 382px;
-        top: $fLow;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeFLow;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
 
@@ -177,9 +145,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 465px;
-          top: $fHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeFHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_F7 {
@@ -187,9 +155,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 607px;
-          top: $fHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeFHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_F6 {
@@ -197,9 +165,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 533px;
-          top: $fLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeFLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_F1 {
@@ -207,9 +175,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 158px;
-          top: $fHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeFHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_F2 {
@@ -217,9 +185,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 226px;
-          top: $fLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeFLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_F3 {
@@ -227,9 +195,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 314px;
-          top: $fHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeFHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_E7 {
@@ -237,9 +205,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 547px;
-            top: $eHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeEHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E9 {
@@ -247,9 +215,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 689px;
-            top: $eHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeEHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E8 {
@@ -257,9 +225,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 615px;
-            top: $eLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeELow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E5 {
@@ -267,9 +235,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 390px;
-            top: $eHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeEHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E6 {
@@ -277,9 +245,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 458px;
-            top: $eLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeELow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E3 {
@@ -287,9 +255,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 231px;
-            top: $eHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeEHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E4 {
@@ -297,9 +265,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 299px;
-            top: $eLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeELow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E1 {
@@ -307,9 +275,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 75px;
-            top: $eHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeEHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_E2 {
@@ -317,9 +285,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 143px;
-            top: $eLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeELow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
 
 
@@ -330,9 +298,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 1px;
-        top: $dHigh;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D2 {
@@ -340,9 +308,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 69px;
-        top: $dLow;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDLow;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D3 {
@@ -350,9 +318,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 152px;
-        top: $dHigh;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D4 {
@@ -360,9 +328,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 220px;
-        top: $dLow;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDLow;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D5 {
@@ -370,9 +338,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 311px;
-        top: $dHigh;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D7 {
@@ -380,9 +348,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 470px;
-        top: $dHigh;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D8 {
@@ -390,9 +358,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 538px;
-        top: $dLow;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDLow;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D9 {
@@ -400,9 +368,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 620px;
-        top: $dHigh;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D11 {
@@ -410,9 +378,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 762px;
-        top: $dHigh;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       } 
       #setl_D10 {
@@ -420,9 +388,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 688px;
-        top: $dLow;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDLow;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
       #setl_D6 {
@@ -430,9 +398,9 @@ top: 347px;)
         background-image: url($settlementTemplatePawn);
         position: absolute;
         left: 379px;
-        top: $dLow;
-        width:$seventy;
-        height:$fiftyseven;
+        top: abstracts.$nodeDLow;
+        width:abstracts.$seventy;
+        height:abstracts.$fiftyseven;
         z-index: $setZ;
       }
 
@@ -441,9 +409,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 74px;
-          top: $cHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C1 {
@@ -451,9 +419,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 0px;
-          top: $cLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C4 {
@@ -461,9 +429,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 226px;
-          top: $cHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C3 {
@@ -471,9 +439,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 152px;
-          top: $cLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C6 {
@@ -481,9 +449,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 385px;
-          top: $cHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C5 {
@@ -491,9 +459,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 311px;
-          top: $cLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C8 {
@@ -501,9 +469,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 544px;
-          top: $cHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C7 {
@@ -511,9 +479,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 470px;
-          top: $cLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C10 {
@@ -521,9 +489,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 694px;
-          top: $cHigh;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C9 {
@@ -531,9 +499,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 620px;
-          top: $cLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
         #setl_C11 {
@@ -541,9 +509,9 @@ top: 347px;)
           background-image: url($settlementTemplatePawn);
           position: absolute;
           left: 762px;
-          top: $cLow;
-          width:$seventy;
-          height:$fiftyseven;
+          top: abstracts.$nodeCLow;
+          width:abstracts.$seventy;
+          height:abstracts.$fiftyseven;
           z-index: $setZ;
         }
 
@@ -552,9 +520,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 688px;
-            top: $bLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBLow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B8 {
@@ -562,9 +530,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 605px;
-            top: $bHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B7 {
@@ -572,9 +540,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 531px;
-            top: $bLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBLow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B6 {
@@ -582,9 +550,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 459px;
-            top: $bHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B5 {
@@ -592,9 +560,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 385px;
-            top: $bLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBLow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B4 {
@@ -602,9 +570,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 302px;
-            top: $bHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B3 {
@@ -612,9 +580,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 228px;
-            top: $bLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBLow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B2 {
@@ -622,9 +590,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 156px;
-            top: $bHigh;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
           #setl_B1 {
@@ -632,9 +600,9 @@ top: 347px;)
             background-image: url($settlementTemplatePawn);
             position: absolute;
             left: 82px;
-            top: $bLow;
-            width:$seventy;
-            height:$fiftyseven;
+            top: abstracts.$nodeBLow;
+            width:abstracts.$seventy;
+            height:abstracts.$fiftyseven;
             z-index: $setZ;
           }
 
@@ -643,9 +611,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 606px;
-              top: $aLow;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeALow;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
               
             }
@@ -654,9 +622,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 233px;
-              top: $aHigh;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeAHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
             }
             #setl_A1 {
@@ -664,9 +632,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 159px;
-              top: $aLow;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeALow;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
               
             }
@@ -675,9 +643,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 387px;
-              top: $aHigh;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeAHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
             }
             #setl_A3 {
@@ -685,9 +653,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 313px;
-              top: $aLow;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeALow;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
             }
             #setl_A6 {
@@ -695,9 +663,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 537px;
-              top: $aHigh;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeAHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
             }
             #setl_A5 {
@@ -705,9 +673,9 @@ top: 347px;)
               background-image: url($settlementTemplatePawn);
               position: absolute;
               left: 460px;
-              top: $aLow;
-              width:$seventy;
-              height:$fiftyseven;
+              top: abstracts.$nodeALow;
+              width:abstracts.$seventy;
+              height:abstracts.$fiftyseven;
               z-index: $setZ;
             }
 
@@ -722,9 +690,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 464px;
-      top: $fHigh;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFHigh;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_F7 {
@@ -732,9 +700,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 610px;
-      top: $fHigh;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFHigh;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_F6 {
@@ -742,9 +710,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 536px;
-      top: $fLow;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFLow;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_F1 {
@@ -752,9 +720,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 157px;
-      top: $fHigh;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFHigh;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_F2 {
@@ -762,9 +730,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 229px;
-      top: $fLow;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFLow;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_F3 {
@@ -772,9 +740,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 313px;
-      top: $fHigh;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFHigh;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_F4 {
@@ -782,9 +750,9 @@ top: 347px;)
       background-image: url($cityTemplatePawn);
       position: absolute;
       left: 385px;
-      top: $fLow;
-      width:$seventy;
-      height:$seventy;
+      top: abstracts.$nodeFLow;
+      width:abstracts.$seventy;
+      height:abstracts.$seventy;
       z-index: $cityZ;
     }
     #city_E7 {
@@ -792,9 +760,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 546px;
-        top: $eHigh;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeEHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E9 {
@@ -802,9 +770,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 692px;
-        top: $eHigh;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeEHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E8 {
@@ -812,9 +780,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 618px;
-        top: $eLow;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeELow;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E5 {
@@ -822,9 +790,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 389px;
-        top: $eHigh;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeEHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E6 {
@@ -832,9 +800,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 461px;
-        top: $eLow;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeELow;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E3 {
@@ -842,9 +810,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 230px;
-        top: $eHigh;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeEHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E4 {
@@ -852,9 +820,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 302px;
-        top: $eLow;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeELow;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E1 {
@@ -862,9 +830,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 74px;
-        top: $eHigh;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeEHigh;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_E2 {
@@ -872,9 +840,9 @@ top: 347px;)
         background-image: url($cityTemplatePawn);
         position: absolute;
         left: 146px;
-        top: $eLow;
-        width:$seventy;
-        height:$seventy;
+        top: abstracts.$nodeELow;
+        width:abstracts.$seventy;
+        height:abstracts.$seventy;
         z-index: $cityZ;
       }
       #city_D1 {
@@ -882,9 +850,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 0px;
-          top: $dHigh;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D2 {
@@ -892,9 +860,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 72px;
-          top: $dLow;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDLow;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D3 {
@@ -902,9 +870,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 151px;
-          top: $dHigh;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D4 {
@@ -912,9 +880,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 223px;
-          top: $dLow;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDLow;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D5 {
@@ -922,9 +890,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 310px;
-          top: $dHigh;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D6 {
@@ -932,9 +900,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 382px;
-          top: $dLow;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDLow;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D7 {
@@ -942,9 +910,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 469px;
-          top: $dHigh;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D8 {
@@ -952,9 +920,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 541px;
-          top: $dLow;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDLow;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D9 {
@@ -962,9 +930,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 619px;
-          top: $dHigh;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D11 {
@@ -972,9 +940,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 765px;
-          top: $dHigh;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDHigh;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_D10 {
@@ -982,9 +950,9 @@ top: 347px;)
           background-image: url($cityTemplatePawn);
           position: absolute;
           left: 691px;
-          top: $dLow;
-          width:$seventy;
-          height:$seventy;
+          top: abstracts.$nodeDLow;
+          width:abstracts.$seventy;
+          height:abstracts.$seventy;
           z-index: $cityZ;
         }
         #city_C1 {
@@ -992,9 +960,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 0px;
-            top: $cLow;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCLow;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C4 {
@@ -1002,9 +970,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 225px;
-            top: $cHigh;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C3 {
@@ -1012,9 +980,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 151px;
-            top: $cLow;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCLow;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C6 {
@@ -1022,9 +990,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 384px;
-            top: $cHigh;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C5 {
@@ -1032,9 +1000,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 310px;
-            top: $cLow;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCLow;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C8 {
@@ -1042,9 +1010,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 543px;
-            top: $cHigh;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCHigh;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C7 {
@@ -1052,9 +1020,9 @@ top: 347px;)
             background-image: url($cityTemplatePawn);
             position: absolute;
             left: 469px;
-            top: $cLow;
-            width:$seventy;
-            height:$seventy;
+            top: abstracts.$nodeCLow;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C10 {
@@ -1063,8 +1031,8 @@ top: 347px;)
             position: absolute;
             left: 693px;
             top: 254px;
-            width:$seventy;
-            height:$seventy;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C9 {
@@ -1073,8 +1041,8 @@ top: 347px;)
             position: absolute;
             left: 619px;
             top: 292px;
-            width:$seventy;
-            height:$seventy;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C11 {
@@ -1083,8 +1051,8 @@ top: 347px;)
             position: absolute;
             left: 765px;
             top: 292px;
-            width:$seventy;
-            height:$seventy;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_C2 {
@@ -1093,8 +1061,8 @@ top: 347px;)
             position: absolute;
             left: 74px;
             top: 250px;
-            width:$seventy;
-            height:$seventy;
+            width:abstracts.$seventy;
+            height:abstracts.$seventy;
             z-index: $cityZ;
           }
           #city_B8 {
@@ -1102,9 +1070,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 608px;
-              top: $bHigh;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B7 {
@@ -1112,9 +1080,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 534px;
-              top: $bLow;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBLow;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B9 {
@@ -1122,9 +1090,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 689px;
-              top: $bLow;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBLow;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B6 {
@@ -1132,9 +1100,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 459px;
-              top: $bHigh;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B5 {
@@ -1142,9 +1110,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 384px;
-              top: $bLow;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBLow;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B4 {
@@ -1152,9 +1120,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 302px;
-              top: $bHigh;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B3 {
@@ -1162,9 +1130,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 227px;
-              top: $bLow;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBLow;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B2 {
@@ -1172,9 +1140,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 155px;
-              top: $bHigh;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBHigh;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_B1 {
@@ -1182,9 +1150,9 @@ top: 347px;)
               background-image: url($cityTemplatePawn);
               position: absolute;
               left: 81px;
-              top: $bLow;
-              width:$seventy;
-              height:$seventy;
+              top: abstracts.$nodeBLow;
+              width:abstracts.$seventy;
+              height:abstracts.$seventy;
               z-index: $cityZ;
             }
             #city_A2 {
@@ -1192,9 +1160,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 232px;
-                top: $aHigh;
-                width:$seventy;
-                height:$fiftyseven;
+                top: abstracts.$nodeAHigh;
+                width:abstracts.$seventy;
+                height:abstracts.$fiftyseven;
                 z-index: $cityZ;
               }
               #city_A1 {
@@ -1202,9 +1170,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 158px;
-                top: $aLow;
-                width:$seventy;
-                height:$seventy;
+                top: abstracts.$nodeALow;
+                width:abstracts.$seventy;
+                height:abstracts.$seventy;
                 z-index: $cityZ;
               }
               #city_A4 {
@@ -1212,9 +1180,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 386px;
-                top: $aHigh;
-                width:$seventy;
-                height: $seventy;
+                top: abstracts.$nodeAHigh;
+                width:abstracts.$seventy;
+                height: abstracts.$seventy;
                 z-index: $cityZ;
               }
               #city_A3 {
@@ -1222,9 +1190,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 312px;
-                top: $aLow;
-                width:$seventy;
-                height:$seventy;
+                top: abstracts.$nodeALow;
+                width:abstracts.$seventy;
+                height:abstracts.$seventy;
                 z-index: $cityZ;
               }
               #city_A5 {
@@ -1232,9 +1200,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 458px;
-                top: $aLow;
-                width:$seventy;
-                height:$seventy;
+                top: abstracts.$nodeALow;
+                width:abstracts.$seventy;
+                height:abstracts.$seventy;
                 z-index: $cityZ;
               }
               #city_A6 {
@@ -1242,9 +1210,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 536px;
-                top: $aHigh;
-                width:$seventy;
-                height:$seventy;
+                top: abstracts.$nodeAHigh;
+                width:abstracts.$seventy;
+                height:abstracts.$seventy;
                 z-index: $cityZ;
               }
               #city_A7 {
@@ -1252,9 +1220,9 @@ top: 347px;)
                 background-image: url($cityTemplatePawn);
                 position: absolute;
                 left: 608px;
-                top: $aLow;
-                width:$seventy;
-                height:$seventy;
+                top: abstracts.$nodeALow;
+                width:abstracts.$seventy;
+                height:abstracts.$seventy;
                 z-index: $cityZ;
               }
 }
@@ -1266,8 +1234,8 @@ top: 347px;)
       position: absolute;
       left: 627px;
       top: 608px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #f5e6 {
@@ -1276,8 +1244,8 @@ top: 347px;)
       position: absolute;
       left: 479px;
       top: 608px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #f6f7 {
@@ -1286,8 +1254,8 @@ top: 347px;)
       position: absolute;
       left: 571px;
       top: 688px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #f5f6 {
@@ -1296,8 +1264,8 @@ top: 347px;)
       position: absolute;
       left: 490px;
       top: 687px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #f1e2 {
@@ -1306,8 +1274,8 @@ top: 347px;)
       position: absolute;
       left: 172px;
       top: 607px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #f2f3 {
@@ -1316,8 +1284,8 @@ top: 347px;)
       position: absolute;
       left: 264px;
       top: 687px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #f1f2 {
@@ -1326,8 +1294,8 @@ top: 347px;)
       position: absolute;
       left: 183px;
       top: 686px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #f3e4 {
@@ -1336,8 +1304,8 @@ top: 347px;)
       position: absolute;
       left: 328px;
       top: 606px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #f4f5 {
@@ -1346,8 +1314,8 @@ top: 347px;)
       position: absolute;
       left: 420px;
       top: 686px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #f3f4 {
@@ -1356,8 +1324,8 @@ top: 347px;)
       position: absolute;
       left: 339px;
       top: 685px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e6e7 {
@@ -1366,8 +1334,8 @@ top: 347px;)
       position: absolute;
       left: 496px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e5e6 {
@@ -1376,8 +1344,8 @@ top: 347px;)
       position: absolute;
       left: 415px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     
@@ -1389,8 +1357,8 @@ top: 347px;)
       position: absolute;
       left: 709px;
       top: 475px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #e7d8 {
@@ -1399,8 +1367,8 @@ top: 347px;)
       position: absolute;
       left: 561px;
       top: 475px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #e8e9 {
@@ -1409,8 +1377,8 @@ top: 347px;)
       position: absolute;
       left: 653px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e7e8 {
@@ -1419,8 +1387,8 @@ top: 347px;)
       position: absolute;
       left: 572px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e5d6 {
@@ -1429,8 +1397,8 @@ top: 347px;)
       position: absolute;
       left: 404px;
       top: 479px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #e3d4 {
@@ -1439,8 +1407,8 @@ top: 347px;)
       position: absolute;
       left: 245px;
       top: 477px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #e4e5 {
@@ -1449,8 +1417,8 @@ top: 347px;)
       position: absolute;
       left: 337px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e3e4 {
@@ -1459,8 +1427,8 @@ top: 347px;)
       position: absolute;
       left: 256px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e1d2 {
@@ -1469,8 +1437,8 @@ top: 347px;)
       position: absolute;
       left: 89px;
       top: 477px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #e2e3 {
@@ -1479,8 +1447,8 @@ top: 347px;)
       position: absolute;
       left: 181px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #e1e2 {
@@ -1489,8 +1457,8 @@ top: 347px;)
       position: absolute;
       left: 100px;
       top: 547px;      
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d9d10 {
@@ -1499,8 +1467,8 @@ top: 347px;)
       position: absolute;
       left: 645px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
    
@@ -1511,8 +1479,8 @@ top: 347px;)
       position: absolute;
       left: 26px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d1c1 {
@@ -1521,8 +1489,8 @@ top: 347px;)
       position: absolute;
       left: 15px;
       top:  347px ;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #d2d3 {
@@ -1531,8 +1499,8 @@ top: 347px;)
       position: absolute;
       left: 107px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d3c3 {
@@ -1541,8 +1509,8 @@ top: 347px;)
       position: absolute;
       left: 166px;
       top: 347px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #d4d5 {
@@ -1551,8 +1519,8 @@ top: 347px;)
       position: absolute;
       left: 258px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d3d4 {
@@ -1561,8 +1529,8 @@ top: 347px;)
       position: absolute;
       left: 177px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d5c5 {
@@ -1571,8 +1539,8 @@ top: 347px;)
       position: absolute;
       left: 325px;
       top: 347px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #d6d7 {
@@ -1581,8 +1549,8 @@ top: 347px;)
       position: absolute;
       left: 417px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d5d6 {
@@ -1591,8 +1559,8 @@ top: 347px;)
       position: absolute;
       left: 336px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d7c7 {
@@ -1601,8 +1569,8 @@ top: 347px;)
       position: absolute;
       left: 484px;
       top: 347px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #d8d9 {
@@ -1611,8 +1579,8 @@ top: 347px;)
       position: absolute;
       left: 576px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d7d8 {
@@ -1621,8 +1589,8 @@ top: 347px;)
       position: absolute;
       left: 495px;
       top: 428px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #d11c11 {
@@ -1631,8 +1599,8 @@ top: 347px;)
       position: absolute;
       left: 782px;
       top: 347px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #d9c9 {
@@ -1641,8 +1609,8 @@ top: 347px;)
       position: absolute;
       left: 634px;
       top: 347px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #d10d11 {
@@ -1651,8 +1619,8 @@ top: 347px;)
       position: absolute;
       left: 726px;
       top: 429px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     
@@ -1663,8 +1631,8 @@ top: 347px;)
       position: absolute;
       left: 706px;
       top: 212px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #c8b7 {
@@ -1673,8 +1641,8 @@ top: 347px;)
       position: absolute;
       left: 555px;
       top: 210px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $setZ;
     }
     #c6b5 {
@@ -1683,8 +1651,8 @@ top: 347px;)
       position: absolute;
       left: 399px;
       top: 210px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $setZ;
     }
     #c4b3 {
@@ -1693,8 +1661,8 @@ top: 347px;)
       position: absolute;
       left: 242px;
       top: 210px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $setZ;
     }
     #c2b1 {
@@ -1703,8 +1671,8 @@ top: 347px;)
       position: absolute;
       left: 96px;
       top: 214px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $setZ;
     }
     #c1c2 {
@@ -1713,8 +1681,8 @@ top: 347px;)
       position: absolute;
       left: 25px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c2c3 {
@@ -1723,8 +1691,8 @@ top: 347px;)
       position: absolute;
       left: 103px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c3c4 {
@@ -1733,8 +1701,8 @@ top: 347px;)
       position: absolute;
       left: 176px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c4c5 {
@@ -1743,8 +1711,8 @@ top: 347px;)
       position: absolute;
       left: 254px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c5c6 {
@@ -1753,8 +1721,8 @@ top: 347px;)
       position: absolute;
       left: 335px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c6c7 {
@@ -1763,8 +1731,8 @@ top: 347px;)
       position: absolute;
       left: 413px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c7c8 {
@@ -1773,8 +1741,8 @@ top: 347px;)
       position: absolute;
       left: 494px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c8c9 {
@@ -1783,8 +1751,8 @@ top: 347px;)
       position: absolute;
       left: 572px;
       top: 298px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
   
@@ -1793,9 +1761,9 @@ top: 347px;)
       background-image: url($roadTemplatePawn-lL-hR); /* hL-hR */
       position: absolute;
       left: 644px;
-      top: $cLow;
-      width: $seventy;
-      height: $seventy;
+      top: abstracts.$nodeCLow;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #c10c11 {
@@ -1803,9 +1771,9 @@ top: 347px;)
       background-image: url($roadTemplatePawn-hL-lR); /* hL-lR */
       position: absolute;
       left: 722px;
-      top: $cLow;
-      width: $seventy;
-      height: $seventy;
+      top: abstracts.$nodeCLow;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     
@@ -1816,8 +1784,8 @@ top: 347px;)
       position: absolute;
       left: 625px;
       top: 79px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #b2a1 {
@@ -1826,8 +1794,8 @@ top: 347px;)
       position: absolute;
       left: 173px;
       top: 79px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #b4a3 {
@@ -1836,8 +1804,8 @@ top: 347px;)
       position: absolute;
       left: 327px;
       top: 81px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #b6a5 {
@@ -1846,8 +1814,8 @@ top: 347px;)
       position: absolute;
       left: 477px;
       top: 79px;
-      width:$nineteen;
-      height:$seventy;
+      width:abstracts.$nineteen;
+      height:abstracts.$seventy;
       z-index: $rodZ;
     }
     #b7b8 {
@@ -1856,8 +1824,8 @@ top: 347px;)
       position: absolute;
       left: 565px;
       top: 163px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b8b9 {
@@ -1866,8 +1834,8 @@ top: 347px;)
       position: absolute;
       left: 643px;
       top: 163px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b5b6 {
@@ -1876,8 +1844,8 @@ top: 347px;)
       position: absolute;
       left: 409px;
       top: 163px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b6b7 {
@@ -1886,8 +1854,8 @@ top: 347px;)
       position: absolute;
       left: 487px;
       top: 163px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b3b4 {
@@ -1896,8 +1864,8 @@ top: 347px;)
       position: absolute;
       left: 252px;
       top: 163px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b4b5 {
@@ -1906,8 +1874,8 @@ top: 347px;)
       position: absolute;
       left: 330px;
       top: 163px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b1b2 {
@@ -1916,8 +1884,8 @@ top: 347px;)
       position: absolute;
       left: 106px;
       top: 167px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     #b2b3 {
@@ -1926,8 +1894,8 @@ top: 347px;)
       position: absolute;
       left: 184px;
       top: 167px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $rodZ;
     }
     
@@ -1938,8 +1906,8 @@ top: 347px;)
       position: absolute;
       left: 183px;
       top: 32px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #a2a3 {
@@ -1948,8 +1916,8 @@ top: 347px;)
       position: absolute;
       left: 261px;
       top: 32px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #a3a4 {
@@ -1958,8 +1926,8 @@ top: 347px;)
       position: absolute;
       left: 337px;
       top: 34px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #a4a5 {
@@ -1968,8 +1936,8 @@ top: 347px;)
       position: absolute;
       left: 415px;
       top: 34px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #a5a6 {
@@ -1978,8 +1946,8 @@ top: 347px;)
       position: absolute;
       left: 487px;
       top: 32px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     #a6a7 {
@@ -1988,8 +1956,8 @@ top: 347px;)
       position: absolute;
       left: 565px;
       top: 30px;
-      width: $seventy;
-      height: $seventy;
+      width: abstracts.$seventy;
+      height: abstracts.$seventy;
       z-index: $setZ;
     }
     
@@ -2001,12 +1969,11 @@ top: 347px;)
 
 
 .allPawnsPhParent {
-  position: absolute;
   /* left: $islandMiddleWidth;
   top: $islandMiddleHeight;
-width: $islandWidth;
-max-height: $islandHeight;
-padding-top: $oceanHeight; */
+width: abstracts.$islandWidth;
+max-height: abstracts.$islandHeight;
+padding-top: abstracts.$oceanHeight; */
 
 }
 

@@ -21,20 +21,6 @@ $islandMiddleWidth: $oceanWidth / 2 - $islandWidth / 2;
 //for "top" position
 $islandMiddleHeight: $oceanHeight / 2 - $islandHeight / 2;
 
-/* island backdrop cropped: 821 x 753 px 
-height/width = 91%
-width/height = 109%
-*/
-
-
-/* 
-.interface-overlay-wrapper {
-
-
-}
- */
-
-
 #logHTML {
     bottom: 0px;
     background-color: lightgrey;
@@ -75,17 +61,12 @@ width/height = 109%
 
 
     .allPawnsPhParent {
-/*         margin: $sideGutters;
- */    
+      
+   
+
+
+
      
-     
-
-
-
-
-     .allPlaceholdersPawn {
-        position: initial;
-    }
     }
     div.hexNumbers {
         margin: $sideGutters;
@@ -129,12 +110,6 @@ width/height = 109%
 
 
 }/* end imageOcean */
-
-
-
-    
-   
-
  
 #imageIsland {
     background-image: url("../gameAssetsOfficial/islandBackdropCropped.png");
