@@ -568,7 +568,7 @@ I need to understand how to pass the
     }
   }
 } */
-div.allPawnsPhParent {
+/* div.allPawnsPhParent { */
   /* 
       @include mq.media(mq.$phone-Portrait-Width) {
 
@@ -596,7 +596,7 @@ div.allPawnsPhParent {
 
   */
   /* end Road */
-}
+
 @media only screen and (max-width: 668px) {
   div.allPawnsPhParent {
     /* For mobile phones: */

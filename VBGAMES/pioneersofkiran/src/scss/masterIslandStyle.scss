@@ -105,12 +105,9 @@ body  {
 
   
 
-    .allPawnsPhParent {
- 
-    } 
-
+ /*
   div.hexNumbers {
-    /* 
+    
         @include media($phone-Portrait-Width) ;
         @include media($S-Screen-Width      );
         @include media($M-Screen-Width      );
@@ -148,7 +145,7 @@ body  {
         margin: $sideGutters;
         } */
 
-} /* end imageOcean */
+/*}  end imageOcean */
 
 
 
@@ -224,15 +221,6 @@ body  {
 }
  */
 
- .allPawnsPhParent {
-  .allPlaceholdersPawn {
-      
-
-
-
-  }
-
-}
 
 /* 
   
