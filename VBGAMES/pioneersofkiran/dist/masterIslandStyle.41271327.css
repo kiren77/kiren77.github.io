@@ -1,15 +1,302 @@
 @charset "UTF-8";
-/* valuename=pixels */
-@media only screen and (max-width: 7680px) {
-  .row-content {
-    background-color: red;
+/* iphone7landscapewidth */
+/*    $fourK-Width: 4096px:*/
+/*    @debug map.get($windsize, "phone-Portrait-Width"); // 500
+ */
+/* @mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) 
+    { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) 
+    { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) 
+    { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) 
+    { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) 
+    { @content; }
   }
+} */
+/* 
+   @mixin media($phone-Portrait-Width)  {
+   @media screen and (max-width: $phone-Portrait-Width) and (orientation: portrait) {
+    $oceanWidth: $phone-Portrait-Width;
+    $oceanHeight: $phone-Portrait-Height;
+
+
+    width: $oceanWidth;
+    height: $oceanHeight;
+    max-height: $oceanHeight;
+    background-size: $oceanWidth $oceanHeight;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+
+    @content;
+   }
+  } */
+/* //Smallest Landscape (just in case) 
+@mixin media($S-Screen-Width) {
+
+  @media screen and (min-width: $S-Screen-Width) and (orientation: landscape) {
+   $oceanWidth: $S-Screen-Width;
+   $oceanHeight: $S-Screen-Height;
+
+   $islandWidth: $oceanWidth / 3; 
+   $islandHeight: $oceanHeight / 3;
+   //for "left" position
+   $islandMiddleWidth: $oceanWidth / 2 - $islandWidth / 2;
+   //for "top" position
+   $islandMiddleHeight: $oceanHeight / 2 - $islandHeight / 1.5;
+   $sideGutters: $oceanWidth / 10;
+
+
+
+
 }
+
+   @content;
+  }
+
+*/
+/* @mixin proportionsPawns($pawnMeasurement, $myBreakpoint) {
+ */
+/*   }
+ */
+/* 
+  .allRoads *, .setlNode *, .cityNode * {
+  @include proportionsPawns(599px);
+  @include proportionsPawns(599px);
+  @include proportionsPawns(780px);
+  @include proportionsPawns(900px);
+  @include proportionsPawns(1200px);
+  @include proportionsPawns(1800px);
+} */
+/* 
+
+  @media (max-width: 375px) and (orientation: portrait) {
+    @include proportionsPawns(599px);
+  };
+  @media (max-width: 599px) {
+    @include proportionsPawns(599px);
+  };
+  @media (max-width: 780px) {
+    @include proportionsPawns(780px);
+  };
+  @media (min-width: 900px) {
+    @include proportionsPawns(900px);
+  };
+  @media (min-width: 1200px) {
+    @include proportionsPawns(1200px);
+  };
+  @media (min-width: 1800px) {
+    @include proportionsPawns(1800px);
+  };
+
+
+
+
+
+
+
+*/
+/*
+myBreakpoint stores the value for the 5 possible
+breakpoints of the viewport.
+these breakpoint values are also used as the 
+multiplier that determines the actual pawns height/width
+ ratio.
+
+
+*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+/* 
+   $vertRoadWidth:    19 / 839 * $myBreakpoint;
+   $vertRoadHeight: 70 / 756 * $myBreakpoint;
+
+   $setlWidth:  54 / 839 * $myBreakpoint;
+   $setlHeight: 53 / 756 * $myBreakpoint;
+
+   $cityWidth:  57 / 839 * $myBreakpoint;
+   $cityHeight: 70 / 756 * $myBreakpoint;
+
+   $diag-road-width:  67 / 839 * $myBreakpoint;
+   $diag-road-height: 45 / 756 * $myBreakpoint;
+
+   //HEIGHT of NODES 
+   $nodeAHigh:   0 / 756 * $myBreakpoint;//   0vh; 
+   $nodeALow:   30 / 756 * $myBreakpoint;//  30;  
+   $nodeBHigh: 120 / 756 * $myBreakpoint;// 120;
+   $nodeBLow:  160 / 756 * $myBreakpoint;// 160; 
+
+   $nodeCHigh: 240 / 756 * $myBreakpoint;// 240;
+   $nodeCLow:  300 / 756 * $myBreakpoint;// 300;
+   $nodeDHigh: 400 / 756 * $myBreakpoint;// 400;
+   $nodeDLow:  420 / 756 * $myBreakpoint;// 420;
+
+   $nodeEHigh: 500 / 756 * $myBreakpoint;// 500;
+   $nodeELow:  540 / 756 * $myBreakpoint;// 540;
+   $nodeFHigh: 650 / 756 * $myBreakpoint;// 650;  
+   $nodeFLow:  680 / 756 * $myBreakpoint;// 680;
+
+   //HEIGHT Hypo ROADS 
+   $road-A-hypo-top:   34 / 756 * $myBreakpoint;
+   $road-B-hypo-top:  167 / 756 * $myBreakpoint;
+   $road-C-hypo-top:  300 / 756 * $myBreakpoint;
+   $road-D-hypo-top:  428 / 756 * $myBreakpoint;
+   $road-E-hypo-top:  547 / 756 * $myBreakpoint;
+   $road-F-hypo-top:  686 / 756 * $myBreakpoint;
+
+
+     //HEIGHT VERT ROADS
+     $road-BA-vert-top:  79 / 756 * $myBreakpoint;
+     $road-CB-vert-top: 212 / 756 * $myBreakpoint;
+     $road-DC-vert-top: 347 / 756 * $myBreakpoint;
+     $road-ED-vert-top: 447 / 756 * $myBreakpoint;
+     $road-FE-vert-top: 608 / 756 * $myBreakpoint;
+
+
+
+ //LEFT POSITION NODES;
+ //hypo equals diagonal road (hypotenuse)
+ $left-vert1:       0 / 839 * $myBreakpoint;
+ $left-hypo1:      25 / 839 * $myBreakpoint;
+ $left-vert2:      74 / 839 * $myBreakpoint;
+ $left-hypo2:     103 / 839 * $myBreakpoint;
+ $left-vert3:     159 / 839 * $myBreakpoint;
+ $left-hypo3:     183 / 839 * $myBreakpoint;
+ $left-vert4:     229 / 839 * $myBreakpoint;
+ $left-hypo4:     261 / 839 * $myBreakpoint;
+ $left-vert5:     302 / 839 * $myBreakpoint;
+ $left-hypo5:     337 / 839 * $myBreakpoint;
+ $left-vert6:     385 / 839 * $myBreakpoint;
+ $left-hypo6:     415 / 839 * $myBreakpoint;
+ $left-vert7:     470 / 839 * $myBreakpoint;
+ $left-hypo7:     487 / 839 * $myBreakpoint;
+ $left-vert8:     536 / 839 * $myBreakpoint;
+ $left-hypo8:     565 / 839 * $myBreakpoint;
+ $left-vert9:     608 / 839 * $myBreakpoint;
+ $left-hypo9:     643 / 839 * $myBreakpoint;
+ $left-vert10:    692 / 839 * $myBreakpoint;
+ $left-hypo10:    722 / 839 * $myBreakpoint;
+ $left-vert11:    782 / 839 * $myBreakpoint;
+
+
+
+
+*/
+/* original dimensions assets
+since we use regular hexagons
+if hexHeight is 1
+then hexWidth is 0.86
+settlement x49 y47
+container rectangle city 
+x51 y65 
+road hypo x68 y49
+so diagonalroad/hypotenuse = h83.8
+
+
+
+  road vert x19 y71
+  regular hexagon rules
+ sides are equilateral  
+
+ In the pointy orientation, 
+ a hexagon has width 
+ w = sqrt(3) * size 
+ and 
+ height 
+ h = 2 * size. 
+ The sqrt(3) comes from sin(60°).
+
+ sizeHex = radius to all 6 angles
+ width w = sqrt(3) //sqrt(3)
+height h = 2 * size
+  */
+/*
+islandBackdropCropped has
+821 x 753
+total horizontaldocks = 45
+total verticaldocks = 43
+
+total pawnPlaceholders 
+islandBackdropCropped - (vertical + horizontal docks)
+821 - 45 = 776w
+753 - 43 = 710h
+
+so once all calculations will be made for placeholders
+we will apply this
+ratiopawnPhtoIsland * 710/776
+
+this also means that if 
+    $diag-road-width: 67;
+and that if along the whole width there 10 
+diagonal roads
+then roughly 776 / 10 should be 67 which it isnt (77.6)
+because the roads are not meeting directly (nodes width overlap)
+
+likewise vertical division by road is complicated 
+as we have both vertical and diagonal roads
+however we can work backwards from and addition of the roads
+*/
+/* $roadWidthByDivision: $islandWidth / 10;
+$roadHeightByDivision: $islandHeight / 10; */
+/*     @debug math.hypot($diag-road-width, $diag-road-height); //80.7093550959
+/*      $hypotenuseRoad: math.hypot($diag-road-width, $diag-road-height); */
+/*
+ total height is 710 (after docks)
+the full height possesses 6 diagonals in height
+and 5 verticals in height
+*/
+/*     @debug $islandHeight; //66.66vh    */
+/* @debug vert-road-height: 
+($islandHeight - (6 * $diag-road-width)) / 5;
+ */
+/* 
+
+
+$stackedDiagRoadHeight: 6 * $diag-road-width;
+@debug $stackedDiagRoadHeight;
+$remainingVertRoadHeight: $islandHeight - $stackedDiagRoadHeight;
+@debug $remainingVertRoadHeight; */
+/* $totalPawnsWidth: $left-vert11 + $cityWidth;
+$totalPawnsHeight: $road-F-hypo-top + $cityHeight;
+@debug $totalPawnsWidth;
+@debug $totalPawnsHeight;
+ */
+/*  */
+/* @mixin hundredPercent() {
+  $totalWidthPawns:
+} */
+/* $totalIslandPawnWidth:  */
 /* @viewport { width: auto; }
 @media (max-width: 600px) {
 @viewport { width: 620px; }
 }
  */
+body {
+  background-color: #052d85;
+}
+
 #logHTML {
   bottom: 0px;
   background-color: lightgrey;
@@ -18,69 +305,151 @@
 
 .imageOcean {
   position: relative;
-  background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
-  width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
-  padding-bottom: 10vw;
-  padding-bottom: 10vw;
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-  z-index: 0;
-  background-size: cover;
-  resize: both;
+  /* .tileContainer { */
+  /*  margin: $sideGutters;
+
+        position: absolute;
+        min-width: $islandWidth;
+        max-width: $oceanWidth;
+        min-height: $islandHeight;
+        left: 50px;  
+        background-size: $islandWidth $islandHeight;
+        background-repeat: no-repeat; */
+  /* } */
+  /* .tradeShips {
+
+        margin: $sideGutters;
+        } */
+}
+@media screen and (min-width: 375px) {
+  .imageOcean {
+    width: 375px;
+    height: 667px;
+    background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  }
+}
+@media screen and (min-width: 667px) {
+  .imageOcean {
+    width: 667px;
+    height: 375px;
+    /* $S-Screen-Width */
+    background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .imageOcean {
+    width: 768px;
+    height: 1024px;
+    /* $M-Screen-Width */
+    background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .imageOcean {
+    width: 1200px;
+    height: 800px;
+    background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  }
+}
+@media screen and (min-width: 1800px) {
+  .imageOcean {
+    width: 1800px;
+    height: 1200px;
+    background-image: radial-gradient(#246892 25%, #1e5f88 45%, #052d85 80%);
+  }
 }
 .imageOcean div.hexNumbers {
-  margin: 10vw;
+  /* 
+      @include media($phone-Portrait-Width) ;
+      @include media($S-Screen-Width      );
+      @include media($M-Screen-Width      );
+      @include media($L-Screen-Width      );
+      @include media($XL-Screen-Width     );
+       */
+  /* margin: $sideGutters;
   position: fixed;
   top: -10px;
   left: 100px;
-  width: 66.6vw;
-  background-size: 66.6vw 66.6vh;
+  width: $islandWidth;
+  background-size: $islandWidth $islandHeight; */
   /*     left: $sideGutters;  
    */
 }
-.imageOcean .tileContainer {
-  margin: 10vw;
-  position: absolute;
-  min-width: 66.6vw;
-  max-width: 100vw;
-  min-height: 66.6vh;
-  left: 50px;
-  background-size: 66.6vw 66.6vh;
-  background-repeat: no-repeat;
-}
-.imageOcean .tradeShips {
-  margin: 10vw;
-}
-.imageOcean .interface-overlay-wrapper {
-  background-color: orange;
-}
 
 /* end imageOcean */
+.interface-overlay-wrapper {
+  background-color: orange;
+}
+@media screen and (min-width: 375px) {
+  .interface-overlay-wrapper {
+    background-color: #fbff00;
+  }
+}
+@media screen and (min-width: 667px) {
+  .interface-overlay-wrapper {
+    background-color: #dfab3a;
+  }
+}
+@media screen and (min-width: 768px) {
+  .interface-overlay-wrapper {
+    background-color: #df7c3a;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .interface-overlay-wrapper {
+    background-color: #df533a;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .interface-overlay-wrapper {
+    background-color: #e72a2a;
+  }
+}
+
 #imageIsland {
   background-image: url("/islandBackdropCropped.670b3e15.png");
-  padding: 33.4vh;
+}
+@media screen and (min-width: 375px) {
+  #imageIsland {
+    background-color: #fbff00;
+  }
+}
+@media screen and (min-width: 667px) {
+  #imageIsland {
+    background-color: #dfab3a;
+  }
+}
+@media screen and (min-width: 768px) {
+  #imageIsland {
+    background-color: #df7c3a;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #imageIsland {
+    background-color: #df533a;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #imageIsland {
+    background-color: #eb2929;
+  }
+}
+
+.measuringBox {
+  background-color: hotpink;
   position: absolute;
-  left: 16.7vw;
-  top: 16.7vh;
-  width: 66.6vw;
-  max-height: 700px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  top: 0px;
+  width: 200px;
+  height: 200px;
 }
 
 /* 
-    First apply background cover
-
+    First apply background cover   
     821 × 753 px
     for ratio in % : height / width * 100
     753 / 821 * 100 = 91% (almost square image as 100% is square)
-
     what we want to do is apply that percentage to padding-top (no height needed).
-
      z-index: 3;
-
 }
  */
 /* 
@@ -89,12 +458,7 @@
     #imageIsland {
 
     }
-    .allPawnsPhParent {
-        .allPlaceholdersPawn {
 
-        }
-
-    }
     .hexNumbers {
 position: absolute;
     }

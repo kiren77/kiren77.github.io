@@ -5,12 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- styling (colors/images here) -->
-  <!--     <link rel="stylesheet" type="text/css" href="./pokStyles/absoluteAssets.css"    />
- -->
   <link rel="stylesheet" type="text/css" href="./scss/relativeAssets.scss" />
-  <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="landscape.css">
-      <link rel="stylesheet" media="screen and (max-width: 600px)" href="portrait.css"> -->
   <link rel="stylesheet" type="text/css" href="./scss/shufflingStyles.scss" />
   <link rel="stylesheet" type="text/css" href="./scss/pawnPlaceholders.scss" />
   <link rel="stylesheet" type="text/css" href="./scss/hexNumbers.scss" />
@@ -18,12 +13,11 @@
   <link rel="stylesheet" type="text/css" href="./scss/myProgress.scss" />
 
   <!-- Bootstrap below -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <!-- Masonry Below (mostly for card titles) -->
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
-  </script>
+  -->
+    <link href="./bootstrap/bootstrap.css" rel="stylesheet" />
+  
   <!-- isotope Below (needs license if commercial use)-->
   <!--     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
  -->
@@ -49,18 +43,24 @@
 </head>
 
 <body>
-  <header>
+ <!--  <header>
     <h1>Pioneers of Kiran</h1>
-  </header>
+  </header> -->
 
+<!-- <div class="measuringBox position-absolute bg-warning">
+  
+  <h1>ALERT</h1>
+
+</div>
+ -->
   <div class="imageOcean">
     <!--     <div class="imageOcean">    </div>  end imageOcean -->
 
     <div id="imageIsland"></div>
 
-    <div class=" allPawnsPhParent">
+    <div class="allPawnsPhParent  position-absolute">
       <!-- city nodes below -->
-      <div class="cityNode">
+      <div class="cityNode ">
         <div class="node nodeA1 allPlaceholdersPawn" id="city_A1"></div>
         <div class="node nodeA2 allPlaceholdersPawn" id="city_A2"></div>
         <div class="node nodeA3 allPlaceholdersPawn" id="city_A3"></div>
@@ -253,13 +253,13 @@
 
     </div><!-- end allPawnsPhParent -->
 
-    <!-- hexNumbers -->
-    <div class="hexNumbers position-absolute">
-      <!-- one hexNumber will be desert
+    <!-- hexNumbers --> <!-- HIDDEN!!!!!!!!!!! -->
+<!--     <div class="hexNumbers position-absolute visually-hidden">
+ -->      <!-- one hexNumber will be desert
     and thus will be skipped
     on that tile there will 
      -->
-      <div id="nA"></div>
+     <!--  <div id="nA"></div>
       <div id="nB"></div>
       <div id="nC"></div>
       <div id="nD"></div>
@@ -278,92 +278,73 @@
       <div id="nQ"></div>
       <div id="nR"></div>
       <div id="nS"></div>
-    </div>
+    </div> -->
     <!-- end hexNumbers>  -->
 
-    <!-- <div>
-      <div class="tilePlaceholder" id="A"></div>
-      <div class="tilePlaceholder" id="B"></div>
-      <div class="tilePlaceholder" id="C"></div>
-      <div class="tilePlaceholder" id="D"></div>
-      <div class="tilePlaceholder" id="E"></div>
-      <div class="tilePlaceholder" id="F"></div>
-      <div class="tilePlaceholder" id="G"></div>
-      <div class="tilePlaceholder" id="H"></div>
-      <div class="tilePlaceholder" id="I"></div>
-      <div class="tilePlaceholder" id="J"></div>
-      <div class="tilePlaceholder" id="K"></div>
-      <div class="tilePlaceholder" id="L"></div>
-      <div class="tilePlaceholder" id="M"></div>
-      <div class="tilePlaceholder" id="N"></div>
-      <div class="tilePlaceholder" id="O"></div>
-      <div class="tilePlaceholder" id="P"></div>
-      <div class="tilePlaceholder" id="Q"></div>
-      <div class="tilePlaceholder" id="R"></div>
-      <div class="tilePlaceholder" id="S"></div>
-    </div> -->
+    
 
-    <div class="tileContainer position-absolute">
-      <div class="tilePlaceholder tileFlip" id="tp_A">
-        <!-- place -->
+<!-- HIDDEN !!!!!!!!!!!! -->
+    <div class="tileContainer position-absolute visually-hidden">
+      <div class="tilePlaceholder  tileFlip" id="tp_A">
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_B">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_C">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_D">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_E">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_F">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_G">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_H">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_I">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_J">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_K">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_L">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_M">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_N">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_O">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_P">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_Q">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_R">
-        <!-- place -->
+        
       </div>
       <div class="tilePlaceholder tileFlip" id="tp_S">
-        <!-- place -->
       </div>
     </div>
 
-    <div class="tradeShips">
+    
+     <div class="tradeShips">
       <div id="ts1">1</div>
       <div id="ts3">3</div>
       <div id="ts4">4</div>
@@ -373,8 +354,13 @@
       <div id="ts10">10</div>
       <div id="ts11">11</div>
       <div id="ts12">12</div>
-    </div>
+    </div> 
+ 
+
     <!--end tileContainer -->
+
+    
+<!-- 
     <div class="container bg-primary">
       <div id="myProgress">
         <div id="myBar">0%</div>
@@ -382,80 +368,82 @@
       <br>
       <button onclick="timeTurnLeft()">Click Me</button>
     </div>
+     -->
 
-    <span class="position-absolute container-fluid" id="logHTML">
-      Text of log
-    </span>
+    <h5 class="position-absolute container-fluid" id="logHTML">
+<em>Log: </em>    </h5>
 
   </div> <!-- imageOcean -->
 
-  <div class="container-fluid bg-secondary interface-overlay-wrapper">
+  <div class="container-fluid interface-overlay-wrapper">
 
-    <div class="container-fluid 
+    <div class="container
     allCards 
-    position-relative
-    align-bottom">
+    
+    
+    ">
+    
 
       <div class="row resourceCards ">
 
         <div class="col-1" id="sheepCard">
-          <div class="scoreCard">
+          <div class="col scoreCard">
             <p>00</p>
           </div>
         </div>
 
         <div class="col-1" id="woodCard">
-          <div class="scoreCard">
+          <div class="col scoreCard">
             <p>00</p>
           </div>
         </div>
 
         <div class="col-1" id="wheatCard">
-          <div class="scoreCard">
+          <div class="col scoreCard">
             <p>00</p>
           </div>
         </div>
 
         <div class="col-1" id="brickCard">
-          <div class="scoreCard">
+          <div class="col scoreCard">
             <p>00</p>
           </div>
         </div>
 
         <div class="col-1" id="oreCard">
-          <div class="scoreCard">
+          <div class="col scoreCard">
             <p>00</p>
           </div>
         </div>
 
        <!-- row / buyable items class removed -->
+  
+      <!-- </div> --> <!-- end Buyableitems -->
+      </div><!-- end resourceCards and  -->
 
-        <div class="col" id="undefinedPlayer">         
+      <ul class="list-inline">
+        <li class="list-inline-item" id="undefinedPlayer">         
           <div id="cityUndefinedPlayer"></div>
           <div class="citiesLeft">4</div>
-        </div>
+        </li>
 
-        <div class="col" id="undefinedPlayer">
+        <li class="list-inline-item" id="undefinedPlayer">
           <div id="roadUndefinedPlayer"></div>
           <div class="roadsLeft">15</div>
-        </div>
+        </li>
 
-        <div class="col" id="undefinedPlayer">
+        <li class="list-inline-item" id="undefinedPlayer">
           <div id="settleUndefinedPlayer"></div>
           <div class="settlementsLeft">5</div>
 
-        </div>
+        </li>
 
-        <div class="col" id="undefinedPlayer">
+        <li class="list-inline-item" id="undefinedPlayer">
           <div id="devCardUndefinedPlayer"></div>
           <div class="devCardTotal">0</div>
 
-        </div>
-
-      <!-- </div> --> <!-- end Buyableitems -->
-
-        
-      </div><!-- end resourceCards and  -->
+        </li>
+  </ul>
 
       <div class="row developmentCards">
         <div class="col-1" id="knightCard">
@@ -543,6 +531,12 @@
         </ul>
         <br>
       </div>
+      
+      <br>
+
+
+      <br>
+      <br>
       <br>
 
       <div class="col-sm-9">
@@ -614,7 +608,6 @@
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

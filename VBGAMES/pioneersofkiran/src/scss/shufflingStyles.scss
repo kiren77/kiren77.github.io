@@ -1,3 +1,7 @@
+
+@use './coordinates/tscoordinates' as tscoords;
+@use './abstracts/mediaqueries' as mq;
+@use "sass:map";
 /* can also write ' as * '  to forego namescaping */
 
 
@@ -19,8 +23,7 @@ $rodZ: 400; /* roads look best when placed an index under the other pawns */
 $hexPlaceholder_Z-index: 2;
 $tradeShip_index: 3;
 
-$tradeShip_width: 125px;
-$tradeShip_height: 85px;
+
 
 
 
@@ -57,106 +60,116 @@ position: absolute;
 
      
     #ts1 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
+      background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       position: absolute;
-      left: $column9 + $tradeShip_width;
-      top: $row1 + $tradeShip_height / 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      left: $column9 + tscoords.$tradeShip_width;
+      top: $row1 + tscoords.$tradeShip_height / 2;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
     
     
     
     #ts3 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
       left: $column9 + $tileWidth * 1.6;
       top: $row3;
-      width: 125px;
-      height: 85px;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
     
     #ts4 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
-      left: $column9 + $tradeShip_width;
-      top: $row4 + $tradeShip_height * 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      left: $column9 + tscoords.$tradeShip_width;
+      top: $row4 + tscoords.$tradeShip_height * 2;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
    
     
     #ts6 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
-      left: $column5 + $tradeShip_width ;
-      top: $row5 + $tradeShip_height * 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      left: $column5 + tscoords.$tradeShip_width ;
+      top: $row5 + tscoords.$tradeShip_height * 2;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
     
     #ts7 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
       left: $column3;
-      top: $row5 + $tradeShip_height * 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      top: $row5 + tscoords.$tradeShip_height * 2;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
 
     #ts8 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
-      left: $column2 - $tradeShip_width / 2;
-      top: $row4 + $tradeShip_height / 2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      left: $column2 - tscoords.$tradeShip_width / 2;
+      top: $row4 + tscoords.$tradeShip_height / 2;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
 
     #ts10 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
-      left: $column2 - $tradeShip_width / 2;
+      left: $column2 - tscoords.$tradeShip_width / 2;
       top: $row2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
     
     
     #ts11 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
      position: absolute;
      left: $column3;
-      top: $row1 - $tradeShip_height * 1.15;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      top: $row1 - tscoords.$tradeShip_height * 1.15;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
 
 
     #ts12 {
-      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png');
+      background-image: url('../gameAssetsOfficial/tradeshipPlaceholder.png'); 
+background-size: tscoords.$tradeShip_width tscoords.$tradeShip_height;
       background-repeat: no-repeat;
       position: absolute;
-      left: $column5 + $tradeShip_width;
-      top: $row1 - $tradeShip_height * 1.2;
-      width: $tradeShip_width;
-      height: $tradeShip_height;
+      left: $column5 + tscoords.$tradeShip_width;
+      top: $row1 - tscoords.$tradeShip_height * 1.2;
+      width: tscoords.$tradeShip_width;
+      height: tscoords.$tradeShip_height;
       z-index: $tradeShip_index;
     }
 

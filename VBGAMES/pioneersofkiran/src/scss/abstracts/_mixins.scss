@@ -3,12 +3,6 @@
 // first declare mixin with @mixin 
 // then use mixin using @include
 
-@mixin important-text {
-  color: red;
-  font-size: 25px;
-  font-weight: bold;
-  border: 1px solid blue;
-}
 
 // selector {
 //  @include important-text;
@@ -21,5 +15,11 @@
   @include link;
   @include special-border;
 } 
-
 */
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+

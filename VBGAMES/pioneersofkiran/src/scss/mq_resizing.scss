@@ -1,0 +1,108 @@
+@use './abstracts/' as *;
+@use './coordinates/_pawn_coordinates' as pawncoords;
+
+
+
+$breakpoint: 375px;
+/* 
+@media screen and (max-width: $phone-Portrait-Width) and (orientation: portrait) {
+    $breakpoint: $phone-Portrait-Width;
+    @include pawnFractions($phone-Portrait-Width);
+  
+  };
+  @media screen and (min-width: $S-Screen-Width) and (orientation: landscape) {
+    $breakpoint: $S-Screen-Width;
+    @include pawnFractions($S-Screen-Width);
+  };
+  @media screen and (min-width: $phone-Portrait-Width) and (orientation: landscape) {
+    $breakpoint: $phone-Landscape-Width;
+    @include pawnFractions($phone-Portrait-Width);
+  };
+  @media screen and (min-width: $M-Screen-Width) and (orientation: landscape) {
+    $breakpoint: $M-Screen-Width;
+    @include pawnFractions($M-Screen-Width);
+  };
+  
+  @media screen and (min-width: $L-Screen-Width) and (orientation: landscape) {
+    $breakpoint: $L-Screen-Width;
+    @include pawnFractions($L-Screen-Width);
+  };
+  @media screen and (max-width: $XL-Screen-Width) and (orientation: landscape) {
+    $breakpoint: $XL-Screen-Width;
+    @include pawnFractions($XL-Screen-Width);
+  };*/
+
+
+
+    $vertRoadWidth:   19 / 839 * $breakpoint;
+    $vertRoadHeight: 70 / 756 * $breakpoint;
+  
+    $setlWidth: 54 / 839 * $breakpoint;
+    $setlHeight: 53 / 756 * $breakpoint;
+  
+    $cityWidth: 57 / 839 * $breakpoint;
+    $cityHeight: 70 / 756 * $breakpoint;
+  
+    $diag-road-width: 67 / 839 * $breakpoint;
+    $diag-road-height: 45 / 756 * $breakpoint;
+  
+    //HEIGHT of NODES 
+    $nodeAHigh:   0 / 756 * $breakpoint;//   0vh; 
+    $nodeALow:   30 / 756 * $breakpoint;//  30;  
+    $nodeBHigh: 120 / 756 * $breakpoint;// 120;
+    $nodeBLow:  160 / 756 * $breakpoint;// 160; 
+  
+    $nodeCHigh: 240 / 756 * $breakpoint;// 240;
+    $nodeCLow:  300 / 756 * $breakpoint;// 300;
+    $nodeDHigh: 400 / 756 * $breakpoint;// 400;
+    $nodeDLow:  420 / 756 * $breakpoint;// 420;
+  
+    $nodeEHigh: 500 / 756 * $breakpoint;// 500;
+    $nodeELow:  540 / 756 * $breakpoint;// 540;
+    $nodeFHigh: 650 / 756 * $breakpoint;// 650;  
+    $nodeFLow:  680 / 756 * $breakpoint;// 680;
+  
+    //HEIGHT Hypo ROADS 
+    $road-A-hypo-Height:  34 / 756 * $breakpoint  /* nodeALow */;
+    $road-B-hypo-Height:  167 / 756 * $breakpoint /* nodeBLow */;
+    $road-C-hypo-Height:  300 / 756 * $breakpoint /* nodeCLow */;
+    $road-D-hypo-Height:  428 / 756 * $breakpoint /* nodeDLow */;
+    $road-E-hypo-Height:  547 / 756 * $breakpoint /* nodeELow */;
+    $road-F-hypo-Height:  686 / 756 * $breakpoint /* nodeFLow */;
+          
+    
+      //HEIGHT VERT ROADS
+      $road-BA-vert-Height: 79 / 756 * $breakpoint;
+      $road-CB-vert-Height: 212 / 756 * $breakpoint;
+      $road-DC-vert-Height: 347 / 756 * $breakpoint;
+      $road-ED-vert-Height: 447 / 756 * $breakpoint;
+      $road-FE-vert-Height: 608 / 756 * $breakpoint;
+  
+  
+  
+  //LEFT POSITION NODES;
+  //hypo equals diagonal road (hypotenuse)
+  $left-vert1:       0 / 839 * $breakpoint ;
+  $left-hypo1:      25 / 839 * $breakpoint;
+  $left-vert2:      74 / 839 * $breakpoint;
+  $left-hypo2:     103 / 839 * $breakpoint;
+  $left-vert3:     159 / 839 * $breakpoint;
+  $left-hypo3:     183 / 839 * $breakpoint;
+  $left-vert4:     229 / 839 * $breakpoint;
+  $left-hypo4:     261 / 839 * $breakpoint;
+  $left-vert5:     302 / 839 * $breakpoint;
+  $left-hypo5:     337 / 839 * $breakpoint;
+  $left-vert6:     385 / 839 * $breakpoint;
+  $left-hypo6:     415 / 839 * $breakpoint;
+  $left-vert7:     470 / 839 * $breakpoint;
+  $left-hypo7:     487 / 839 * $breakpoint;
+  $left-vert8:     536 / 839 * $breakpoint;
+  $left-hypo8:     565 / 839 * $breakpoint;
+  $left-vert9:     608 / 839 * $breakpoint;
+  $left-hypo9:     643 / 839 * $breakpoint;
+  $left-vert10:    692 / 839 * $breakpoint;
+  $left-hypo10:    722 / 839 * $breakpoint;
+  $left-vert11:    782 / 839 * $breakpoint;
+  /* 
+  $left-vert11:    math.floor(782 / 839 * $breakpoint);
+   */

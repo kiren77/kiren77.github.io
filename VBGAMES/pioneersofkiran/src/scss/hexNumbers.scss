@@ -1,4 +1,6 @@
 @use './abstracts';
+@use './coordinates/_pawncoordinates' as pawncoords;
+
 
 $hexCoinSize: 39px;
 

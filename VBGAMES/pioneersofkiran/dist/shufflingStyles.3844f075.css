@@ -1,3 +1,95 @@
+/* $myBreakpoint: 375px;
+ */
+/*
+islandBackdropCropped has
+821 x 753
+total horizontaldocks = 45
+total verticaldocks = 43
+
+total pawnPlaceholders 
+islandBackdropCropped - (vertical + horizontal docks)
+821 - 45 = 776w
+753 - 43 = 710h
+
+so once all calculations will be made for placeholders
+we will apply this
+ratiopawnPhtoIsland * 710/776
+
+this also means that if 
+    $diag-road-width: 67;
+and that if along the whole width there 10 
+diagonal roads
+then roughly 776 / 10 should be 67 which it isnt (77.6)
+because the roads are not meeting directly (nodes width overlap)
+
+likewise vertical division by road is complicated 
+as we have both vertical and diagonal roads
+however we can work backwards from and addition of the roads
+*/
+/* iphone7landscapewidth */
+/*    $fourK-Width: 4096px:*/
+/*    @debug map.get($windsize, "phone-Portrait-Width"); // 500
+ */
+/* @mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) 
+    { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) 
+    { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) 
+    { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) 
+    { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) 
+    { @content; }
+  }
+} */
+/* 
+   @mixin media($phone-Portrait-Width)  {
+   @media screen and (max-width: $phone-Portrait-Width) and (orientation: portrait) {
+    $oceanWidth: $phone-Portrait-Width;
+    $oceanHeight: $phone-Portrait-Height;
+
+
+    width: $oceanWidth;
+    height: $oceanHeight;
+    max-height: $oceanHeight;
+    background-size: $oceanWidth $oceanHeight;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+
+    @content;
+   }
+  } */
+/* //Smallest Landscape (just in case) 
+@mixin media($S-Screen-Width) {
+
+  @media screen and (min-width: $S-Screen-Width) and (orientation: landscape) {
+   $oceanWidth: $S-Screen-Width;
+   $oceanHeight: $S-Screen-Height;
+
+   $islandWidth: $oceanWidth / 3; 
+   $islandHeight: $oceanHeight / 3;
+   //for "left" position
+   $islandMiddleWidth: $oceanWidth / 2 - $islandWidth / 2;
+   //for "top" position
+   $islandMiddleHeight: $oceanHeight / 2 - $islandHeight / 1.5;
+   $sideGutters: $oceanWidth / 10;
+
+
+
+
+}
+
+   @content;
+  }
+
+*/
 /* can also write ' as * '  to forego namescaping */
 /* city placeholder asset*/
 /* settlement pawn asset*/
@@ -13,7 +105,9 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts1 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
+  background-size: 125px 85px;
   position: absolute;
   left: 751px;
   top: 66.5px;
@@ -23,6 +117,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts3 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 861.2px;
@@ -33,6 +128,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts4 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 751px;
@@ -43,6 +139,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts6 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 441px;
@@ -53,6 +150,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts7 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 160px;
@@ -63,6 +161,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts8 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 20.5px;
@@ -73,6 +172,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts10 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 20.5px;
@@ -83,6 +183,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts11 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 160px;
@@ -93,6 +194,7 @@ $viewportHeight: 100vh; */
 }
 .tradeShips #ts12 {
   background-image: url("/tradeshipPlaceholder.47fdd05d.png");
+  background-size: 125px 85px;
   background-repeat: no-repeat;
   position: absolute;
   left: 441px;
