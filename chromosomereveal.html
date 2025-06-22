@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromosome Reveal Slot Machine</title>
+    <!-- Include Tone.js for audio synthesis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    <style>
+        /* General body styling */
+        body {
+            display: flex;
+            flex-direction: column; /* Allow content to stack vertically */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e0f2f7; /* Light blue background */
+            font-family: 'Inter', sans-serif; /* Using Inter font */
+            overflow: hidden; /* Prevent scroll bars if content overflows */
+            color: #333;
+        }
+
+        /* Main slot machine container */
+        .slot-machine {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Soft gradient background */
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            padding: 60px; /* Increased padding to make it bigger */
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #b0e0e6; /* Light border */
+        }
+
+        /* Display title */
+        .display {
+            font-size: 2.8em;
+            font-weight: bold;
+            margin-bottom: 35px;
+            color: #2196f3; /* Blue for the title */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Reels container */
+        .reels-container {
+            display: flex;
+            gap: 30px; /* Increased gap between reels */
+            margin-bottom: 50px;
+            perspective: 600px; /* Stronger 3D effect */
+        }
+
+        /* Individual reel styling */
+        .reel {
+            width: 120px; /* Updated: 120px width */
+            height: 120px; /* Updated: 120px height */
+            border: 6px solid #81d4fa; /* Cyan border */
+            border-radius: 15px; /* Rounded corners for reels */
+            overflow: hidden;
+            position: relative;
+            background-color: #f5f5f5;
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.15); /* Inset shadow */
+        }
+
+        /* Inner part of the reel that spins */
+        .reel-inner {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 3.8em; /* Larger symbols */
+            font-weight: bold;
+            color: #424242; /* Default darker grey for symbols */
+            /* Removed CSS transition for transform as it will be controlled by JS for animation */
+        }
+
+        /* Each symbol within the reel */
+        .reel-inner span {
+            height: 120px; /* Updated: 120px height to match reel */
+            width: 100%; /* Ensure span fills width for centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Specific colors for Reel 2 symbols */
+        .reel-inner .x-symbol {
+            color: #e91e63; /* Deep pink for X */
+        }
+        .reel-inner .y-symbol {
+            color: #2196f3; /* Deep blue for Y */
+        }
+
+
+        /* Lever container (base) */
+        .lever-container {
+            width: 80px;
+            height: 180px; /* Taller lever container */
+            background-color: #ef5350; /* Red lever base */
+            border-radius: 10px;
+            position: absolute;
+            right: 20px; /* Adjusted: Position it inside, 20px from right edge of slot-machine */
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+            border: 2px solid #c62828;
+        }
+
+        /* Actual lever arm - now static relative to its container */
+        .lever {
+            width: 35px; /* Slightly wider lever arm */
+            height: 140px; /* Taller lever arm */
+            background-color: #ff8a80; /* Lighter red for the actual lever arm */
+            border-radius: 17px; /* More rounded */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* Stays fixed horizontally */
+            top: 20px; /* Stays fixed vertically relative to lever-container */
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Lever handle - this is what will be dragged */
+        .handle {
+            width: 60px; /* Larger handle */
+            height: 60px;
+            background-color: #d32f2f; /* Darker red for handle */
+            border-radius: 50%;
+            position: absolute;
+            top: -25px; /* Initial vertical position relative to the lever arm's top */
+            left: 50%;
+            transform: translateX(-50%); /* Stays fixed horizontally within lever arm */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            border: 3px solid #c62828;
+            cursor: grab; /* Cursor on the handle */
+            transition: top 0.1s ease-out, box-shadow 0.1s ease-out; /* Smooth transition for handle movement */
+        }
+
+        /* Class for when the handle is pulled down */
+        .handle.pulled {
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.5); /* Inset shadow to show "pressed" state */
+        }
+
+        /* Result message display */
+        .result-message {
+            font-size: 2.5em; /* Larger result message */
+            font-weight: bold;
+            margin-top: 35px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out; /* Slower fade-in */
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-message.show {
+            opacity: 1;
+        }
+
+        .result-message.xx {
+            background-color: #fce4ec; /* Light pink background */
+            color: #e91e63; /* Deep pink for XX */
+        }
+
+        .result-message.xy {
+            background-color: #e3f2fd; /* Light blue background */
+            color: #2196f3; /* Deep blue for XY */
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .slot-machine {
+                padding: 30px; /* Adjusted padding */
+                width: 90%;
+            }
+            .display {
+                font-size: 2.2em;
+                margin-bottom: 30px;
+            }
+            .reels-container {
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+            .reel {
+                width: 100px; /* Adjusted for responsiveness */
+                height: 100px; /* Adjusted for responsiveness */
+            }
+            .reel-inner span {
+                height: 100px; /* Adjusted for responsiveness */
+                font-size: 3em;
+            }
+            .lever-container {
+                right: 15px; /* Adjusted lever position */
+                width: 70px;
+                height: 160px;
+            }
+            .lever {
+                width: 30px;
+                height: 120px;
+                top: 18px;
+            }
+            .handle {
+                width: 50px;
+                height: 50px;
+                top: -20px;
+            }
+            .result-message {
+                font-size: 2em;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slot-machine {
+                padding: 20px;
+            }
+            .display {
+                font-size: 1.8em;
+                margin-bottom: 25px;
+            }
+            .reels-container {
+                gap: 15px;
+                margin-bottom: 30px;
+            }
+            .reel {
+                width: 80px; /* Adjusted for responsiveness */
+                height: 80px; /* Adjusted for responsiveness */
+                border-width: 5px;
+            }
+            .reel-inner span {
+                height: 80px; /* Adjusted for responsiveness */
+                font-size: 2.8em;
+            }
+            .lever-container {
+                right: 10px; /* Adjusted lever position */
+                width: 60px;
+                height: 140px;
+            }
+            .lever {
+                width: 25px;
+                height: 100px;
+                top: 15px;
+            }
+            .handle {
+                width: 40px;
+                height: 40px;
+                top: -15px;
+            }
+            .result-message {
+                font-size: 1.5em;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slot-machine">
+        <div class="display">Chromosome Reveal</div>
+        <div class="reels-container">
+            <div class="reel" id="reel1">
+                <div class="reel-inner">
+                    <!-- Reel 1 always shows 'X' -->
+                    <span class="x-symbol">X</span>
+                    <span class="x-symbol">X</span>
+                    <span class="x-symbol">X</span>
+                </div>
+            </div>
+            <div class="reel" id="reel2">
+                <div class="reel-inner">
+                    <!-- Reel 2 alternates 'X' (pink) and 'Y' (blue) -->
+                    <span class="x-symbol">X</span>
+                    <span class="y-symbol">Y</span>
+                    <span class="x-symbol">X</span>
+                    <span class="y-symbol">Y</span>
+                </div>
+            </div>
+        </div>
+        <div class="lever-container" id="leverContainer">
+            <div class="lever" id="lever">
+                <div class="handle" id="handle"></div>
+            </div>
+        </div>
+        <div class="result-message" id="resultMessage"></div>
+    </div>
+
+    <script>
+        const handle = document.getElementById('handle');
+        const reel1 = document.getElementById('reel1');
+        const reel2 = document.getElementById('reel2');
+        const reel1Inner = reel1.querySelector('.reel-inner');
+        const reel2Inner = reel2.querySelector('.reel-inner');
+        const resultMessage = document.getElementById('resultMessage');
+
+        // Lever interaction variables
+        let isDragging = false;
+        let startY;
+        let handleInitialTopCSS;
+        const initialHandleTop = -25; // CSS top value for handle when not pulled
+        const maxHandleTravel = 90; // Max pixels handle can move down
+        const pullThreshold = initialHandleTop + (maxHandleTravel * 0.8); // Threshold for triggering spin
+
+        // Deterministic outcomes - set to always produce 'XX' as per request
+        const outcomes = ['XX'];
+        let outcomeIndex = 0;
+
+        // Audio variables
+        let beepSynth;
+        let tadaaSynth;
+        let audioContextStarted = false; // Flag to ensure Tone.start() is called once
+        let spinAnimationId; // To store requestAnimationFrame ID
+        const reelSpeedStart = 60; // Initial speed in pixels per frame
+        const spinDuration = 4000; // Total spin duration in milliseconds
+        const reelItemHeight = 120; // Updated: Height of each 'X' or 'Y' span in the reel
+        let lastPlayedSoundSymbol = ''; // Track which symbol's sound was last played to avoid rapid re-triggering
+        let lastYLongBeepTriggered = false; // Flag to ensure the long Y beep plays only once
+
+        // Audio rate-limiting variables
+        let lastBeepTimestamp = 0;
+        const beepMinInterval = 50; // Minimum interval between beeps in milliseconds (adjust as needed)
+
+        /**
+         * Initializes the beep sound synthesizer for individual notes.
+         */
+        function initBeepSynth() {
+            beepSynth = new Tone.Synth({
+                oscillator: { type: "square" },
+                envelope: { attack: 0.01, decay: 0.1, sustain: 0.05, release: 0.1 }
+            }).toDestination();
+        }
+
+        /**
+         * Initializes the Tadaaa chord synthesizer.
+         */
+        function initTadaaSynth() {
+            tadaaSynth = new Tone.PolySynth(Tone.Synth, {
+                oscillator: { type: "sawtooth" }, // Richer sound for chord
+                envelope: { attack: 0.02, decay: 0.3, sustain: 0.5, release: 1.0 }
+            }).toDestination();
+        }
+
+        /**
+         * Plays a beep tone based on the chromosome.
+         * @param {string} chromosome - 'X' or 'Y'
+         * @param {number} [duration=0.1] - Duration of the beep in seconds.
+         */
+        function playBeep(chromosome, duration = 0.1) {
+            // Check if enough time has passed since the last beep
+            if (Tone.context.currentTime * 1000 - lastBeepTimestamp < beepMinInterval) {
+                return; // Too soon, skip this beep
+            }
+
+            if (!beepSynth) { initBeepSynth(); }
+            if (Tone.context.state !== 'running') {
+                console.warn('AudioContext not running. Cannot play beep.');
+                return;
+            }
+
+            const xFreq = 440; // A4 for X
+            const yFreq = xFreq * (5/4); // A major third above A4 for Y (approx 550 Hz)
+
+            if (chromosome === 'X') {
+                beepSynth.triggerAttackRelease(xFreq, duration);
+            } else if (chromosome === 'Y') {
+                beepSynth.triggerAttackRelease(yFreq, duration);
+            }
+            lastBeepTimestamp = Tone.context.currentTime * 1000; // Update last beep time
+        }
+
+        /**
+         * Plays a "Tadaaa" chord.
+         */
+        function playTadaaChord() {
+            if (!tadaaSynth) { initTadaaSynth(); }
+            if (Tone.context.state !== 'running') {
+                console.warn('AudioContext not running. Cannot play Tadaaa chord.');
+                return;
+            }
+            // A simple C Major chord: C4, E4, G4, C5
+            tadaaSynth.triggerAttackRelease(["C4", "E4", "G4", "C5"], "1.5s");
+        }
+
+        // Event listener for mouse down on the handle
+        handle.addEventListener('mousedown', async (e) => {
+            isDragging = true;
+            startY = e.clientY;
+            handleInitialTopCSS = parseFloat(getComputedStyle(handle).top);
+
+            handle.style.transition = 'none';
+            handle.style.cursor = 'grabbing';
+            e.preventDefault();
+
+            if (!audioContextStarted) {
+                await Tone.start();
+                audioContextStarted = true;
+                console.log('AudioContext started');
+            }
+        });
+
+        // Event listener for mouse move across the document
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            let deltaY = e.clientY - startY;
+            let newHandleTopCSS = handleInitialTopCSS + deltaY;
+
+            newHandleTopCSS = Math.max(initialHandleTop, newHandleTopCSS);
+            newHandleTopCSS = Math.min(initialHandleTop + maxHandleTravel, newHandleTopCSS);
+
+            handle.style.top = `${newHandleTopCSS}px`;
+
+            if (newHandleTopCSS >= pullThreshold) {
+                handle.classList.add('pulled');
+            } else {
+                handle.classList.remove('pulled');
+            }
+        });
+
+        // Event listener for mouse up across the document
+        document.addEventListener('mouseup', () => {
+            if (!isDragging) return;
+
+            isDragging = false;
+            handle.style.transition = 'top 0.1s ease-out, box-shadow 0.1s ease-out';
+            handle.style.cursor = 'grab';
+
+            const currentHandleTop = parseFloat(getComputedStyle(handle).top);
+
+            if (currentHandleTop >= pullThreshold) {
+                spinReels();
+            }
+
+            handle.style.top = `${initialHandleTop}px`;
+            handle.classList.remove('pulled');
+        });
+
+        // Variables for custom spin animation
+        let spinStartTime;
+        let currentReel1Y = 0;
+        let currentReel2Y = 0;
+        const reel2Symbols = ['X', 'Y', 'X', 'Y']; // Content of reel2-inner spans
+
+        /**
+         * Calculates the logarithmic deceleration for the reel spin.
+         * @param {number} t - Current time elapsed since spin start (0 to 1).
+         * @returns {number} - Easing value.
+         */
+        function easeOutExpo(t) {
+            return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+        }
+
+        /**
+         * The main animation loop for the reels.
+         * @param {DOMHighResTimeStamp} currentTime - The current time provided by requestAnimationFrame.
+         */
+        function spinAnimationLoop(currentTime) {
+            if (!spinStartTime) spinStartTime = currentTime;
+            const elapsedTime = currentTime - spinStartTime;
+            let progress = Math.min(1, elapsedTime / spinDuration);
+            let easedProgress = easeOutExpo(progress);
+
+            // Calculate current speed, starting fast and slowing down
+            let currentSpeedFactor = (1 - easedProgress);
+            const minEffectiveSpeedFactor = 0.2; // Ensure speed doesn't go below 20% of start speed
+            currentSpeedFactor = Math.max(minEffectiveSpeedFactor, currentSpeedFactor); // Apply minimum speed factor
+
+            const currentSpeed = reelSpeedStart * currentSpeedFactor; // Pixels per animation frame
+
+            currentReel1Y -= currentSpeed;
+            currentReel2Y -= currentSpeed;
+
+            // Loop reel positions to simulate infinite spinning
+            const reel1LoopHeight = reel1Inner.children.length * reelItemHeight;
+            const reel2LoopHeight = reel2Inner.children.length * reelItemHeight;
+
+            currentReel1Y = (currentReel1Y % reel1LoopHeight + reel1LoopHeight) % reel1LoopHeight;
+            currentReel2Y = (currentReel2Y % reel2LoopHeight + reel2LoopHeight) % reel2LoopHeight;
+
+            reel1Inner.style.transform = `translateY(${-currentReel1Y}px)`; /* Negative for upward movement */
+            reel2Inner.style.transform = `translateY(${-currentReel2Y}px)`; /* Negative for upward movement */
+
+
+            // Tone during spinning - only for reel2
+            const centerOffset = reelItemHeight / 2;
+            const currentReel2YAbs = Math.abs(currentReel2Y);
+            const currentSymbolIndex = Math.floor((currentReel2YAbs + centerOffset) / reelItemHeight) % reel2Symbols.length;
+            const currentSymbol = reel2Symbols[currentSymbolIndex];
+
+            // Play beep when a new symbol "lands" in the center visual area.
+            if (currentSymbol !== lastPlayedSoundSymbol) {
+                if (currentSymbol === 'X') {
+                    playBeep('X', 0.05); // Short beep
+                } else if (currentSymbol === 'Y') {
+                    playBeep('Y', 0.05); // Short beep
+                }
+                lastPlayedSoundSymbol = currentSymbol;
+            }
+
+            // Logic for the longer 'Y' tone before the final 'XX' result
+            if (outcomes[0] === 'XX' && !lastYLongBeepTriggered && progress > 0.8 && progress < 0.95) {
+                // To trigger the long beep only once for the *specific* 'Y' that passes before the final 'X'
+                if (currentSymbol === 'Y' && Math.abs((currentReel2YAbs % reelItemHeight) - centerOffset) < (reelItemHeight / 8)) {
+                    playBeep('Y', 0.5); // Longer beep for suspense
+                    lastYLongBeepTriggered = true; // Ensure it only plays once
+                }
+            }
+
+
+            if (progress < 1) {
+                spinAnimationId = requestAnimationFrame(spinAnimationLoop);
+            } else {
+                // Animation finished, snap to final position
+                reel1Inner.style.transition = 'transform 0.5s ease-out';
+                reel2Inner.style.transition = 'transform 0.5s ease-out';
+
+                reel1Inner.style.transform = `translateY(0px)`; /* Final position for X */
+                reel2Inner.style.transform = `translateY(0px)`; /* Final position for X */
+
+                setTimeout(() => {
+                    displayResult(); // Display text and play Tadaaa chord
+                }, 500); // Allow reels to visually settle with transition
+            }
+        }
+
+        /**
+         * Initiates the spinning animation for both reels.
+         */
+        function spinReels() {
+            resultMessage.classList.remove('show', 'xx', 'xy');
+            resultMessage.textContent = '';
+
+            // Reset spin state
+            spinStartTime = null;
+            lastPlayedSoundSymbol = ''; // Reset for new spin
+            lastYLongBeepTriggered = false; // Reset for new spin
+            if (spinAnimationId) cancelAnimationFrame(spinAnimationId); // Clear any previous animation
+
+            // Set initial positions (they will immediately start moving in spinAnimationLoop)
+            reel1Inner.style.transition = 'none'; // No transition at start of spin
+            reel2Inner.style.transition = 'none'; // No transition at start of spin
+
+            // Start the custom animation loop
+            spinAnimationId = requestAnimationFrame(spinAnimationLoop);
+        }
+
+        /**
+         * Displays the final result and plays the Tadaaa chord.
+         */
+        function displayResult() {
+            const currentOutcome = outcomes[outcomeIndex];
+            outcomeIndex = (outcomeIndex + 1) % outcomes.length; // Still advances, but only one outcome
+
+            resultMessage.textContent = `Result: ${currentOutcome}`;
+            resultMessage.classList.add('show');
+            if (currentOutcome === 'XX') {
+                resultMessage.classList.add('xx');
+            } else {
+                resultMessage.classList.add('xy'); // This path won't be taken with current 'outcomes' array
+            }
+            playTadaaChord(); // Play the Tadaaa chord after result is shown
+        }
+    </script>
+</body>
+</html>
