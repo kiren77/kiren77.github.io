@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical System Assignment</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" xintegrity="sha384-nB0miv6/jRmo5IYMNsK0RTNoxEuYfsCCR/goC03O1L3FeK1VnE+Gwy2goDki+IFZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" xintegrity="sha384-7K3bLdxFsdlu4BUIhIOypD6Ny/s8G2BGYQYfS/wI/Q83b/3ZdnDq1/ScWrJ0/iTRE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" xintegrity="sha384-43gviWU0YVjaDtb/GpLTMi2WE8oUJVrECEsNcuL4qteL5BKSSSCGsDiuQNNNNtP" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for active tab */
+        .tab-button.active {
+            border-bottom-color: #2563EB; /* blue-600 */
+            color: #2563EB;
+        }
+        /* Style for tab content */
+        .tab-panel {
+            display: none; /* Hidden by default */
+        }
+        .tab-panel.active {
+            display: block; /* Shown when active */
+        }
+        .katex-display {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <h1 class="text-2xl sm:text-3xl font-bold">Mechanical System Assignment 🏗️</h1>
+            <p class="text-purple-100">Analyse, Design & Document</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Overview Section -->
+        <section class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <div class="flex flex-col lg:flex-row gap-6 items-center">
+                <!-- Text Content -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4">Task Overview 🚀</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        This assessment is your opportunity to demonstrate your skills in analysing, designing, and documenting a complete mechanical system.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        You will identify components, apply engineering principles, use software for analysis, and document your work to industry standards. 🧑‍🔬
+                    </p>
+                    
+                    <!-- Project Choice Card -->
+                    <div class="bg-blue-100 border-l-4 border-blue-600 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-blue-800 mb-2">Your Project Choice</h3>
+                        <p class="text-blue-700 mb-3">
+                            Your project must include an item that can <strong class="font-semibold">lift, carry, rotate, and precisely place</strong> objects of a specific weight.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong class="font-semibold">Example:</strong> A full-scale 3D house printer 🏠, focusing on the gantry system, material extrusion, and layering precision.
+                        </Body>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="lg:w-1/2 w-full mt-6 lg:mt-0">
+                    <img src="https://placehold.co/600x400/818cf8/f1f5f9?text=3D+House+Printer+Project" 
+                         alt="Illustration of a large 3D printer for houses"
+                         class="rounded-lg shadow-md object-cover w-full h-auto">
+                </div>
+            </div>
+            
+            <!-- New Callout Box -->
+            <div class="mt-6 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-lg">
+                <h3 class="font-bold text-lg text-yellow-800 mb-2">✨ New! Project Focus Updated</h3>
+                <p class="text-yellow-700">
+                    I've updated the project example to your <strong>3D House Printer</strong> idea and added a new <strong class="font-semibold">"🏠 3D Printer Tech"</strong> tab with an industry overview!
+                </p>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="bg-white rounded-xl shadow-lg">
+            <!-- Tab Buttons -->
+            <div class="border-b border-gray-200">
+                <nav class="flex flex-wrap -mb-px px-4 sm:px-6" aria-label="Tabs">
+                    <button class="tab-button active text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="partA">
+                        📝 Part A: Assessment
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="partB">
+                        ⚙️ Part B: Analysis
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="partC">
+                        📊 Part C: Reporting
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="submission">
+                        ✅ Submission Checklist
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="grading">
+                        🏆 Grading Criteria
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="reportGuide">
+                        📖 Example Report Guide
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="printerTech">
+                        🏠 3D Printer Tech
+                    </button>
+                    <button class="tab-button text-base sm:text-lg font-medium py-4 px-3 sm:px-5 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="standardsSimulation">
+                        💡 Standards & Simulation
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content Panels -->
+            <div class="p-6 sm:p-8">
+                
+                <!-- Part A Panel -->
+                <div id="partA" class="tab-panel active">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Part A: System Identification & Initial Assessment</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Identify the system and its component parts. 🧩</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Review principles like static/dynamic loading, stress-strain, and mechanical advantage. ⚖️</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Document primary functions and features (load capacity, range of motion, control systems). 📐</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Identify the correct software for analytical simulations. 💻</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>List all stakeholders you need to consult. 🤝</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Review and document WHS regulations and outline risk management procedures. ⚠️</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Evaluate environmental impact (materials, energy) and document sustainability implications. ♻️</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Identify sources for technical support (industry standards, academic journals, forums). 📚</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Part B Panel -->
+                <div id="partB" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Part B: Detailed Analysis & Validation</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Choose and document mechanical principles, including equations of rectilinear motion. 📏</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Follow a structured analysis process, ensuring all units are compatible and converted. 🔄</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Calculate resultant forces and moments, incorporating rectilinear motion analysis. ↘️</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Determine torque and power requirements for the lifting mechanism. ⚡</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Use selected software to produce graphical representations of your analysis. 📈</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Complete manual calculations (static/dynamic loads, rectilinear motion) and compare with software simulations. 🧮</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Choose appropriate hardware components that meet design specs and load requirements. 🔩</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Perform stress analysis. 🧱</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Follow and maintain safe working practices at all times. 👷</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Part C Panel -->
+                <div id="partC" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Part C: Documentation & Reporting</h3>
+                    <p class="text-gray-600 mb-4">This part defines how to professionally present your findings.</p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Provide clear and accurate documentation of all findings (calculations, diagrams, software outputs). ✍️</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Compile a comprehensive report including all analysis results, screenshots, and documentation. 📂</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong>Report Structure:</strong> Must include Title Page, Main Body (Parts A-C), References, and Appendices (e.g., Risk Matrix, Consultation Notes, Datasheets). 📑</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong>Formatting:</strong> Follow the <strong>Australian Government Style Manual</strong> (e.g., Arial 12pt, 1.5 line spacing, SI units, Australian spelling). 🇦🇺</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong>Ethical Conduct:</strong> Acknowledge all sources, cite references, and declare original work. 🎓</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong>Professional Reflection:</strong> Include a short reflection on your technical growth, safety awareness, and sustainability choices. 🤔</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong>WHS/Ergonomics:</strong> Ensure safe ergonomics *while writing* the report (e.g., breaks, workstation setup). 🧘</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Submission Panel (Replaced Content) -->
+                <div id="submission" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Submission Checklist</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- File Checklist -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-700 mb-3">File & Submission Package 📦</h4>
+                            <p class="text-sm text-gray-500 mb-3">Your complete submission must contain all of the following files:</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Main Report</strong> (Word or PDF)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Calculation Spreadsheet</strong> (Excel) or Script (Python/MATLAB)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>CAD Files</strong> (.SLDASM, .SLDPRT, or .STEP)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>FEA Results</strong> & Screenshots</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Manufacturer Datasheets</strong> (for motors, screws, bearings, etc.)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Risk Assessment Matrix</strong> (Appendix A)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Consultation Notes</strong> (Appendix B)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span><strong>Sustainability Lifecycle Diagram</strong> (Appendix E)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Visual Checklist -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-700 mb-3">Mandatory Visual Evidence (in Report) 🖼️</h4>
+                            <p class="text-sm text-gray-500 mb-3">Your report *must* include and reference these visual elements:</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Free-Body Diagrams (FBDs)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Shear & Bending Moment Diagrams</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Motion Profiles (Position, Velocity, Accel.)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>CAD Screenshots (Isometric, Dimensioned)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>FEA Plots (Stress, Deflection, Mesh)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Comparison Table (Hand Calcs vs. Software)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grading Panel -->
+                <div id="grading" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Grading Criteria</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                        <li>Identify lifting mechanism, system/component parts, and document findings.</li>
+                        <li>Review and report on mechanical principles.</li>
+                        <li>Review and document primary functions and features of the robotic arm.</li>
+                        <li>Assess software required and detail outputs.</li>
+                        <li>Identify stakeholders for consultation.</li>
+                        <li>Determine and evaluate sustainability impacts.</li>
+                        <li>Identify sources for additional technical support.</li>
+                        <li>Choose correct engineering principles for graphical representations.</li>
+                        <li>Validate software results.</li>
+                        <li>Ensure all units are compatible and follow a structured process.</li>
+                        <li>Calculate rectilinear motion, resultant forces, and reactions.</li>
+                        <li>Determine and document torque and power requirements.</li>
+                        <li>Select correct hardware to meet specifications.</li>
+                        <li>Perform stress analysis and submit detailed calculations/diagrams.</li>
+                        <li>Follow Australian Government Style Guide for report writing.</li>
+                        <li>Confirm WHS and regulatory requirements.</li>
+                        <li class="font-semibold text-gray-800">Observation: Work safely and ergonomically.</li>
+                    </ol>
+                </div>
+
+                <!-- New Example Report Guide Panel -->
+                <div id="reportGuide" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Example Report Guide (Based on AVSL Document)</h3>
+                    <p class="text-gray-600 mb-6">This guide provides a detailed breakdown of what to include in your final report, based on the "AVSL" exemplar document. Use this as a model for your own project's report.</p>
+                    
+                    <!-- Guide Part A -->
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-indigo-600 mb-3">Guide: Part A - System Identification</h4>
+                        <p class="mb-3">Your report's Part A should formally introduce and assess your system. Include sections for:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong>Introduction:</strong> Define the system, its purpose, and relevant Australian Standards (e.g., AS/NZS 4024.1, AS 3990).</li>
+                            <li><strong>System Overview:</strong> List and describe the main components (e.g., base frame, drive, carriage). Include a labelled CAD drawing.</li>
+                            <li><strong>Functional Description:</strong> Table of requirements (e.g., Lift Capacity, Speed, Accuracy).</li>
+                            <li><strong>Mechanical Principles:</strong> Review key concepts (e.g., static/dynamic loading, FoS, stress-strain).</li>
+                            <li><strong>Safety & WHS Compliance:</strong> Identify hazards and control measures. Refer to a Risk Assessment Matrix (Appendix).</li>
+                            <li><strong>Environmental & Sustainability:</strong> Assess materials, energy use, and recyclability (AS/NZS ISO 14001).</li>
+                            <li><strong>Stakeholder Consultation:</strong> Document who was consulted (e.g., WHS Officer, Technician) and the outcomes (Appendix).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Guide Part B -->
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-teal-600 mb-3">Guide: Part B - Detailed Analysis</h4>
+                        <p class="mb-3">This section must show your step-by-step engineering calculations. Clearly state data and assumptions. Key analyses include:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                            <!-- NOTE: Formulas are now wrapped in display-mode $$...$$ for KaTeX rendering -->
+                            <li><strong>Force Resultants:</strong> (Rectilinear Motion) e.g., $$F_{\text{total}} = m(g+a)$$</li>
+                            <li><strong>Torque & Speed:</strong> e.g., $$\tau_{\text{screw}} = \frac{F \times p}{2\pi\eta}$$</li>
+                            <li><strong>Power Requirement:</strong> e.g., $$P_{\text{linear}} = F \times v$$</li>
+                            <li><strong>Structural Bending & Stress:</strong> e.g., $$\sigma = \frac{M}{Z}$$. Check against yield strength for FoS.</li>
+                            <li><strong>Elastic Deflection:</strong> e.g., $$\delta = \frac{PL^3}{3EI}$$. Check against accuracy requirements.</li>
+                            <li><strong>Rotational Dynamics:</strong> e.g., $$\tau_{\text{rot}} = I_{\text{rot}} \times \alpha$$</li>
+                            <li><strong>Fatigue Assessment:</strong> Check alternating stress against endurance limit.</li>
+                            <li><strong>Energy & Efficiency:</strong> Estimate energy per cycle.</li>
+                            <li><strong>Reliability:</strong> Estimate MTBF (Mean Time Between Failures).</li>
+                            <li><strong>Software Validation:</strong> Compare hand calculations to FEA/Motion Analysis results.</li>
+                            <li><strong>Hardware Selection:</strong> Justify choices for motors, screws, guides, etc. Attach datasheets in Appendix.</li>
+                            <li><strong>Friction, Back-Driving & Brakes:</strong> Address safety under power loss.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- NEW 3D Printer Tech Panel -->
+                <div id="printerTech" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">🏠 Industry 3D House Printing Methods</h3>
+                    <p class="text-gray-600 mb-6">Here's a brief overview of the common technologies used in construction-scale 3D printing. Your project will likely involve analysing one of these systems.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Gantry Systems -->
+                        <div class="bg-gray-50 rounded-lg p-4 shadow">
+                            <h4 class="text-xl font-semibold text-gray-700 mb-2">1. Gantry Systems (Cartesian)</h4>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="md:w-2/3">
+                                    <p class="mb-3"><strong>Principle:</strong> A large, overhead frame (the gantry) moves an extrusion nozzle along the X, Y, and Z axes. It's like a massive desktop 3D printer for concrete.</p>
+                                    <p class="font-semibold">Pros:</p>
+                                    <ul class="list-disc list-inside text-sm mb-3">
+                                        <li>✅ Very high precision and stability over large areas.</li>
+                                        <li>✅ Scalable to build entire single-story homes in one go.</li>
+                                    </ul>
+                                    <p class="font-semibold">Cons:</p>
+                                    <ul class="list-disc list-inside text-sm mb-3">
+                                        <li>❌ Slow to assemble and disassemble the entire gantry on-site.</li>
+                                        <li>❌ High initial investment cost.</li>
+                                        <li>❌ Mostly limited to rectangular or "boxy" building footprints.</li>
+                                    </ul>
+                                    <p class="font-semibold">Human Intervention: 🧑‍🔧</p>
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>Heavy involvement in site prep, gantry setup, and rail levelling.</li>
+                                        <li>Managing the material (concrete) mixing and pumping.</li>
+                                        <li>Quality control, smoothing walls, and all post-printing work (roof, windows, plumbing, electrical).</li>
+                                    </ul>
+                                </div>
+                                <div class="md:w-1/3">
+                                    <img src="https://placehold.co/400x300/dbeafe/1e3a8a?text=Gantry+System" alt="Gantry 3D Printer" class="rounded-lg shadow-md object-cover w-full h-full">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Robotic Arm Systems -->
+                        <div class="bg-gray-50 rounded-lg p-4 shadow">
+                            <h4 class="text-xl font-semibold text-gray-700 mb-2">2. Robotic Arms (6-Axis)</h4>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="md:w-2/3">
+                                    <p class="mb-3"><strong>Principle:</strong> A 6-axis industrial robotic arm (like those in a car factory) holds the extrusion nozzle. The arm can be fixed in place, or mounted on a mobile track to extend its reach.</p>
+                                    <p class="font-semibold">Pros:</p>
+                                    <ul class="list-disc list-inside text-sm mb-3">
+                                        <li>✅ Highly flexible; can easily create complex curves and unique shapes.</li>
+                                        <li>✅ Faster to set up and deploy on a job site.</li>
+                                        <li>✅ Can potentially be used for other tasks (milling, finishing) by changing the tool.</li>
+                                    </ul>
+                                    <p class="font-semibold">Cons:</p>
+                                    <ul class="list-disc list-inside text-sm mb-3">
+                                        <li>❌ More complex to program the non-linear toolpaths.</li>
+                                        <li>❌ Precision can decrease over very large distances (less rigid than a gantry).</li>
+                                        <li>❌ Smaller build volume unless mounted on a mobile platform.</li>
+                                    </ul>
+                                    <p class="font-semibold">Human Intervention: 🧑‍💻</p>
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>Complex path programming and simulation.</li>
+                                        <li>Site preparation and material management.</li>
+                                        <li>Supervision and quality control during printing.</li>
+                                        <li>All finishing tasks (roof, windows, etc.).</li>
+                                    </ul>
+                                </div>
+                                <div class="md:w-1/3">
+                                    <img src="https://placehold.co/400x300/fecaca/991b1b?text=Robotic+Arm+Printer" alt="Robotic Arm 3D Printer" class="rounded-lg shadow-md object-cover w-full h-full">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Challenges Section -->
+                        <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
+                            <h3 class="text-2xl font-semibold text-red-800 mb-4">❗ Key Challenges to Overcome</h3>
+                            <p class="text-red-700 mb-4">Your analysis should address these common industry problems:</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Material Science:</strong> How do you ensure the concrete/mortar mix is consistent? How quickly does it need to set (to support the next layer) without setting *too* fast (clogging the nozzle)?</li>
+                                <li><strong>Layer Adhesion:</strong> What mechanical principles ensure one layer of concrete properly bonds to the layer below it? This is critical for wall strength.</li>
+                                <li><strong>Structural Reinforcement:</strong> 3D printed concrete is strong in compression but weak in tension. How will your design incorporate steel rebar (either manually or automatically) to meet building codes?</li>
+                                <li><strong>Precision vs. Scale:</strong> How do you maintain a +/- 5mm precision (for example) when your gantry is 20 meters long? This involves analyzing beam deflection, vibration, and control system feedback.</li>
+                                <li><strong>Cost & Speed:</strong> The high capital cost of the printer and specialized materials vs. the time saved in manual brick-laying.</li>
+                                <li><strong>Regulatory Hurdles:</strong> How do you prove to a local council that your printed structure complies with the National Construction Code (NCC)?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Standards & Simulation Panel -->
+                <div id="standardsSimulation" class="tab-panel">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">💡 Standards & Simulation</h3>
+                    <p class="text-gray-600 mb-6">Use these points to guide your research for Part A and your analysis for Part B.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Australian Standards -->
+                        <div class="bg-blue-50 rounded-lg p-6 shadow">
+                            <h4 class="text-xl font-semibold text-blue-800 mb-3">🇦🇺 Australian Standards & Your 3D Printer</h4>
+                            <p class="mb-4">Your project isn't just building a house; it's building the *machine* to build a house. Both are covered by standards:</p>
+                            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                                <li>
+                                    <strong>AS/NZS 4024.1 (Safety of Machinery):</strong> This is critical for your project. Your gantry/robot arm is a large, automated machine. Your report *must* include a risk assessment based on this standard.
+                                    <ul class="list-circle list-inside ml-6 text-sm">
+                                        <li>How do you prevent people from walking under a moving 2-tonne gantry? (Guarding, E-stops, light curtains).</li>
+                                        <li>What happens if a drive motor fails? (Brakes, redundant systems).</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>AS 3990 / AS 4100 (Steel Structures):</strong> The gantry frame itself is a mechanical structure. You will use these standards to analyse the deflection, buckling, and stress in the beams that support the print head.
+                                </li>
+                                <li>
+                                    <strong>National Construction Code (NCC):</strong> This governs the *final product* (the house). Your design must be capable of producing a structure that complies with the NCC. This will inform your functional requirements (e.g., "must be able to integrate steel rebar").
+                                </li>
+                                <li>
+                                    <strong>AS/NZS ISO 14001 (Environmental):</strong> This guides your sustainability assessment. How much material is wasted? What is the energy consumption (power requirement) of your gantry motors?
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Autodesk Inventor Simulation -->
+                        <div class="bg-gray-50 rounded-lg p-6 shadow">
+                            <h4 class="text-xl font-semibold text-gray-700 mb-3">⚙️ Simulating in Autodesk Inventor</h4>
+                            <p class="mb-4">Here’s how you can use Inventor to validate your design (Part B):</p>
+                            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                                <li>
+                                    <strong>Stress Analysis (FEA):</strong>
+                                    <ul class="list-circle list-inside ml-6 text-sm">
+                                        <li>Model your main gantry beam (the one spanning the house).</li>
+                                        <li>Apply a point load representing the print head, motors, and material hopper.</li>
+                                        <li>Run a simulation to find the **max deflection (mm)**. This is your most important calculation. If it deflects too much, your walls won't be straight!</li>
+                                        <li>Check this deflection against your "precision" requirement (e.g., max $\delta < 5\text{mm}$).</li>
+                                        <li>Also check the max stress ($\sigma$) against the material's yield strength (for your FoS).</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Dynamic Simulation:</strong>
+                                    <ul class="list-circle list-inside ml-6 text-sm">
+                                        <li>Assemble your X-Y gantry. Define joints (e.g., prismatic joints for rails).</li>
+                                        <li>Apply a motion to the print head (e.g., "move 10m in 5 seconds").</li>
+                                        <li>The software can then calculate the **forces, torques, and power** required by the drive motors. This is perfect for your "Torque & Power Requirements" section.</li>
+                                        <li>You can also check for vibration (resonant frequencies) that could ruin the print quality.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>What NOT to simulate in Inventor:</strong>
+                                    <ul class="list-circle list-inside ml-6 text-sm">
+                                        <li>Don't try to simulate the concrete flowing out of the nozzle. That is Complex Fluid Dynamics (CFD) and not what this tool is for. Focus on the *mechanical* system.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-6">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="font-semibold text-lg">Safety First 👷</p>
+            <p class="text-gray-400 text-sm">
+                Safety must be maintained throughout this assessment. Always follow New Engineering policies and procedures.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+
+                    // Deactivate all buttons and panels
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanels.forEach(panel => panel.classList.remove('active'));
+
+                    // Activate the clicked button and corresponding panel
+                    button.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+
+        // KaTeX Auto-Render
+        document.addEventListener('DOMContentLoaded', () => {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                ],
+                throwOnError : false
+            });
+        });
+    </script>
+
+</body>
+</html>
+
