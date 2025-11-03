@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D House Printer Workflow</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: #1e1e2f;
+      color: #f0f0f5;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      color: #00d8ff;
+      margin-top: 2rem;
+      text-shadow: 0 0 5px #00d8ff55;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      border-bottom: 2px solid #00d8ff;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "🔹";
+      margin-right: 0.5rem;
+      color: #ff6ec7;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    code {
+      background-color: #2e2e3e;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #ffcc99;
+    }
+
+    .contributors {
+      background-color: #2a2a3a;
+      padding: 1rem;
+      border-left: 4px solid #00d8ff;
+      border-radius: 6px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    a {
+      color: #00d8ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏗️ Project Workflow: 3D House Printer Design</h1>
+
+  <section>
+    <h2>📁 Folder Structure</h2>
+    <ul>
+      <li><code>/Inventor Models/</code> – Native <code>.ipt</code> and <code>.iam</code> files</li>
+      <li><code>/Exports/</code> – STEP files for Fusion 360 and Revit</li>
+      <li><code>/Documentation/</code> – Design notes, simulations, and reports</li>
+      <li><code>/References/</code> – Research papers, standards, and specs</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧭 Workflow Overview</h2>
+    <ol>
+      <li><strong>Design in Inventor</strong> – Use <code>.iam</code> for assemblies; simulate mechanical motion and stress</li>
+      <li><strong>Export for Collaboration</strong> – Export as <code>.step</code> for Fusion 360 and Revit compatibility; use Pack and Go</li>
+      <li><strong>Review in Fusion 360</strong> – Import STEP or native Inventor files; use cloud comments and versioning</li>
+      <li><strong>Civil Engineering Integration</strong> – Coordinate slip ring and column interfaces using Revit</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>🔄 Update Protocol</h2>
+    <ul>
+      <li>As-we-go updates of resulting .STEP files</li>
+      <li>.STEP files will use version tags: <code>v1.0</code>, <code>v1.1</code>, etc.</li>
+      <li>Add changelog entries in <code>CHANGELOG.md</code></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📌 Notes</h2>
+    <ul>
+      <li>Avoid editing Inventor files directly unless assigned</li>
+      <li>Use Fusion 360 for visualization and feedback</li>
+      <li>All exports should be verified before upload</li>
+    </ul>
+  </section>
+
+  <section class="contributors">
+    <h2>👥 Contributors</h2>
+    <ul>
+      <li><strong>Kiren</strong> (Mechatronics) – Mechanical design</li>
+      <li><strong>Yaspal</strong> (Civil) – documentation & structural calculations</li>
+      <li><strong>Jacob</strong> (Civil) – Simulation</li>
+      <li><strong>Jason/Du Huy</strong> (Civil) – Additional Considerations</li>
+    </ul>
+  </section>
+
+</body>
+</html>
